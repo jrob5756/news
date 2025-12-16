@@ -1,0 +1,249 @@
+{
+  "articles": [
+    {
+      "source": "Hacker News",
+      "title": "Microsoft drops AI sales targets in half after salespeople miss their quotas",
+      "url": "https://arstechnica.com/ai/2025/12/microsoft-slashes-ai-sales-growth-targets-as-customers-resist-unproven-agents/",
+      "summary": "Relevant topics: ai, microsoft",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Uncloud - Tool for deploying containerised apps across servers without k8s",
+      "url": "https://uncloud.run/",
+      "summary": "Relevant topics: cloud, ai",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Show HN: Walrus \u2013 a Kafka alternative written in Rust",
+      "url": "https://github.com/nubskr/walrus",
+      "summary": "Relevant topics: github, kafka",
+      "date": "2025-12-01"
+    },
+    {
+      "source": "Hacker News",
+      "title": "30 years ago today \"Netscape and Sun announce JavaScript\"",
+      "url": "https://web.archive.org/web/20070916144913/http://wp.netscape.com/newsref/pr/newsrelease67.html",
+      "summary": "Relevant topics: javascript, ml",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "Hacker News",
+      "title": "It\u2019s time to free JavaScript (2024)",
+      "url": "https://javascript.tm/letter",
+      "summary": "Relevant topics: javascript",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Microsoft faces complaint in EU over Israeli surveillance data",
+      "url": "https://www.france24.com/en/live-news/20251204-microsoft-faces-complaint-in-eu-over-israeli-surveillance-data",
+      "summary": "Article discussing: Microsoft faces complaint in EU over Israeli surveillance data",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Anthropic acquires Bun",
+      "url": "https://bun.com/blog/bun-joins-anthropic",
+      "summary": "Article discussing: Anthropic acquires Bun",
+      "date": "2025-12-03"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Interop and MathML Core",
+      "url": "https://conflor.es/blog/2025-11-27-interop-and-mathml/",
+      "summary": "Article discussing: Interop and MathML Core",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Elites could shape mass preferences as AI reduces persuasion costs",
+      "url": "https://arxiv.org/abs/2512.04047",
+      "summary": "Article discussing: Elites could shape mass preferences as AI reduces persuasion costs",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "Hacker News",
+      "title": "The Math Legend Who Just Left Academia\u2013For an AI Startup Run by a 24-Year-Old",
+      "url": "https://www.wsj.com/tech/ai/math-ken-ono-carina-hong-axiom-startup-649bc417",
+      "summary": "Article discussing: The Math Legend Who Just Left Academia\u2013For an AI Startup Run by a 24-Year-Old",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "TechCrunch",
+      "title": "EU investigating Meta over policy change that bans rival AI chatbots from WhatsApp",
+      "url": "https://techcrunch.com/2025/12/04/eu-investigating-meta-over-policy-change-that-bans-rival-ai-chatbots-from-whatsapp/",
+      "summary": "The European Union is investigating Meta's new policy that prohibits rival AI chatbots from operating on WhatsApp platform.",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "TechCrunch",
+      "title": "AWS doubles down on custom LLMs with features meant to simplify model creation",
+      "url": "https://techcrunch.com/2025/12/03/aws-doubles-down-on-custom-llms-with-features-meant-to-simplify-model-creation/",
+      "summary": "Amazon Web Services introduces new features to simplify custom large language model creation, making it easier for enterprises to build tailored AI solutions.",
+      "date": "2025-12-03"
+    },
+    {
+      "source": "TechCrunch",
+      "title": "Meta centralizes Facebook and Instagram support, tests AI support assistant",
+      "url": "https://techcrunch.com/2025/12/04/meta-centralizes-facebook-and-instagram-support-tests-ai-support-assistant/",
+      "summary": "Meta is consolidating Facebook and Instagram customer support and testing an AI-powered support assistant to improve user experience.",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "TechCrunch",
+      "title": "Anthropic signs $200M deal to bring its LLMs to Snowflake's customers",
+      "url": "https://techcrunch.com/2025/12/04/anthropic-signs-200m-deal-to-bring-its-llms-to-snowflakes-customers/",
+      "summary": "Anthropic partners with Snowflake in a $200M deal to integrate its large language models into Snowflake's data platform, expanding enterprise AI accessibility.",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "TechCrunch",
+      "title": "All the biggest news from AWS' big tech show re:Invent 2025",
+      "url": "https://techcrunch.com/2025/12/03/all-the-biggest-news-from-aws-big-tech-show-reinvent-2025/",
+      "summary": "Comprehensive coverage of major announcements from AWS re:Invent 2025, including new cloud services, AI capabilities, and infrastructure updates.",
+      "date": "2025-12-03"
+    },
+    {
+      "source": "The Verge",
+      "title": "Anthropic will start using AI to interview its users... about their experience with AI.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/838243/anthropic-will-start-using-ai-to-interview-its-users-about-their-experience-with-ai",
+      "summary": "",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "The Verge",
+      "title": "Grok is now doxxing regular folks.",
+      "url": "https://www.theverge.com/tech/838108/grok-is-now-doxxing-regular-folks",
+      "summary": "",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "The Verge",
+      "title": "Anthropic\u2019s quest to study the negative effects of AI is under pressure",
+      "url": "https://www.theverge.com/podcast/838023/anthropic-societal-impact-trump-woke-ai-interview",
+      "summary": "The Verge\u2019s Hayden Field joins Decoder to discuss the politically fraught climate around AI safety.",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "The Verge",
+      "title": "Yahoo is using AI to recap football games in real time",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/837950/yahoo-sports-game-breakdowns-ai",
+      "summary": "AI models are very useful for mining stats to see exactly what\u2019s going on in the game you\u2019re watching.",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "The Verge",
+      "title": "Get ready for an AI country music explosion",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/829964/country-music-ai",
+      "summary": "Suno is taking over Nashville\u2019s writing rooms.",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "Reddit r/programming",
+      "title": "Build your own ChatGPT from scratch in C++",
+      "url": "https://www.reddit.com/r/programming/comments/1pdq8t7/build_your_own_chatgpt_from_scratch_in_c/",
+      "summary": "Most of us use LLMs, but we still treat them like a magic box that spits out answers. Once you dig in a bit, you realize it\u2019s mostly just a bunch of math happening very fast.\n\nTorchless is a small inf...",
+      "date": "2025-12-03"
+    },
+    {
+      "source": "Reddit r/programming",
+      "title": "Reverse engineering a $1B Legal AI tool exposed 100k+ confidential files",
+      "url": "https://www.reddit.com/r/programming/comments/1pddgdw/reverse_engineering_a_1b_legal_ai_tool_exposed/",
+      "summary": "Link post: Reverse engineering a $1B Legal AI tool exposed 100k+ confidential files",
+      "date": "2025-12-03"
+    },
+    {
+      "source": "Reddit r/programming",
+      "title": "Meta Is Killing Messenger Desktop Apps\u2026 PWAs Are Finally Taking Over?",
+      "url": "https://www.reddit.com/r/programming/comments/1pdnvyn/meta_is_killing_messenger_desktop_apps_pwas_are/",
+      "summary": "Link post: Meta Is Killing Messenger Desktop Apps\u2026 PWAs Are Finally Taking Over?",
+      "date": "2025-12-03"
+    },
+    {
+      "source": "Reddit r/programming",
+      "title": "Booting a Linux kernel in qemu and writing PID 1 in Go (to show the kernel is \"just a program\")",
+      "url": "https://www.reddit.com/r/programming/comments/1pd8dh1/booting_a_linux_kernel_in_qemu_and_writing_pid_1/",
+      "summary": "I\u2019ve been working on a \"Linux Inside Out\" series and wrote a post that might interest folks here who like low-level / OS internals.\n\nThe idea is to dissect the components of a Linux OS, layer by layer...",
+      "date": "2025-12-03"
+    },
+    {
+      "source": "Reddit r/programming",
+      "title": "Amber the programming language compiled to Bash, 0.5.1 release",
+      "url": "https://www.reddit.com/r/programming/comments/1pd128h/amber_the_programming_language_compiled_to_bash/",
+      "summary": "The new 0.5.1 release includes a lot of new stuff to the compiler, from new syntax, stdlib functions, features and so on.\n\nPS: I am one of the co-maintainer, so for any question I am here :-)\n\nPS: we...",
+      "date": "2025-12-03"
+    },
+    {
+      "source": "Reddit - r/ArtificialInteligence",
+      "title": "I Went to an AI Networking Event and Discovered Nobody Understands AI (Except the Lawyer)",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pdwpo1/i_went_to_an_ai_networking_event_and_discovered/",
+      "summary": "went to an ai/ml networking thing recently. everyone was doing their pitches about their \u201cai\u201d projects. startups built around whatever checkpoint they downloaded yesterday, wrapped in enough buzzwords to qualify as insulation foam. for context, i\u2019m an engineer, the pre-framework kind who learned on ...",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "Reddit - r/ArtificialInteligence",
+      "title": "NVIDIA CEO on new JRE podcast: AI scaling laws,Robots and nuclear energy",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pdvr2b/nvidia_ceo_on_new_jre_podcast_ai_scaling/",
+      "summary": "i watched the full multi-hour **jensen huang interview on jre.** the nuclear clip is going viral but the deeper parts of the conversation were far more important.\n\n**here\u2019s the high-signal breakdown.**\n\n1) **the three scaling laws:** jensen says that we are **no longer** just relying on one scaling ...",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "Reddit - r/ArtificialInteligence",
+      "title": "An AI model trained on prison phone calls now looks for planned crimes in those calls | The model is built to detect when crimes are being \u201ccontemplated.\u201d",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pe5cte/an_ai_model_trained_on_prison_phone_calls_now/",
+      "summary": "a us telecom company trained an ai model on years of inmates\u2019 phone and video calls and is now piloting that model to scan their calls, texts, and emails in the hope of predicting and preventing crimes.\u00a0\n\nsecurus technologies president kevin elder told\u00a0*mit technology review*\u00a0that the company began ...",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "Reddit - r/ArtificialInteligence",
+      "title": "I thought building a 50+ model image generator would be an AI problem. It wasn't.",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pdzn34/i_thought_building_a_50_model_image_generator/",
+      "summary": "spent the last month building a multi-model image generation pipeline (50+ models from different providers). i'm a backend dev, not an ml person, so i expected the \"ai part\" to destroy me.\n\nturns out the ai was the easy part lol.\n\nthe real nightmares:\n\n**1. every model speaks a different language** ...",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "Reddit - r/ArtificialInteligence",
+      "title": "A Gap in AI Development That No Dataset Currently Fills",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pe418u/a_gap_in_ai_development_that_no_dataset_currently/",
+      "summary": "yes, ai clearly wrote this for me.\nanyway\u2014\n\ni\u2019ve been spending a lot of time following ai discussions, and something keeps standing out. we have massive datasets for language, images, code, etc., but there\u2019s basically no structured dataset that captures how people actually behave with each other.\n\nn...",
+      "date": "2025-12-04"
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[D] Published paper uses hardcoded seed and collapsed model to report fraudulent results",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1pcaxi3/d_published_paper_uses_hardcoded_seed_and/",
+      "summary": "Inspired by [an earlier post](https://www.reddit.com/r/MachineLearning/comments/1p82cto/d_got_burned_by_an_apple_iclr_paper_it_was/) that called out an Apple ICLR paper for having an egregiously low q",
+      "date": "2025-12-02"
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[D] On low quality reviews at ML conferences",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1pcgmma/d_on_low_quality_reviews_at_ml_conferences/",
+      "summary": "Lately I've been really worried about a trend in the ML community: the overwhelming dominance of *purely empirical* researchers. It\u2019s genuinely hard to be a rigorous scientist, someone who backs up ar",
+      "date": "2025-12-02"
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[D] How to make ML publications not show arxiv by default on Google scholar?",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1pcygva/d_how_to_make_ml_publications_not_show_arxiv_by/",
+      "summary": "Sorry if it\u2019s a stupid question but I\u2019m early in my PhD.   I have recently published two papers in ICLR/ICML/NeurIPS and uploaded to arxiv after the papers were accepted.   After the arxiv indexes, th",
+      "date": "2025-12-03"
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "Gated Attention, a bit of schmidhubering/sociology of science [D]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1pcdq5r/gated_attention_a_bit_of_schmidhuberingsociology/",
+      "summary": "I am a bit perplexed by the relatively late excitement for Gated Attention, and it's late emergence.  Specifically, I am concerned with the headwise gating, which is a dense \\[0,1\\] coefficient over e",
+      "date": "2025-12-02"
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[P] I trained Qwen2.5-Coder-7B for a niche diagramming language and reached 86% code accuracy",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1pdk10w/p_i_trained_qwen25coder7b_for_a_niche_diagramming/",
+      "summary": "I trained a 7B to learn a niche language and reaching 86% code accuracy  Hi everyone, I just wanted to share a project I did over the last weekend.  I\u2019m no ML engineer or having any relevant backgroun",
+      "date": "2025-12-03"
+    }
+  ]
+}

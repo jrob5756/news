@@ -1,0 +1,268 @@
+{
+  "articles": [
+    {
+      "source": "Hacker News",
+      "title": "NanoChat \u2013 The best ChatGPT that $100 can buy",
+      "url": "https://github.com/karpathy/nanochat",
+      "summary": "Andrej Karpathy releases NanoChat, an AI chatbot implementation that demonstrates how to build a ChatGPT-like experience for minimal cost. Relevant to AI tools, frameworks, and development patterns."
+    },
+    {
+      "source": "Hacker News",
+      "title": "Why the push for Agentic when models can barely follow a simple instruction?",
+      "url": "https://forum.cursor.com/t/why-the-push-for-agentic-when-models-can-barely-follow-a-single-simple-instruction/137154",
+      "summary": "Discussion about AI agent systems and their current limitations in following instructions. Addresses AI development patterns and best practices in building agentic systems."
+    },
+    {
+      "source": "Hacker News",
+      "title": "America is getting an AI gold rush instead of a factory boom",
+      "url": "https://www.washingtonpost.com/business/2025/10/13/manufacturing-artificial-intelligence/",
+      "summary": "Analysis of the AI industry boom and its impact on the tech landscape. Covers AI news, updates, and the shifting focus toward AI infrastructure and applications."
+    },
+    {
+      "source": "Hacker News",
+      "title": "Why Study Programming Languages",
+      "url": "https://people.csail.mit.edu/rachit/post/why-study-programming-languages/",
+      "summary": "MIT CSAIL article discussing the importance of programming language theory and design. Relevant to software development, systems design, and architectural patterns."
+    },
+    {
+      "source": "Hacker News",
+      "title": "LLMs are getting better at character-level text manipulation",
+      "url": "https://blog.burkert.me/posts/llm_evolution_character_manipulation/",
+      "summary": "Analysis of improvements in large language model capabilities for character-level operations. Discusses AI development patterns and model evolution."
+    },
+    {
+      "source": "Hacker News (page 2)",
+      "title": "Nanochat",
+      "url": "https://simonwillison.net/2025/Oct/13/nanochat/",
+      "summary": "AI chatbot tool by Simon Willison demonstrating modern AI development patterns and frameworks for building conversational interfaces."
+    },
+    {
+      "source": "Hacker News (page 2)",
+      "title": "All in on MatMul? Don't Put All Your Tensors in One Basket!",
+      "url": "https://www.sigarch.org/dont-put-all-your-tensors-in-one-basket-hardware-lottery/",
+      "summary": "Analysis of AI hardware architecture focusing on tensor operations and matrix multiplication optimization. Relevant to AI development patterns and systems design for ML workloads."
+    },
+    {
+      "source": "Hacker News (page 2)",
+      "title": "StreamingVLM: Real-Time Understanding for Infinite Video Streams",
+      "url": "https://arxiv.org/abs/2510.09608",
+      "summary": "Research paper on real-time video understanding using vision-language models. Advances in AI tools and frameworks for processing continuous video streams."
+    },
+    {
+      "source": "Hacker News (page 2)",
+      "title": "Show HN: AI toy I worked on is in stores",
+      "url": "https://www.walmart.com/ip/SANTA-SMAGICAL-PHONE/16364964771",
+      "summary": "AI-powered consumer product demonstrating practical applications of AI technology in toys and consumer electronics, showcasing AI development in production."
+    },
+    {
+      "source": "Hacker News (page 2)",
+      "title": "Scaling request logging with ClickHouse, Kafka, and Vector",
+      "url": "https://www.geocod.io/code-and-coordinates/2025-10-02-from-millions-to-billions/",
+      "summary": "Technical article on scaling distributed logging infrastructure from millions to billions of requests using ClickHouse, Kafka, and Vector. Covers cloud computing architecture and systems design best practices."
+    },
+    {
+      "source": "Hacker News",
+      "title": "OpenAI and Broadcom to deploy 10 GW of OpenAI-designed AI accelerators",
+      "url": "https://openai.com/index/openai-and-broadcom-announce-strategic-collaboration/",
+      "summary": "Article from Hacker News: OpenAI and Broadcom to deploy 10 GW of OpenAI-designed AI accelerators"
+    },
+    {
+      "source": "Hacker News",
+      "title": "German state replaces Microsoft Exchange and Outlook with open-source email",
+      "url": "https://www.zdnet.com/article/german-state-replaces-microsoft-exchange-and-outlook-with-open-source-email/",
+      "summary": "Article from Hacker News: German state replaces Microsoft Exchange and Outlook with open-source email"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Uv overtakes pip in CI",
+      "url": "https://wagtail.org/blog/uv-overtakes-pip-in-ci/",
+      "summary": "Article from Hacker News: Uv overtakes pip in CI"
+    },
+    {
+      "source": "Hacker News",
+      "title": "iOS Development with Visual Studio Code: Step-by-Step Setup Guide",
+      "url": "https://www.dogancan.dev/blog/iOS-development-with-vscode",
+      "summary": "Article from Hacker News: iOS Development with Visual Studio Code: Step-by-Step Setup Guide"
+    },
+    {
+      "source": "Alvin Ashcraft",
+      "title": "\ud83e\udde0 Build AI Agents in C# with the Microsoft Agent Framework and Hugging Face MCP Tools",
+      "url": "https://elbruno.com/2025/10/13/%f0%9f%a7%a0-build-ai-agents-in-c-with-the-microsoft-agent-framework-and-hugging-face-mcp-tools/",
+      "summary": "Relevant to AI-related, Microsoft, Architecture/Design, Development"
+    },
+    {
+      "source": "Alvin Ashcraft",
+      "title": "Azure DevOps local MCP Server is generally available",
+      "url": "https://devblogs.microsoft.com/devops/azure-devops-local-mcp-server-generally-available/",
+      "summary": "Relevant to AI-related, Cloud, Microsoft"
+    },
+    {
+      "source": "Alvin Ashcraft",
+      "title": "Transition to Azure Functions V2 on Azure Container Apps",
+      "url": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/transition-to-azure-functions-v2-on-azure-container-apps/ba-p/4457258",
+      "summary": "Relevant to AI-related, Cloud, Microsoft"
+    },
+    {
+      "source": "Alvin Ashcraft",
+      "title": "The Future of AI: Structured Vibe Coding \u2013 An Improved Approach to AI Software Development",
+      "url": "https://techcommunity.microsoft.com/t5/azure-ai-foundry-blog/the-future-of-ai-structured-vibe-coding-an-improved-approach-to/ba-p/4461275",
+      "summary": "Relevant to AI-related, Cloud, Microsoft"
+    },
+    {
+      "source": "Alvin Ashcraft",
+      "title": "GitHub Copilot CLI: How to get started",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-how-to-get-started/",
+      "summary": "Relevant to AI-related, Microsoft, GitHub/Microsoft"
+    },
+    {
+      "source": "Reddit - r/programming",
+      "title": "Tests Don't Prove Code Is Correct\u2026 They Just Agree With It",
+      "url": "https://medium.com/@arnonaxelrod/proof-driven-development-or-the-business-value-of-clean-code-b84380ff312e",
+      "summary": "Reflection on software testing philosophy discussing how tests validate assumptions rather than absolute correctness. Explores test-driven development, code quality, and development best practices for ensuring software reliability."
+    },
+    {
+      "source": "Reddit - r/programming",
+      "title": "Blameless Culture in Software Engineering",
+      "url": "https://open.substack.com/pub/thehustlingengineer/p/how-to-build-a-blameless-culture?r=yznlc&utm_medium=ios",
+      "summary": "Discussion on building a blameless culture in software engineering teams. Covers best practices for incident response, team dynamics, and organizational patterns that promote learning from failures rather than assigning blame."
+    },
+    {
+      "source": "Reddit - r/programming",
+      "title": "We saved 76% on our cloud bills while tripling our capacity by migrating to Hetzner from AWS and DigitalOcean",
+      "url": "https://digitalsociety.coop/posts/migrating-to-hetzner-cloud/",
+      "summary": "Case study on cloud migration demonstrating significant cost savings by moving from AWS and DigitalOcean to Hetzner. Discusses cloud computing cost optimization, infrastructure design decisions, and performance considerations for alternative cloud providers."
+    },
+    {
+      "source": "Reddit - r/programming",
+      "title": "React Compiler v1.0",
+      "url": "https://react.dev/blog/2025/10/07/react-compiler-1",
+      "summary": "Official release announcement of React Compiler v1.0 from Meta. New tool that optimizes React applications by automatically memoizing components, reducing the need for manual optimization. Relevant to AI tools, frameworks, and modern web development patterns."
+    },
+    {
+      "source": "Reddit - r/programming",
+      "title": "The LLMentalist Effect: How AI programmers and users and trick themselves",
+      "url": "https://softwarecrisis.dev/letters/llmentalist/",
+      "summary": "Analysis of cognitive biases and self-deception in AI-assisted programming. Discusses how developers and users can misinterpret AI capabilities, addresses AI development patterns, best practices, and the psychology of working with LLM-based tools."
+    },
+    {
+      "source": "Reddit r/ArtificialInteligence",
+      "title": "OpenAI just got caught trying to intimidate a 3 person nonprofit that opposed them",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1o595xg/openai_just_got_caught_trying_to_intimidate_a_3/",
+      "summary": "so this incident took place just a few days ago, and it is truly a shocking one.\n\nThere's a nonprofit called Encode. Three people work there full time. They helped push California's SB 53 which is a new AI safety law requiring transparency reports from AI companies.\n\nOpenAI didn't like the law. Whil"
+    },
+    {
+      "source": "Reddit r/ArtificialInteligence",
+      "title": "Microsoft just launched a tool that lets your boss see if you\u2019re 'using enough AI' at work \ud83d\udc80",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1o5ara3/microsoft_just_launched_a_tool_that_lets_your/",
+      "summary": "Here's the news that I came across: [https://winbuzzer.com/2025/10/11/new-microsoft-tool-lets-your-boss-track-if-you-use-ai-sufficiently-xcxwbn/](https://winbuzzer.com/2025/10/11/new-microsoft-tool-lets-your-boss-track-if-you-use-ai-sufficiently-xcxwbn/)  \n  \nSo uh\u2026 Microsoft\u2019s new thing called Copi"
+    },
+    {
+      "source": "Reddit r/ArtificialInteligence",
+      "title": "How does this work?",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1o5rugt/how_does_this_work/",
+      "summary": "I came across this tool Faceseek which claims to use AI for facial matching and verification. I tried it briefly it handled similar looking faces decently. i was thinking about the kind of model or approach tools like this might be using face embeddings, CLIP based comparisons, or something else, id"
+    },
+    {
+      "source": "Reddit r/ArtificialInteligence",
+      "title": "AI is getting really scary people can make fake videos that look almost 100% real",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1o5ovib/ai_is_getting_really_scary_people_can_make_fake/",
+      "summary": "I know everyone keeps talking about AI but lately it\u2019s starting to actually freak me out. I saw some clips of this influencer called hstiktokky where people had literally made fake AI videos( i think it was with sora) of him saying or doing things he never did some of it was straight up disturbing l"
+    },
+    {
+      "source": "Reddit r/ArtificialInteligence",
+      "title": "If AI takes over most jobs, how do you think we the people will take our power back from the rich?",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1o572jg/if_ai_takes_over_most_jobs_how_do_you_think_we/",
+      "summary": "I used to think it was dramatic when people would say that job automation would be at least half complete in 5-10 years. Not that I\u2019m now certain of a timeline, however I have a very real concern that AI will be taking our jobs sooner than I originally thought. I know there\u2019s a large conversation re"
+    },
+    {
+      "source": "r/MachineLearning",
+      "title": "[D] Need career advice, just got rejected for an Applied Scientist role at Microsoft",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1o5gojz/d_need_career_advice_just_got_rejected_for_an/",
+      "summary": "Discussion about career challenges in AI/ML at Microsoft, focusing on API consumption vs model building, RAG systems, and fine-tuning LLMs. Relevant for AI development patterns, Microsoft AI roles, and cloud computing skills (Azure/AWS)."
+    },
+    {
+      "source": "r/MachineLearning",
+      "title": "[D] TEE GPU inference overhead way lower than expected - production numbers",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1o5wpu3/d_tee_gpu_inference_overhead_way_lower_than/",
+      "summary": "Production experience with Trusted Execution Environments for secure LLM inference on Intel TDX. Discusses cloud deployment patterns, security architecture for financial documents, and achieving only 7% overhead vs standard deployment. Relevant for systems design, cloud computing best practices, and AI deployment patterns."
+    },
+    {
+      "source": "r/MachineLearning",
+      "title": "[P] Adapting Karpathy's baby GPT into a character-level discrete diffusion model",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1o4qu0h/p_adapting_karpathys_baby_gpt_into_a/",
+      "summary": "Educational project implementing discrete diffusion models for text generation using a modified GPT architecture. Provides annotated Jupyter Notebook with full implementation. Relevant for AI development patterns, tools/frameworks, and software development best practices in ML."
+    },
+    {
+      "source": "r/MachineLearning",
+      "title": "[P] CleanMARL: a clean implementations of Multi-Agent Reinforcement Learning Algorithms in PyTorch",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1o5fry6/p_cleanmarl_a_clean_implementations_of_multiagent/",
+      "summary": "Open-source project providing clean, single-file implementations of multi-agent RL algorithms (VDN, QMIX, COMA, MADDPG, FACMAC, IPPO, MAPPO) in PyTorch. Includes educational resources similar to Spinning Up. Relevant for AI tools/frameworks, software development patterns, and best practices."
+    },
+    {
+      "source": "r/MachineLearning",
+      "title": "[D]: Interview prep: What LC questions were u asked for AI/MLE/Research scientist roles",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1o5zhqo/d_interview_prep_what_lc_questions_were_u_asked/",
+      "summary": "Discussion about technical interview requirements for AI/ML Engineer and Research Scientist positions at major companies. Covers coding interview patterns and expectations for AI roles. Relevant for understanding hiring practices at major tech companies and AI development requirements."
+    },
+    {
+      "source": "DZone",
+      "title": "Transforming Your Node.js REST API into an AI-Ready MCP Server",
+      "url": "https://dzone.com/articles/transform-nodejs-rest-api-to-mcp-server",
+      "summary": "Guide on transforming Node.js REST APIs into AI-ready Model Context Protocol (MCP) servers for enhanced AI integration."
+    },
+    {
+      "source": "DZone",
+      "title": "AI-Assisted Kubernetes Diagnostics: A Practical Implementation",
+      "url": "https://dzone.com/articles/ai-assisted-kubernetes-diagnostics",
+      "summary": "Practical implementation of AI-assisted diagnostics for Kubernetes clusters to improve troubleshooting and monitoring."
+    },
+    {
+      "source": "DZone",
+      "title": "Long-Running Durable Agents With Spring AI and Dapr Workflows",
+      "url": "https://dzone.com/articles/durable-agents-with-spring-ai-and-dapr",
+      "summary": "Tutorial on building long-running durable AI agents using Spring AI framework with Dapr workflows for stateful operations."
+    },
+    {
+      "source": "DZone",
+      "title": "AI-Driven Developer Tools: Transforming the Future of Software Development",
+      "url": "https://dzone.com/articles/ai-driven-developer-tools",
+      "summary": "Overview of how AI-powered tools are transforming software development workflows and developer productivity."
+    },
+    {
+      "source": "DZone",
+      "title": "Infusing AI into Your Java Applications",
+      "url": "https://dzone.com/articles/infusing-ai-into-your-java-applications",
+      "summary": "Best practices and patterns for integrating AI capabilities into Java applications using modern frameworks and tools."
+    },
+    {
+      "source": "dev.to",
+      "title": "The Day I Almost Backed Out: Being the Only Woman Speaker at AWS Cloud Day Philippines' Developer Lounge",
+      "url": "https://dev.to/urielalonso/the-day-i-almost-backed-out-being-the-only-woman-speaker-at-aws-cloud-day-philippines-developer-2jb",
+      "summary": "I need to be real with you\u2014I almost didn&#39;t do it.   When I got the invitation to speak at AWS Cloud... Tagged with ai, awscloudday, womenintech, inclusion."
+    },
+    {
+      "source": "dev.to",
+      "title": "The Hidden Risk of Letting ChatGPT Touch Your Code",
+      "url": "https://dev.to/michal_harcej/the-hidden-risk-of-letting-chatgpt-touch-your-code-2lh0",
+      "summary": "I wrote this after spending an entire day fixing the chaos that ChatGPT caused in my live... Tagged with webdev, chatgpt, ai, llm."
+    },
+    {
+      "source": "dev.to",
+      "title": "Congrats to the Heroku \"Back to School\" AI Challenge Winners!",
+      "url": "https://dev.to/devteam/congrats-to-the-heroku-back-to-school-ai-challenge-winners-303h",
+      "summary": "Thank you to everyone for being patient, the wait is over! We are excited to announce the winners of... Tagged with devchallenge, herokuchallenge, heroku, ai."
+    },
+    {
+      "source": "dev.to",
+      "title": "GitHub Copilot Chat Modes: From Chaos to Command \ud83c\udf9b\ufe0f",
+      "url": "https://dev.to/anchildress1/github-copilot-chat-modes-from-chaos-to-command-54k0",
+      "summary": "You\u2019ve built your first GitHub Copilot chat mode\u2014now it\u2019s time to tame it. Here\u2019s how to set up, test, and share custom modes like a professional who occasionally yells at their AI. Tagged with githubcopilot, ai, tutorial, productivity."
+    },
+    {
+      "source": "dev.to",
+      "title": "Join the Auth0 for AI Agents Challenge: $3,000 in Prizes!",
+      "url": "https://dev.to/devteam/join-the-auth0-for-ai-agents-challenge-3000-in-prizes-11gi",
+      "summary": "We&#39;re excited to announce our newest challenge with Auth0, a leading authentication and authorization... Tagged with devchallenge, auth0challenge, security, ai."
+    }
+  ]
+}

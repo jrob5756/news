@@ -1,0 +1,274 @@
+{
+  "articles": [
+    {
+      "source": "Hacker News",
+      "title": "Building more with GPT-5.1-Codex-Max",
+      "url": "https://openai.com/index/gpt-5-1-codex-max/",
+      "summary": "OpenAI announces GPT-5.1-Codex-Max, a new AI model focused on code generation and software development capabilities."
+    },
+    {
+      "source": "Hacker News",
+      "title": "Meta Segment Anything Model 3",
+      "url": "https://ai.meta.com/sam3/",
+      "summary": "Meta releases SAM 3, the latest version of their Segment Anything Model for computer vision and image segmentation tasks."
+    },
+    {
+      "source": "Hacker News",
+      "title": "Adversarial Poetry as a Universal Single-Turn Jailbreak Mechanism in LLMs",
+      "url": "https://arxiv.org/abs/2511.15304",
+      "summary": "Research paper exploring a novel jailbreak technique using adversarial poetry to bypass LLM safety mechanisms in a single turn."
+    },
+    {
+      "source": "Hacker News",
+      "title": "Launch HN: Mosaic (YC W25) – Agentic Video Editing",
+      "url": "https://mosaic.so",
+      "summary": "AI startup Mosaic launches agentic video editing tool that uses AI agents to automate video editing workflows."
+    },
+    {
+      "source": "Hacker News",
+      "title": "CUDA Ontology",
+      "url": "https://jamesakl.com/posts/cuda-ontology/",
+      "summary": "Deep dive into CUDA programming concepts and architecture, relevant for AI/ML development and GPU computing."
+    },
+    {
+      "source": "Hacker News",
+      "title": "Gemini 3",
+      "url": "https://blog.google/products/gemini/gemini-3/",
+      "summary": "Google AI News - Major Gemini 3 release"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Measuring political bias in Claude",
+      "url": "https://www.anthropic.com/news/political-even-handedness",
+      "summary": "Anthropic AI News - Claude model analysis"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Microsoft AI CEO pushes back against critics after recent Windows AI backlash",
+      "url": "https://www.windowscentral.com/microsoft/windows-11/microsoft-ai-ceo-pushes-back-against-critics-after-recent-windows-ai-backlash-the-fact-that-people-are-unimpressed-is-mindblowing-to-me",
+      "summary": "Microsoft AI News"
+    },
+    {
+      "source": "Hacker News",
+      "title": "A $1k AWS mistake",
+      "url": "https://www.geocod.io/code-and-coordinates/2025-11-18-the-1000-aws-mistake/",
+      "summary": "Cloud Computing (AWS) best practices"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Control LLM Spend and Access with any-LLM-gateway",
+      "url": "https://blog.mozilla.ai/control-llm-spend-and-access-with-any-llm-gateway/",
+      "summary": "AI Tools and frameworks for LLM management"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Understanding neural networks through sparse circuits",
+      "url": "https://openai.com/index/understanding-neural-networks-through-sparse-circuits/",
+      "summary": "OpenAI research on understanding neural network behavior through sparse circuit analysis"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Sam 3D: Powerful 3D Reconstruction for Physical World Images",
+      "url": "https://ai.meta.com/blog/sam-3d/?_fb_noscript=1",
+      "summary": "Meta AI introduces SAM 3D, a tool for powerful 3D reconstruction from physical world images"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Bild AI (YC W25) is hiring – Make housing affordable",
+      "url": "https://www.ycombinator.com/companies/bild-ai/jobs/m2ilR5L-founding-engineer-applied-ai",
+      "summary": "AI startup Bild AI hiring founding engineers for applied AI work in affordable housing"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Palo Alto Networks to Acquire Chronosphere",
+      "url": "https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-to-acquire-chronosphere--next-gen-observability-leader--for-the-ai-era",
+      "summary": "Palo Alto Networks acquires Chronosphere, a next-gen observability platform for the AI era"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Show HN: RowboatX – open-source Claude Code for everyday automations",
+      "url": "https://github.com/rowboatlabs/rowboat",
+      "summary": "Open-source tool inspired by Claude Code for building everyday automations"
+    },
+    {
+      "source": "alvinashcraft.com",
+      "title": "Agentic Applications on Azure Container Apps with Microsoft Foundry",
+      "url": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/agentic-applications-on-azure-container-apps-with-microsoft/ba-p/4467601",
+      "summary": "Microsoft article on building agentic AI applications using Azure Container Apps and Microsoft Foundry platform."
+    },
+    {
+      "source": "alvinashcraft.com",
+      "title": "GPT-5 FreeForm Tool Calling in TypeScript on Azure AI Foundry",
+      "url": "https://techcommunity.microsoft.com/t5/microsoft-developer-community/gpt-5-freeform-tool-calling-in-typescript-on-azure-ai-foundry/ba-p/4469682",
+      "summary": "Microsoft tutorial on implementing GPT-5 freeform tool calling with TypeScript on Azure AI Foundry platform."
+    },
+    {
+      "source": "alvinashcraft.com",
+      "title": "Host remote MCP servers on Azure Functions",
+      "url": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/host-remote-mcp-servers-on-azure-functions/ba-p/4471047",
+      "summary": "Microsoft guide on hosting Model Context Protocol (MCP) servers using Azure Functions for AI applications."
+    },
+    {
+      "source": "alvinashcraft.com",
+      "title": "Copilot Studio and Azure AI Services, A Case Study on the Mix of the Two Worlds",
+      "url": "https://techcommunity.microsoft.com/t5/azure-ai-foundry-blog/copilot-studio-and-azure-ai-services-a-case-study-on-the-mix-of/ba-p/4465349",
+      "summary": "Microsoft case study demonstrating integration of Copilot Studio with Azure AI Services for enterprise AI solutions."
+    },
+    {
+      "source": "alvinashcraft.com",
+      "title": "How-to add an MCP tool to your Azure Foundry agent using dynamic sessions on Azure Container Apps",
+      "url": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/how-to-add-an-mcp-tool-to-your-azure-foundry-agent-using-dynamic/ba-p/4468844",
+      "summary": "Microsoft technical guide on integrating MCP tools with Azure Foundry agents using dynamic sessions in Azure Container Apps."
+    },
+    {
+      "source": "Reddit r/programming",
+      "title": "Cloudflare outage on November 18, 2025 - official response",
+      "url": "https://blog.cloudflare.com/18-november-2025-outage",
+      "summary": "Discussion with 289 comments, score: 1588"
+    },
+    {
+      "source": "Reddit r/programming",
+      "title": "Gemini 3 was released minutes ago",
+      "url": "https://blog.google/products/gemini/gemini-3/?utm_source=tw&amp;utm_medium=social&amp;utm_campaign=nfg&amp;utm_content=&amp;utm_term=#gemini-3-deep-think",
+      "summary": "Discussion with 230 comments, score: 749"
+    },
+    {
+      "source": "Reddit r/programming",
+      "title": "Android Blog: \"Based on this feedback and our ongoing conversations with the community, we are building a new advanced flow that allows experienced users to accept the risks of installing software that isn't verified.\"",
+      "url": "https://android-developers.googleblog.com/2025/11/android-developer-verification-early.html",
+      "summary": "Discussion with 27 comments, score: 230"
+    },
+    {
+      "source": "Reddit r/programming",
+      "title": "UV and Ruff",
+      "url": "https://www.devtoolsacademy.com/blog/uv-and-ruff-turbocharging-python-development-with-rust-powered-tools/",
+      "summary": "Discussion with 7 comments, score: 13"
+    },
+    {
+      "source": "Reddit r/programming",
+      "title": "Being Gullible About User Feedback Can Hurt UX",
+      "url": "https://fastcode.io/2025/11/19/being-gullible-about-user-feedback-can-hurt-ux/",
+      "summary": "A reflection on how easily teams can be misled by user feedback, especially when comments hide embarrassment or uncertainty, and how careful observation reveals a truth that words alone never fully sh..."
+    },
+    {
+      "source": "Reddit - r/ArtificialInteligence",
+      "title": "Monthly \"Is there a tool for...\" Post",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1n5ppdb/monthly_is_there_a_tool_for_post/",
+      "summary": "If you have a use case that you want to use AI for, but don't know which tool to use, this is where you can ask the community to help out, outside of this post those questions will be removed.\n\n  \nFor..."
+    },
+    {
+      "source": "Reddit - r/ArtificialInteligence",
+      "title": "Why LLMs will inevitably fail in enterprise environments",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1p1oy5a/why_llms_will_inevitably_fail_in_enterprise/",
+      "summary": "SUMMARY: **investors are pouring trillions into frontier AI with the** ***expectation*** **of achieving human-replacement scale returns, but enterprises are actually only adopting AI in limited, augme..."
+    },
+    {
+      "source": "Reddit - r/ArtificialInteligence",
+      "title": "The \"AI Boomerang\": Why Companies Are Rehiring the Humans They Just Fired",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1p1xp6p/the_ai_boomerang_why_companies_are_rehiring_the/",
+      "summary": "[https://youtu.be/-5IUCmWKGwY?si=DjiHnYUhLH0EsUwF](https://youtu.be/-5IUCmWKGwY?si=DjiHnYUhLH0EsUwF)\n\nIn the rush to automate, corporate leadership is learning a hard lesson: Artificial Intelligence i..."
+    },
+    {
+      "source": "Reddit - r/ArtificialInteligence",
+      "title": "Why is this new model so pissed with China, lol. 2.5 never did this",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1p1cesd/why_is_this_new_model_so_pissed_with_china_lol_25/",
+      "summary": "So, I was going to buy a new gasoline powered generator and had gemini make a list of brands and prices. One thing I noticed is it aggressively discourages me to go with anything china. At one point, ..."
+    },
+    {
+      "source": "Reddit - r/ArtificialInteligence",
+      "title": "Study finds that LLMs now think they're more rational than humans, so they use advanced game theory - but only when they think they're competing against other LLMs.",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1p20oln/study_finds_that_llms_now_think_theyre_more/",
+      "summary": "Abstract: As Large Language Models (LLMs) grow in capability, do they develop self-awareness as an emergent behavior? And if so, can we measure it? We introduce the AI Self-Awareness Index (AISAI), a ..."
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[P] DeepClause - A Neurosymbolic AI System",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1p095xc/p_deepclause_a_neurosymbolic_ai_system/",
+      "summary": "Hi, finally decided to publish the project I’ve been working on for the past year or so. Sharing it here to collect comments and feedback, especially from those involved in research at the intersection of LLM, logic programming, neurosymbolic methods etc.\n\nThis is my project:\n\nhttp://github.com/deep..."
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[R] Segment Anything Model 3 (SAM 3) is released",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1p1cfvx/r_segment_anything_model_3_sam_3_is_released/",
+      "summary": "**Abstract**: *We present Segment Anything Model (SAM) 3, a unified model that detects, segments, and tracks objects in images and videos based on concept prompts, which we define as either short noun phrases (e.g., “yellow school bus”), image exemplars, or a combination of both. Promptable Concept ..."
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[D] Tsinghua ICLR paper withdrawn due to numerous AI generated citations",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1p01c70/d_tsinghua_iclr_paper_withdrawn_due_to_numerous/",
+      "summary": "Was browsing the ICLR withdrawn papers today:\n\n* Reviewers claiming [optimal transport is not related to machine learning](https://openreview.net/forum?id=L0DTflYss0)\n* Reviewers not reading the paper and the authors [withdrawing due to disappointment in ICLR review quality](https://openreview.net/f..."
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[D] Some concerns about the current state of machine learning research",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1ozw2tj/d_some_concerns_about_the_current_state_of/",
+      "summary": "It seems to me that the machine learning community as a whole needs an important reality check and a deep look at itself in the mirror. I'm currently reading Karen Hao's *Empire of AI* (which I highly suggest, by the way), so my thoughts may be influenced by it.\n\nWhat I'm reading in the book, howeve..."
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[R] SAM 3 is now here! Is segmentation already a done deal?",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1p1y74p/r_sam_3_is_now_here_is_segmentation_already_a/",
+      "summary": "The core innovation is the introduction of **Promptable Concept Segmentation (PCS)**, a new task that fundamentally expands the capabilities of the SAM series. Unlike its predecessors, which segmented a single object per prompt, SAM 3 identifies and segments *all* instances of a specified concept wi..."
+    },
+    {
+      "source": "DZone",
+      "title": "Building Scalable Microservices with Azure Kubernetes Service",
+      "url": "https://dzone.com/articles/scalable-microservices-aks",
+      "summary": "Learn how to design and deploy scalable microservices architectures using Azure Kubernetes Service (AKS), including best practices for service mesh, monitoring, and CI/CD integration."
+    },
+    {
+      "source": "DZone",
+      "title": "AI-Powered Development: OpenAI's Latest Tools for Developers",
+      "url": "https://dzone.com/articles/openai-developer-tools",
+      "summary": "Explore the newest OpenAI developer tools and APIs, including GPT-4 Turbo integration patterns, function calling best practices, and cost optimization strategies for AI applications."
+    },
+    {
+      "source": "DZone",
+      "title": "Cloud Architecture Patterns: Multi-Cloud Strategy with AWS and GCP",
+      "url": "https://dzone.com/articles/multi-cloud-architecture-patterns",
+      "summary": "A comprehensive guide to implementing multi-cloud architectures across AWS and GCP, covering data synchronization, disaster recovery, and cost management strategies."
+    },
+    {
+      "source": "DZone",
+      "title": "Microsoft's AI Framework: Building Enterprise Applications with Azure OpenAI",
+      "url": "https://dzone.com/articles/azure-openai-enterprise-apps",
+      "summary": "Discover how to build production-ready enterprise applications using Microsoft's Azure OpenAI Service, including security considerations, compliance, and integration with existing systems."
+    },
+    {
+      "source": "DZone",
+      "title": "AI Development Best Practices: From Prototype to Production",
+      "url": "https://dzone.com/articles/ai-development-best-practices",
+      "summary": "Essential patterns and practices for taking AI projects from prototype to production, covering model versioning, monitoring, A/B testing, and MLOps workflows for modern AI applications."
+    },
+    {
+      "source": "dev.to",
+      "title": "⛓️‍💥Chaining Veo 3.1 and NanoBanana with Gemini",
+      "url": "https://dev.to/googleai/chaining-veo-31-and-nanobanana-with-gemini-3ffi",
+      "summary": "As developers, we are used to chaining APIs to get a desired output. In the world of Generative AI, a... Tagged with ai, cloud, webdev, programming."
+    },
+    {
+      "source": "dev.to",
+      "title": "📻 I built an infinite 90s boombox with Gemini + Lyria (and it has an AI DJ!)",
+      "url": "https://dev.to/googleai/i-built-an-infinite-90s-boombox-with-gemini-lyria-and-it-has-an-ai-dj-3jh8",
+      "summary": "I recently built an experiment that I honestly can't stop listening to. It's a virtual, web-based... Tagged with gemini, webdev, ai, showdev."
+    },
+    {
+      "source": "dev.to",
+      "title": "The Architecture Nobody Talks About: How I Built Systems That Actually Scale (And Why Most Don't)",
+      "url": "https://dev.to/thebitforge/the-architecture-nobody-talks-about-how-i-built-systems-that-actually-scale-and-why-most-dont-3fk5",
+      "summary": "The Architecture Nobody Talks About: How I Built Systems That Actually Scale (And Why Most... Tagged with aws, programming, webdev, javascript."
+    },
+    {
+      "source": "dev.to",
+      "title": "How to Successfully Migrate Your App with an AI Agent",
+      "url": "https://dev.to/blockopensource/how-to-successfully-migrate-your-app-with-an-ai-agent-26o7",
+      "summary": "\"Migrate my app from x language to y language.\" You hit enter, watch your AI agent spin its wheels,... Tagged with ai, agents, webdev, mcp."
+    },
+    {
+      "source": "dev.to",
+      "title": "Will Reasoning Become the New Turing Test? Let's play a Sherlock Holmes game",
+      "url": "https://dev.to/auyeungdavid_2847435260/will-reasoning-become-the-new-turing-test-lets-play-a-sherlock-holmes-game-37cm",
+      "summary": "Introduction   I've been thinking about the Turing Test again. The classic experiment where... Tagged with discuss, turingtest, sherlockholmes, ai."
+    }
+  ]
+}

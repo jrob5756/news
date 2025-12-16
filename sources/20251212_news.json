@@ -1,0 +1,205 @@
+[
+  {
+    "source": "Hacker News",
+    "title": "openai.com",
+    "url": "from?site=openai.com",
+    "summary": "",
+    "date": "2025-12-12"
+  },
+  {
+    "source": "Hacker News",
+    "title": "Show HN: Autofix Bot – Hybrid static analysis and AI code review agent",
+    "url": "item?id=46237358",
+    "summary": "",
+    "date": "2025-12-12"
+  },
+  {
+    "source": "Hacker News",
+    "title": "The architecture of “not bad”: Decoding the Chinese source code of the void",
+    "url": "https://suggger.substack.com/p/the-architecture-of-not-bad-decoding",
+    "summary": "From Hacker News - 19 hours ago",
+    "date": "2025-12-12"
+  },
+  {
+    "source": "Hacker News",
+    "title": "Show HN: Epstein's emails reconstructed in a message-style UI (OCR and LLMs)",
+    "url": "https://github.com/Toon-nooT/epsteins-phone-reconstructed",
+    "summary": "From Hacker News - 2 hours ago",
+    "date": "2025-12-12"
+  },
+  {
+    "source": "Hacker News",
+    "title": "The Walt Disney Company and OpenAI Partner on Sora",
+    "url": "https://openai.com/index/disney-sora-agreement/",
+    "summary": "From Hacker News - 1 day ago",
+    "date": "2025-12-12"
+  },
+  {
+    "source": "TechCrunch",
+    "title": "Google launched its deepest AI research agent yet — on the same day OpenAI dropped GPT-5.2",
+    "url": "https://techcrunch.com/2025/12/11/google-launched-its-deepest-ai-research-agent-yet-on-the-same-day-openai-dropped-gpt-5-2/",
+    "summary": "For the first time, developers can embed Google's Deep Research tool, based on Gemini 3 Pro, into their own apps.",
+    "date": "2025-12-11"
+  },
+  {
+    "source": "TechCrunch",
+    "title": "OpenAI fires back at Google with GPT-5.2 after ‘code red’ memo",
+    "url": "https://techcrunch.com/2025/12/11/openai-fires-back-at-google-with-gpt-5-2-after-code-red-memo/",
+    "summary": "OpenAI just launched GPT-5.2, a frontier model aimed at developers and professionals, pushing reasoning and coding benchmarks as it races Google’s Gemini 3 while grappling with compute costs and no generator.",
+    "date": "2025-12-11"
+  },
+  {
+    "source": "TechCrunch",
+    "title": "Google launches managed MCP servers that let AI agents simply plug into its tools",
+    "url": "https://techcrunch.com/2025/12/10/google-is-going-all-in-on-mcp-servers-agent-ready-by-design/",
+    "summary": "Google is rolling out managed MCP servers to make its services “agent-ready by design,” starting with Maps and BigQuery, aiming to simplify messy integrations and help AI agents use real tools.",
+    "date": "2025-12-10"
+  },
+  {
+    "source": "TechCrunch",
+    "title": "Disney hits Google with cease-and-desist claiming ‘massive’ copyright infringement",
+    "url": "https://techcrunch.com/2025/12/11/disney-hits-google-with-cease-and-desist-claiming-massive-copyright-infringement/",
+    "summary": "Disney is accusing the tech giant of unauthorized distribution of its copyrighted characters without permission via Gemini AI.",
+    "date": "2025-12-11"
+  },
+  {
+    "source": "TechCrunch",
+    "title": "Google’s AI try-on feature for clothes now works with just a selfie",
+    "url": "https://techcrunch.com/2025/12/11/googles-ai-try-on-feature-for-clothes-now-works-with-just-a-selfie/",
+    "summary": "In the past, users had to upload a full-body picture of themselves to virtually try on a piece of clothing. Now they can use a selfie and Nano Banana will generate a full-body digital version of them.",
+    "date": "2025-12-11"
+  },
+  {
+    "title": "Remember Google Stadia? Steam finally made its gamepad worth rescuing",
+    "url": "https://www.theverge.com/games/829631/save-google-stadia-gamepad-steam-deadline",
+    "summary": "",
+    "date": "2025-12-11T19:27:36",
+    "source": "The Verge"
+  },
+  {
+    "title": "Google is building an experimental new browser and a new kind of web app",
+    "url": "https://www.theverge.com/tech/842000/google-disco-browser-ai-experiment",
+    "summary": "",
+    "date": "2025-12-11T18:10:36",
+    "source": "The Verge"
+  },
+  {
+    "title": "ChatGPT’s ‘adult mode’ is expected to debut in Q1 2026",
+    "url": "https://www.theverge.com/news/842657/openai-chatgpt-adult-mode-debut-q1-2026",
+    "summary": "",
+    "date": "2025-12-11T18:10:19",
+    "source": "The Verge"
+  },
+  {
+    "title": "GPT-5.2 is OpenAI’s latest move in the agentic AI battle",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/842529/openai-gpt-5-2-new-model-chatgpt",
+    "summary": "",
+    "date": "2025-12-11T18:00:00",
+    "source": "The Verge"
+  },
+  {
+    "source": "Reddit - r/programming",
+    "title": "AI Can Write Your Code. It Can't Do Your Job.",
+    "url": "https://terriblesoftware.org/2025/12/11/ai-can-write-your-code-it-cant-do-your-job/",
+    "summary": "Posted on r/programming with 144 upvotes and 108 comments",
+    "date": "2025-12-12"
+  },
+  {
+    "source": "Reddit - r/programming",
+    "title": "Product engineering teams must own supply chain risk",
+    "url": "https://www.hyperact.co.uk/blog/product-engineering-teams-must-own-supply-chain-risk",
+    "summary": "Posted on r/programming with 104 upvotes and 21 comments",
+    "date": "2025-12-11"
+  },
+  {
+    "source": "Reddit - r/programming",
+    "title": "Modbus logging tool",
+    "url": "https://github.com/rubenax97/modbus-logger",
+    "summary": "Posted on r/programming with 2 upvotes and 0 comments",
+    "date": "2025-12-12"
+  },
+  {
+    "source": "Reddit - r/programming",
+    "title": "💧Mizu - A lightweight web framework for Go that stays close to the standard library",
+    "url": "https://docs.go-mizu.dev/overview/intro",
+    "summary": "Posted on r/programming with 2 upvotes and 0 comments",
+    "date": "2025-12-12"
+  },
+  {
+    "source": "Reddit - r/programming",
+    "title": "We got tired of rogue AI agents. So we built Idun, an open source platform for agents governance",
+    "url": "https://github.com/Idun-Group/idun-agent-platform",
+    "summary": "Posted on r/programming with 0 upvotes and 0 comments",
+    "date": "2025-12-12"
+  },
+  {
+    "source": "Reddit r/ArtificialInteligence",
+    "title": "AI adoption graph has to go up and right",
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pkkfir/ai_adoption_graph_has_to_go_up_and_right/",
+    "summary": "Last quarter I rolled out Microsoft Copilot to 4,000 employees. $30 per seat per month. $1.4 million annually.\n\nI called it \"digital transformation.\" The board loved that phrase. They approved it in eleven minutes. No one asked what it would actually do.\nIncluding me.\n\nI told everyone it would \"10x ",
+    "date": "2025-12-12"
+  },
+  {
+    "source": "Reddit r/ArtificialInteligence",
+    "title": "Anyone here using AI for deep thinking instead of tasks?",
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pklt92/anyone_here_using_ai_for_deep_thinking_instead_of/",
+    "summary": "Most people I see use AI for quick tasks, shortcuts or surface-level answers. I’m more interested in using it for philosophy, psychology, self-inquiry and complex reasoning. Basically treating it as a thinking partner, not a tool for copy-paste jobs.\n\nIf you’re using AI for deeper conversations or e",
+    "date": "2025-12-12"
+  },
+  {
+    "source": "Reddit r/ArtificialInteligence",
+    "title": "LLM hallucination: fabricated a full NeurIPS architecture with loss functions and pseudo code",
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pkr5aq/llm_hallucination_fabricated_a_full_neurips/",
+    "summary": "I asked ChatGPT a pretty normal research style question.   \nNothing too fancy. Just wanted a summary of a supposed NeurIPS 2021 architecture called NeuroCascade by J. P. Hollingsworth.\n\n(Neither the architecture nor the author exists.)   \nNeuroCascade is a medical term unrelated to ML. No NeurIPS, n",
+    "date": "2025-12-12"
+  },
+  {
+    "source": "Reddit r/ArtificialInteligence",
+    "title": "The \"Token Economy\" optimizes for mediocrity. Labs should be incentivizing high-entropy prompts instead.",
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pkp4fg/the_token_economy_optimizes_for_mediocrity_labs/",
+    "summary": "​It hit me that the current economic model of AI is fundamentally broken.\n​Right now, we pay for AI like a utility (electricity). You pay per token. This incentivizes high-volume, low-complexity tasks. \"Summarize this email.\" \"Write a generic blog post.\"\n\n​From a data science perspective, this is a ",
+    "date": "2025-12-12"
+  },
+  {
+    "source": "Reddit r/ArtificialInteligence",
+    "title": "Are AI search results slowly becoming more important than Google rankings?",
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pknuks/are_ai_search_results_slowly_becoming_more/",
+    "summary": "I asked ChatGPT and Perplexity about my industry, and the answers are different every time.  \nSometimes my website shows up, sometimes it doesn’t.\n\nDo you think AI visibility will matter more than SEO soon?  \nHow are you preparing for it?",
+    "date": "2025-12-12"
+  },
+  {
+    "source": "Reddit - r/MachineLearning",
+    "title": "[D] HTTP Anomaly Detection Research ?",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1pktkx6/d_http_anomaly_detection_research/",
+    "summary": "[D] HTTP Anomaly Detection Research ?",
+    "date": "2025-12-12T14:42:25Z"
+  },
+  {
+    "source": "Reddit - r/MachineLearning",
+    "title": "[D] GPT confidently generated a fake NeurIPS architecture. Loss function, code, the works. How does this get fixed?",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1pkrc6c/d_gpt_confidently_generated_a_fake_neurips/",
+    "summary": "[D] GPT confidently generated a fake NeurIPS architecture. Loss function, code, the works. How does this get fixed?",
+    "date": "2025-12-12T13:02:44Z"
+  },
+  {
+    "source": "Reddit - r/MachineLearning",
+    "title": "[P] I built an open plant species classification model trained on 2M+ iNaturalist images",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1pklrqa/p_i_built_an_open_plant_species_classification/",
+    "summary": "[P] I built an open plant species classification model trained on 2M+ iNaturalist images",
+    "date": "2025-12-12T07:17:13Z"
+  },
+  {
+    "source": "Reddit - r/MachineLearning",
+    "title": "[D] ARR October 2026 Discussion",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1pk4tjx/d_arr_october_2026_discussion/",
+    "summary": "[D] ARR October 2026 Discussion",
+    "date": "2025-12-11T18:21:58Z"
+  },
+  {
+    "source": "Reddit - r/MachineLearning",
+    "title": "[R] Found the same information-dynamics (entropy spike → ~99% retention → power-law decay) across neural nets, CAs, symbolic models, and quantum sims. Looking for explanations or ways to break it.",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1pk2iou/r_found_the_same_informationdynamics_entropy/",
+    "summary": "[R] Found the same information-dynamics (entropy spike → ~99% retention → power-law decay) across neural nets, CAs, symbolic models, and quantum sims. Looking for explanations or ways to break it.",
+    "date": "2025-12-11T16:54:05Z"
+  }
+]

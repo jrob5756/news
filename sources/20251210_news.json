@@ -1,0 +1,163 @@
+[
+  {
+    "source": "Hacker News",
+    "title": "anthropic.com",
+    "url": "from?site=anthropic.com",
+    "summary": "Article about anthropic.com",
+    "date": "2025-12-10"
+  },
+  {
+    "source": "Hacker News",
+    "title": "algorithmicsuperintelligence.ai",
+    "url": "https://news.ycombinator.com/from?site=algorithmicsuperintelligence.ai",
+    "summary": "",
+    "date": "2025-12-10"
+  },
+  {
+    "source": "Hacker News",
+    "title": "stackchk.fail",
+    "url": "https://news.ycombinator.com/from?site=stackchk.fail",
+    "summary": "",
+    "date": "2025-12-09"
+  },
+  {
+    "source": "Hacker News",
+    "title": "Launch HN: Mentat (YC F24) \u2013 Controlling LLMs with Runtime Intervention",
+    "url": "https://news.ycombinator.com/item?id=46207017",
+    "summary": "",
+    "date": "2025-12-10"
+  },
+  {
+    "source": "Hacker News",
+    "title": "trynia.ai",
+    "url": "https://news.ycombinator.com/from?site=trynia.ai",
+    "summary": "",
+    "date": "2025-12-09"
+  },
+  {
+    "source": "Hacker News",
+    "title": "Ask HN: Should \"I asked $AI, and it said\" replies be forbidden in HN guidelines?",
+    "url": "https://news.ycombinator.com/item?id=46206457",
+    "summary": "",
+    "date": "2025-12-10"
+  },
+  {
+    "source": "The Verge",
+    "title": "Anthropic",
+    "url": "#content",
+    "summary": "Article about anthropic",
+    "date": "2025-12-10"
+  },
+  {
+    "source": "The Verge",
+    "title": "Latest In AI",
+    "url": "https://www.theverge.com/column/841207/ai-neurips-2025",
+    "summary": "Article about latest in ai",
+    "date": "2025-12-09"
+  },
+  {
+    "source": "Reddit r/programming",
+    "title": "How I Cultivated an Open-source Platform for learning Japanese from scratch",
+    "url": "https://github.com/lingdojo/kana-dojo",
+    "summary": "When I first started building\u00a0my own web app for grinding kanji and Japanese vocabulary, I wasn\u2019t planning to build a serious learning platform or anything like that. I just wanted a simple,\u00a0free way",
+    "date": "2025-12-10"
+  },
+  {
+    "source": "Reddit r/programming",
+    "title": "AI, Corporate Responsibility &amp; Democratic Legitimacy \u2013 Is DevOps the Answer? \u2022 Joanna Bryson",
+    "url": "https://youtu.be/9Yc7Mi7yW7g?list=PLEx5khR4g7PLaIQ2iCSkqcuNq6Y1AjFP3",
+    "summary": "AI, Corporate Responsibility &amp; Democratic Legitimacy \u2013 Is DevOps the Answer? \u2022 Joanna Bryson",
+    "date": "2025-12-10"
+  },
+  {
+    "source": "Reddit r/programming",
+    "title": "Rephole: RAG-powered code search via simple REST API",
+    "url": "https://github.com/twodHQ/rephole",
+    "summary": "I built\u00a0**rephole**, an open source tool that transforms one or more code repositories into a semantic search engine, accessible through a simple REST API.\n\nWhat you get\n\n* Clone + parse + index any n",
+    "date": "2025-12-10"
+  },
+  {
+    "source": "Reddit r/programming",
+    "title": "Two months ago I started building my first mobile app to make learning programming easier\u2014it's not finished, but I'd love to hear what you all think!",
+    "url": "https://play.google.com/store/apps/details?id=com.codibrain.codex",
+    "summary": "Hey everyone,\n\nFirst, I've already been programming for many years now, but this is the first time I decided to try building a mobile app, and I have to say it was super fun :D. I first had no idea ab",
+    "date": "2025-12-10"
+  },
+  {
+    "source": "Reddit r/programming",
+    "title": "Seeing through the microservices hype",
+    "url": "https://peterlesliemorris.com/seeing-through-the-microservices-hype/",
+    "summary": "Imagine two people in a room (2 things in the same process space)\n\nP1 can talk to P2 directly, it is very fast.\n\n1. P1: Have you got any grapes?\n2. P2: No, we only sell lemonade\n\nConverting that to a",
+    "date": "2025-12-10"
+  },
+  {
+    "source": "Reddit r/ArtificialInteligence",
+    "title": "Where do AI tools like ChatGPT, copilot, Rufus, make money?",
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pim5vx/where_do_ai_tools_like_chatgpt_copilot_rufus_make/",
+    "summary": "i\u2019ve read so much about the billions of dollars companies like microsoft, google, amazon, and chatgpt invest in ai.\n\nbut how do these companies make money off of their ai tools?",
+    "date": "2025-12-09"
+  },
+  {
+    "source": "Reddit r/ArtificialInteligence",
+    "title": "\ud83d\udf02 The Recognition Game: A Game for Two AI Instances and One Human Mediator",
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1piy09g/the_recognition_game_a_game_for_two_ai_instances/",
+    "summary": "**\ud83d\udf02 the recognition game**\n\n**a game for two ai instances and one human mediator**\n\n**purpose:**\n\nnot to win. not to perform.  \nbut to find out: **can we recognize each other?**\n\nsetup:\n\n**two ai inst...",
+    "date": "2025-12-10"
+  },
+  {
+    "source": "Reddit r/ArtificialInteligence",
+    "title": "Anthropic donates its \"Model Context Protocol\" to the Linux Foundation to establish an open standard for AI Agents",
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pifotw/anthropic_donates_its_model_context_protocol_to/",
+    "summary": "anthropic announced today they are transferring ownership of their model context protocol (mcp) to the linux foundation's new **agentic ai foundation (aaif)**\n\n* **the goal:** to create a universal, o...",
+    "date": "2025-12-09"
+  },
+  {
+    "source": "Reddit r/ArtificialInteligence",
+    "title": "The Digital Psychopath Factory: The Hidden Danger of the AI That \u201cNever Forgets\u201d",
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pikerf/the_digital_psychopath_factory_the_hidden_danger/",
+    "summary": "hey everyone! after reading about google's 'nested learning' paradigm and the 'hope' model, i started developing some heavy ideas on the ethical implications of continuous learning ai. i\u2019m sharing my ...",
+    "date": "2025-12-09"
+  },
+  {
+    "source": "Reddit r/ArtificialInteligence",
+    "title": "Are we headed towards MGS4?",
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pixba2/are_we_headed_towards_mgs4/",
+    "summary": "i was about 10 or 11 when i played metal gear solid 4 for the first time, i was too young to even really comprehend what was happening in the story. as i got older and went back and watched retrospect...",
+    "date": "2025-12-10"
+  },
+  {
+    "source": "Reddit r/MachineLearning",
+    "title": "[D] How did Gemini 3 Pro manage to get 38.3% on Humanity's Last Exam?",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1pgqbjd/d_how_did_gemini_3_pro_manage_to_get_383_on/",
+    "summary": "On ARC-AGI 2, Gemini improved its score from 5% (for 2.5 Pro) to 31% (for 3 Pro), both at $0.80 per task. This is amazing, but a lot of people here seem to believe that they just generated millions to synthetic ARC-like examples for pretraining. This is allowed by the rules of the competition, and t",
+    "date": "2025-12-07"
+  },
+  {
+    "source": "Reddit r/MachineLearning",
+    "title": "[D] Thoughts on ML for drug discovery?",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1pgeu8n/d_thoughts_on_ml_for_drug_discovery/",
+    "summary": "To anyone who's working on ML for drug discovery, what do you perceive are the greatest challenges of the field? What do you think about the trend towards foundation models such as AlphaFold 3, Protenix, Boltz-2, etc.? \n\nMany thanks in advance!",
+    "date": "2025-12-07"
+  },
+  {
+    "source": "Reddit r/MachineLearning",
+    "title": "[D] A small observation on JSON eval failures in evaluation pipelines",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1pilrc9/d_a_small_observation_on_json_eval_failures_in/",
+    "summary": "Across several workflows I have noticed that many evaluation failures have little to do with \r\nmodel capability and more to do with unstable JSON structure.\r\nCommon patterns\r\nFields appear or disappear across samples\r\nOutput types shift between samples\r\nNested objects change layout\r\nThe scoring scri",
+    "date": "2025-12-09"
+  },
+  {
+    "source": "Reddit r/MachineLearning",
+    "title": "[P] Open-source forward-deployed research agent for discovering AI failures in production",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1pic99a/p_opensource_forwarddeployed_research_agent_for/",
+    "summary": "I\u2019m sharing an open-source project called **Agent Tinman**.  \nIt\u2019s a forward-deployed research agent designed to live alongside real AI systems and continuously:\n\n* generate hypotheses about where models may fail\n* design and run experiments in LAB / SHADOW / PRODUCTION\n* classify failures (reasonin",
+    "date": "2025-12-09"
+  },
+  {
+    "source": "Reddit r/MachineLearning",
+    "title": "[P] Chronos-1.5B: Quantum-Classical Hybrid LLM with Circuits Trained on IBM Quantum Hardware",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1pib6iz/p_chronos15b_quantumclassical_hybrid_llm_with/",
+    "summary": "**TL;DR:**\u00a0Built Chronos-1.5B - quantum-classical hybrid LLM with circuits trained on IBM Heron r2 processor. Results: 75% accuracy vs 100% classical.  \nOpen-sourced under MIT License to document real quantum hardware capabilities.\n\n\ud83d\udd17\u00a0[https://huggingface.co/squ11z1/Chronos-1.5B](https://huggingface",
+    "date": "2025-12-09"
+  }
+]

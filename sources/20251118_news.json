@@ -1,0 +1,238 @@
+{
+  "articles": [
+    {
+      "source": "Hacker News",
+      "title": "Gemini 3 Pro Model Card",
+      "url": "https://pixeldrain.com/u/hwgaNKeH",
+      "summary": "Google's Gemini 3 Pro model card, providing technical specifications and capabilities of the latest Gemini AI model. Relevant to AI news and Google's AI developments."
+    },
+    {
+      "source": "Hacker News",
+      "title": "Azure hit by 15 Tbps DDoS attack using 500k IP addresses",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-aisuru-botnet-used-500-000-ips-in-15-tbps-azure-ddos-attack/",
+      "summary": "Microsoft Azure experienced a massive 15 Tbps DDoS attack using 500,000 IP addresses from the Aisuru botnet. Critical cloud computing security news affecting Microsoft Azure infrastructure."
+    },
+    {
+      "source": "Hacker News",
+      "title": "When Reverse Proxies Surprise You: Hard Lessons from Operating at Scale",
+      "url": "https://www.infoq.com/articles/scaling-reverse-proxies/",
+      "summary": "Detailed analysis of challenges and best practices for operating reverse proxies at scale. Covers systems design, architecture patterns, and lessons learned from production deployments."
+    },
+    {
+      "source": "Hacker News",
+      "title": "LeJEPA: Provable and Scalable Self-Supervised Learning Without the Heuristics",
+      "url": "https://arxiv.org/abs/2511.08544",
+      "summary": "Research paper on LeJEPA, a new approach to self-supervised learning with theoretical guarantees and scalability. Relevant to AI development patterns, frameworks, and machine learning best practices."
+    },
+    {
+      "source": "Hacker News",
+      "title": "A/B Tests over Evals",
+      "url": "https://www.raindrop.ai/blog/thoughts-on-evals/",
+      "summary": "Discussion on evaluation strategies for AI systems, comparing A/B testing approaches versus traditional evals. Covers AI development best practices and testing methodologies for AI tools."
+    },
+    {
+      "source": "Hacker News",
+      "title": "One Student One Chip Course Homepage",
+      "url": "https://ysyx.oscc.cc/docs/en/",
+      "summary": "Computer architecture and systems design educational resource"
+    },
+    {
+      "source": "Hacker News",
+      "title": "How to escape the Linux networking stack",
+      "url": "https://blog.cloudflare.com/so-long-and-thanks-for-all-the-fish-how-to-escape-the-linux-networking-stack/",
+      "summary": "Systems design article on Linux networking stack optimization and performance"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Show HN: PrinceJS \u2013 19,200 req/s Bun framework in 2.8 kB (built by a 13yo)",
+      "url": "https://princejs.vercel.app",
+      "summary": "Software development: High-performance JavaScript/Bun web framework"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Ion: Modern System Shell in Rust",
+      "url": "https://github.com/redox-os/ion",
+      "summary": "A modern system shell written in Rust, relevant to software development and systems programming"
+    },
+    {
+      "source": "Hacker News",
+      "title": "I caught Google Gemini using my data and then covering it up",
+      "url": "https://unbuffered.stream/gemini-personal-context/",
+      "summary": "Article about Google Gemini AI privacy concerns and data usage practices"
+    },
+    {
+      "source": "Hacker News",
+      "title": "An overly aggressive mock can work fine, but break much later",
+      "url": "https://nedbatchelder.com/blog/202511/why_your_mock_breaks_later.html",
+      "summary": "Software development best practices article about testing and mocking patterns"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Google is killing the open web, part 2",
+      "url": "https://wok.oblomov.eu/tecnologia/google-killing-open-web-2/",
+      "summary": "Analysis of Google's impact on web development and open standards"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Show HN: Kalendis \u2013 Scheduling API (keep your UI, we handle timezones/DST)",
+      "url": "https://kalendis.dev",
+      "summary": "New API service for developers handling scheduling, timezones and DST management"
+    },
+    {
+      "source": "Alvin Ashcraft",
+      "title": "Developers Test Visual Studio 2026's AI-Native Claims",
+      "url": "https://thenewstack.io/developers-test-visual-studio-2026s-ai-native-claims/",
+      "summary": "In-depth analysis of Visual Studio 2026's AI-native features and developer feedback on Microsoft's claims about AI integration in the IDE. Covers software development tools, Microsoft products, and AI development tools."
+    },
+    {
+      "source": "Alvin Ashcraft",
+      "title": "Anthropic Adds Sandboxing and Web Access to Claude Code for Safer AI-Powered Coding",
+      "url": "https://www.infoq.com/news/2025/11/anthropic-claude-code-sandbox/",
+      "summary": "Anthropic announces new safety features for Claude AI including code sandboxing and web access capabilities. Relevant to AI tools and frameworks, Anthropic company updates, and AI development best practices."
+    },
+    {
+      "source": "Alvin Ashcraft",
+      "title": "How to Build an AI-Powered Writing Assistant in Angular Using Google Gemini API (Part 1)",
+      "url": "https://www.syncfusion.com/blogs/post/ai-writing-assistant-angular-gemini",
+      "summary": "Tutorial on building AI applications using Google's Gemini API with Angular framework. Covers AI development patterns, Google AI tools, and practical implementation of AI features in web applications."
+    },
+    {
+      "source": "Alvin Ashcraft",
+      "title": "Google Colab is Coming to VS Code",
+      "url": "https://developers.googleblog.com/en/google-colab-is-coming-to-vs-code/",
+      "summary": "Google announces integration of Colab notebooks into VS Code, enabling cloud-based Python development directly in the editor. Major update from Google affecting software development tools and cloud computing workflows."
+    },
+    {
+      "source": "Alvin Ashcraft",
+      "title": "From Code to Cloud: Python-Driven Microsoft Fabric Deployments",
+      "url": "https://techcommunity.microsoft.com/t5/azure-infrastructure-blog/from-code-to-cloud-python-driven-microsoft-fabric-deployments/ba-p/4470447",
+      "summary": "Microsoft's guide on automating Microsoft Fabric deployments using Python. Covers cloud computing on Azure, software development practices, and infrastructure as code patterns for Microsoft's data platform."
+    },
+    {
+      "source": "Reddit r/programming",
+      "title": "Microservices: Microliths as a resonable alternative",
+      "url": "https://www.ufried.com/blog/microservices_fallacy_10_microliths/",
+      "summary": "Discussion of microservices architecture patterns and alternatives like microliths"
+    },
+    {
+      "source": "Reddit r/programming",
+      "title": "An exploration of a schema-first, JSON-compatible format I\u2019ve been refining since 2017",
+      "url": "https://blog.maniartech.com/from-json-to-internet-object-a-lean-schema-first-data-format-part-1-150488e2f274",
+      "summary": "Development of a schema-first data format as an alternative to JSON"
+    },
+    {
+      "source": "Reddit r/programming",
+      "title": "LLMs and creation outside of time",
+      "url": "https://balajmarius.com/writings/llms-and-creation-outside-of-time/",
+      "summary": "Exploration of how LLMs change the creative process and development workflow"
+    },
+    {
+      "source": "Reddit r/programming",
+      "title": "Cloudflare is down. How does this affect you?",
+      "url": "https://www.cloudflarestatus.com/incidents/8gmgl950y3h7",
+      "summary": "Report on Cloudflare outage and its impact on cloud services"
+    },
+    {
+      "source": "Reddit r/programming",
+      "title": "dockerlings: Learn Docker in your terminal",
+      "url": "https://github.com/furkan/dockerlings",
+      "summary": "Interactive tutorial for learning Docker containerization in the terminal"
+    },
+    {
+      "source": "Reddit r/ArtificialInteligence",
+      "title": "One-Minute Daily AI News 11/17/2025",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1p036wx/oneminute_daily_ai_news_11172025/",
+      "summary": "1. **OpenAI**\u00a0named Emerging Leader in Generative AI.\\[1\\]\n2. Authors dumped from New Zealand\u2019s top book prize after AI used in cover designs.\\[2\\]\n3. **Jeff Bezos**\u00a0Creates A.I. Start-Up Where He Will Be Co-Chief Executive.\\[3\\]\n4. **Google**\u00a0rolls out its AI \u2018Flight Deals\u2019 tool globally, adds new ..."
+    },
+    {
+      "source": "Reddit r/ArtificialInteligence",
+      "title": "TabTune by Lexsi Labs \u2014 Bringing Foundation-Model Concepts to Tabular Data",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1p071xj/tabtune_by_lexsi_labs_bringing_foundationmodel/",
+      "summary": "Hi everyone,\n\nI wanted to share and discuss\u00a0**TabTune by Lexsi Labs**, a framework that applies foundation-model workflows (pre-training, fine-tuning, meta-learning) to\u00a0**tabular data**. While much of AI work focuses on NLP or vision, structured/tabular data remains a huge space \u2014 and having a unifi..."
+    },
+    {
+      "source": "Reddit r/ArtificialInteligence",
+      "title": "The death of AI wrappers is actually happening. Here's what's replacing them.",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1p09tol/the_death_of_ai_wrappers_is_actually_happening/",
+      "summary": "For the last 2 years, every other startup was just wrapping OpenAI's API. Slap some UI on it. Charge $99/month or $49/month or $15/month. Call it a product. **It worked for a while.**\n\nThen OpenAI started building features instead of just releasing models. Anthropic did the same. Now Google, Microso..."
+    },
+    {
+      "source": "Reddit r/ArtificialInteligence",
+      "title": "He\u2019s Been Right About AI for 40 Years. Now He Thinks Everyone Is Wrong.",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1ozuri3/hes_been_right_about_ai_for_40_years_now_he/",
+      "summary": "As a graduate student in the 1980s,\u00a0Yann LeCun\u00a0had trouble finding an adviser for his Ph.D. thesis on machine learning\u2014because no one else was studying the topic, he recalled later.\n\nMore recently, he\u2019s become the odd man out at\u00a0Meta. Despite worldwide renown as one of the godfathers of artificial i..."
+    },
+    {
+      "source": "Reddit r/ArtificialInteligence",
+      "title": "A 13 y/o girl got suspended for confronting her boy classmate for sharing explicit deepfake videos of her",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1ozgfau/a_13_yo_girl_got_suspended_for_confronting_her/",
+      "summary": "Link to news: [https://www.cbsnews.com/news/louisiana-school-student-deepfake-expelled/](https://www.cbsnews.com/news/louisiana-school-student-deepfake-expelled/)  \n  \nThis is unbelievable. How did the victim get suspended for taking action against someone who's using her pictures maliciously throug..."
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[P] DeepClause - A Neurosymbolic AI System",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1p095xc/p_deepclause_a_neurosymbolic_ai_system/",
+      "summary": "Hi, finally decided to publish the project I\u2019ve been working on for the past year or so. Sharing it here to collect comments and feedback, especially from those involved in research at the intersection of LLM, logic programming, neurosymbolic methods..."
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[D] Has anyone used ONNX Runtime (ORT) + CUDA for multilingual embedding models (e.g., LaBSE) on GPUs?",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1ozzu5z/d_has_anyone_used_onnx_runtime_ort_cuda_for/",
+      "summary": "I have a project where we have to use an LLM to generate similarity matrices for semantics. I am doing this in PySpark using AWS EMR, and Google\u2019s labse model. \n\nI converted the labse model to onnx runtime so i can keep my spark ML pipeline lightweig..."
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[D] Advice for getting into post-training / fine-tuning of LLMs?",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1p0d6q0/d_advice_for_getting_into_posttraining_finetuning/",
+      "summary": "Hi everyone,\n\nThose who follow fine-tunes of LLMs may know that there\u2019s a company called Nous Research has been releasing a series of fine-tuned models called the Hermes, which seem to have great performance.\n\nSince post-training is relatively cheape..."
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[D] Some concerns about the current state of machine learning research",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1ozw2tj/d_some_concerns_about_the_current_state_of/",
+      "summary": "It seems to me that the machine learning community as a whole needs an important reality check and a deep look at itself in the mirror. I'm currently reading Karen Hao's *Empire of AI* (which I highly suggest, by the way), so my thoughts may be influ..."
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[D] Do industry researchers log test set results when training production-level models?",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1oz3he6/d_do_industry_researchers_log_test_set_results/",
+      "summary": "Training production-level models can be very costly. As the title suggests, I am wondering if the models released by these big tech companies are trained to optimize for held-out test sets. Or maybe the models are trained with an RL feedback using th..."
+    },
+    {
+      "source": "DZone",
+      "title": "DZone unavailable - timeout/blocking requests",
+      "url": "https://dzone.com/",
+      "summary": "Attempted to fetch DZone at 2025-11-18T09:34:47.015440 but the site is either down, timing out, or blocking automated requests. Received timeouts and 500 errors on multiple attempts with different user agents and headers."
+    },
+    {
+      "source": "dev.to",
+      "title": "Chaining Veo 3.1 and NanoBanana with Gemini",
+      "url": "https://dev.to/googleai/chaining-veo-31-and-nanobanana-with-gemini-3ffi",
+      "summary": "Tutorial on chaining Google's Veo 3.1 video generation model with NanoBanana using Gemini API. Demonstrates AI development patterns and Google's AI tools integration."
+    },
+    {
+      "source": "dev.to",
+      "title": "I Cloned Myself in 2 Minutes to Answer Gemini API Questions",
+      "url": "https://dev.to/googleai/i-cloned-myself-in-2-minutes-to-answer-gemini-api-questions-2dmf",
+      "summary": "Quick implementation of AI cloning using Google's Gemini API. Shows practical AI tools usage and rapid development patterns with Google's AI platform."
+    },
+    {
+      "source": "dev.to",
+      "title": "\"2026\", AI Users vs The Unemployed.",
+      "url": "https://dev.to/elvissautet/2026-ai-users-vs-the-unemployed-3jk4",
+      "summary": "Analysis of AI's impact on employment and the evolving job market. Discusses AI adoption trends and workforce transformation in software development."
+    },
+    {
+      "source": "dev.to",
+      "title": "Building Conflux - My Own Real-time Collaboration Engine in Rust",
+      "url": "https://dev.to/kayleecodez/building-conflux-my-own-real-time-collaboration-engine-in-rust-41lm",
+      "summary": "In-depth article on building a real-time collaboration engine in Rust. Covers systems design, architecture patterns, and modern software development practices."
+    },
+    {
+      "source": "dev.to",
+      "title": "Beyond Page One: Building a Highly Robust SEO Lead Generation Agent with Python and SerpApi",
+      "url": "https://dev.to/rafajrg21/beyond-page-one-building-a-highly-robust-seo-lead-generation-agent-with-python-and-serpapi-331h",
+      "summary": "Guide to building an AI-powered SEO lead generation agent using Python. Demonstrates AI development patterns, agent architecture, and practical AI tool implementation."
+    }
+  ]
+}

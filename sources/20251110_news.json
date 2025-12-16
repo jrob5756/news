@@ -1,0 +1,124 @@
+{
+  "articles": [
+    {
+      "source": "Reddit r/ArtificialInteligence",
+      "title": "What could possibly go wrong if an enterprise replaces all its engineers with AI? - VentureBeat",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1osmdjt/what_could_possibly_go_wrong_if_an_enterprise/",
+      "summary": "VentureBeat ran a piece on what happens when companies try to replace their engineering teams with AI coding tools. The headline is sarcastic but the examples in the article are real and pretty brutal.\n\nTwo cases stand out."
+    },
+    {
+      "source": "Reddit r/ArtificialInteligence",
+      "title": "The AI Industry Is Traumatizing Desperate Contractors in the Developing World for Pennies - Futurism",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1osvgqs/the_ai_industry_is_traumatizing_desperate/",
+      "summary": "A report from Agence France-Presse is highlighting how AI training relies on contract workers in Kenya, Colombia, and India who do what's called data labeling for extremely low pay. This is the work that teaches AI models how to recognize patterns..."
+    },
+    {
+      "source": "Reddit r/ArtificialInteligence",
+      "title": "Your \u201cencrypted\u201d AI chats weren\u2019t actually private. Microsoft just proved it.",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1ota3e0/your_encrypted_ai_chats_werent_actually_private/",
+      "summary": "So apparently Microsoft's security team just dropped a bomb called Whisper Leak.\n\nSource: [https://winbuzzer.com/2025/11/10/microsoft-uncovers-whisper-leak-flaw-exposing-encrypted-ai-chats-across-28-llms-xcxwbn/](https://winbuzzer.com/2025/11/10/m..."
+    },
+    {
+      "source": "Reddit r/ArtificialInteligence",
+      "title": "96% of Leaders Say AI Fails to Deliver ROI, Atlassian Report Claims - digit.fyi",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1otdllx/96_of_leaders_say_ai_fails_to_deliver_roi/",
+      "summary": "A new report from Atlassian surveyed 180 Fortune 1000 executives and found that 96% say AI hasn't delivered meaningful ROI yet. That's a pretty stark number considering how much money and attention is being poured into this space right now."
+    },
+    {
+      "source": "Reddit r/ArtificialInteligence",
+      "title": "Top 20 AI algorithms I use to solve machine learning problems, save as JSON, use with coding agent to \"inspire\" more creative solutions.",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1ote1t3/top_20_ai_algorithms_i_use_to_solve_machine/",
+      "summary": "When I don't know what I am doing I use [this list of the 20 top AI algorithms](https://danielkliewer.com/blog/2025-11-10-top-ai-algortihms) I put together and it helps me think of practical applications and solutions to some of my common machine ..."
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[D] Why TPUs are not as famous as GPUs",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1ornns5/d_why_tpus_are_not_as_famous_as_gpus/",
+      "summary": "I have been doing some research and I found out that TPUs are much cheaper than GPUs and apparently they are made for machine learning tasks, so why are google and TPUs not having the same hype as GPU"
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[R] WavJEPA: Semantic learning unlocks robust audio foundation models for raw waveforms",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1oquza7/r_wavjepa_semantic_learning_unlocks_robust_audio/",
+      "summary": "https://preview.redd.it/7u5do1x19uzf1.png?width=1103&amp;format=png&amp;auto=webp&amp;s=bfc314716f4e33593b16e6e131870dae62d7577a\n\nHey All,\n\nWe have just released our new pre-print on **WavJEPA**. WavJ"
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[R][Slides] Gemma3n architecture guide",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1oqvgh6/rslides_gemma3n_architecture_guide/",
+      "summary": "Hi everyone, just sharing a couple of slides about Gemma3n architecture. I found it a very interesting architecture with a lot of innovations (e.g. Matryoshka Transformers, MobileNetV5, PLE, etc) that"
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[P] RLHF (SFT, RM, PPO) with GPT-2 in Notebooks",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1oskesn/p_rlhf_sft_rm_ppo_with_gpt2_in_notebooks/",
+      "summary": "Hi all, I implemented Reinforcement Learning from Human Feedback (RLHF) including Supervised Fine-Tuning (SFT), Reward Modeling (RM), and Proximal Policy Optimization (PPO) step-by-step in three noteb"
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[R] AlphaEvolve: Breaking 56 Years of Mathematical Stagnation",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1otaqfo/r_alphaevolve_breaking_56_years_of_mathematical/",
+      "summary": "**Google DeepMind's AlphaEvolve just broke a 56-year-old record in matrix multiplication (Strassen's 1969 algorithm: 49 multiplications \u2192 48 multiplications for 4\u00d74 matrices).**  \n  \n\u00a0 \u2022 Uses LLMs as"
+    },
+    {
+      "source": "DZone",
+      "title": "AI-Assisted Software Engineering With OOPS, SOLID Principles, and Documentation",
+      "url": "https://dzone.com/articles/ai-software-engineering-oops-solid-docs",
+      "summary": "Article discussing ai, architecture, development - AI-Assisted Software Engineering With OOPS, SOLID Principles, and Documentation"
+    },
+    {
+      "source": "DZone",
+      "title": "Modular Monoliths Explained: Structure, Strategy, and Scalability",
+      "url": "https://dzone.com/articles/modular-monolith-architecture-overview",
+      "summary": "Article discussing ai, architecture - Modular Monoliths Explained: Structure, Strategy, and Scalability"
+    },
+    {
+      "source": "DZone",
+      "title": "Tactical Domain Driven Design Bringing Strategy To",
+      "url": "https://dzone.com/articles/tactical-domain-driven-design-bringing-strategy-to",
+      "summary": "Article discussing ai, architecture - Tactical Domain Driven Design Bringing Strategy To"
+    },
+    {
+      "source": "DZone",
+      "title": "AI Code Generation: The Productivity Paradox in Software Development",
+      "url": "https://dzone.com/articles/ai-code-generation-productivity-paradox",
+      "summary": "Article discussing ai, development - AI Code Generation: The Productivity Paradox in Software Development"
+    },
+    {
+      "source": "DZone",
+      "title": "Master Production-Ready Big Data, Apache Spark Jobs in Databricks and Beyond: An Expert Guide",
+      "url": "https://dzone.com/articles/optimizing-apache-spark-jobs-in-databricks",
+      "summary": "Article discussing cloud/infrastructure, data engineering - Master Production-Ready Big Data, Apache Spark Jobs in Databricks and Beyond: An Expert Guide"
+    },
+    {
+      "source": "dev.to",
+      "title": "How I Use AI to Build Frontend Apps: My Candid, Messy Process",
+      "url": "https://dev.to/blackgirlbytes/how-i-use-ai-to-build-frontend-apps-my-candid-messy-process-3ehk",
+      "summary": "A practical guide on using AI tools for frontend development, covering real-world workflows, challenges, and best practices for integrating AI into the development process."
+    },
+    {
+      "source": "dev.to",
+      "title": "Federated app store for self-hosted AI agents (Apache-2.0)",
+      "url": "https://dev.to/agentsystems/federated-app-store-for-self-hosted-ai-agents-apache-20-19ka",
+      "summary": "Introduction to an open-source federated app store platform for self-hosted AI agents, enabling decentralized deployment and management of AI agent applications."
+    },
+    {
+      "source": "dev.to",
+      "title": "Stop Calling LLMs AI",
+      "url": "https://dev.to/sagiadinos/stop-calling-llms-ai-1ihk",
+      "summary": "A critical perspective on the terminology and understanding of Large Language Models, discussing the distinction between LLMs and artificial intelligence, and implications for the industry."
+    },
+    {
+      "source": "dev.to",
+      "title": "Why Most AI Startups Fail (And What I'd Do Differently)",
+      "url": "https://dev.to/jaideepparashar/why-most-ai-startups-fail-and-what-id-do-differently-4ph5",
+      "summary": "Analysis of common pitfalls in AI startup ventures, examining market challenges, technical hurdles, and strategic approaches for building successful AI companies."
+    },
+    {
+      "source": "dev.to",
+      "title": "Congrats to the Winners of the Auth0 for AI Agents Challenge!",
+      "url": "https://dev.to/devteam/congrats-to-the-winners-of-the-auth0-for-ai-agents-challenge-2jc8",
+      "summary": "Announcement of winners from the Auth0 AI Agents Challenge, showcasing innovative implementations of authentication and authorization in AI agent applications."
+    }
+  ]
+}

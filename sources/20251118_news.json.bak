@@ -1,0 +1,82 @@
+{
+  "articles": [
+    {
+      "source": "Hacker News",
+      "title": "Gemini 3 Pro Model Card",
+      "url": "https://pixeldrain.com/u/hwgaNKeH",
+      "summary": "Google's Gemini 3 Pro model card, providing technical specifications and capabilities of the latest Gemini AI model. Relevant to AI news and Google's AI developments."
+    },
+    {
+      "source": "Hacker News",
+      "title": "Azure hit by 15 Tbps DDoS attack using 500k IP addresses",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-aisuru-botnet-used-500-000-ips-in-15-tbps-azure-ddos-attack/",
+      "summary": "Microsoft Azure experienced a massive 15 Tbps DDoS attack using 500,000 IP addresses from the Aisuru botnet. Critical cloud computing security news affecting Microsoft Azure infrastructure."
+    },
+    {
+      "source": "Hacker News",
+      "title": "When Reverse Proxies Surprise You: Hard Lessons from Operating at Scale",
+      "url": "https://www.infoq.com/articles/scaling-reverse-proxies/",
+      "summary": "Detailed analysis of challenges and best practices for operating reverse proxies at scale. Covers systems design, architecture patterns, and lessons learned from production deployments."
+    },
+    {
+      "source": "Hacker News",
+      "title": "LeJEPA: Provable and Scalable Self-Supervised Learning Without the Heuristics",
+      "url": "https://arxiv.org/abs/2511.08544",
+      "summary": "Research paper on LeJEPA, a new approach to self-supervised learning with theoretical guarantees and scalability. Relevant to AI development patterns, frameworks, and machine learning best practices."
+    },
+    {
+      "source": "Hacker News",
+      "title": "A/B Tests over Evals",
+      "url": "https://www.raindrop.ai/blog/thoughts-on-evals/",
+      "summary": "Discussion on evaluation strategies for AI systems, comparing A/B testing approaches versus traditional evals. Covers AI development best practices and testing methodologies for AI tools."
+    },
+    {
+      "source": "Hacker News",
+      "title": "One Student One Chip Course Homepage",
+      "url": "https://ysyx.oscc.cc/docs/en/",
+      "summary": "Computer architecture and systems design educational resource"
+    },
+    {
+      "source": "Hacker News",
+      "title": "How to escape the Linux networking stack",
+      "url": "https://blog.cloudflare.com/so-long-and-thanks-for-all-the-fish-how-to-escape-the-linux-networking-stack/",
+      "summary": "Systems design article on Linux networking stack optimization and performance"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Show HN: PrinceJS \u2013 19,200 req/s Bun framework in 2.8 kB (built by a 13yo)",
+      "url": "https://princejs.vercel.app",
+      "summary": "Software development: High-performance JavaScript/Bun web framework"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Ion: Modern System Shell in Rust",
+      "url": "https://github.com/redox-os/ion",
+      "summary": "A modern system shell written in Rust, relevant to software development and systems programming"
+    },
+    {
+      "source": "Hacker News",
+      "title": "I caught Google Gemini using my data and then covering it up",
+      "url": "https://unbuffered.stream/gemini-personal-context/",
+      "summary": "Article about Google Gemini AI privacy concerns and data usage practices"
+    },
+    {
+      "source": "Hacker News",
+      "title": "An overly aggressive mock can work fine, but break much later",
+      "url": "https://nedbatchelder.com/blog/202511/why_your_mock_breaks_later.html",
+      "summary": "Software development best practices article about testing and mocking patterns"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Google is killing the open web, part 2",
+      "url": "https://wok.oblomov.eu/tecnologia/google-killing-open-web-2/",
+      "summary": "Analysis of Google's impact on web development and open standards"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Show HN: Kalendis \u2013 Scheduling API (keep your UI, we handle timezones/DST)",
+      "url": "https://kalendis.dev",
+      "summary": "New API service for developers handling scheduling, timezones and DST management"
+    }
+  ]
+}

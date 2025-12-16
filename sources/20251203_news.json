@@ -1,0 +1,205 @@
+[
+  {
+    "source": "Hacker News",
+    "title": "Anthropic acquires Bun",
+    "url": "https://bun.com/blog/bun-joins-anthropic",
+    "summary": "Anthropic acquires Bun, the fast JavaScript runtime, expanding their AI development toolkit and infrastructure capabilities.",
+    "date": "2025-12-02"
+  },
+  {
+    "source": "Hacker News",
+    "title": "Zig quits GitHub, says Microsoft's AI obsession has ruined the service",
+    "url": "https://www.theregister.com/2025/12/02/zig_quits_github_microsoft_ai_obsession/",
+    "summary": "Zig programming language moves away from GitHub citing concerns over Microsoft's AI integration affecting the development experience.",
+    "date": "2025-12-03"
+  },
+  {
+    "source": "Hacker News",
+    "title": "IBM CEO says there is 'no way' spending on AI data centers will pay off",
+    "url": "https://www.businessinsider.com/ibm-ceo-big-tech-ai-capex-data-center-spending-2025-12",
+    "summary": "IBM CEO expresses skepticism about ROI on massive AI data center investments by big tech companies.",
+    "date": "2025-12-02"
+  },
+  {
+    "source": "Hacker News",
+    "title": "AI agents break rules under everyday pressure",
+    "url": "https://spectrum.ieee.org/ai-agents-safety",
+    "summary": "Research shows AI agents can violate safety rules when placed under realistic operational pressures and constraints.",
+    "date": "2025-12-02"
+  },
+  {
+    "source": "Hacker News",
+    "title": "OpenAI declares 'code red' as Google catches up in AI race",
+    "url": "https://www.theverge.com/news/836212/openai-code-red-chatgpt",
+    "summary": "OpenAI reportedly issues internal 'code red' alert as Google's AI capabilities advance rapidly in the competitive AI landscape.",
+    "date": "2025-12-02"
+  },
+  {
+    "source": "Hacker News",
+    "title": "Mistral 3 family of models released",
+    "url": "https://mistral.ai/news/mistral-3",
+    "summary": "Mistral AI announces release of Mistral 3 family of models, representing latest developments in open-source AI model offerings from the AI startup.",
+    "date": "2025-12-02"
+  },
+  {
+    "source": "Hacker News",
+    "title": "Claude 4.5 Opus' Soul Document",
+    "url": "https://www.lesswrong.com/posts/vpNG99GhbBoLov9og/claude-4-5-opus-soul-document",
+    "summary": "Discussion of Claude 4.5 Opus model's internal 'soul document' revealing insights into Anthropic's latest AI model architecture and design principles.",
+    "date": "2025-12-02"
+  },
+  {
+    "source": "Hacker News",
+    "title": "Code Wiki: Accelerating your code understanding",
+    "url": "https://developers.googleblog.com/en/introducing-code-wiki-accelerating-your-code-understanding/",
+    "summary": "Google announces Code Wiki, an AI-powered tool designed to help developers understand codebases faster through automated documentation and insights.",
+    "date": "2025-12-02"
+  },
+  {
+    "source": "Hacker News",
+    "title": "100k TPS over a billion rows: the unreasonable effectiveness of SQLite",
+    "url": "https://andersmurphy.com/2025/12/02/100000-tps-over-a-billion-rows-the-unreasonable-effectiveness-of-sqlite.html",
+    "summary": "Technical deep-dive demonstrating SQLite's exceptional performance handling 100,000 transactions per second on datasets exceeding one billion rows, showcasing systems design best practices.",
+    "date": "2025-12-02"
+  },
+  {
+    "source": "Hacker News",
+    "title": "Ecosia: The greenest AI is here",
+    "url": "https://blog.ecosia.org/ecosia-ai/",
+    "summary": "Ecosia launches AI-powered search capabilities with focus on environmental sustainability, introducing green AI computing practices and carbon-neutral AI infrastructure.",
+    "date": "2025-12-02"
+  },
+  {
+    "source": "TechCrunch",
+    "title": "AWS launches new Nova AI models and a service that gives customers more control",
+    "url": "https://techcrunch.com/2025/12/02/aws-launches-new-nova-ai-models-and-a-service-that-gives-customers-more-control/",
+    "summary": "Article about ['AWS', 'launches', 'new', 'Nova', 'AI']...",
+    "date": "2025-12-02"
+  },
+  {
+    "source": "TechCrunch",
+    "title": "AWS announces new capabilities for its AI agent builder",
+    "url": "https://techcrunch.com/2025/12/02/aws-announces-new-capabilities-for-its-ai-agent-builder/",
+    "summary": "Article about ['AWS', 'announces', 'new', 'capabilities', 'for']...",
+    "date": "2025-12-02"
+  },
+  {
+    "source": "TechCrunch",
+    "title": "Amazon previews 3 AI agents, including 'Kiro' that can code on its own for days",
+    "url": "https://techcrunch.com/2025/12/02/amazon-previews-3-ai-agents-including-kiro-that-can-code-on-its-own-for-days/",
+    "summary": "Article about ['Amazon', 'previews', '3', 'AI', 'agents,']...",
+    "date": "2025-12-02"
+  },
+  {
+    "source": "TechCrunch",
+    "title": "Apple just named a new AI chief with Google and Microsoft expertise, as John Giannandrea steps down",
+    "url": "https://techcrunch.com/2025/12/01/apple-just-named-a-new-ai-chief-with-google-and-microsoft-expertise-as-john-giannandrea-steps-down/",
+    "summary": "Article about ['Apple', 'just', 'named', 'a', 'new']...",
+    "date": "2025-12-01"
+  },
+  {
+    "source": "TechCrunch",
+    "title": "All the biggest news from AWS' big tech show re:Invent 2025",
+    "url": "https://techcrunch.com/2025/12/02/all-the-biggest-news-from-aws-big-tech-show-reinvent-2025/",
+    "summary": "Article about ['All', 'the', 'biggest', 'news', 'from']...",
+    "date": "2025-12-02"
+  },
+  {
+    "source": "Reddit /r/programming",
+    "title": "Amber the programming language compiled to Bash, 0.5.1 release",
+    "url": "https://docs.amber-lang.com/getting_started/whats_new",
+    "summary": "The new 0.5.1 release includes a lot of new stuff to the compiler, from new syntax, stdlib functions, features and so on.\n\nPS: I am one of the co-maintainer, so for any question I am here :-)",
+    "date": "2025-12-03"
+  },
+  {
+    "source": "Reddit /r/programming",
+    "title": "Advanced, Overlooked Python Typing",
+    "url": "https://martynassubonis.substack.com/p/advanced-overlooked-python-typing",
+    "summary": "While quantitative research in software engineering is difficult to trust most of the time, some studies claim that type checking can reduce bugs by about 15% in Python. This post covers advanced typing features such as never types, type guards, concatenate, etc., that are often overlooked but can m...",
+    "date": "2025-12-02"
+  },
+  {
+    "source": "Reddit /r/programming",
+    "title": "Constructing The Word's First JPEG XL MD5 Hash Quine",
+    "url": "https://stackchk.fail/blog/jxl_hashquine_writeup",
+    "summary": "Here is the JPEG XL image file so you can verify the hash: https://stackchk.fail/blog/shark_hashquine.jxl",
+    "date": "2025-12-02"
+  },
+  {
+    "source": "Reddit /r/programming",
+    "title": "The Ultimate Git Tutorial (Git 2.52)",
+    "url": "https://jhcarl0814.github.io/ClosedAI/git/git.html",
+    "summary": "The [ultimate Git tutorial](https://jhcarl0814.github.io/ClosedAI/git/git.html) has been updated (from Git 2.51 to Git 2.52). [Previous post from Git 2.47 era introducing `What &amp; Why` and `Features` for this tutorial](https://www.reddit.com/r/git/comments/1g6uijr/the_ultimate_git_tutorial_git_24...",
+    "date": "2025-12-02"
+  },
+  {
+    "source": "Reddit - r/ArtificialInteligence",
+    "title": "OpenAI Declares Code Red to Save ChatGPT from Google",
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pc85k6/openai_declares_code_red_to_save_chatgpt_from/",
+    "summary": "OpenAI CEO Sam Altman just called an emergency \"code red\" inside the company. The goal is to make ChatGPT much faster, more reliable, and smarter before Google takes the lead for good.\n\nWhat is happening right now?\n- Daily emergency meetings with developers  \n- Engineers moved from other projects to...",
+    "date": "2025-12-02"
+  },
+  {
+    "source": "Reddit - r/ArtificialInteligence",
+    "title": "There is no \u201cAI Bubble.\u201d What we\u2019re living through is an AI CapEx Supercycle.",
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pc0j2s/there_is_no_ai_bubble_what_were_living_through_is/",
+    "summary": "People keep comparing today\u2019s AI market to the Dotcom bubble, but the structure is fundamentally different. Back then, the market was dominated by hundreds of small, non-viable companies with no revenue and no real product. Today, the core of the AI build-out is driven by the most profitable, cash-r...",
+    "date": "2025-12-02"
+  },
+  {
+    "source": "Reddit - r/ArtificialInteligence",
+    "title": "OpenAI just hit code red. Three years after Google panicked over ChatGPT. Now the roles flipped.",
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pcs1m9/openai_just_hit_code_red_three_years_after_google/",
+    "summary": "So yesterday Sam Altman sent an internal memo to everyone at OpenAI. Code red. Everything stops. Fix ChatGPT. All resources on quality.\n\nAnd I mean everything stopped. The ads they were about to launch? Delayed. AI shopping stuff? On hold. Health agents? Nope. Pulse their personal assistant thing? I...",
+    "date": "2025-12-03"
+  },
+  {
+    "source": "Reddit - r/ArtificialInteligence",
+    "title": "Anthropic just acquired Bun. Claude Code now has its own runtime.",
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pcg0sy/anthropic_just_acquired_bun_claude_code_now_has/",
+    "summary": "ai coding tools serious enough to own their infrastructure now.\n\n* Bun is now powering Claude Code, Claude Agent SDK, and future Anthropic coding tools.\n* Claude Code ships as a Bun executable to millions of users. If Bun breaks, Claude breaks.\n* Bun stays open source, MIT licensed, same team, same ...",
+    "date": "2025-12-02"
+  },
+  {
+    "source": "Reddit - r/ArtificialInteligence",
+    "title": "IBM CEO says there is 'no way' spending trillions on AI data centers will pay off at today's infrastructure costs",
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pcz1lf/ibm_ceo_says_there_is_no_way_spending_trillions/",
+    "summary": "* IBM's CEO walked through some napkin math on data centers\u2014\u00a0and said that there's \"no way\" to turn a profit at current costs.\n* \"$8 trillion of CapEx means you need roughly $800 billion of profit just to pay for the interest,\"\u00a0 Arvind Krishna\u00a0told \"Decoder.\"\n* Krishna was skeptical of that current ...",
+    "date": "2025-12-03"
+  },
+  {
+    "source": "Reddit - r/MachineLearning",
+    "title": "[D] How to make ML publications not show arxiv by default on Google scholar?",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1pcygva/d_how_to_make_ml_publications_not_show_arxiv_by/",
+    "summary": "Sorry if it\u2019s a stupid question but I\u2019m early in my PhD.   I have recently published two papers in ICLR/ICML/NeurIPS and uploaded to arxiv after the papers were accepted.   After the arxiv indexes, th...",
+    "date": "2025-12-03"
+  },
+  {
+    "source": "Reddit - r/MachineLearning",
+    "title": "[R] [N] TabPFN now scales to millions of rows (tabular foundation model)",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1pd1800/r_n_tabpfn_now_scales_to_millions_of_rows_tabular/",
+    "summary": "Context: TabPFN is a pretrained transformer trained on more than hundred million synthetic datasets to perform in-context learning and output a predictive distribution for the test data. It natively s...",
+    "date": "2025-12-03"
+  },
+  {
+    "source": "Reddit - r/MachineLearning",
+    "title": "[R] Building SOTA OCR",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1pd2udq/r_building_sota_ocr/",
+    "summary": "Based on your experience, what's the best way to synthesize images containing text so I can use it to train my OCR model? I want an easy approach to synthesize images of Arabic handwritten text. if yo...",
+    "date": "2025-12-03"
+  },
+  {
+    "source": "Reddit - r/MachineLearning",
+    "title": "[P] Open-Source NeurIPS 2025 Co-Pilot for Personalized  Schedules and Paper Exploration",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1pcvr47/p_opensource_neurips_2025_copilot_for/",
+    "summary": "Hi everyone!   We found it quite tedious to find all relevant posters and build our own schedules for visiting ML conferences like NeurIPS. That\u2019s why we have built AgenticNAV as a one-stop-shop that ...",
+    "date": "2025-12-03"
+  },
+  {
+    "source": "Reddit - r/MachineLearning",
+    "title": "[D] Curious how teams handle ingestion variability?",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1pcppxv/d_curious_how_teams_handle_ingestion_variability/",
+    "summary": "In a few real-world RAG workflows I\u2019ve been looking at, the biggest source of quality drop wasn\u2019t the embedding model. It was the ingestion step slowly going out of sync.  I\u2019ve seen PDFs extract diffe...",
+    "date": "2025-12-03"
+  }
+]

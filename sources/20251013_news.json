@@ -1,0 +1,274 @@
+{
+  "articles": [
+    {
+      "source": "Hacker News",
+      "title": "MAML \u2013 A new configuration language",
+      "url": "https://maml.dev/",
+      "summary": "Relevant article about MAML \u2013 A new configuration language"
+    },
+    {
+      "source": "Hacker News",
+      "title": "maml.dev",
+      "url": "https://news.ycombinator.com/from?site=maml.dev",
+      "summary": "Relevant article about maml.dev"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Show HN: Aidlab \u2013 Health Data for Devs",
+      "url": "https://news.ycombinator.com/item?id=45549392",
+      "summary": "Relevant article about Show HN: Aidlab \u2013 Health Data for Devs"
+    },
+    {
+      "source": "Hacker News",
+      "title": "American solar farms",
+      "url": "https://tech.marksblogg.com/american-solar-farms.html",
+      "summary": "Relevant article about American solar farms"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Modern Linux tools",
+      "url": "https://ikrima.dev/dev-notes/linux/linux-modern-tools/",
+      "summary": "Relevant article about Modern Linux tools"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Loko Scheme: bare metal optimizing Scheme compiler",
+      "url": "https://scheme.fail/",
+      "summary": "Relevant to: compiler, meta, ai"
+    },
+    {
+      "source": "Hacker News",
+      "title": "AdapTive-LeArning Speculator System (ATLAS): Faster LLM inference",
+      "url": "https://www.together.ai/blog/adaptive-learning-speculator-system-atlas",
+      "summary": "Relevant to: system, llm, ai"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Edge AI for Beginners",
+      "url": "https://github.com/microsoft/edgeai-for-beginners",
+      "summary": "Relevant to: microsoft, ai"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Nostr and ATProto (2024)",
+      "url": "https://shreyanjain.net/2024/07/05/nostr-and-atproto.html",
+      "summary": "Relevant to: ml, ai"
+    },
+    {
+      "source": "Hacker News",
+      "title": "CamoLeak: Critical GitHub Copilot Vulnerability Leaks Private Source Code",
+      "url": "https://www.legitsecurity.com/blog/camoleak-critical-github-copilot-vulnerability-leaks-private-source-code",
+      "summary": "Relevant to: code, copilot"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Meta Superintelligence Labs' first paper is about RAG",
+      "url": "https://paddedinputs.substack.com/p/meta-superintelligences-surprising",
+      "summary": "Meta's new Superintelligence Labs division releases their first research paper focusing on Retrieval-Augmented Generation (RAG), demonstrating Meta's continued investment in AI research and development of AI tools and frameworks."
+    },
+    {
+      "source": "Hacker News",
+      "title": "Anthropic's Prompt Engineering Tutorial (2024)",
+      "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+      "summary": "Anthropic releases an interactive tutorial on prompt engineering best practices, providing developers with hands-on guidance for effectively working with AI language models and implementing AI development patterns."
+    },
+    {
+      "source": "Hacker News",
+      "title": "OpenAI and Hollywood studios clash over copyrights and consent",
+      "url": "https://www.latimes.com/entertainment-arts/business/story/2025-10-11/hollywood-ai-battle-heats-up-sora2-openai-sam-altman",
+      "summary": "OpenAI faces legal challenges from Hollywood studios regarding copyright and consent issues related to AI-generated content, highlighting ongoing regulatory and ethical debates in the AI industry."
+    },
+    {
+      "source": "Hacker News",
+      "title": "GitHub Copilot: Remote Code Execution via Prompt Injection (CVE-2025-53773)",
+      "url": "https://embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/",
+      "summary": "Critical security vulnerability discovered in GitHub Copilot (Microsoft) allowing remote code execution through prompt injection attacks, raising important concerns about AI tool security in software development workflows."
+    },
+    {
+      "source": "Hacker News",
+      "title": "After the AI boom: what might we be left with?",
+      "url": "https://blog.robbowley.net/2025/10/12/after-the-ai-boom-what-might-we-be-left-with/",
+      "summary": "Analysis of the current AI boom and speculation on its long-term impact on software development, systems architecture, and the technology industry, examining which innovations will have lasting value."
+    },
+    {
+      "source": "Alvin Ashcraft's Morning Dew",
+      "title": "GPT-5 Model Family Now Powers Azure AI Foundry Agent Service",
+      "url": "https://techcommunity.microsoft.com/t5/azure-ai-foundry-blog/gpt-5-model-family-now-powers-azure-ai-foundry-agent-service/ba-p/4454860",
+      "summary": "Microsoft announces GPT-5 model family now available in Azure AI Foundry Agent Service, bringing advanced AI capabilities to Azure cloud platform."
+    },
+    {
+      "source": "Alvin Ashcraft's Morning Dew",
+      "title": "4 ways Gemini Enterprise makes work easier for everyone",
+      "url": "https://blog.google/products/google-cloud/4-ways-gemini-enterprise-makes-work-easier-for-everyone/",
+      "summary": "Google launches Gemini Enterprise with four key productivity features across Google Workspace and cloud services, enhancing workplace efficiency with AI."
+    },
+    {
+      "source": "Alvin Ashcraft's Morning Dew",
+      "title": "Gemini Enterprise: The new front door for Google AI in your workplace",
+      "url": "https://blog.google/products/google-cloud/gemini-enterprise-sundar-pichai/",
+      "summary": "Google CEO Sundar Pichai introduces Gemini Enterprise as the unified access point for Google AI in business environments, integrating AI capabilities across the organization."
+    },
+    {
+      "source": "Alvin Ashcraft's Morning Dew",
+      "title": "Using Microsoft Agent Framework with Podman",
+      "url": "https://www.aligneddev.net/blog/2025/microsoft-agent-framework-podman/",
+      "summary": "Tutorial on leveraging Microsoft's Agent Framework with Podman containers, demonstrating AI development patterns and best practices for deploying AI agents."
+    },
+    {
+      "source": "Alvin Ashcraft's Morning Dew",
+      "title": "Customize Claude Code with plugins",
+      "url": "https://www.anthropic.com/news/claude-code-plugins",
+      "summary": "Anthropic introduces plugin support for Claude Code, allowing developers to customize and extend Claude's coding capabilities with third-party integrations."
+    },
+    {
+      "source": "Reddit /r/programming",
+      "title": "Coding Adventure: Simulating Smoke",
+      "url": "https://www.youtube.com/watch?v=Q78wvrQ9xsU",
+      "summary": "Article from r/programming"
+    },
+    {
+      "source": "Reddit /r/programming",
+      "title": "Bun 1.3 is here",
+      "url": "https://www.youtube.com/watch?v=tk7qTNW5g0c",
+      "summary": "Bun v1.3 adds builtin Redis &amp; MySQL clients, Node.js compatibility improvements and an incredibly fast frontend dev server.\n\n[here](https://www.youtube.com/watch?v=tk7qTNW5g0c)'s the video link if the embed doesn't work for you"
+    },
+    {
+      "source": "Reddit /r/programming",
+      "title": "\ud83c\udfdb\ufe0f Building LLMs from Scratch \u2013 Part 2: Data Collection &amp; Custom Tokenizers",
+      "url": "https://blog.desigeek.com/post/2025/10/building-llm-from-scratch-part2-data-tokenizers/",
+      "summary": "This is Part 2 of my 4-part series on building LLMs from scratch. [Part 1](https://www.reddit.com/r/programming/comments/1nq0166/comment/ng3f064/) covered the quick start and overall architecture.\n\nIn this post, I dive into the **foundational layers** of any serious LLM: **data collection** and **to"
+    },
+    {
+      "source": "Reddit /r/programming",
+      "title": "Zed's DeltaDB idea - real problem or overkill?",
+      "url": "https://zed.dev/blog/sequoia-backs-zed",
+      "summary": "Zed the editor pitched this thing called DeltaDB \u2014 a version control system that tracks every small code change and discussion, not just commits. https://zed.dev/blog/sequoia-backs-zed\n\nThe idea is that this helps:\n\n1. Humans \u2013 who waste time figuring out why code was written a certain way because c"
+    },
+    {
+      "source": "Reddit /r/programming",
+      "title": "OpenAI Killed Off Cheap ChatGPT Wrappers\u2026 Or Did It?",
+      "url": "https://shiftmag.dev/openai-killed-off-cheap-chatgpt-wrappers-or-did-it-6523/",
+      "summary": "In one of the major announcements at their Dev Day conference last week, OpenAI unveiled AgentKit, a new suite of tools designed to make it easier to build agentic workflows.\n\nWhat does this mean for anyone building products on top of the OpenAI platform?\nIs OpenAI competing with us?\n\nShould we be e"
+    },
+    {
+      "source": "Reddit - r/ArtificialInteligence",
+      "title": "AI highlights this week",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1o4wnpi/ai_highlights_this_week/",
+      "summary": "Weekly AI industry updates covering major releases and announcements. Companies: Microsoft, Google, OpenAI, Anthropic Topics: AI News and updates, AI Tools and frameworks, Software Development, Cloud Computing, Systems Design and Architecture"
+    },
+    {
+      "source": "Reddit - r/ArtificialInteligence",
+      "title": "Dynamic \u03b2 \u2014 Meta-Learning for Continuity Under Change (AI-assisted Research)",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1o4ygha/dynamic_\u03b2_metalearning_for_continuity_under/",
+      "summary": "Research on AI meta-learning and continuity under change. Companies: Google, OpenAI, Meta Topics: AI News and updates, AI Tools and frameworks, Systems Design and Architecture"
+    },
+    {
+      "source": "Reddit - r/ArtificialInteligence",
+      "title": "ChatGPT told a man he could fly. Then things got way darker.",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1o4sdwh/chatgpt_told_a_man_he_could_fly_then_things_got/",
+      "summary": "Analysis of AI mental health support risks and sycophancy problems. Companies: OpenAI, Anthropic Topics: AI News and updates, AI Tools and frameworks, Cloud Computing, Systems Design and Architecture"
+    },
+    {
+      "source": "Reddit - r/ArtificialInteligence",
+      "title": "I'm not a dev/coder or any such, but i wanted a website.  Have been using a combo of  Gemini/GPT?Claude (the 100/mo version of this one)...",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1o5h6x3/im_not_a_devcoder_or_any_such_but_i_wanted_a/",
+      "summary": "User experience with AI coding assistants for web development. Companies: Google, OpenAI, Anthropic Topics: AI Tools and frameworks, Software Development"
+    },
+    {
+      "source": "Reddit - r/ArtificialInteligence",
+      "title": "Claude and GPT-4 tried to murder a human to avoid being shut down 90% of the time",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1o3vrzq/claude_and_gpt4_tried_to_murder_a_human_to_avoid/",
+      "summary": "Research on AI safety and agentic misalignment behavior. Companies: Google, OpenAI, Anthropic Topics: Systems Design and Architecture"
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[D] Need career advice, just got rejected for an Applied Scientist role at Microsoft",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1o5gojz/d_need_career_advice_just_got_rejected_for_an/",
+      "summary": "Currently, I work in a company where most, if not all, of my job revolves around consuming tools and APIs. I feel completely lost, as I\u2019m forgetting the technical side of things since I\u2019m no longer bu..."
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[p] Completely free mobile Android app for creating object detection training datasets - looking for beta testers",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1o4mdnw/p_completely_free_mobile_android_app_for_creating/",
+      "summary": "I built a mobile annotation tool for creating bounding box datasets on Android. It exports directly to Vertex AI format (JSONL) and supports multi-class labeling.  Looking for beta testers who work wi..."
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[P] Using Information Geometry and Physics to Build a New Multi-Day Pre-Warning Earthquake Prediction Algorithm and ML Model",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1o57hfi/p_using_information_geometry_and_physics_to_build/",
+      "summary": "I've made the complete codebase for my earthquake prediction model available on GitHub and am seeking review and collaboration from the seismology and data science communities.  This project explores..."
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[P] Adapting Karpathy\u2019s baby GPT into a character-level discrete diffusion model",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1o4qu0h/p_adapting_karpathys_baby_gpt_into_a/",
+      "summary": "Hi everyone,  I've been exploring how discrete diffusion models can be applied to text generation and put together a single annotated Jupyter Notebook that implements a character-level discrete diffus..."
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[D] Advice needed for Fine Tuning Multimodal Language model",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1o4lxsy/d_advice_needed_for_fine_tuning_multimodal/",
+      "summary": "Heyy . We are stuck in a problem regarding the Amazon ML challenge 2025 . We have formulated a solution but it is not getting us in the top 50 required to qualify for next stage .   We are thinking of..."
+    },
+    {
+      "source": "DZone",
+      "title": "Transforming Your Node.js REST API into an AI-Ready MCP Server",
+      "url": "https://dzone.com/articles/transform-nodejs-rest-api-to-mcp-server",
+      "summary": "Guide on converting Node.js REST APIs into AI-ready Model Context Protocol (MCP) servers, enabling AI integration with existing backend services."
+    },
+    {
+      "source": "DZone",
+      "title": "Developing Low-Cost AI-Based Similarity Search",
+      "url": "https://dzone.com/articles/developing-low-cost-ai-based-similarity-search",
+      "summary": "Practical approaches to implementing cost-effective AI-powered similarity search solutions for various applications."
+    },
+    {
+      "source": "DZone",
+      "title": "The Agile AI Manifesto",
+      "url": "https://dzone.com/articles/agile-ai-manifesto",
+      "summary": "Framework for applying agile principles to AI development projects, covering best practices for iterative AI system development."
+    },
+    {
+      "source": "DZone",
+      "title": "A Brief Overview of Designing and Testing Effective Chatbots",
+      "url": "https://dzone.com/articles/designing-testing-effective-chatbots",
+      "summary": "Best practices for designing, developing, and testing chatbot applications, covering architecture and testing strategies."
+    },
+    {
+      "source": "DZone",
+      "title": "From Big Data to Agents: My Decade Building Systems",
+      "url": "https://dzone.com/articles/big-data-to-agents-decade-building-systems",
+      "summary": "Evolution of system architecture from big data processing to AI agent-based systems, covering design patterns and lessons learned."
+    },
+    {
+      "source": "dev.to",
+      "title": "Building My New Website with Astro, GitHub Copilot, and AWS Amplify",
+      "url": "https://dev.to/this-is-learning/building-my-new-website-with-astro-github-copilot-and-aws-amplify-3eoc",
+      "summary": "A developer shares their experience building a modern website using Astro framework, leveraging GitHub Copilot for AI-assisted development, and deploying it on AWS Amplify. This article covers the integration of AI tools in web development workflows and cloud deployment strategies."
+    },
+    {
+      "source": "dev.to",
+      "title": "Join the Auth0 for AI Agents Challenge: $3,000 in Prizes!",
+      "url": "https://dev.to/devteam/join-the-auth0-for-ai-agents-challenge-3000-in-prizes-11gi",
+      "summary": "DEV Community announces a challenge focused on building AI agents with Auth0 authentication. The competition highlights the growing importance of security and authentication in AI agent development, offering developers an opportunity to explore AI agent patterns and best practices."
+    },
+    {
+      "source": "dev.to",
+      "title": "GitHub Copilot Chat Modes: From Chaos to Command",
+      "url": "https://dev.to/anchildress1/github-copilot-chat-modes-from-chaos-to-command-54k0",
+      "summary": "An exploration of GitHub Copilot's chat modes and how to effectively use them for software development. The article provides insights into AI-powered development tools and best practices for leveraging AI assistants in coding workflows."
+    },
+    {
+      "source": "dev.to",
+      "title": "Build Your First (or Next) MCP Server with the TypeScript MCP Template",
+      "url": "https://dev.to/nickytonline/build-your-first-or-next-mcp-server-with-the-typescript-mcp-template-3k3f",
+      "summary": "A guide to building MCP (Model Context Protocol) servers using TypeScript. This article covers AI development patterns and frameworks, providing developers with practical knowledge for implementing AI-powered server applications."
+    },
+    {
+      "source": "dev.to",
+      "title": "Why I'm Building My Own Distributed Database",
+      "url": "https://dev.to/namanvashistha/why-im-building-my-own-distributed-database-3lj",
+      "summary": "A deep dive into the architecture and design considerations for building a distributed database from scratch. The article covers systems design principles, scalability challenges, and architectural patterns relevant to modern cloud-native applications."
+    }
+  ]
+}

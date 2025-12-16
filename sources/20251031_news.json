@@ -1,0 +1,154 @@
+{
+  "articles": [
+    {
+      "source": "Reddit r/programming",
+      "title": "Tik Tok saved $300000 per year in computing costs by having an intern partially rewrite a microservice in Rust.",
+      "url": "https://www.linkedin.com/posts/animesh-gaitonde_tech-systemdesign-rust-activity-7377602168482160640-z_gL",
+      "summary": "Nowadays, many developers claim that optimization is pointless because computers are fast, and developer time is expensive. While that may be true, optimization is not always pointless. Running server..."
+    },
+    {
+      "source": "Reddit r/programming",
+      "title": "How Google, Amazon, and CrowdStrike broke millions of systems",
+      "url": "https://newsletter.techworld-with-milan.com/p/how-google-amazon-and-crowdstrike",
+      "summary": "How Google, Amazon, and CrowdStrike broke millions of systems"
+    },
+    {
+      "source": "Reddit r/programming",
+      "title": "How my Node.js code was causing a massive memory leak and how I solved it",
+      "url": "https://medium.com/codetodeploy/de-mystifying-the-v8-garbage-collector-how-your-code-is-sabotaging-your-apps-memory-c290f80eb1d0?source=friends_link&amp;sk=fc1c16b78a846500f40de8539dba7332",
+      "summary": "For the longest time, I had a Node.js server with a slow memory leak. It would creep up for days and then crash. I'd internally blame V8, thinking the garbage collector was just \"being slow\" or \"missi..."
+    },
+    {
+      "source": "Reddit r/programming",
+      "title": "I compiled my research on modern bot detection into a deep-dive on multi-layer fingerprinting (TLS/JA3, Canvas, Biometrics)",
+      "url": "https://pydoll.tech/docs/deep-dive/fingerprinting/",
+      "summary": "As part of the research for my `asyncio` Python automation library (pydoll), I fell down the rabbit hole of modern bot detection and ended up writing what is essentially a technical manual on the subj..."
+    },
+    {
+      "source": "Reddit r/programming",
+      "title": "AI coding is moving faster than the guardrails meant to secure it and that's risky business.",
+      "url": "https://blog.codacy.com/benchmark-the-risk-profile-of-your-ai-coding-posture",
+      "summary": "We\u2019re an AppSec platform, and we\u2019re seeing pipelines fill up with AI code that nobody fully knows how to oversee. This post is for teams that are concerned that their security and governance controls ..."
+    },
+    {
+      "source": "Reddit - r/ArtificialInteligence",
+      "title": "One-Minute Daily AI News 10/30/2025",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1oklqhz/oneminute_daily_ai_news_10302025/",
+      "summary": "1. Mom who sued\u00a0**Character**.ai\u00a0over son\u2019s suicide says the platform\u2019s new teen policy comes \u2018too late\u2019.\\[1\\]\n2. **Google**\u00a0to offer free Gemini AI access to India\u2019s 505 million Reliance Jio users.\\[2\\]\n3. **NVIDIA**\u00a0and Nokia to Pioneer the AI Platform for 6G \u2014 Powering America\u2019s Return to Telecom"
+    },
+    {
+      "source": "Reddit - r/ArtificialInteligence",
+      "title": "Claude wins today",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1oka4gy/claude_wins_today/",
+      "summary": "I am not a very savvy user of LLMs. But Claude wins by a mile for my simple project today.\n\nI have a 19 pages legal document that is a PDF. The texts in the PDF are not text but photographs/scans of text.\n\nI need to convert this PDF into MS Word so that I can edit it.\n\nI went to DeepSeek, Gemini, Ch"
+    },
+    {
+      "source": "Reddit - r/ArtificialInteligence",
+      "title": "How do you actually get cited in AI search results? \ud83e\udd14",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1oknq5q/how_do_you_actually_get_cited_in_ai_search_results/",
+      "summary": "I\u2019ve noticed tools like ChatGPT, Perplexity, and Gemini now show citations from websites when answering questions.\n\nDoes anyone know what really helps a page get cited in those AI results?\n\n  \nIs it about structured data, backlinks, freshness, or just overall site authority?\n\nHas anyone here actuall"
+    },
+    {
+      "source": "Reddit - r/ArtificialInteligence",
+      "title": "Future of websites and user interfaces?",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1okqbd2/future_of_websites_and_user_interfaces/",
+      "summary": "AI is making most of it obsolete - with conversational interface and also the ability to build a UI on the fly. \n\nI think AI companies will be guzzling all the energy they can to power a different connected agentic world - with UI on the fly. However not quite sure with post-login, databases etc\u2026 I "
+    },
+    {
+      "source": "Reddit - r/ArtificialInteligence",
+      "title": "Meta Says It Downloaded All that porn for \"personal use\" not to train AI",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1ojixgq/meta_says_it_downloaded_all_that_porn_for/",
+      "summary": "[https://arstechnica.com/tech-policy/2025/10/meta-says-porn-downloads-on-its-ips-were-for-personal-use-not-ai-training/](https://arstechnica.com/tech-policy/2025/10/meta-says-porn-downloads-on-its-ips-were-for-personal-use-not-ai-training/)\n\nThe move comes after Strike 3 Holdings discovered illegal "
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[D]NLP conferences look like a scam..",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1ojeldl/dnlp_conferences_look_like_a_scam/",
+      "summary": "Not trying to punch down on other smart folks, but honestly, I feel like most NLP conference papers are kinda scams. Out of 10 papers I read, 9 have zero theoretical justification, and the 1 that does usually calls something a *theorem* when it\u2019s basically just a lemma with ridiculous assumptions.  "
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[D] How to benchmark open-ended, real-world goal achievement by computer-using LLMs?",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1okwuyx/d_how_to_benchmark_openended_realworld_goal/",
+      "summary": "[GDPVal](https://arxiv.org/abs/2510.04374)\u00a0takes care of measuring agent performance on economically valuable tasks. We are working on the\u00a0[AI Village](https://theaidigest.org/village), where we try to see how we can explore, and possibly evaluate, how groups of persistent agents do at open-ended, r"
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[P] Aeonisk-52: Open RPG testbed with six-tier counterfactual outcomes (dataset + code)",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1ojczs5/p_aeonisk52_open_rpg_testbed_with_sixtier/",
+      "summary": "tl;dr - Over the past few years, I've created a role-playing game by merging my world-building and an open source game system called YAGS (Yet Another Game System). YAGS has 6 outcome tiers depending on the margin of success of your dice rolls. For each scenario, the **AI recorded all 6 possible out"
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[R] FastJAM: a Fast Joint Alignment Model for Images (NeurIPS 2025)",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1ojx3wc/r_fastjam_a_fast_joint_alignment_model_for_images/",
+      "summary": "Hi everyone!\n\nI'm excited to share our NeurIPS 2025 paper \"FastJAM: a Fast Joint Alignment Model for Images\".\n\nAuthors: Omri Hirsch\\*, Ron Shapira Weber\\*, Shira Ifergane, Oren Freifeld.\n\nFastJAM is a lightweight graph-based framework for joint image alignment that runs in seconds rather than minute"
+    },
+    {
+      "source": "Reddit r/MachineLearning",
+      "title": "[P] `triton_bwd`: Enabling Backpropagation for the OpenAI Triton language",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1ojwyye/p_triton_bwd_enabling_backpropagation_for_the/",
+      "summary": "Hi fellow ML researchers and engineers:\n\nYou've probably heard of the OpenAI Triton language, which allows you to write GPU kernel code in Python syntax and Pytorch-like semantics, but compiles down to GPU machine code and runs blazingly fast.\n\nOne problem with Triton is that I can't backprop using "
+    },
+    {
+      "source": "DZone",
+      "title": "Building Cloud Ecosystems With Autonomous AI Agents: The Future of Scalable Data Solutions",
+      "url": "https://dzone.com/articles/building-cloud-ecosystems-with-autonomous-ai-agents",
+      "summary": "Article about AI, Cloud Computing, Systems Design and Architecture"
+    },
+    {
+      "source": "DZone",
+      "title": "Building a New Testing Mindset for AI-Powered Web Apps",
+      "url": "https://dzone.com/articles/ai-powered-testing-for-web-apps",
+      "summary": "Article about AI"
+    },
+    {
+      "source": "DZone",
+      "title": "Understand and Optimize AWS Aurora Global Database",
+      "url": "https://dzone.com/articles/understand-and-optimize-aws-aurora-global-database",
+      "summary": "Article about Cloud Computing"
+    },
+    {
+      "source": "DZone",
+      "title": "*You* Can Shape Trend Reports: Join DZone's Database Systems Research",
+      "url": "https://dzone.com/articles/dzone-2025-survey",
+      "summary": "Article about Systems Design and Architecture"
+    },
+    {
+      "source": "DZone",
+      "title": "A Developer's Practical Guide to Support Vector Machines (SVM) in Python",
+      "url": "https://dzone.com/articles/practical-guide-support-vector-machines-svm-python",
+      "summary": "Article about Software Development"
+    },
+    {
+      "source": "dev.to",
+      "title": "How I Made an MCP Server That Saves Me an Hour per Week",
+      "url": "https://dev.to/googlecloud/how-i-made-an-mcp-server-that-saves-me-an-hour-per-week-3k8k",
+      "summary": "Recently, I\u2019ve been travelling around the country to help engineers learn how to build MCP Servers... Tagged with ai, mcp, serverless, productivity."
+    },
+    {
+      "source": "dev.to",
+      "title": "Angular's Testing Revolution: Vitest, Fake Timers & Testronaut",
+      "url": "https://dev.to/rainerhahnekamp/angulars-testing-revolution-vitest-fake-timers-testronaut-2bnj",
+      "summary": "As we wrap up the year, the Angular world has been abuzz with big topics like Signal Forms. But... Tagged with angular, webdev, testing, vitest."
+    },
+    {
+      "source": "dev.to",
+      "title": "I created Lovelace \ud83d\udc9c - An online AI-enabled IDE for developers who code from anywhere",
+      "url": "https://dev.to/lambrosphotios/i-created-lovelace-an-online-ai-enabled-ide-for-developers-who-code-from-anywhere-864",
+      "summary": "Story to date: I founded Adaca, a tech consultancy based in Sydney, Australia about 10 years ago,... Tagged with programming, webdev, ai, productivity."
+    },
+    {
+      "source": "dev.to",
+      "title": "The AI development trap that wastes your time",
+      "url": "https://dev.to/samuelfaure/the-ai-programming-sunk-cost-fallacy-loop-and-how-to-break-it-13d6",
+      "summary": "Have this ever happened to you?  You are asking your AI agent to develop something, correct a bug, or... Tagged with ai, beginners, programming, learning."
+    },
+    {
+      "source": "dev.to",
+      "title": "If I Had to Learn JavaScript Again: The Real Journey From 2017 to Today",
+      "url": "https://dev.to/elvissautet/if-i-had-to-learn-javascript-again-the-real-journey-from-2017-to-today-28fg",
+      "summary": "Fresh out of high school. No plan, no direction, just a laptop and a feeling that I should probably... Tagged with javascript, webdev, programming, productivity."
+    }
+  ]
+}

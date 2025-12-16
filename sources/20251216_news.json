@@ -1,0 +1,317 @@
+[
+  {
+    "source": "Hacker News",
+    "title": "Show HN: I designed my own 3D printer motherboard",
+    "url": "https://github.com/KaiPereira/Cheetah-MX4-Mini",
+    "summary": "Open-source hardware project showcasing a custom-designed motherboard for 3D printers, demonstrating embedded systems development.",
+    "date": "2025-12-15"
+  },
+  {
+    "source": "Hacker News",
+    "title": "Bonsai: A Voxel Engine, from scratch",
+    "url": "https://github.com/scallyw4g/bonsai",
+    "summary": "A voxel-based game engine built from scratch, showcasing graphics programming and game development techniques.",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Hacker News",
+    "title": "ArkhamMirror: Airgapped investigation platform with CIA-style hypothesis testing",
+    "url": "https://github.com/mantisfury/ArkhamMirror",
+    "summary": "An airgapped investigation platform featuring CIA-style hypothesis testing for secure data analysis and intelligence work.",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Hacker News",
+    "title": "VS Code deactivates IntelliCode in favor of the paid Copilot",
+    "url": "https://www.heise.de/en/news/VS-Code-deactivates-IntelliCode-in-favor-of-the-paid-Copilot-11115783.html",
+    "summary": "Microsoft is deactivating IntelliCode in VS Code, pushing users toward the paid Copilot service for AI-assisted coding.",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Hacker News",
+    "title": "Children with cancer scammed out of millions fundraised for their treatment",
+    "url": "https://www.bbc.com/news/articles/ckgz318y8elo",
+    "summary": "Investigation reveals fraudulent schemes targeting children's cancer treatment fundraising efforts.",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Hacker News",
+    "title": "It seems that OpenAI is scraping [certificate transparency] logs",
+    "url": "https://benjojo.co.uk/u/benjojo/h/Gxy2qrCkn1Y327Y6D3",
+    "summary": "AI-related, Software development, Relevant company",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Hacker News",
+    "title": "Debugging TLS failures in distroless containers",
+    "url": "https://lucabaggi.com/posts/ssl-docker/",
+    "summary": "AI-related, Cloud computing",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Hacker News",
+    "title": "Light intensity steers molecular assemblies into 1D, 2D or 3D structures",
+    "url": "https://phys.org/news/2025-11-intensity-molecular-1d-2d-3d.html",
+    "summary": "AI-related",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Hacker News",
+    "title": "EU household real income per capita up 22% since 2004",
+    "url": "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251125-2",
+    "summary": "Software development",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Hacker News",
+    "title": "We are discontinuing the dark web report",
+    "url": "https://support.google.com/websearch/answer/16767242?hl=en",
+    "summary": "Relevant company",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Hacker News",
+    "title": "No Graphics API",
+    "url": "https://www.sebastianaaltonen.com/blog/no-graphics-api",
+    "summary": "Posted 36 minutes ago on Hacker News",
+    "date": "36 minutes ago"
+  },
+  {
+    "source": "Hacker News",
+    "title": "40 percent of fMRI signals do not correspond to actual brain activity",
+    "url": "https://www.tum.de/en/news-and-events/all-news/press-releases/details/40-percent-of-mri-signals-do-not-correspond-to-actual-brain-activity",
+    "summary": "Posted 6 hours ago on Hacker News",
+    "date": "6 hours ago"
+  },
+  {
+    "source": "Hacker News",
+    "title": "GPT Image 1.5",
+    "url": "https://openai.com/index/new-chatgpt-images-is-here/",
+    "summary": "Posted 1 hour ago on Hacker News",
+    "date": "1 hour ago"
+  },
+  {
+    "source": "Hacker News",
+    "title": "Purrtran \u2013 \u14da\u160f\u15e2 \u2013 A Programming Language for Cat People",
+    "url": "https://github.com/cmontella/purrtran",
+    "summary": "Posted 6 hours ago on Hacker News",
+    "date": "6 hours ago"
+  },
+  {
+    "source": "Hacker News",
+    "title": "Confuse some SSH bots and make botters block you",
+    "url": "https://mirror.newsdump.org/confuse-some-ssh-bots.html",
+    "summary": "Posted 1 hour ago on Hacker News",
+    "date": "1 hour ago"
+  },
+  {
+    "source": "Hacker News",
+    "title": "ArkhamMirror: Airgapped investigation platform with CIA-style hypothesis testing",
+    "url": "https://github.com/mantisfury/ArkhamMirror",
+    "summary": "An open-source airgapped investigation platform featuring CIA-style hypothesis testing for secure analysis and investigations.",
+    "date": "2025-12-16T09:51:31"
+  },
+  {
+    "source": "Hacker News",
+    "title": "Bonsai: A Voxel Engine, from scratch",
+    "url": "https://github.com/scallyw4g/bonsai",
+    "summary": "A voxel engine built from scratch, showcasing custom 3D graphics engine development.",
+    "date": "2025-12-16T06:06:43"
+  },
+  {
+    "source": "Hacker News",
+    "title": "Devs say Apple still flouting EU&#x27;s Digital Markets Act six months on",
+    "url": "https://www.theregister.com/2025/12/16/apple_dma_complaint/",
+    "summary": "Developers claim Apple continues to violate the EU Digital Markets Act six months after implementation.",
+    "date": "2025-12-16T16:09:48"
+  },
+  {
+    "source": "Hacker News",
+    "title": "Be Careful with GIDs in Rails",
+    "url": "https://blog.julik.nl/2025/12/a-trap-with-global-ids",
+    "summary": "Discussion of potential pitfalls when using Global IDs in Ruby on Rails applications.",
+    "date": "2025-12-11T04:23:46"
+  },
+  {
+    "source": "Hacker News",
+    "title": "Joseph Gordon-Levitt wonders why AI companies don&#x27;t have to &#x27;follow any laws&#x27;",
+    "url": "https://fortune.com/2025/12/15/joseph-gordon-levitt-ai-laws-dystopian/",
+    "summary": "Actor questions the lack of legal compliance requirements for AI companies compared to other industries.",
+    "date": "2025-12-16T19:31:13"
+  },
+  {
+    "source": "TechCrunch",
+    "title": "DoorDash rolls out Zesty, an AI social app for discovering new restaurants",
+    "url": "https://techcrunch.com/2025/12/16/doordash-rolls-out-zesty-an-ai-social-app-for-discovering-new-restaurants/",
+    "summary": "Users can view and share photos and comments about restaurants they\u2019ve visited, discover content from others, and follow people just like on any social network.",
+    "date": "2025-12-16T00:00:00Z"
+  },
+  {
+    "source": "TechCrunch",
+    "title": "Meta&#8217;s AI glasses can now help you hear conversations better",
+    "url": "https://techcrunch.com/2025/12/16/metas-ai-glasses-can-now-help-you-hear-conversations-better/",
+    "summary": "Conversation focus uses the AI glasses&#039; open-ear speakers to amplify the voice of the person you&#039;re talking to, says Meta.",
+    "date": "2025-12-16T00:00:00Z"
+  },
+  {
+    "source": "TechCrunch",
+    "title": "OpenAI continues on its &#8216;code red&#8217; warpath with new image generation model",
+    "url": "https://techcrunch.com/2025/12/16/openai-continues-on-its-code-red-warpath-with-new-image-generation-model/",
+    "summary": "OpenAI rolls out GPT Image 1.5 for ChatGPT, promising 4x faster generation, better instruction-following, and precise edits. The launch escalates its rivalry with Google Gemini.",
+    "date": "2025-12-16T00:00:00Z"
+  },
+  {
+    "source": "TechCrunch",
+    "title": "Google tests an email-based productivity assistant",
+    "url": "https://techcrunch.com/2025/12/16/google-tests-an-email-based-productivity-assistant/",
+    "summary": "Google&#039;s new email-based assistant will be available to AI Pro and Ultra plan users over the age of 18 in North America.",
+    "date": "2025-12-16T00:00:00Z"
+  },
+  {
+    "source": "TechCrunch",
+    "title": "Databricks raises $4B at $134B valuation as its AI business heats up",
+    "url": "https://techcrunch.com/2025/12/16/databricks-raises-4b-at-134b-valuation-as-its-ai-business-heats-up/",
+    "summary": "The data intelligence company has just raised more than $4 billion in a Series L funding round at a $134 billion valuation \u2014 up 34% from the $100 billion valuation that it achieved just three months ago.",
+    "date": "2025-12-16T00:00:00Z"
+  },
+  {
+    "source": "The Verge",
+    "title": "State AGs warn Google, Meta, and OpenAI that their chatbots could be breaking the law",
+    "url": "https://www.theverge.com/news/842512/google-meta-openai-state-attorneys-general-ai-letter",
+    "summary": "State AGs warn Google, Meta, and OpenAI that their chatbots could be breaking the law",
+    "date": "2025-12-11T16:21:17+00:00"
+  },
+  {
+    "source": "The Verge",
+    "title": "Lawsuit claims ChatGPT put a \u2018target\u2019 on murdered woman",
+    "url": "https://www.theverge.com/news/842494/openai-chatgpt-wrongful-death-suzanne-adams-delusions",
+    "summary": "Lawsuit claims ChatGPT put a \u2018target\u2019 on murdered woman",
+    "date": "2025-12-11T16:29:05+00:00"
+  },
+  {
+    "source": "The Verge",
+    "title": "Disney accuses Google of \u2018massive\u2019 copyright infringement following deal with OpenAI",
+    "url": "https://www.theverge.com/news/842573/disney-google-copyright-infringement-cease-and-desist",
+    "summary": "Disney accuses Google of \u2018massive\u2019 copyright infringement following deal with OpenAI",
+    "date": "2025-12-11T17:02:06+00:00"
+  },
+  {
+    "source": "The Verge",
+    "title": "Google wants its AI assistant CC to replace your morning scroll",
+    "url": "https://www.theverge.com/news/845280/google-cc-morning-briefing-gemini-ai-agent",
+    "summary": "Google wants its AI assistant CC to replace your morning scroll",
+    "date": "2025-12-16T18:00:00+00:00"
+  },
+  {
+    "source": "The Verge",
+    "title": "Google brings Gemini\u2019s Chrome integration to iPhone and iPad",
+    "url": "https://www.theverge.com/news/842987/google-gemini-chrome-ios",
+    "summary": "Google brings Gemini\u2019s Chrome integration to iPhone and iPad",
+    "date": "2025-12-11T22:51:27+00:00"
+  },
+  {
+    "source": "Reddit r/programming",
+    "title": "JetBrains Fleet dropped for AI products instead",
+    "url": "https://blog.jetbrains.com/fleet/2025/12/the-future-of-fleet/",
+    "summary": "JetBrains Fleet was going to be an alternative to VS Code and seemed quite promising. After over 3 years of development since the first public preview release, it\u2019s now dropped in order to make room f...",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Reddit r/programming",
+    "title": "\"If you time-traveled to 1979 and found yourself sitting across from me in my office at Bell Labs\u2014just as I was drafting the initial designs for what would become 'C with Classes'\u2014what would you tell me?\": A homework by Bjarne Stroustrup.",
+    "url": "https://coderschmoder.com/i-time-traveled-1979-met-bjarne-stroustrup",
+    "summary": "This was a homework given by Bjarne Stroustrup when he was my professor at Texas A&amp;M University in Spring Semester of 2013. The course, Generic Programming in C++, was one of the most fun classes ...",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Reddit r/programming",
+    "title": "Linus Torvalds is 'a huge believer' in using AI to maintain code - just don't call it a revolution",
+    "url": "https://www.zdnet.com/article/linus-torvalds-ai-tool-maintaining-linux-code/",
+    "summary": "Linus Torvalds is 'a huge believer' in using AI to maintain code - just don't call it a revolution",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Reddit r/programming",
+    "title": "Sandboxing AI Agents: Practical Ways to Limit Autonomous Behavior",
+    "url": "https://medium.com/@yessine.abdelmaksoud.03/sandboxing-for-ai-agents-2420ac69569e",
+    "summary": "I\u2019ve been exploring how to safely deploy autonomous AI agents without giving them too much freedom.\n\nIn practice, the biggest risks come from:\n\nunrestricted tool access\n\nfilesystem and network exposur...",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Reddit r/programming",
+    "title": "Piecemeal Formal Verification: Cloudflare, Java Exceptions, and Rust Mutexes",
+    "url": "https://gavinhoward.com/2025/12/piecemeal-formal-verification-cloudflare-java-exceptions-and-rust-mutexes/",
+    "summary": "Piecemeal Formal Verification: Cloudflare, Java Exceptions, and Rust Mutexes",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Reddit r/ArtificialInteligence",
+    "title": "I wish someone had warned me before I joined this AI startup",
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pnvehb/i_wish_someone_had_warned_me_before_i_joined_this/",
+    "summary": "I\u2019m sharing this a few days after leaving an early stage AI startup because I genuinely hope it helps other founders, interns, and early hires avoid a situation like mine.\n\nThis is my personal experie...",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Reddit r/ArtificialInteligence",
+    "title": "'Slop' Is Merriam-Webster's 2025 Word of the Year as AI Content Floods the Internet",
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1po7r3e/slop_is_merriamwebsters_2025_word_of_the_year_as/",
+    "summary": "\"Originally used in the 1700s to refer to soft mud and in the 1800s to describe food waste or rubbish, \"slop\" now takes on a decidedly 21st-century twist. Merriam-Webster defines it as \"digital conten...",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Reddit r/ArtificialInteligence",
+    "title": "Am I going crazy or what?? 100s of seemingly low-effort websites specifically created just to satisfy the search results of AI's research (EX: google AI summaries &amp; Copilot's chat results)",
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pnrckg/am_i_going_crazy_or_what_100s_of_seemingly/",
+    "summary": "I've been using copilot for the past year and a half (give or take) to do the bulk of my research for school assignments and projects. In the past month or so I've been looking more into what sources ...",
+    "date": "2025-12-15"
+  },
+  {
+    "source": "Reddit r/ArtificialInteligence",
+    "title": "Will AI Destroy the Legal Profession?",
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1po28nf/will_ai_destroy_the_legal_profession/",
+    "summary": "A barrister in the UK opens up to a journalist. And openly says that AI is going to destroy the legal profession, putting thousands out of work. But very few of his colleagues are really aware of what...",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Reddit r/ArtificialInteligence",
+    "title": "Does anyone else feel a bit\u2026 weird after using AI a lot?",
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1pnray1/does_anyone_else_feel_a_bit_weird_after_using_ai/",
+    "summary": "Not in a \u201cAI is scary\u201d way, just\u2026 different.\n\nI catch myself thinking in steps now.\nExplaining things in my head like I\u2019m about to type them out.\nSometimes it helps, sometimes it feels like my brain i...",
+    "date": "2025-12-15"
+  },
+  {
+    "source": "Reddit r/MachineLearning",
+    "title": "[P] Cyreal - Yet Another Jax Dataloader",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1po2yut/p_cyreal_yet_another_jax_dataloader/",
+    "summary": "Looking for a JAX dataloader that is fast, lightweight, and flexible? Try out Cyreal!\n\n[GitHub](https://github.com/smorad/cyreal)  [Documentation](https://smorad.github.io/cyreal/cyreal.html)\n\n**Note:** This is a new library and probably full of bugs. If you find one, please file an issue.\n\n**Backgr",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Reddit r/MachineLearning",
+    "title": "Denoising Language Models for Speech Recognition",
+    "url": "https://arxiv.org/abs/2512.13576",
+    "summary": "We studied *denoising language models* (error correction models) as an alternative to standard language models.\n\nDenoising LMs use an encoder-decoder architecture, and are trained to reconstruct the original text from a corrupted version of it.\nWe test them for speech recognition, and specifically t",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Reddit r/MachineLearning",
+    "title": "[P] Using a Vector Quantized Variational Autoencoder to learn Bad Apple!! live, with online learning.",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1po5uko/p_using_a_vector_quantized_variational/",
+    "summary": "I wanted to share something I was working on recently to experiment with VQ-VAEs! The goal of the project was to actively learn \u201cBad Apple!!\u201d and reconstruct the song in the middle of training without seeing the current frame/audio sample. The song is only around 3 minutes so the VQ-VAE needed to le",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Reddit r/MachineLearning",
+    "title": "[D] What are the most commonly cited benchmarks for measuring hallucinations in LLMs?",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1pobptw/d_what_are_the_most_commonly_cited_benchmarks_for/",
+    "summary": "I am reviewing approaches to evaluating hallucinations and factual reliability in **domain-specific large language models**, and want to ensure this work is grounded in benchmarks and evaluation frameworks that are widely cited within the ML community.\n\nI am particularly interested in **benchmarks, ",
+    "date": "2025-12-16"
+  },
+  {
+    "source": "Reddit r/MachineLearning",
+    "title": "[P] Plotting ~8000 entities embeddings with cluster tags and ontologicol colour coding",
+    "url": "https://www.reddit.com/gallery/1po2m4m",
+    "summary": "This is a side project I've been working on for a few months.\n\nI've designed a trait based ontology; 32 bits each representating a yes/no question, I've created trait specifications including examples and edge cases for each trait.\n\nThe user names and describes an entity (anything you can imagine) t",
+    "date": "2025-12-16"
+  }
+]
