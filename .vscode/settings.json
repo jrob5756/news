@@ -1,46 +1,15 @@
 {
     "chat.tools.urls.autoApprove": {
-        "https://techcrunch.com": {
-            "approveRequest": true,
-            "approveResponse": true
-        },
-        "https://www.theverge.com": {
-            "approveRequest": true,
-            "approveResponse": true
-        },
-        "https://www.reddit.com/r/programming": true,
-        "https://www.reddit.com/r/ArtificialInteligence": true,
-        "https://www.reddit.com/r/MachineLearning": true,
-        "https://www.kleppmann.com": {
-            "approveRequest": true,
-            "approveResponse": true
-        },
-        "https://martin.kleppmann.com": {
-            "approveRequest": true,
-            "approveResponse": true
-        },
-        "https://github.blog": {
-            "approveRequest": true,
-            "approveResponse": true
-        },
-        "https://news.ycombinator.com": {
-            "approveRequest": true,
-            "approveResponse": true
-        },
-        "https://dev.to": {
-            "approveRequest": true,
-            "approveResponse": true
-        },
-        "https://github.com": {
-            "approveRequest": true,
-            "approveResponse": true
-        },
-        "https://openai.com": {
+        "https://*.*": {
             "approveRequest": true,
             "approveResponse": true
         }
     },
+    "chat.tools.terminal.autoApprove": {
+        "mv": true,
+        "curl": true,
+    },
     "chat.customAgentInSubagent.enabled": true,
-    "chat.useClaudeSkills": true,
-    "github.copilot.chat.cli.customAgents.enabled": true
+    "github.copilot.chat.cli.customAgents.enabled": true,
+    "chat.useAgentSkills": true
 }
