@@ -1,8 +1,5 @@
 {
-    "work": "sources/$(date +%Y%m%d)_news.json",
-    "report": "$(date +%Y%m%d)_news_report.md",
     "template": "template.md",
-    "command": "copilot --allow-all-tools -p ",
     "sources": [
         "https://news.ycombinator.com/news?p=1",
         "https://news.ycombinator.com/news?p=2",
@@ -29,43 +26,5 @@
             "Anthropic",
             "Other AI startups"
         ]
-    },
-    "prompts": {
-        "scatter": {
-            "iterate": "sources",
-            "as": "source",
-            "template": [
-                "Fetch the {{source}} URL and review the articles listed on the page.",
-                "Identify the top 5 articles that are relevant to the following topics: {{interests.topics}} and companies: {{interests.companies}}.",
-                "Only include articles from the last 7 days. Skip articles with older dates or no date information.",
-                "Be sure articles have not already been included in a previous file (yyyyMMdd_news_report.md).",
-                "Save the articles to {{work}} in the following JSON format: [articles: { source, title, url, summary, date }]",
-                "CRITICAL: If {{work}} already exists, you MUST read it first, parse the JSON array, append your new articles to that array, then write the merged array back. Use Python code like: existing = json.load(f) if file exists, then existing.extend(new_articles), then json.dump(existing). Do NOT overwrite the file.",
-                "Be concise in your approach - fetch the data, analyze it, and save the results without excessive intermediate steps.",
-                "Do not run any other commands, and do not review any other local files.",
-                "If you want to save a file locally, use the local './tmp' directory instead of '/tmp' directory, and delete the file when you're done."
-            ]
-        },
-        "gather": {
-            "template": [
-                "Review the articles listed in the {{work}} file.",
-                "Rank the articles based on relevance to the following topics: {{interests.topics}} and companies: {{interests.companies}}.",
-                "Generate a markdown report using the {{template}} file, summarizing the top 25 articles.",
-                "Save the report to {{report}}.",
-                "Be efficient - read the file once, process in memory, and write the output.",
-                "Do not run any other commands, and do not review any other local files.",
-                "If you want to save a file locally, use the local './tmp' directory instead of '/tmp' directory, and delete the file when you're done."
-            ]
-        },
-        "detail": {
-            "template": [
-                "For each 'top' article in the {{report}} file, fetch the full content from the article's URL.",
-                "Provide a more detailed summary of the article, including key points and insights, as it relates to the following topics: {{interests.topics}} and companies: {{interests.companies}}.",
-                "Update the article entry in the {{report}} file with the detailed summary.",
-                "Process efficiently - batch fetch if possible, and update the file once at the end.",
-                "Do not run any other commands, and do not review any other local files.",
-                "If you want to save a file locally, use the local './tmp' directory instead of '/tmp' directory, and delete the file when you're done."
-            ]
-        }
     }
 }
