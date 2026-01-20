@@ -227,58 +227,43 @@ async function scrapeUntaggedFeed() {
     
     console.log(`   Scroll container: ${scrollContainerSelector || 'window'}`);
     
+    let lastCount = 0;
     let lastScrollHeight = 0;
     let noChangeCount = 0;
     const maxNoChangeAttempts = 10; // More attempts to confirm we've hit bottom
     
     while (true) {
-      // Get current article counts (total and untagged) and scroll height
-      const { totalCount, untaggedCount, scrollHeight } = await page.evaluate(({ selector, excludeBoards }) => {
+      // Get current article count and scroll height
+      const { count, scrollHeight } = await page.evaluate((selector) => {
         const container = selector ? document.querySelector(selector) : null;
-        const articles = document.querySelectorAll('article');
-        
-        let untagged = 0;
-        articles.forEach(article => {
-          const boards = [];
-          article.querySelectorAll('svg[title*="Board"]').forEach(svg => {
-            const title = svg.getAttribute('title');
-            if (title) {
-              const boardName = title.replace(/\s*Board\s*$/i, '').trim();
-              if (boardName) boards.push(boardName);
-            }
-          });
-          const hasExcludedBoard = boards.some(b => excludeBoards.includes(b));
-          if (!hasExcludedBoard) untagged++;
-        });
-        
         return {
-          totalCount: articles.length,
-          untaggedCount: untagged,
+          count: document.querySelectorAll('article').length,
           scrollHeight: container ? container.scrollHeight : document.body.scrollHeight
         };
-      }, { selector: scrollContainerSelector, excludeBoards: CONFIG.excludeBoards });
+      }, scrollContainerSelector);
       
-      console.log(`   Loaded ${totalCount} articles (${untaggedCount} untagged, scroll height: ${scrollHeight}px)...`);
+      console.log(`   Loaded ${count} articles (scroll height: ${scrollHeight}px)...`);
       
-      // Check if we have enough UNTAGGED articles
-      if (untaggedCount >= CONFIG.maxArticles) {
-        console.log(`   ✓ Reached ${untaggedCount} untagged articles (target: ${CONFIG.maxArticles})`);
+      // Check if we have enough articles
+      if (count >= CONFIG.maxArticles) {
+        console.log(`   ✓ Reached max articles (${CONFIG.maxArticles})`);
         break;
       }
       
-      // Check if we've hit the bottom (no change in scroll height)
-      if (scrollHeight === lastScrollHeight) {
+      // Check if we've hit the bottom (no new articles AND no change in scroll height)
+      if (count === lastCount && scrollHeight === lastScrollHeight) {
         noChangeCount++;
         console.log(`   No new content (attempt ${noChangeCount}/${maxNoChangeAttempts})...`);
         
         if (noChangeCount >= maxNoChangeAttempts) {
-          console.log(`   ✓ Reached bottom of feed with ${untaggedCount} untagged articles`);
+          console.log(`   ✓ Reached bottom of feed`);
           break;
         }
       } else {
         noChangeCount = 0; // Reset counter when we get new content
       }
       
+      lastCount = count;
       lastScrollHeight = scrollHeight;
       
       // Scroll to bottom of the appropriate container
@@ -336,37 +321,25 @@ async function scrapeUntaggedFeed() {
             }
           });
           
-          // Get board tags - look for elements with board indicators
-          // The structure is: <a role="button"> containing <svg title="_tagged Board"> and <span>_tagged</span>
+          // Get board tags
           const boards = [];
           
-          // Method 1: Look for SVG elements with title containing "Board"
-          article.querySelectorAll('svg[title*="Board"]').forEach(svg => {
-            const title = svg.getAttribute('title');
-            if (title) {
-              // Extract board name from title (e.g., "_tagged Board" -> "_tagged")
-              const boardName = title.replace(/\s*Board\s*$/i, '').trim();
-              if (boardName) {
-                boards.push(boardName);
+          // Method 1: Look for button elements with board info
+          article.querySelectorAll('button').forEach(btn => {
+            const text = btn.textContent?.trim();
+            const img = btn.querySelector('img[alt*="Board"]');
+            if (img) {
+              boards.push(img.alt.replace(' Board', '').trim());
+            } else if (text && !text.includes('/') && text.length < 50) {
+              // Some board tags appear as simple buttons
+              const possibleBoard = text.replace(/Board\s*/i, '').trim();
+              if (possibleBoard && possibleBoard.length > 0 && possibleBoard.length < 30) {
+                boards.push(possibleBoard);
               }
             }
           });
           
-          // Method 2: Also check for anchor elements with role="button" that have board info
-          if (boards.length === 0) {
-            article.querySelectorAll('a[role="button"]').forEach(a => {
-              const svg = a.querySelector('svg[title*="Board"]');
-              if (svg) {
-                const title = svg.getAttribute('title');
-                const boardName = title?.replace(/\s*Board\s*$/i, '').trim();
-                if (boardName) {
-                  boards.push(boardName);
-                }
-              }
-            });
-          }
-          
-          // Check if article is already tagged with excluded boards (_tagged or _untagged)
+          // Check if article is already tagged with excluded boards
           const hasExcludedBoard = boards.some(b => excludeBoards.includes(b));
           if (hasExcludedBoard) return;
           

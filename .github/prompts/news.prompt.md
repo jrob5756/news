@@ -1,7 +1,6 @@
 ---
 name: News for Today
 description: This prompt is used to gather, analyze, and summarize today's news articles based on specified.
-model: Claude Opus 4.5 (copilot)
 tools: ['execute/runInTerminal', 'read', 'edit', 'search', 'web', 'agent', 'todo']
 ---
 
