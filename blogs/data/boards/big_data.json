@@ -1,0 +1,187 @@
+{
+  "board": "Big Data",
+  "scrapedAt": "2026-01-19T23:00:18.864Z",
+  "articleCount": 20,
+  "articles": [
+    {
+      "title": "Unifying governance and metadata across Amazon SageMaker Unified Studio and Atlan",
+      "url": "https://aws.amazon.com/blogs/big-data/unifying-governance-and-metadata-across-amazon-sagemaker-unified-studio-and-atlan/",
+      "source": "Unifying governance and metadata across Amazon SageMaker Unified Studio and AtlanAWS Big Data Blog",
+      "date": "2025-12-22",
+      "relativeDate": "28d",
+      "description": "Unifying governance and metadata across Amazon SageMaker Unified Studio and AtlanAWS Big Data Blog  / 28d This post was cowritten with Satabrata Paul and Karan Singh Thakur from Atlan In this post, we show you how to unify governance and metadata across Amazon SageMaker Unified Studio and Atlan through a comprehensive bidirectional integration. You’ll learn how to deploy the necessary Amazon Web S",
+      "otherBoards": []
+    },
+    {
+      "title": "Simplified management of Amazon MSK with natural language using Kiro CLI and Amazon MSK MCP Server",
+      "url": "https://aws.amazon.com/blogs/big-data/simplified-management-of-amazon-msk-with-natural-language-using-kiro-cli-and-amazon-msk-mcp-server/",
+      "source": "Simplified management of Amazon MSK with natural language using Kiro CLI and Amazon MSK MCP ServerAWS Big Data Blog",
+      "date": "2025-12-24",
+      "relativeDate": "26d",
+      "description": "Simplified management of Amazon MSK with natural language using Kiro CLI and Amazon MSK MCP ServerAWS Big Data Blog  / 26d Managing and scaling data streams efficiently is a cornerstone of success for many organizations. Apache Kafka is a leading platform for real-time data streaming, offering unmatched scalability and reliability. However, setting up and scaling Kafka clusters can be challenging,",
+      "otherBoards": []
+    },
+    {
+      "title": "The Top Strategic Priorities Guiding Data and AI Leaders in 2026",
+      "url": "https://www.databricks.com/blog/top-strategic-priorities-guiding-data-and-ai-leaders-2026",
+      "source": "The Top Strategic Priorities Guiding Data and AI Leaders in 2026Databricks",
+      "date": "2025-12-30",
+      "relativeDate": "20d",
+      "description": "",
+      "otherBoards": []
+    },
+    {
+      "title": "From Zero to Millions in Savings: Ströer Transforms Advertising Success with Databricks",
+      "url": "https://www.databricks.com/blog/zero-millions-savings-stroer-transforms-advertising-success-databricks",
+      "source": "From Zero to Millions in Savings: Ströer Transforms Advertising Success with DatabricksDatabricks",
+      "date": "2026-01-02",
+      "relativeDate": "17d",
+      "description": "",
+      "otherBoards": []
+    },
+    {
+      "title": "Simplify multi-warehouse data governance with Amazon Redshift federated permissions",
+      "url": "https://aws.amazon.com/blogs/big-data/simplify-multi-warehouse-data-governance-with-amazon-redshift-federated-permissions/",
+      "source": "Simplify multi-warehouse data governance with Amazon Redshift federated permissionsAWS Big Data Blog",
+      "date": "2026-01-05",
+      "relativeDate": "14d",
+      "description": "Simplify multi-warehouse data governance with Amazon Redshift federated permissionsAWS Big Data Blog  / 14d Modern data architectures increasingly rely on multi-warehouse deployments to achieve workload isolation, cost optimization, and performance scaling. Amazon Redshift federated permissions simplify permissions management across multiple Redshift warehouses. With federated permissions, you reg",
+      "otherBoards": []
+    },
+    {
+      "title": "Instructed Retriever: Unlocking System-Level Reasoning in Search Agents",
+      "url": "https://www.databricks.com/blog/instructed-retriever-unlocking-system-level-reasoning-search-agents",
+      "source": "Instructed Retriever: Unlocking System-Level Reasoning in Search AgentsDatabricks",
+      "date": "2026-01-06",
+      "relativeDate": "13d",
+      "description": "",
+      "otherBoards": []
+    },
+    {
+      "title": "Introducing Apache Spark® 4.1",
+      "url": "https://www.databricks.com/blog/introducing-apache-sparkr-41",
+      "source": "Introducing Apache Spark® 4.1Databricks",
+      "date": "2026-01-06",
+      "relativeDate": "13d",
+      "description": "",
+      "otherBoards": []
+    },
+    {
+      "title": "BCBS 239 Compliance in the Age of AI: Turning Regulatory Burden into Strategic Advantage",
+      "url": "https://www.databricks.com/blog/bcbs-239-compliance-age-ai-turning-regulatory-burden-strategic-advantage",
+      "source": "BCBS 239 Compliance in the Age of AI: Turning Regulatory Burden into Strategic AdvantageDatabricks",
+      "date": "2026-01-06",
+      "relativeDate": "13d",
+      "description": "",
+      "otherBoards": []
+    },
+    {
+      "title": "Building scalable AWS Lake Formation governed data lakes with dbt and Amazon Managed Workflows for Apache Airflow",
+      "url": "https://aws.amazon.com/blogs/big-data/building-scalable-aws-lake-formation-governed-data-lakes-with-dbt-and-amazon-managed-workflows-for-apache-airflow/",
+      "source": "Building scalable AWS Lake Formation governed data lakes with dbt and Amazon Managed Workflows for Apache AirflowAWS Big Data Blog",
+      "date": "2026-01-06",
+      "relativeDate": "13d",
+      "description": "Building scalable AWS Lake Formation governed data lakes with dbt and Amazon Managed Workflows for Apache AirflowAWS Big Data Blog  / 13d Organizations often struggle with building scalable and maintainable data lakes—especially when handling complex data transformations, enforcing data quality, and monitoring compliance with established governance. Traditional approaches typically involve custom ",
+      "otherBoards": []
+    },
+    {
+      "title": "Amazon EMR Serverless eliminates local storage provisioning, reducing data processing costs by up to 20%",
+      "url": "https://aws.amazon.com/blogs/big-data/amazon-emr-serverless-eliminates-local-storage-provisioning-reducing-data-processing-costs-by-up-to-20/",
+      "source": "Amazon EMR Serverless eliminates local storage provisioning, reducing data processing costs by up to 20%AWS Big Data Blog",
+      "date": "2026-01-06",
+      "relativeDate": "13d",
+      "description": "Amazon EMR Serverless eliminates local storage provisioning, reducing data processing costs by up to 20%AWS Big Data Blog  / 13d At AWS re:Invent 2025, Amazon Web Services (AWS) announced serverless storage for Amazon EMR Serverless , a new capability that eliminates the need configure local disks for Apache Spark workloads. This reduces data processing costs by up to 20% while eliminating job fai",
+      "otherBoards": []
+    },
+    {
+      "title": "From Chaos to Scale: Templatizing Spark Declarative Pipelines with DLT-META",
+      "url": "https://www.databricks.com/blog/chaos-scale-templatizing-spark-declarative-pipelines-dlt-meta",
+      "source": "From Chaos to Scale: Templatizing Spark Declarative Pipelines with DLT-METADatabricks",
+      "date": "2026-01-07",
+      "relativeDate": "12d",
+      "description": "",
+      "otherBoards": []
+    },
+    {
+      "title": "AWS analytics at re:Invent 2025: Unifying Data, AI, and governance at scale",
+      "url": "https://aws.amazon.com/blogs/big-data/aws-analytics-at-reinvent-2025-unifying-data-ai-and-governance-at-scale/",
+      "source": "AWS analytics at re:Invent 2025: Unifying Data, AI, and governance at scaleAWS Big Data Blog",
+      "date": "2026-01-07",
+      "relativeDate": "12d",
+      "description": "AWS analytics at re:Invent 2025: Unifying Data, AI, and governance at scaleAWS Big Data Blog  / 12d re:Invent 2025 showcased the bold Amazon Web Services (AWS) vision for the future of analytics, one where data warehouses, data lakes, and AI development converge into a seamless, open, intelligent platform, with Apache Iceberg compatibility at its core. Across over 18 major announcements spanning t",
+      "otherBoards": []
+    },
+    {
+      "title": "Securing the Grid: A Practical Guide to Cyber Analytics for Energy & Utilities",
+      "url": "https://www.databricks.com/blog/securing-grid-practical-guide-cyber-analytics-energy-utilities",
+      "source": "Securing the Grid: A Practical Guide to Cyber Analytics for Energy & UtilitiesDatabricks",
+      "date": "2026-01-08",
+      "relativeDate": "11d",
+      "description": "",
+      "otherBoards": []
+    },
+    {
+      "title": "Create AWS Glue Data Catalog views using cross-account definer roles",
+      "url": "https://aws.amazon.com/blogs/big-data/create-aws-glue-data-catalog-views-using-cross-account-definer-roles/",
+      "source": "Create AWS Glue Data Catalog views using cross-account definer rolesAWS Big Data Blog",
+      "date": "2026-01-08",
+      "relativeDate": "11d",
+      "description": "Create AWS Glue Data Catalog views using cross-account definer rolesAWS Big Data Blog  / 11d With AWS Glue Data Catalog views you can create a SQL view in the Data Catalog that references one or more base tables. These multi-dialect views support various SQL query engines, providing consistent access across multiple Amazon Web Services (AWS) services including Amazon Athena , Amazon Redshift Spect",
+      "otherBoards": []
+    },
+    {
+      "title": "Use Amazon SageMaker custom tags for project resource governance and cost tracking",
+      "url": "https://aws.amazon.com/blogs/big-data/use-amazon-sagemaker-custom-tags-for-project-resource-governance-and-cost-tracking/",
+      "source": "Use Amazon SageMaker custom tags for project resource governance and cost trackingAWS Big Data Blog",
+      "date": "2026-01-09",
+      "relativeDate": "10d",
+      "description": "Use Amazon SageMaker custom tags for project resource governance and cost trackingAWS Big Data Blog  / 10d Amazon SageMaker announced a new feature that you can use to add custom tags to resources created through an Amazon SageMaker Unified Studio project. This helps you enforce tagging standards that conform to your organization’s service control policies (SCPs) and helps enable cost tracking rep",
+      "otherBoards": []
+    },
+    {
+      "title": "How 7‑Eleven Transformed Maintenance Technician Knowledge Access with Databricks Agent Bricks",
+      "url": "https://www.databricks.com/blog/how-7-eleven-transformed-maintenance-technician-knowledge-access-databricks-agent-bricks",
+      "source": "How 7‑Eleven Transformed Maintenance Technician Knowledge Access with Databricks Agent BricksDatabricks",
+      "date": "2026-01-09",
+      "relativeDate": "10d",
+      "description": "",
+      "otherBoards": []
+    },
+    {
+      "title": "Thumbtack Powering Safe, Smart Home Services on Databricks with GenAI",
+      "url": "https://www.databricks.com/blog/thumbtack-powering-safe-smart-home-services-databricks-genai",
+      "source": "Thumbtack Powering Safe, Smart Home Services on Databricks with GenAIDatabricks",
+      "date": "2026-01-09",
+      "relativeDate": "10d",
+      "description": "",
+      "otherBoards": []
+    },
+    {
+      "title": "Access Databricks Unity Catalog data using catalog federation in the AWS Glue Data Catalog",
+      "url": "https://aws.amazon.com/blogs/big-data/access-databricks-unity-catalog-data-using-catalog-federation-in-the-aws-glue-data-catalog/",
+      "source": "Access Databricks Unity Catalog data using catalog federation in the AWS Glue Data CatalogAWS Big Data Blog",
+      "date": "2026-01-12",
+      "relativeDate": "7d",
+      "description": "Access Databricks Unity Catalog data using catalog federation in the AWS Glue Data CatalogAWS Big Data Blog  / 7d AWS has launched the catalog federation capability, enabling direct access to Apache Iceberg tables managed in Databricks Unity Catalog through the AWS Glue Data Catalog . With this integration, you can discover and query Unity Catalog data in Iceberg format using an Iceberg REST API e",
+      "otherBoards": []
+    },
+    {
+      "title": "Navigating architectural choices for a lakehouse using Amazon SageMaker",
+      "url": "https://aws.amazon.com/blogs/big-data/navigating-architectural-choices-for-a-lakehouse-using-amazon-sagemaker/",
+      "source": "Navigating architectural choices for a lakehouse using Amazon SageMakerAWS Big Data Blog",
+      "date": "2026-01-12",
+      "relativeDate": "7d",
+      "description": "Navigating architectural choices for a lakehouse using Amazon SageMakerAWS Big Data Blog  / 7d Organizations today are using data more than ever to drive decision-making and innovation. Because they work with petabytes of information, they have traditionally gravitated towards two distinct paradigms—data lakes and data warehouses. While each paradigm excels at specific use cases, they often create",
+      "otherBoards": []
+    },
+    {
+      "title": "Open Sourcing Dicer: Databricks’ Auto-Sharder",
+      "url": "https://www.databricks.com/blog/open-sourcing-dicer-databricks-auto-sharder",
+      "source": "Open Sourcing Dicer: Databricks’ Auto-SharderDatabricks",
+      "date": "2026-01-13",
+      "relativeDate": "6d",
+      "description": "",
+      "otherBoards": []
+    }
+  ]
+}

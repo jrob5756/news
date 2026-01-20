@@ -1,0 +1,151 @@
+{
+  "board": ".NET Core",
+  "scrapedAt": "2026-01-19T22:59:56.594Z",
+  "articleCount": 16,
+  "articles": [
+    {
+      "title": "Solving the Distributed Cache Invalidation Problem with Redis and HybridCache",
+      "url": "https://www.milanjovanovic.tech/blog/solving-the-distributed-cache-invalidation-problem-with-redis-and-hybridcache",
+      "source": "Milan's .NET Weekly",
+      "date": "2026-01-16",
+      "relativeDate": "3d",
+      "description": "Solving the Distributed Cache Invalidation Problem with Redis and HybridCache.NET Core•Milan's .NET Weekly  / 3d MongoDB's new Voyage 4 series , a unified family of text embedding models featuring shared embedding spaces, lets you mix and match models for documents and queries in the same pipeline for a flexible, cost-effective embedding solution for local development (voyage-4-nano) and productio",
+      "otherBoards": []
+    },
+    {
+      "title": "Distributed Locking in .NET: Coordinating Work Across Multiple Instances",
+      "url": "https://www.milanjovanovic.tech/blog/distributed-locking-in-dotnet-coordinating-work-across-multiple-instances",
+      "source": "Milan's .NET Weekly",
+      "date": "2025-09-19",
+      "relativeDate": "4mo",
+      "description": "Distributed Locking in .NET: Coordinating Work Across Multiple InstancesArchitecture •Milan's .NET Weekly  / 4mo Diskless 2.0 combines Kafka's Tiered Storage and Diskless Topics into one simpler path with zero-copy migration. Cut costs, reduce complexity, and run faster, cloud-ready Kafka without broker disks for streamlined performance built for the next decade. Read the full blog here . BoldSign",
+      "otherBoards": []
+    },
+    {
+      "title": "Converting an xUnit test project to TUnit",
+      "url": "https://andrewlock.net/converting-an-xunit-project-to-tunit/",
+      "source": "Andrew Lock",
+      "date": "2025-08-19",
+      "relativeDate": "5mo",
+      "description": "Converting an xUnit test project to TUnit.NET Core•Andrew Lock  / 5mo In this post I discuss the new TUnit testing framework , why I ported one of my libraries to use it instead of xUnit, how I did that, and related issues I had to deal with. What is TUnit TUnit is a new testing library, similar to xUnit , NUnit , or MSTest , that you can use to write test suites for your .NET applications. As per",
+      "otherBoards": []
+    },
+    {
+      "title": "Emit logs on-demand with log buffering",
+      "url": "https://devblogs.microsoft.com/dotnet/emit-logs-on-demand-with-log-buffering/",
+      "source": ".NET Blog",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "Emit logs on-demand with log buffering.NET Core•.NET Blog  / 7mo Managing logs in production environments involves tricky trade-offs. You want detailed logs when things go wrong, but you don’t want to pay storage costs for logs that never get examined. While log sampling helps reduce log volume by emitting only a percentage of logs, sometimes you need a different approach. Enter log buffering in .",
+      "otherBoards": []
+    },
+    {
+      "title": "Building a Custom Domain Events Dispatcher in .NET",
+      "url": "https://www.milanjovanovic.tech/blog/building-a-custom-domain-events-dispatcher-in-dotnet",
+      "source": "Milan's .NET Weekly",
+      "date": "2025-05-19",
+      "relativeDate": "8mo",
+      "description": "Building a Custom Domain Events Dispatcher in .NETArchitecture •Milan's .NET Weekly  / 8mo Unlock the Power of ABP.IO's Core Modules and supercharge your .NET web app development: ✅ SaaS - Build scalable, multi-tenant applications. ✅ Identity & Permission Management - Handle authentication, roles, and claims. ✅ Audit Logging - Track changes and user actions automatically. ✅ Account - Get a full-fe",
+      "otherBoards": []
+    },
+    {
+      "title": "Converting a docker-compose file to .NET Aspire",
+      "url": "https://andrewlock.net/converting-a-docker-compose-file-to-aspire/",
+      "source": "Andrew Lock",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "Converting a docker-compose file to .NET Aspire.NET Core•Andrew Lock  / 7mo In this post, I take a docker-compose.yml file for the open-source mailing list manager listmonk , and rewrite it to use .NET Aspire. Functionally, this results in the same app, but as an app directly modelled in .NET it's (theoretically) easier to both run the stack locally with your IDE and to generate \"publish\" artifact",
+      "otherBoards": []
+    },
+    {
+      "title": "Announcing dotnet run app.cs – A simpler way to start with C# and .NET 10",
+      "url": "https://devblogs.microsoft.com/dotnet/announcing-dotnet-run-app/",
+      "source": ".NET Blog",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "Announcing dotnet run app.cs – A simpler way to start with C# and .NET 10.NET Core•100+.NET Blog  / 7mo We are super excited to introduce a new feature that was released as part of .NET 10 Preview 4 that makes getting started with C# easier than ever. You can now run a C# file directly using dotnet run app.cs . This means you no longer need to create a project file or scaffold a whole application ",
+      "otherBoards": []
+    },
+    {
+      "title": "Top .NET Videos & Live Streams of 2024",
+      "url": "https://devblogs.microsoft.com/dotnet/top-dotnet-videos-live-streams-of-2024/",
+      "source": ".NET Blog",
+      "date": "2025-01-19",
+      "relativeDate": "12mo",
+      "description": "Top .NET Videos & Live Streams of 2024.NET Core•.NET Blog  / 12mo It has been an absolutely outstanding year of content for .NET from creators around the globe sharing their passion for .NET and the .NET team giving insight into the latest and greatest in the world of .NET. From events, live streams, and plenty of on-demand content dropping on the .NET YouTube nearly every single day, it is a grea",
+      "otherBoards": []
+    },
+    {
+      "title": "Server-Sent Events in ASP.NET Core and .NET 10",
+      "url": "https://khalidabuhakmeh.com/server-sent-events-in-aspnet-core-and-dotnet-10",
+      "source": "Khalid Abuhakmeh",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Server-Sent Events in ASP.NET Core and .NET 10ASP.NET Core•Khalid Abuhakmeh  / 9mo Like many .NET developers, I’m starting to look at the features coming in .NET 10, C# 14, and specifically ASP.NET Core. To my surprise, ASP.NET Core Minimal APIs now support Server-Sent Events (SSE). For folks who don’t know what Server-Sent Events are, they are a unidirectional channel from the server to a client ",
+      "otherBoards": []
+    },
+    {
+      "title": "Announcing CommandLineExtensions, a .NET DI Compatible System.CommandLine Facade",
+      "url": "https://blog.peterritchie.com/posts/announcing-commandlineextensions",
+      "source": "Peter Ritchie's Blog",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Announcing CommandLineExtensions, a .NET DI Compatible System.CommandLine FacadeTools and Frameworks•Peter Ritchie's Blog  / 9mo Mission, Inspiration The mission of CommandLineExtensions is to help make command-line argument parsing simpler while leveraging Microsoft-supported System.CommandLine . The inspiration for CommandLineExtensions spawns from ConsoleApplicationBuilder, which makes it easie",
+      "otherBoards": []
+    },
+    {
+      "title": "Exploring new .NET releases with Dev Containers",
+      "url": "https://devblogs.microsoft.com/dotnet/dotnet-in-dev-container/",
+      "source": ".NET Blog",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "Exploring new .NET releases with Dev ContainersTools and Frameworks•.NET Blog  / 10mo The .NET team has just released preview2 of .NET 10, and it’s got a bundle of new features and improvements . You might want to give these a try but don’t want to mess with your local development environment. A great way to try out a .NET preview is by using dev containers. In this blog post, we’ll walk you throu",
+      "otherBoards": []
+    },
+    {
+      "title": "Introducing support for SLNX, a new, simpler solution file format in the .NET CLI",
+      "url": "https://devblogs.microsoft.com/dotnet/introducing-slnx-support-dotnet-cli/",
+      "source": ".NET Blog",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "Introducing support for SLNX, a new, simpler solution file format in the .NET CLI.NET Core•100+.NET Blog  / 10mo Solution files have been a part of the .NET and Visual Studio experience for many years now, and they’ve had the same custom format the whole time. Recently, the Visual Studio solution team has begun previewing a new , XML-based solution file format called SLNX. Starting in .NET SDK 9.0",
+      "otherBoards": []
+    },
+    {
+      "title": "New, Simpler Solution File Format",
+      "url": "https://devblogs.microsoft.com/visualstudio/new-simpler-solution-file-format/",
+      "source": "Visual Studio Blog",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "New, Simpler Solution File Format.NET Core•Visual Studio Blog  / 10mo For years, you’ve worked with Visual Studio’s solution file (*.SLN) format, and while it’s a core part of your project organization, we know the experience hasn’t always been smooth. Whether you’ve been modifying, maintaining, or trying to resolve merge conflicts, it’s often felt more like a hassle than it should be. We understa",
+      "otherBoards": []
+    },
+    {
+      "title": ".NET AI Template Now Available in Preview",
+      "url": "https://devblogs.microsoft.com/dotnet/announcing-dotnet-ai-template-preview1/",
+      "source": ".NET Blog",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": ".NET AI Template Now Available in PreviewAI•35.NET Blog  / 10mo Want to get started with AI development, but not sure where to start? I’ve got a treat for you – we have a new AI Chat Web App template now in preview. This template is part of our ongoing effort to make AI development with .NET easier to discover and use, with scaffolding and guidance within Visual Studio, Visual Studio Code, and the",
+      "otherBoards": []
+    },
+    {
+      "title": "Accessing MSBuild properties and user configuration from source generators: Creating a source generator - Part 13",
+      "url": "https://andrewlock.net/creating-a-source-generator-part-13-providing-and-accessing-msbuild-settings-in-source-generators/",
+      "source": "Andrew Lock",
+      "date": "2025-01-19",
+      "relativeDate": "12mo",
+      "description": "Accessing MSBuild properties and user configuration from source generators: Creating a source generator - Part 13.NET Core•Andrew Lock  / 12mo This is the thirteenth post in the series: Creating a source generator . Part 1 - Creating an incremental generator Part 2 - Testing an incremental generator with snapshot testing Part 3 - Integration testing and NuGet packaging Part 4 - Customising generat",
+      "otherBoards": []
+    },
+    {
+      "title": "Reading compilation options and the C# version in source generators: Creating a source generator - Part 12",
+      "url": "https://andrewlock.net/creating-a-source-generator-part-12-reading-compilation-options-and-csharp-version-in-source-generators/",
+      "source": "Andrew Lock",
+      "date": "2025-01-19",
+      "relativeDate": "12mo",
+      "description": "Reading compilation options and the C# version in source generators: Creating a source generator - Part 12.NET Core•Andrew Lock  / 12mo This is the twelve post in the series: Creating a source generator . Part 1 - Creating an incremental generator Part 2 - Testing an incremental generator with snapshot testing Part 3 - Integration testing and NuGet packaging Part 4 - Customising generated code wit",
+      "otherBoards": []
+    }
+  ]
+}

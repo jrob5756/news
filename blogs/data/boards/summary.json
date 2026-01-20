@@ -1,0 +1,174 @@
+{
+  "scrapedAt": "2026-01-19T22:59:53.668Z",
+  "totalArticles": 179,
+  "boards": {
+    ".NET Core": {
+      "count": 16,
+      "file": "_net_core.json"
+    },
+    ".NET Framework": {
+      "count": 0,
+      "file": "_net_framework.json"
+    },
+    "AI": {
+      "count": 19,
+      "file": "ai.json"
+    },
+    "Architecture": {
+      "count": 0,
+      "file": "architecture.json"
+    },
+    "ASP.NET Core": {
+      "count": 1,
+      "file": "asp_net_core.json"
+    },
+    "AWS": {
+      "count": 0,
+      "file": "aws.json"
+    },
+    "Azure": {
+      "count": 8,
+      "file": "azure.json"
+    },
+    "Azure DevOps": {
+      "count": 1,
+      "file": "azure_devops.json"
+    },
+    "Big Data": {
+      "count": 20,
+      "file": "big_data.json"
+    },
+    "Big Data - Stream Processing": {
+      "count": 7,
+      "file": "big_data___stream_processing.json"
+    },
+    "Blogging": {
+      "count": 1,
+      "file": "blogging.json"
+    },
+    "Business and Soft Skills": {
+      "count": 1,
+      "file": "business_and_soft_skills.json"
+    },
+    "C#": {
+      "count": 0,
+      "file": "c_.json"
+    },
+    "Career": {
+      "count": 0,
+      "file": "career.json"
+    },
+    "Cloud Native": {
+      "count": 0,
+      "file": "cloud_native.json"
+    },
+    "Development": {
+      "count": 20,
+      "file": "development.json"
+    },
+    "Docker": {
+      "count": 0,
+      "file": "docker.json"
+    },
+    "Frontend": {
+      "count": 0,
+      "file": "frontend.json"
+    },
+    "General": {
+      "count": 0,
+      "file": "general.json"
+    },
+    "General Security": {
+      "count": 0,
+      "file": "general_security.json"
+    },
+    "GitHub": {
+      "count": 4,
+      "file": "github.json"
+    },
+    "Go": {
+      "count": 0,
+      "file": "go.json"
+    },
+    "IaC": {
+      "count": 1,
+      "file": "iac.json"
+    },
+    "Identity / Authentication": {
+      "count": 3,
+      "file": "identity___authentication.json"
+    },
+    "Interview": {
+      "count": 1,
+      "file": "interview.json"
+    },
+    "Interview - Coding": {
+      "count": 3,
+      "file": "interview___coding.json"
+    },
+    "Interview - Systems Design": {
+      "count": 20,
+      "file": "interview___systems_design.json"
+    },
+    "Kubernetes": {
+      "count": 10,
+      "file": "kubernetes.json"
+    },
+    "Leadership": {
+      "count": 1,
+      "file": "leadership.json"
+    },
+    "Microservices": {
+      "count": 1,
+      "file": "microservices.json"
+    },
+    "Patterns": {
+      "count": 0,
+      "file": "patterns.json"
+    },
+    "Rust": {
+      "count": 0,
+      "file": "rust.json"
+    },
+    "Serverless": {
+      "count": 0,
+      "file": "serverless.json"
+    },
+    "Share with Bootcamps": {
+      "count": 1,
+      "file": "share_with_bootcamps.json"
+    },
+    "SQL, Data Access": {
+      "count": 0,
+      "file": "sql__data_access.json"
+    },
+    "Static Sites": {
+      "count": 0,
+      "file": "static_sites.json"
+    },
+    "Systems Design": {
+      "count": 20,
+      "file": "systems_design.json"
+    },
+    "Talks": {
+      "count": 0,
+      "file": "talks.json"
+    },
+    "Test Automation": {
+      "count": 0,
+      "file": "test_automation.json"
+    },
+    "Tools and Frameworks": {
+      "count": 19,
+      "file": "tools_and_frameworks.json"
+    },
+    "Visual Studio": {
+      "count": 1,
+      "file": "visual_studio.json"
+    },
+    "Visual Studio Code": {
+      "count": 0,
+      "file": "visual_studio_code.json"
+    }
+  }
+}

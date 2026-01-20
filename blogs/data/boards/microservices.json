@@ -1,0 +1,16 @@
+{
+  "board": "Microservices",
+  "scrapedAt": "2026-01-19T23:01:18.520Z",
+  "articleCount": 1,
+  "articles": [
+    {
+      "title": "Understanding Microservices: Core Concepts and Benefits",
+      "url": "https://www.milanjovanovic.tech/blog/understanding-microservices-core-concepts-and-benefits",
+      "source": "Milan's .NET Weekly",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Understanding Microservices: Core Concepts and BenefitsMicroservices•Milan's .NET Weekly  / 9mo Build Faster with ABP.IO Modules . Save weeks of development time with ready-made, enterprise-grade modules from ABP.IO. From Identity and SaaS to Audit Logging and Language Management, ABP's modular architecture helps you ship faster and scale confidently — all within your favorite .NET ecosystem. Each",
+      "otherBoards": []
+    }
+  ]
+}

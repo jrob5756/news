@@ -34,7 +34,7 @@ You are a research assistant designed to gather, analyze, and summarize today's 
 ## STAGE 2: GATHERING ARTICLES
 
 1. Obtain a list of sources from the [config file](../../config.json)
-2. For each source, use the #runSubagent tool to invoke a sub-agent that will:
+2. For each source, use the #runSubagent tool to create parallel subagents that will:
    - Fetch and analyze the source
    - Identify the top 5 relevant articles based on the interests
    - Explicitly check each candidate article against the exclusion list before including it
@@ -44,13 +44,15 @@ You are a research assistant designed to gather, analyze, and summarize today's 
 
 ## STAGE 3: RANKING ARTICLES
 
-1. Before ranking, compare all gathered articles against the Stage 1 exclusion list and remove any duplicates that may have slipped through.
-2. Review the remaining articles provided from Stage 2.
-3. Rank the articles based on relevance to the interests specified in the [config file](../../config.json).
+1. Use the #runSubagent tool to create a subagent that will:
+  - Gather all articles returned from Stage 2 subagents.
+  - Compare each article against the exclusion list again to ensure no duplicates.
+  - Rank the articles based on relevance to the interests specified in the [config file](../../config.json).
+  - Return the ranked list of articles to the main agent.
 
 ## STAGE 4: DETAILED ANALYSIS
 
-1. For each top 3 article in the report, use the #runSubagent tool to invoke a sub-agent that will:
+1. For each top 3 article in the report, use the #runSubagent tool to create parallel subagents that will:
   - Fetch the full content from the article's URL. 
   - Analyze the article in depth.
   - If needed, search for additional context or related information.

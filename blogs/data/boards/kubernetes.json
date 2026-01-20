@@ -1,0 +1,97 @@
+{
+  "board": "Kubernetes",
+  "scrapedAt": "2026-01-19T23:01:12.769Z",
+  "articleCount": 10,
+  "articles": [
+    {
+      "title": "How To Build a Kubernetes Operator From Scratch",
+      "url": "https://thenewstack.io/how-to-build-a-kubernetes-operator-from-scratch/",
+      "source": "Kubernetes Overview, News and Trends",
+      "date": "2025-05-19",
+      "relativeDate": "8mo",
+      "description": "How To Build a Kubernetes Operator From ScratchKubernetes•Kubernetes Overview, News and Trends  / 8mo Building robust, scalable applications in Kubernetes often requires fine-tuned automation — and that’s where Kubernetes operators come into play. Operators extend Kubernetes’ capabilities by automating management of custom resources and stateful applications. Think of operators as software that kn",
+      "otherBoards": []
+    },
+    {
+      "title": "Components vs. Containers: Fight?",
+      "url": "https://www.cncf.io/blog/2025/04/09/components-vs-containers-fight/",
+      "source": "Cloud Native Computing Foundation",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Components vs. Containers: Fight?Kubernetes•Cloud Native Computing Foundation  / 9mo WebAssembly components offer a new way to deploy microservices and other applications in cloud native environments. This naturally raises the question: is the upstart component out to replace containers? Or is this one of those situations where the apparent rivals need to learn to work together? For a proper answe",
+      "otherBoards": []
+    },
+    {
+      "title": "Application Gateway for Containers: a not-so-gentle intro (4)",
+      "url": "https://blog.cloudtrooper.net/2025/04/02/application-gateway-for-containers-a-not-so-gentle-intro-4/",
+      "source": "Azure Feeds",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Application Gateway for Containers: a not-so-gentle intro (4)Kubernetes•Azure Feeds  / 9mo This post will explore the new support in Azure Application Gateway for Containers (AGC) for the overlay network option in Azure Kubernetes Service (AKS) as documented in https://aka.ms/agc/overlay , as well as whether you can see traffic between AGC and AKS with VNet Flow Logs. This blog is part of a series",
+      "otherBoards": []
+    },
+    {
+      "title": "Istio: The Highest-Performance Solution for Network Security",
+      "url": "https://www.cncf.io/blog/2025/03/27/istio-the-highest-performance-solution-for-network-security/",
+      "source": "Cloud Native Computing Foundation",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Istio: The Highest-Performance Solution for Network SecurityTools and Frameworks•Cloud Native Computing Foundation  / 9mo Ambient mode provides more encrypted throughput than any other project in the Kubernetes ecosystem. Encryption in transit is a baseline requirement for almost all Kubernetes environments today, and forms the foundation of a zero-trust security posture. However, the challenge wi",
+      "otherBoards": []
+    },
+    {
+      "title": "Kubernetes Troubleshooting: A Step-by-Step Guide",
+      "url": "https://www.cncf.io/blog/2025/03/13/kubernetes-troubleshooting-a-step-by-step-guide/",
+      "source": "Cloud Native Computing Foundation",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "Kubernetes Troubleshooting: A Step-by-Step GuideKubernetes•Cloud Native Computing Foundation  / 10mo In the modern era of the software industry, microservice architecture and Kubernetes have become the globally adopted solution, for organizations looking for scalability and operational efficiency. At one end where these cutting-edge technologies help organizations operate at scale, navigating thro",
+      "otherBoards": []
+    },
+    {
+      "title": "Use Azure Front Door to secure AKS workloads",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/aks-front-door/aks-front-door",
+      "source": "Azure Feeds",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "Use Azure Front Door to secure AKS workloadsArchitecture •Azure Feeds  / 10mo Learn how to secure AKS workloads by using end-to-end TLS encryption, Azure Front Door Premium, an Azure Private Link service, and the NGINX ingress controller.",
+      "otherBoards": []
+    },
+    {
+      "title": "Demo an Automated Canary Deployment on Kubernetes with Argo Rollouts, Istio, and Prometheus",
+      "url": "https://www.cncf.io/blog/2025/02/18/demo-an-automated-canary-deployment-on-kubernetes-with-argo-rollouts-istio-and-prometheus/",
+      "source": "Cloud Native Computing Foundation",
+      "date": "2025-02-19",
+      "relativeDate": "11mo",
+      "description": "Demo an Automated Canary Deployment on Kubernetes with Argo Rollouts, Istio, and PrometheusKubernetes•Cloud Native Computing Foundation  / 11mo Building stuff is fun! Let’s use Argo Rollouts, Istio, and Prometheus to automate a canary deployment on Kubernetes! The application we’ll run is the Argo Rollouts Demo Application which does a great job of visualizing how traffic is slowly routed from fro",
+      "otherBoards": []
+    },
+    {
+      "title": "Kubernetes Best Practices I Wish I Had Known Before",
+      "url": "https://www.pulumi.com/blog/kubernetes-best-practices-i-wish-i-had-known-before/",
+      "source": "pulumi",
+      "date": "2025-01-19",
+      "relativeDate": "12mo",
+      "description": "Kubernetes Best Practices I Wish I Had Known BeforeKubernetes•pulumi  / 12mo  Posted on Monday, Jan 20, 2025 Kubernetes has undeniably transformed the way we build, ship, and run applications. But let’s be honest, getting started with Kubernetes can feel like climbing Mount Everest in flip-flops. As a cloud-native citizen and Kubernetes enthusiast, I’ve learned the hard way that there are a bunch ",
+      "otherBoards": []
+    },
+    {
+      "title": "Build an Open Source Kubernetes GitOps Platform, Part 1",
+      "url": "https://thenewstack.io/build-an-open-source-kubernetes-gitops-platform-part-1/",
+      "source": "Kubernetes Overview, News and Trends",
+      "date": "2025-01-19",
+      "relativeDate": "12mo",
+      "description": "Build an Open Source Kubernetes GitOps Platform, Part 1Kubernetes•Kubernetes Overview, News and Trends  / 12mo Read Part 2 With Kubernetes recently celebrating its 10th birthday, its landscape of popular open source products reached such a maturity that whatever your platform must use, there is a reliable open source product ready to help. A common cluster typically includes many open source tools",
+      "otherBoards": []
+    },
+    {
+      "title": "WebAssembly and Containers’ Love Affair on Kubernetes",
+      "url": "https://thenewstack.io/webassembly-and-containers-love-affair-on-kubernetes/",
+      "source": "Kubernetes Overview, News and Trends",
+      "date": "2025-01-19",
+      "relativeDate": "12mo",
+      "description": "WebAssembly and Containers’ Love Affair on KubernetesKubernetes•Kubernetes Overview, News and Trends  / 12mo The use of WebAssembly is emerging as an optimal use case to replace containers in Kubernetes environments for certain workloads. Running side by side with containers , Wasm modules can replace heavier containers or be used when very fast cold start times are required, as Wasm modules are s",
+      "otherBoards": []
+    }
+  ]
+}

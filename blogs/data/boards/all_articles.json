@@ -1,0 +1,1678 @@
+{
+  ".NET Core": [
+    {
+      "title": "Solving the Distributed Cache Invalidation Problem with Redis and HybridCache",
+      "url": "https://www.milanjovanovic.tech/blog/solving-the-distributed-cache-invalidation-problem-with-redis-and-hybridcache",
+      "source": "Milan's .NET Weekly",
+      "date": "2026-01-16",
+      "relativeDate": "3d",
+      "description": "Solving the Distributed Cache Invalidation Problem with Redis and HybridCache.NET Core•Milan's .NET Weekly  / 3d MongoDB's new Voyage 4 series , a unified family of text embedding models featuring shared embedding spaces, lets you mix and match models for documents and queries in the same pipeline for a flexible, cost-effective embedding solution for local development (voyage-4-nano) and productio",
+      "otherBoards": []
+    },
+    {
+      "title": "Distributed Locking in .NET: Coordinating Work Across Multiple Instances",
+      "url": "https://www.milanjovanovic.tech/blog/distributed-locking-in-dotnet-coordinating-work-across-multiple-instances",
+      "source": "Milan's .NET Weekly",
+      "date": "2025-09-19",
+      "relativeDate": "4mo",
+      "description": "Distributed Locking in .NET: Coordinating Work Across Multiple InstancesArchitecture •Milan's .NET Weekly  / 4mo Diskless 2.0 combines Kafka's Tiered Storage and Diskless Topics into one simpler path with zero-copy migration. Cut costs, reduce complexity, and run faster, cloud-ready Kafka without broker disks for streamlined performance built for the next decade. Read the full blog here . BoldSign",
+      "otherBoards": []
+    },
+    {
+      "title": "Converting an xUnit test project to TUnit",
+      "url": "https://andrewlock.net/converting-an-xunit-project-to-tunit/",
+      "source": "Andrew Lock",
+      "date": "2025-08-19",
+      "relativeDate": "5mo",
+      "description": "Converting an xUnit test project to TUnit.NET Core•Andrew Lock  / 5mo In this post I discuss the new TUnit testing framework , why I ported one of my libraries to use it instead of xUnit, how I did that, and related issues I had to deal with. What is TUnit TUnit is a new testing library, similar to xUnit , NUnit , or MSTest , that you can use to write test suites for your .NET applications. As per",
+      "otherBoards": []
+    },
+    {
+      "title": "Emit logs on-demand with log buffering",
+      "url": "https://devblogs.microsoft.com/dotnet/emit-logs-on-demand-with-log-buffering/",
+      "source": ".NET Blog",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "Emit logs on-demand with log buffering.NET Core•.NET Blog  / 7mo Managing logs in production environments involves tricky trade-offs. You want detailed logs when things go wrong, but you don’t want to pay storage costs for logs that never get examined. While log sampling helps reduce log volume by emitting only a percentage of logs, sometimes you need a different approach. Enter log buffering in .",
+      "otherBoards": []
+    },
+    {
+      "title": "Building a Custom Domain Events Dispatcher in .NET",
+      "url": "https://www.milanjovanovic.tech/blog/building-a-custom-domain-events-dispatcher-in-dotnet",
+      "source": "Milan's .NET Weekly",
+      "date": "2025-05-19",
+      "relativeDate": "8mo",
+      "description": "Building a Custom Domain Events Dispatcher in .NETArchitecture •Milan's .NET Weekly  / 8mo Unlock the Power of ABP.IO's Core Modules and supercharge your .NET web app development: ✅ SaaS - Build scalable, multi-tenant applications. ✅ Identity & Permission Management - Handle authentication, roles, and claims. ✅ Audit Logging - Track changes and user actions automatically. ✅ Account - Get a full-fe",
+      "otherBoards": []
+    },
+    {
+      "title": "Converting a docker-compose file to .NET Aspire",
+      "url": "https://andrewlock.net/converting-a-docker-compose-file-to-aspire/",
+      "source": "Andrew Lock",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "Converting a docker-compose file to .NET Aspire.NET Core•Andrew Lock  / 7mo In this post, I take a docker-compose.yml file for the open-source mailing list manager listmonk , and rewrite it to use .NET Aspire. Functionally, this results in the same app, but as an app directly modelled in .NET it's (theoretically) easier to both run the stack locally with your IDE and to generate \"publish\" artifact",
+      "otherBoards": []
+    },
+    {
+      "title": "Announcing dotnet run app.cs – A simpler way to start with C# and .NET 10",
+      "url": "https://devblogs.microsoft.com/dotnet/announcing-dotnet-run-app/",
+      "source": ".NET Blog",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "Announcing dotnet run app.cs – A simpler way to start with C# and .NET 10.NET Core•100+.NET Blog  / 7mo We are super excited to introduce a new feature that was released as part of .NET 10 Preview 4 that makes getting started with C# easier than ever. You can now run a C# file directly using dotnet run app.cs . This means you no longer need to create a project file or scaffold a whole application ",
+      "otherBoards": []
+    },
+    {
+      "title": "Top .NET Videos & Live Streams of 2024",
+      "url": "https://devblogs.microsoft.com/dotnet/top-dotnet-videos-live-streams-of-2024/",
+      "source": ".NET Blog",
+      "date": "2025-01-19",
+      "relativeDate": "12mo",
+      "description": "Top .NET Videos & Live Streams of 2024.NET Core•.NET Blog  / 12mo It has been an absolutely outstanding year of content for .NET from creators around the globe sharing their passion for .NET and the .NET team giving insight into the latest and greatest in the world of .NET. From events, live streams, and plenty of on-demand content dropping on the .NET YouTube nearly every single day, it is a grea",
+      "otherBoards": []
+    },
+    {
+      "title": "Server-Sent Events in ASP.NET Core and .NET 10",
+      "url": "https://khalidabuhakmeh.com/server-sent-events-in-aspnet-core-and-dotnet-10",
+      "source": "Khalid Abuhakmeh",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Server-Sent Events in ASP.NET Core and .NET 10ASP.NET Core•Khalid Abuhakmeh  / 9mo Like many .NET developers, I’m starting to look at the features coming in .NET 10, C# 14, and specifically ASP.NET Core. To my surprise, ASP.NET Core Minimal APIs now support Server-Sent Events (SSE). For folks who don’t know what Server-Sent Events are, they are a unidirectional channel from the server to a client ",
+      "otherBoards": []
+    },
+    {
+      "title": "Announcing CommandLineExtensions, a .NET DI Compatible System.CommandLine Facade",
+      "url": "https://blog.peterritchie.com/posts/announcing-commandlineextensions",
+      "source": "Peter Ritchie's Blog",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Announcing CommandLineExtensions, a .NET DI Compatible System.CommandLine FacadeTools and Frameworks•Peter Ritchie's Blog  / 9mo Mission, Inspiration The mission of CommandLineExtensions is to help make command-line argument parsing simpler while leveraging Microsoft-supported System.CommandLine . The inspiration for CommandLineExtensions spawns from ConsoleApplicationBuilder, which makes it easie",
+      "otherBoards": []
+    },
+    {
+      "title": "Exploring new .NET releases with Dev Containers",
+      "url": "https://devblogs.microsoft.com/dotnet/dotnet-in-dev-container/",
+      "source": ".NET Blog",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "Exploring new .NET releases with Dev ContainersTools and Frameworks•.NET Blog  / 10mo The .NET team has just released preview2 of .NET 10, and it’s got a bundle of new features and improvements . You might want to give these a try but don’t want to mess with your local development environment. A great way to try out a .NET preview is by using dev containers. In this blog post, we’ll walk you throu",
+      "otherBoards": []
+    },
+    {
+      "title": "Introducing support for SLNX, a new, simpler solution file format in the .NET CLI",
+      "url": "https://devblogs.microsoft.com/dotnet/introducing-slnx-support-dotnet-cli/",
+      "source": ".NET Blog",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "Introducing support for SLNX, a new, simpler solution file format in the .NET CLI.NET Core•100+.NET Blog  / 10mo Solution files have been a part of the .NET and Visual Studio experience for many years now, and they’ve had the same custom format the whole time. Recently, the Visual Studio solution team has begun previewing a new , XML-based solution file format called SLNX. Starting in .NET SDK 9.0",
+      "otherBoards": []
+    },
+    {
+      "title": "New, Simpler Solution File Format",
+      "url": "https://devblogs.microsoft.com/visualstudio/new-simpler-solution-file-format/",
+      "source": "Visual Studio Blog",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "New, Simpler Solution File Format.NET Core•Visual Studio Blog  / 10mo For years, you’ve worked with Visual Studio’s solution file (*.SLN) format, and while it’s a core part of your project organization, we know the experience hasn’t always been smooth. Whether you’ve been modifying, maintaining, or trying to resolve merge conflicts, it’s often felt more like a hassle than it should be. We understa",
+      "otherBoards": []
+    },
+    {
+      "title": ".NET AI Template Now Available in Preview",
+      "url": "https://devblogs.microsoft.com/dotnet/announcing-dotnet-ai-template-preview1/",
+      "source": ".NET Blog",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": ".NET AI Template Now Available in PreviewAI•35.NET Blog  / 10mo Want to get started with AI development, but not sure where to start? I’ve got a treat for you – we have a new AI Chat Web App template now in preview. This template is part of our ongoing effort to make AI development with .NET easier to discover and use, with scaffolding and guidance within Visual Studio, Visual Studio Code, and the",
+      "otherBoards": []
+    },
+    {
+      "title": "Accessing MSBuild properties and user configuration from source generators: Creating a source generator - Part 13",
+      "url": "https://andrewlock.net/creating-a-source-generator-part-13-providing-and-accessing-msbuild-settings-in-source-generators/",
+      "source": "Andrew Lock",
+      "date": "2025-01-19",
+      "relativeDate": "12mo",
+      "description": "Accessing MSBuild properties and user configuration from source generators: Creating a source generator - Part 13.NET Core•Andrew Lock  / 12mo This is the thirteenth post in the series: Creating a source generator . Part 1 - Creating an incremental generator Part 2 - Testing an incremental generator with snapshot testing Part 3 - Integration testing and NuGet packaging Part 4 - Customising generat",
+      "otherBoards": []
+    },
+    {
+      "title": "Reading compilation options and the C# version in source generators: Creating a source generator - Part 12",
+      "url": "https://andrewlock.net/creating-a-source-generator-part-12-reading-compilation-options-and-csharp-version-in-source-generators/",
+      "source": "Andrew Lock",
+      "date": "2025-01-19",
+      "relativeDate": "12mo",
+      "description": "Reading compilation options and the C# version in source generators: Creating a source generator - Part 12.NET Core•Andrew Lock  / 12mo This is the twelve post in the series: Creating a source generator . Part 1 - Creating an incremental generator Part 2 - Testing an incremental generator with snapshot testing Part 3 - Integration testing and NuGet packaging Part 4 - Customising generated code wit",
+      "otherBoards": []
+    }
+  ],
+  ".NET Framework": [],
+  "AI": [
+    {
+      "title": "My answers to the questions I posed about porting open source code with LLMs",
+      "url": "https://simonwillison.net/2026/Jan/11/answers/",
+      "source": "Simon Willison's Weblog",
+      "date": "2026-01-12",
+      "relativeDate": "7d",
+      "description": "My answers to the questions I posed about porting open source code with LLMsAI•Simon Willison's Weblog  / 7d Last month I wrote about porting JustHTML from Python to JavaScript using Codex CLI and GPT-5.2 in a few hours while also buying a Christmas tree and watching Knives Out 3. I ended that post with a series of open questions about the ethics and legality of this style of work. Alexander Petro",
+      "otherBoards": []
+    },
+    {
+      "title": "Scaling long-running autonomous coding",
+      "url": "https://simonwillison.net/2026/Jan/19/scaling-long-running-autonomous-coding/",
+      "source": "Simon Willison's Weblog",
+      "date": "2026-01-19",
+      "relativeDate": "17h",
+      "description": "Scaling long-running autonomous codingAI•Simon Willison's Weblog  / 17h•Cursor claims AI built browser  Wilson Lin at Cursor has been doing some experiments to see how far you can push a large fleet of \"autonomous\" coding agents: This post describes what we've learned from running hundreds of concurrent agents on a single project, coordinating their work, and watching them write over a million lin",
+      "otherBoards": []
+    },
+    {
+      "title": "Spec-driven development with Kiro",
+      "url": "https://changelog.com/podcast/662",
+      "source": "Changelog",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "Spec-driven development with KiroAI•Changelog  / 3mo We’re joined by Deepak Singh from the Kiro team. Kiro is AWS’s attempt at building an AI coding environment to take you from prototype to production. It does that by bringing structure to your agentic workflow with spec-driven development. Their aim: the flow of AI coding, leveled up with mature engineering practices. Join the discussion Changel",
+      "otherBoards": []
+    },
+    {
+      "title": "Understanding Spec-Driven-Development: Kiro, spec-kit, and Tessl",
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html",
+      "source": "Martin Fowler",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "Understanding Spec-Driven-Development: Kiro, spec-kit, and TesslAI•Martin Fowler  / 3mo Birgitta Böckeler has been trying to understand one of the latest AI coding buzzword: Spec-driven development (SDD). She looked at three of the tools that label themselves as SDD tools and tried to untangle what it means, as of now. more…",
+      "otherBoards": []
+    },
+    {
+      "title": "Implement a secure MCP OAuth desktop client using OAuth and Entra ID",
+      "url": "https://damienbod.com/2025/10/16/implement-a-secure-mcp-oauth-desktop-client-using-oauth-and-entra-id/",
+      "source": "Software Engineering",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "Implement a secure MCP OAuth desktop client using OAuth and Entra IDAI•Software Engineering  / 3mo The article demonstrates how to implement a secure MCP OAuth desktop client using Microsoft Entra ID. The MCP server is built with ASP.NET Core and secured using Microsoft Entra ID. The MCP client is a .NET console application that must acquire an OAuth access token to interact with the MCP server. C",
+      "otherBoards": []
+    },
+    {
+      "title": "How Fine-Tuning Transforms Generic AI Models into Specialists",
+      "url": "https://blog.bytebytego.com/p/how-fine-tuning-transforms-generic",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "How Fine-Tuning Transforms Generic AI Models into SpecialistsAI•ByteByteGo Newsletter  / 3mo Supercharge Cursor and Claude with your team’s knowledge (Sponsored) AI coding tools become more reliable when they understand the \"why\" behind your code. With Unblocked’s MCP server , tools like Cursor and Claude now leverage your team’s historical knowledge across tools like GitHub, Slack, Confluence, an",
+      "otherBoards": []
+    },
+    {
+      "title": "Implement a secure MCP server using OAuth and Entra ID",
+      "url": "https://damienbod.com/2025/09/23/implement-a-secure-mcp-server-using-oauth-and-entra-id/",
+      "source": "Software Engineering",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "Implement a secure MCP server using OAuth and Entra IDAI•Software Engineering  / 3mo The article shows how to implement a secure model context protocol (MCP) server using OAuth and Entra ID. The MCP server is implemented using ASP.NET Core and uses Microsoft Entra ID to secure the API. An ASP.NET Core application using Azure OpenAI and semantic kernel is used to implement the MCP client for the ag",
+      "otherBoards": []
+    },
+    {
+      "title": "Building your own CLI Coding Agent with Pydantic-AI",
+      "url": "https://martinfowler.com/articles/build-own-coding-agent.html",
+      "source": "Martin Fowler",
+      "date": "2025-09-19",
+      "relativeDate": "4mo",
+      "description": "Building your own CLI Coding Agent with Pydantic-AIAI•Martin Fowler  / 4mo CLI coding agents are a fundamentally different tool to chatbots or autocomplete tools - they're agents that can read code, run tests, and update a codebase. Ben O'Mahony explains that while commercial tools are impressive, they don't understand the particular context of our environment and the eccentricities of our specifi",
+      "otherBoards": []
+    },
+    {
+      "title": "Introducing Align Evals: Streamlining LLM Application Evaluation",
+      "url": "https://blog.langchain.com/introducing-align-evals/",
+      "source": "LangChain Blog",
+      "date": "2025-08-19",
+      "relativeDate": "5mo",
+      "description": "Introducing Align Evals: Streamlining LLM Application EvaluationAI•LangChain Blog  / 5mo Evaluations are a key technique for improving your application — whether you’re working on a single prompt or a complex agent. As you compare models, update logic, or iterate on your architecture, evaluations are a reliable way to score outputs and understand the impact of your changes. But, one big challenge ",
+      "otherBoards": []
+    },
+    {
+      "title": "Deep Agents",
+      "url": "https://blog.langchain.com/deep-agents/",
+      "source": "LangChain Blog",
+      "date": "2025-08-19",
+      "relativeDate": "5mo",
+      "description": "Deep AgentsAI•LangChain Blog  / 5mo Using an LLM to call tools in a loop is the simplest form of an agent. This architecture, however, can yield agents that are “shallow” and fail to plan and act over longer, more complex tasks. Applications like “ Deep Research ”, “ Manus ”, and “ Claude Code ” have gotten around this limitation by implementing a combination of four things: a planning tool, sub a",
+      "otherBoards": []
+    },
+    {
+      "title": "Basic Azure AI Foundry Chat Reference Architecture",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/basic-azure-ai-foundry-chat",
+      "source": "Azure Feeds",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "Basic Azure AI Foundry Chat Reference ArchitectureAI•Azure Feeds  / 7mo Establish foundational knowledge for how to build and deploy enterprise chat applications by using Azure AI Foundry and Azure App Service.",
+      "otherBoards": []
+    },
+    {
+      "title": "Cloud Native and Open Source Help Scale Agentic AI Workflows",
+      "url": "https://thenewstack.io/cloud-native-and-open-source-help-scale-agentic-ai-workflows/",
+      "source": "Kubernetes Overview, News and Trends",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "Cloud Native and Open Source Help Scale Agentic AI WorkflowsAI•Kubernetes Overview, News and Trends  / 7mo Enterprise automation is increasingly leveraging intelligent agent workflows driven by AI, typically relying on large language models (LLMs) for these applications. While LLMs can address many general-purpose use cases, the deployment and orchestration of these models can add significant comp",
+      "otherBoards": []
+    },
+    {
+      "title": "AI Repo of the Week: MCP for Beginners",
+      "url": "https://blog.codewithdan.com/ai-repo-of-the-week-mcp-for-beginners/",
+      "source": "Code with Dan Blog",
+      "date": "2025-05-19",
+      "relativeDate": "8mo",
+      "description": "AI Repo of the Week: MCP for BeginnersAI•Code with Dan Blog  / 8mo Introduction Welcome to this week’s spotlight in our AI Repo of the Week series—introducing the “MCP for Beginners” course, a fantastic starting point for AI developers and enthusiasts eager to navigate the world of Model Context Protocol (MCP). This open-source GitHub repository offers an in-depth exploration of MCP, an interface ",
+      "otherBoards": []
+    },
+    {
+      "title": "Using the new AI template to create a chatbot about a website",
+      "url": "https://andrewlock.net/using-the-new-ai-template-to-create-a-chatbot-about-a-website/",
+      "source": "Andrew Lock",
+      "date": "2025-05-19",
+      "relativeDate": "8mo",
+      "description": "Using the new AI template to create a chatbot about a websiteAI•Andrew Lock  / 8mo In this post I use the new .NET AI Chat Web App template (currently in preview) to create a chat application that ingests the contents of a website ( The Modern .NET Show ) and uses that data to answer questions in the chat. This post was partly inspired by a conversation I had with Jamie Taylor at the MVP summit in",
+      "otherBoards": []
+    },
+    {
+      "title": "How Cursor Indexes Codebases Fast",
+      "url": "https://read.engineerscodex.com/p/how-cursor-indexes-codebases-fast",
+      "source": "Engineer’s Codex",
+      "date": "2025-05-19",
+      "relativeDate": "8mo",
+      "description": "How Cursor Indexes Codebases FastAI•Engineer’s Codex  / 8mo Engineer’s Codex is a publication about real-world software engineering. Subscribe now Cursor, the popular AI IDE that recently announced they hit $300M ARR, uses Merkle trees to index code fast. This post goes over exactly how. Before diving into Cursor's implementation, let's first understand what a Merkle tree is. Merkle Trees Explaine",
+      "otherBoards": []
+    },
+    {
+      "title": "Exploring the new AI chat template",
+      "url": "https://andrewlock.net/exploring-the-new-ai-chat-template/",
+      "source": "Andrew Lock",
+      "date": "2025-05-19",
+      "relativeDate": "8mo",
+      "description": "Exploring the new AI chat templateAI•22Andrew Lock  / 8mo In this post I explore the new .NET AI Chat Web App template (currently in preview) to create a chat application and take a brief look at everything it provides. In the next post I then customize the app so that instead of ingesting PDFs, it ingests the contents of a website and uses that data to answer questions in the chat. Getting starte",
+      "otherBoards": []
+    },
+    {
+      "title": "Getting Started with Azure MCP Server: A Guide for Developers",
+      "url": "https://techcommunity.microsoft.com/blog/azuredevcommunityblog/getting-started-with-azure-mcp-server-a-guide-for-developers/4408974",
+      "source": "Azure Feeds",
+      "date": "2025-05-19",
+      "relativeDate": "8mo",
+      "description": "Getting Started with Azure MCP Server: A Guide for DevelopersAI•Azure Feeds  / 8mo•AI integrates with MCP standard The world of cloud computing is growing rapidly, and Azure is at the forefront of this innovation. If you’re a student developer eager to dive into Azure and learn about Model Context Protocol (MCP), the Azure MCP Server is your perfect starting point. This tool, currently in Public P",
+      "otherBoards": []
+    },
+    {
+      "title": "Build MCP Remote Servers with Azure Functions",
+      "url": "https://devblogs.microsoft.com/dotnet/build-mcp-remote-servers-with-azure-functions/",
+      "source": ".NET Blog",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Build MCP Remote Servers with Azure FunctionsAI•.NET Blog  / 9mo You can’t run to the grocery store these days without hearing about the Model Context Protocol (MCP)! Well, I hope the grocery store is your safe haven from AI, but the fact is that MCP is one of the hottest and most talked about topics in software development. And I’m going to keep talking about it because I want to show you a brand",
+      "otherBoards": []
+    },
+    {
+      "title": "Announcing the GPT-4.1 model series for Azure AI Foundry and GitHub developers",
+      "url": "https://azure.microsoft.com/en-us/blog/announcing-the-gpt-4-1-model-series-for-azure-ai-foundry-developers/",
+      "source": "Microsoft Azure Blog",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Announcing the GPT-4.1 model series for Azure AI Foundry and GitHub developersAI•41Microsoft Azure Blog  / 9mo•Microsoft launches GPT-4.1 series We are excited to share the launch of the next iteration of the GPT model series with GPT-4.1, 4.1-mini, and 4.1-nano to Microsoft Azure OpenAI Service and GitHub . The GPT-4.1 models bring improved capabilities and significant advancements in coding, ins",
+      "otherBoards": []
+    }
+  ],
+  "Architecture": [],
+  "ASP.NET Core": [
+    {
+      "title": "Server-Sent Events in ASP.NET Core and .NET 10",
+      "url": "https://khalidabuhakmeh.com/server-sent-events-in-aspnet-core-and-dotnet-10",
+      "source": "Khalid Abuhakmeh",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Server-Sent Events in ASP.NET Core and .NET 10ASP.NET Core•Khalid Abuhakmeh  / 9mo Like many .NET developers, I’m starting to look at the features coming in .NET 10, C# 14, and specifically ASP.NET Core. To my surprise, ASP.NET Core Minimal APIs now support Server-Sent Events (SSE). For folks who don’t know what Server-Sent Events are, they are a unidirectional channel from the server to a client ",
+      "otherBoards": []
+    }
+  ],
+  "AWS": [],
+  "Azure": [
+    {
+      "title": "Azure Kubernetes Service Automatic: Fast and frictionless Kubernetes for all",
+      "url": "https://azure.microsoft.com/en-us/blog/azure-kubernetes-service-automatic-fast-and-frictionless-kubernetes-for-all/",
+      "source": "Microsoft Azure Blog",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "Azure Kubernetes Service Automatic: Fast and frictionless Kubernetes for allAzure•Microsoft Azure Blog  / 3mo•Microsoft launches AKS Automatic Today, I’m excited to announce the general availability of Azure Kubernetes Service (AKS) Automatic , delivering Kubernetes that’s already configured, optimized, and ready to run—right out of the box. AKS Automatic accelerates app delivery with automation, ",
+      "otherBoards": []
+    },
+    {
+      "title": "Fast deploy and evaluate AI model performance on AML/AI Foundry",
+      "url": "https://techcommunity.microsoft.com/blog/machinelearningblog/fast-deploy-and-evaluate-ai-model-performance-on-amlai-foundry/4400100",
+      "source": "Azure Feeds",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Fast deploy and evaluate AI model performance on AML/AI FoundryAI•Azure Feeds  / 9mo This source code of this article: https://github.com/xinyuwei-david/AI-Foundry-Model-Performance.git Please refer to my repo to get more AI resources,…",
+      "otherBoards": []
+    },
+    {
+      "title": "Application Gateway for Containers: a not-so-gentle intro (4)",
+      "url": "https://blog.cloudtrooper.net/2025/04/02/application-gateway-for-containers-a-not-so-gentle-intro-4/",
+      "source": "Azure Feeds",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Application Gateway for Containers: a not-so-gentle intro (4)Kubernetes•Azure Feeds  / 9mo This post will explore the new support in Azure Application Gateway for Containers (AGC) for the overlay network option in Azure Kubernetes Service (AKS) as documented in https://aka.ms/agc/overlay , as well as whether you can see traffic between AGC and AKS with VNet Flow Logs. This blog is part of a series",
+      "otherBoards": []
+    },
+    {
+      "title": "Static Web Apps CLI: local authentication emulation with ASP.NET",
+      "url": "https://johnnyreilly.com/static-web-apps-cli-local-auth-emulator-with-dotnet-authentication",
+      "source": "I CAN MAKE THIS WORK",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Static Web Apps CLI: local authentication emulation with ASP.NETAzure•I CAN MAKE THIS WORK  / 9mo When developing web applications that have some dependency on authentication, it can be tricky to get a local development setup that allows you to manage authentication effectively. However, there's a way to achieve this, using the Static Web Apps CLI local authentication emulator. I build a lot of SP",
+      "otherBoards": []
+    },
+    {
+      "title": "[Launched] Generally Available: API Management as a Private Link-Enabled Origin for Front Door Premium",
+      "url": "https://azure.microsoft.com/en-us/updates",
+      "source": "Azure Feeds",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "[Launched] Generally Available: API Management as a Private Link-Enabled Origin for Front Door PremiumAzure•200+Azure Feeds  / 10mo You can now configure Azure API Management resources as Private Link enabled origins in your Front Door Premium profile. Private Link enabled origins in Front Door allow you to deliver content to your end-users through public Front Door endpoints while en",
+      "otherBoards": []
+    },
+    {
+      "title": "Use Azure Front Door to secure AKS workloads",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/aks-front-door/aks-front-door",
+      "source": "Azure Feeds",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "Use Azure Front Door to secure AKS workloadsArchitecture •Azure Feeds  / 10mo Learn how to secure AKS workloads by using end-to-end TLS encryption, Azure Front Door Premium, an Azure Private Link service, and the NGINX ingress controller.",
+      "otherBoards": []
+    },
+    {
+      "title": "Cache public container images in your Azure Container Registry with Terraform",
+      "url": "https://medium.com/microsoftazure/cache-public-container-images-in-your-azure-container-registry-with-terraform-aa76dcdb08b4?source=rss----8bec1183ada9---4",
+      "source": "Microsoft Azure",
+      "date": "2025-02-19",
+      "relativeDate": "11mo",
+      "description": "Cache public container images in your Azure Container Registry with TerraformIaC•Microsoft Azure  / 11mo When running your application on Azure Kubernetes Services, it’s a best practice to store the container images you need in an Azure Container Registry. This setup will improve performance when downloading container images for new pods. It also ensures you can create new pods even if a public re",
+      "otherBoards": []
+    },
+    {
+      "title": "Terraform: Get User Principal Name (UPN) of User Running Deployment without Entra ID Read Permissions",
+      "url": "https://build5nines.com/terraform-get-user-principal-name-upn-of-user-running-deployment-without-entra-id-read-permissions/",
+      "source": "Build5Nines",
+      "date": "2025-02-19",
+      "relativeDate": "11mo",
+      "description": "Terraform: Get User Principal Name (UPN) of User Running Deployment without Entra ID Read PermissionsAzure•Build5Nines  / 11mo I has a scenario where I needed to configure an Azure PostgreSQL Flexible Server to use Entra ID (Azure AD) authentication and add the Entra user running the HashiCorp Terraform deployment as the Azure PostgreSQL Administrator using the azurerm_postgresql_flexible_server_a",
+      "otherBoards": []
+    }
+  ],
+  "Azure DevOps": [
+    {
+      "title": "How to Use GitHub Codespaces with Azure DevOps Repositories",
+      "url": "https://luke.geek.nz/azure/github-codespaces-azure-devops-repo/",
+      "source": "Azure Feeds",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "How to Use GitHub Codespaces with Azure DevOps RepositoriesAI•Azure Feeds  / 10mo I’ve talked about GitHub Codespaces before, but what I haven’t covered – is using a GitHub Codespace to connect to a repository in Azure DevOps. It’s classed as ‘Remote Repository’ in the Codespace, however, it’s something that can be done. To start with, we have a repository in Azure DevOps, and we want to connect t",
+      "otherBoards": []
+    }
+  ],
+  "Big Data": [
+    {
+      "title": "Unifying governance and metadata across Amazon SageMaker Unified Studio and Atlan",
+      "url": "https://aws.amazon.com/blogs/big-data/unifying-governance-and-metadata-across-amazon-sagemaker-unified-studio-and-atlan/",
+      "source": "Unifying governance and metadata across Amazon SageMaker Unified Studio and AtlanAWS Big Data Blog",
+      "date": "2025-12-22",
+      "relativeDate": "28d",
+      "description": "Unifying governance and metadata across Amazon SageMaker Unified Studio and AtlanAWS Big Data Blog  / 28d This post was cowritten with Satabrata Paul and Karan Singh Thakur from Atlan In this post, we show you how to unify governance and metadata across Amazon SageMaker Unified Studio and Atlan through a comprehensive bidirectional integration. You’ll learn how to deploy the necessary Amazon Web S",
+      "otherBoards": []
+    },
+    {
+      "title": "Simplified management of Amazon MSK with natural language using Kiro CLI and Amazon MSK MCP Server",
+      "url": "https://aws.amazon.com/blogs/big-data/simplified-management-of-amazon-msk-with-natural-language-using-kiro-cli-and-amazon-msk-mcp-server/",
+      "source": "Simplified management of Amazon MSK with natural language using Kiro CLI and Amazon MSK MCP ServerAWS Big Data Blog",
+      "date": "2025-12-24",
+      "relativeDate": "26d",
+      "description": "Simplified management of Amazon MSK with natural language using Kiro CLI and Amazon MSK MCP ServerAWS Big Data Blog  / 26d Managing and scaling data streams efficiently is a cornerstone of success for many organizations. Apache Kafka is a leading platform for real-time data streaming, offering unmatched scalability and reliability. However, setting up and scaling Kafka clusters can be challenging,",
+      "otherBoards": []
+    },
+    {
+      "title": "The Top Strategic Priorities Guiding Data and AI Leaders in 2026",
+      "url": "https://www.databricks.com/blog/top-strategic-priorities-guiding-data-and-ai-leaders-2026",
+      "source": "The Top Strategic Priorities Guiding Data and AI Leaders in 2026Databricks",
+      "date": "2025-12-30",
+      "relativeDate": "20d",
+      "description": "",
+      "otherBoards": []
+    },
+    {
+      "title": "From Zero to Millions in Savings: Ströer Transforms Advertising Success with Databricks",
+      "url": "https://www.databricks.com/blog/zero-millions-savings-stroer-transforms-advertising-success-databricks",
+      "source": "From Zero to Millions in Savings: Ströer Transforms Advertising Success with DatabricksDatabricks",
+      "date": "2026-01-02",
+      "relativeDate": "17d",
+      "description": "",
+      "otherBoards": []
+    },
+    {
+      "title": "Simplify multi-warehouse data governance with Amazon Redshift federated permissions",
+      "url": "https://aws.amazon.com/blogs/big-data/simplify-multi-warehouse-data-governance-with-amazon-redshift-federated-permissions/",
+      "source": "Simplify multi-warehouse data governance with Amazon Redshift federated permissionsAWS Big Data Blog",
+      "date": "2026-01-05",
+      "relativeDate": "14d",
+      "description": "Simplify multi-warehouse data governance with Amazon Redshift federated permissionsAWS Big Data Blog  / 14d Modern data architectures increasingly rely on multi-warehouse deployments to achieve workload isolation, cost optimization, and performance scaling. Amazon Redshift federated permissions simplify permissions management across multiple Redshift warehouses. With federated permissions, you reg",
+      "otherBoards": []
+    },
+    {
+      "title": "Instructed Retriever: Unlocking System-Level Reasoning in Search Agents",
+      "url": "https://www.databricks.com/blog/instructed-retriever-unlocking-system-level-reasoning-search-agents",
+      "source": "Instructed Retriever: Unlocking System-Level Reasoning in Search AgentsDatabricks",
+      "date": "2026-01-06",
+      "relativeDate": "13d",
+      "description": "",
+      "otherBoards": []
+    },
+    {
+      "title": "Introducing Apache Spark® 4.1",
+      "url": "https://www.databricks.com/blog/introducing-apache-sparkr-41",
+      "source": "Introducing Apache Spark® 4.1Databricks",
+      "date": "2026-01-06",
+      "relativeDate": "13d",
+      "description": "",
+      "otherBoards": []
+    },
+    {
+      "title": "BCBS 239 Compliance in the Age of AI: Turning Regulatory Burden into Strategic Advantage",
+      "url": "https://www.databricks.com/blog/bcbs-239-compliance-age-ai-turning-regulatory-burden-strategic-advantage",
+      "source": "BCBS 239 Compliance in the Age of AI: Turning Regulatory Burden into Strategic AdvantageDatabricks",
+      "date": "2026-01-06",
+      "relativeDate": "13d",
+      "description": "",
+      "otherBoards": []
+    },
+    {
+      "title": "Building scalable AWS Lake Formation governed data lakes with dbt and Amazon Managed Workflows for Apache Airflow",
+      "url": "https://aws.amazon.com/blogs/big-data/building-scalable-aws-lake-formation-governed-data-lakes-with-dbt-and-amazon-managed-workflows-for-apache-airflow/",
+      "source": "Building scalable AWS Lake Formation governed data lakes with dbt and Amazon Managed Workflows for Apache AirflowAWS Big Data Blog",
+      "date": "2026-01-06",
+      "relativeDate": "13d",
+      "description": "Building scalable AWS Lake Formation governed data lakes with dbt and Amazon Managed Workflows for Apache AirflowAWS Big Data Blog  / 13d Organizations often struggle with building scalable and maintainable data lakes—especially when handling complex data transformations, enforcing data quality, and monitoring compliance with established governance. Traditional approaches typically involve custom ",
+      "otherBoards": []
+    },
+    {
+      "title": "Amazon EMR Serverless eliminates local storage provisioning, reducing data processing costs by up to 20%",
+      "url": "https://aws.amazon.com/blogs/big-data/amazon-emr-serverless-eliminates-local-storage-provisioning-reducing-data-processing-costs-by-up-to-20/",
+      "source": "Amazon EMR Serverless eliminates local storage provisioning, reducing data processing costs by up to 20%AWS Big Data Blog",
+      "date": "2026-01-06",
+      "relativeDate": "13d",
+      "description": "Amazon EMR Serverless eliminates local storage provisioning, reducing data processing costs by up to 20%AWS Big Data Blog  / 13d At AWS re:Invent 2025, Amazon Web Services (AWS) announced serverless storage for Amazon EMR Serverless , a new capability that eliminates the need configure local disks for Apache Spark workloads. This reduces data processing costs by up to 20% while eliminating job fai",
+      "otherBoards": []
+    },
+    {
+      "title": "From Chaos to Scale: Templatizing Spark Declarative Pipelines with DLT-META",
+      "url": "https://www.databricks.com/blog/chaos-scale-templatizing-spark-declarative-pipelines-dlt-meta",
+      "source": "From Chaos to Scale: Templatizing Spark Declarative Pipelines with DLT-METADatabricks",
+      "date": "2026-01-07",
+      "relativeDate": "12d",
+      "description": "",
+      "otherBoards": []
+    },
+    {
+      "title": "AWS analytics at re:Invent 2025: Unifying Data, AI, and governance at scale",
+      "url": "https://aws.amazon.com/blogs/big-data/aws-analytics-at-reinvent-2025-unifying-data-ai-and-governance-at-scale/",
+      "source": "AWS analytics at re:Invent 2025: Unifying Data, AI, and governance at scaleAWS Big Data Blog",
+      "date": "2026-01-07",
+      "relativeDate": "12d",
+      "description": "AWS analytics at re:Invent 2025: Unifying Data, AI, and governance at scaleAWS Big Data Blog  / 12d re:Invent 2025 showcased the bold Amazon Web Services (AWS) vision for the future of analytics, one where data warehouses, data lakes, and AI development converge into a seamless, open, intelligent platform, with Apache Iceberg compatibility at its core. Across over 18 major announcements spanning t",
+      "otherBoards": []
+    },
+    {
+      "title": "Securing the Grid: A Practical Guide to Cyber Analytics for Energy & Utilities",
+      "url": "https://www.databricks.com/blog/securing-grid-practical-guide-cyber-analytics-energy-utilities",
+      "source": "Securing the Grid: A Practical Guide to Cyber Analytics for Energy & UtilitiesDatabricks",
+      "date": "2026-01-08",
+      "relativeDate": "11d",
+      "description": "",
+      "otherBoards": []
+    },
+    {
+      "title": "Create AWS Glue Data Catalog views using cross-account definer roles",
+      "url": "https://aws.amazon.com/blogs/big-data/create-aws-glue-data-catalog-views-using-cross-account-definer-roles/",
+      "source": "Create AWS Glue Data Catalog views using cross-account definer rolesAWS Big Data Blog",
+      "date": "2026-01-08",
+      "relativeDate": "11d",
+      "description": "Create AWS Glue Data Catalog views using cross-account definer rolesAWS Big Data Blog  / 11d With AWS Glue Data Catalog views you can create a SQL view in the Data Catalog that references one or more base tables. These multi-dialect views support various SQL query engines, providing consistent access across multiple Amazon Web Services (AWS) services including Amazon Athena , Amazon Redshift Spect",
+      "otherBoards": []
+    },
+    {
+      "title": "Use Amazon SageMaker custom tags for project resource governance and cost tracking",
+      "url": "https://aws.amazon.com/blogs/big-data/use-amazon-sagemaker-custom-tags-for-project-resource-governance-and-cost-tracking/",
+      "source": "Use Amazon SageMaker custom tags for project resource governance and cost trackingAWS Big Data Blog",
+      "date": "2026-01-09",
+      "relativeDate": "10d",
+      "description": "Use Amazon SageMaker custom tags for project resource governance and cost trackingAWS Big Data Blog  / 10d Amazon SageMaker announced a new feature that you can use to add custom tags to resources created through an Amazon SageMaker Unified Studio project. This helps you enforce tagging standards that conform to your organization’s service control policies (SCPs) and helps enable cost tracking rep",
+      "otherBoards": []
+    },
+    {
+      "title": "How 7‑Eleven Transformed Maintenance Technician Knowledge Access with Databricks Agent Bricks",
+      "url": "https://www.databricks.com/blog/how-7-eleven-transformed-maintenance-technician-knowledge-access-databricks-agent-bricks",
+      "source": "How 7‑Eleven Transformed Maintenance Technician Knowledge Access with Databricks Agent BricksDatabricks",
+      "date": "2026-01-09",
+      "relativeDate": "10d",
+      "description": "",
+      "otherBoards": []
+    },
+    {
+      "title": "Thumbtack Powering Safe, Smart Home Services on Databricks with GenAI",
+      "url": "https://www.databricks.com/blog/thumbtack-powering-safe-smart-home-services-databricks-genai",
+      "source": "Thumbtack Powering Safe, Smart Home Services on Databricks with GenAIDatabricks",
+      "date": "2026-01-09",
+      "relativeDate": "10d",
+      "description": "",
+      "otherBoards": []
+    },
+    {
+      "title": "Access Databricks Unity Catalog data using catalog federation in the AWS Glue Data Catalog",
+      "url": "https://aws.amazon.com/blogs/big-data/access-databricks-unity-catalog-data-using-catalog-federation-in-the-aws-glue-data-catalog/",
+      "source": "Access Databricks Unity Catalog data using catalog federation in the AWS Glue Data CatalogAWS Big Data Blog",
+      "date": "2026-01-12",
+      "relativeDate": "7d",
+      "description": "Access Databricks Unity Catalog data using catalog federation in the AWS Glue Data CatalogAWS Big Data Blog  / 7d AWS has launched the catalog federation capability, enabling direct access to Apache Iceberg tables managed in Databricks Unity Catalog through the AWS Glue Data Catalog . With this integration, you can discover and query Unity Catalog data in Iceberg format using an Iceberg REST API e",
+      "otherBoards": []
+    },
+    {
+      "title": "Navigating architectural choices for a lakehouse using Amazon SageMaker",
+      "url": "https://aws.amazon.com/blogs/big-data/navigating-architectural-choices-for-a-lakehouse-using-amazon-sagemaker/",
+      "source": "Navigating architectural choices for a lakehouse using Amazon SageMakerAWS Big Data Blog",
+      "date": "2026-01-12",
+      "relativeDate": "7d",
+      "description": "Navigating architectural choices for a lakehouse using Amazon SageMakerAWS Big Data Blog  / 7d Organizations today are using data more than ever to drive decision-making and innovation. Because they work with petabytes of information, they have traditionally gravitated towards two distinct paradigms—data lakes and data warehouses. While each paradigm excels at specific use cases, they often create",
+      "otherBoards": []
+    },
+    {
+      "title": "Open Sourcing Dicer: Databricks’ Auto-Sharder",
+      "url": "https://www.databricks.com/blog/open-sourcing-dicer-databricks-auto-sharder",
+      "source": "Open Sourcing Dicer: Databricks’ Auto-SharderDatabricks",
+      "date": "2026-01-13",
+      "relativeDate": "6d",
+      "description": "",
+      "otherBoards": []
+    }
+  ],
+  "Big Data - Stream Processing": [
+    {
+      "title": "How OpenAI Uses Kubernetes And Apache Kafka for GenAI",
+      "url": "https://blog.bytebytego.com/p/how-openai-uses-kubernetes-and-apache",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "How OpenAI Uses Kubernetes And Apache Kafka for GenAIBig Data - Stream Processing•ByteByteGo Newsletter  / 3mo Supercharge Cursor and Claude with your team’s knowledge (Sponsored) AI coding tools become more reliable when they understand the “why” behind your code. With Unblocked’s MCP server , tools like Cursor and Claude now leverage your team’s historical knowledge across tools like GitHub, Sla",
+      "otherBoards": []
+    },
+    {
+      "title": "Understanding Apache Fluss",
+      "url": "https://jack-vanlightly.com/blog/2025/9/2/understanding-apache-fluss",
+      "source": "Jack Vanlightly",
+      "date": "2025-09-19",
+      "relativeDate": "4mo",
+      "description": "Understanding Apache FlussBig Data - Stream Processing•Jack Vanlightly  / 4mo This is a data system internals blog post. So if you enjoyed my table formats internals blog posts , or writing on Apache Kafka internals or Apache BookKeeper internals , you might enjoy this one. But beware, it’s long and detailed. Also note that I work for Confluent, which also runs Apache Flink but does not run nor co",
+      "otherBoards": []
+    },
+    {
+      "title": "A Real-time Open Lakehouse with Redpanda and Databricks",
+      "url": "https://www.databricks.com/blog/real-time-open-lakehouse-redpanda-and-databricks",
+      "source": "Databricks",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "A Real-time Open Lakehouse with Redpanda and DatabricksBig Data - Stream Processing•Databricks  / 7moEvery lakehouse should be ‘stream-fed’ The ‘open lakehouse’ concept pioneered by Databricks years ago has been more broadly realized through the recent rise of Apache",
+      "otherBoards": []
+    },
+    {
+      "title": "Accelerate lightweight analytics using PyIceberg with AWS Lambda and an AWS Glue Iceberg REST endpoint",
+      "url": "https://aws.amazon.com/blogs/big-data/accelerate-lightweight-analytics-using-pyiceberg-with-aws-lambda-and-an-aws-glue-iceberg-rest-endpoint/",
+      "source": "AWS Big Data Blog",
+      "date": "2025-05-19",
+      "relativeDate": "8mo",
+      "description": "Accelerate lightweight analytics using PyIceberg with AWS Lambda and an AWS Glue Iceberg REST endpointBig Data - Stream Processing•AWS Big Data Blog  / 8mo For modern organizations built on data insights, effective data management is crucial for powering advanced analytics and machine learning (ML) activities. As data use cases become more complex, data engineering teams require sophisticated tool",
+      "otherBoards": []
+    },
+    {
+      "title": "LinkedIn's hot new distributed document store",
+      "url": "https://engineering.linkedin.com/espresso/introducing-espresso-linkedins-hot-new-distributed-document-store",
+      "source": "LinkedIn Engineering",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "LinkedIn's hot new distributed document storeBig Data - Stream Processing•LinkedIn Engineering  / 10mo Authors: Aditya Auradkar , Tom Quiggle Espresso is LinkedIn's online, distributed, fault-tolerant NoSQL database that currently powers approximately 30 LinkedIn applications including Member Profile, InMail (LinkedIn's member-to-member messaging system), portions of the Homepage and mobile applic",
+      "otherBoards": []
+    },
+    {
+      "title": "Open sourcing venice linkedin s derived data platform",
+      "url": "https://www.linkedin.com/blog/engineering/open-source/open-sourcing-venice-linkedin-s-derived-data-platform",
+      "source": "LinkedIn: Log In or Sign Up",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "Open sourcing venice linkedin s derived data platformBig Data - Stream Processing•LinkedIn: Log In or Sign Up  / 10mo We couldn’t extract the content of this article. Here is the URL so you can access it: https://www.linkedin.com/blog/engineering/open-source/open-sourcing-venice-linkedin-s-derived-data-platform",
+      "otherBoards": []
+    },
+    {
+      "title": "Journey of next generation control plane for data systems",
+      "url": "https://www.linkedin.com/blog/engineering/infrastructure/journey-of-next-generation-control-plane-for-data-systems",
+      "source": "Engineering Blog",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "",
+      "otherBoards": []
+    }
+  ],
+  "Blogging": [
+    {
+      "title": "Generate Unlimited Ideas",
+      "url": "https://catalins.tech/generate-unlimited-ideas/",
+      "source": "Catalin's Tech",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Generate Unlimited IdeasBlogging•Catalin's Tech  / 9mo The main challenge for writers (and content creators) is coming up with content ideas. You might be familiar with writer's block and the frustrating feeling of looking at a blank editor. However, generating content ideas is not that difficult. Personally, I don't have time to talk about all the ideas I have. So, in this article, I'll show you ",
+      "otherBoards": []
+    }
+  ],
+  "Business and Soft Skills": [
+    {
+      "title": "How engineers can use one-on-ones with their manager to accelerate career growth",
+      "url": "https://github.blog/developer-skills/career-growth/how-engineers-can-use-one-on-ones-with-their-manager-to-accelerate-career-growth/",
+      "source": "The latest from GitHub's engineering tea...",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "How engineers can use one-on-ones with their manager to accelerate career growthBusiness and Soft Skills•The latest from GitHub's engineering tea...  / 9mo One-on-one meetings with your manager are one of the most valuable tools you have for career growth, problem-solving, and unlocking new opportunities. So if you’re only using them to provide status updates, you’re leaving a lot on the table. I ",
+      "otherBoards": []
+    }
+  ],
+  "C#": [],
+  "Career": [],
+  "Cloud Native": [],
+  "Development": [
+    {
+      "title": "Amdahl, Gustafson, coding agents, and you",
+      "url": "https://surfingcomplexity.blog/2026/01/19/amdahl-gustafson-coding-agents-and-you/",
+      "source": "Amdahl, Gustafson, coding agents, and youSurfing Complexity",
+      "date": "2026-01-19",
+      "relativeDate": "47min",
+      "description": "Amdahl, Gustafson, coding agents, and youSurfing Complexity  / 47min In the software operations world, if your service is successful, then eventually the load on it is going to increase to the point where you’ll need to give that services more resources. There are two strategies for increasing resources: scale up and scale out . Scaling up means running the service on a beefier system. This works ",
+      "otherBoards": []
+    },
+    {
+      "title": "Agent psychosis: are we going insane?",
+      "url": "https://changelog.com/news/177",
+      "source": "Agent psychosis: are we going insane?Changelog",
+      "date": "2026-01-19",
+      "relativeDate": "1h",
+      "description": "Agent psychosis: are we going insane?Changelog  / 1h Armin Ronacher thinks AI agent psychosis might be driving us insane, Dan Abramov explains how AT Protocol is a social filesystem, RepoBar keeps your GitHub work in view without opening a browser, Ethan McCue shares some life altering Postgres patterns, and Lea Verou says web dependencies are broken and we need to fix them. View the newsletter Jo",
+      "otherBoards": []
+    },
+    {
+      "title": "Filtering as domain logic",
+      "url": "https://blog.ploeh.dk/2026/01/19/filtering-as-domain-logic/",
+      "source": "Filtering as domain logicploeh blog",
+      "date": "2026-01-19",
+      "relativeDate": "1h",
+      "description": "Filtering as domain logicploeh blog  / 1h Performance and correctness are two independent concerns with overlapping solutions. How do you design, implement, maintain, and test complex filter logic as part of out-of-process (e.g. database) queries? One option is to implement parts of the filtering logic twice: Once as an easily-testable in-memory implementation to ensure correctness, and another, p",
+      "otherBoards": []
+    },
+    {
+      "title": "On rebuilding read models, Dead-Letter Queues and Why Letting Go is Sometimes the Answer",
+      "url": "https://www.architecture-weekly.com/p/on-rebuilding-read-models-dead-letter",
+      "source": "On rebuilding read models, Dead-Letter Queues and Why Letting Go is Sometimes the AnswerArchitecture Weekly",
+      "date": "2026-01-19",
+      "relativeDate": "4h",
+      "description": "On rebuilding read models, Dead-Letter Queues and Why Letting Go is Sometimes the AnswerArchitecture Weekly  / 4h In the last article, I explained how to rebuild Event-Driven Read Models in a safe and resilient way . I asked readers to let me know if they find any blind spots in my design. Well, I found one myself. This article is about that edge case, but more importantly, it’s about the rabbit h",
+      "otherBoards": []
+    },
+    {
+      "title": "Why AI Needs GPUs and TPUs: The Hardware Behind LLMs",
+      "url": "https://blog.bytebytego.com/p/why-ai-needs-gpus-and-tpus-the-hardware",
+      "source": "Why AI Needs GPUs and TPUs: The Hardware Behind LLMsByteByteGo Newsletter",
+      "date": "2026-01-19",
+      "relativeDate": "6h",
+      "description": "Why AI Needs GPUs and TPUs: The Hardware Behind LLMsByteByteGo Newsletter  / 6h From quick sync to quick ship (Sponsored) Most AI notetakers just transcribe. Granola is the AI notepad that helps you stay focused in meetings, then turns your conversations into real progress. Engineers use Granola to: Draft Linear/Jira tickets from standup notes Paste code into Granola Chat and instantly receive a p",
+      "otherBoards": []
+    },
+    {
+      "title": "Why a Free Market Fire Department System Beats the Archaic Public Model",
+      "url": "https://ardalis.com/why-a-free-market-fire-department-systems-beats-the-archaic-public-model/",
+      "source": "Why a Free Market Fire Department System Beats the Archaic Public ModelArdalis.com on Ardalis (Steve Smith)",
+      "date": "2026-01-10",
+      "relativeDate": "9d",
+      "description": "Why a Free Market Fire Department System Beats the Archaic Public ModelArdalis.com on Ardalis (Steve Smith)  / 9d By a devoted advocate for individual choice Introduction: Fire Protection, Reimagined 🚒 In a nation that prizes personal responsibility, it’s time to ask whether a single, taxpayer-funded fire department model still serves us best. A market of competing fire protection providers would",
+      "otherBoards": []
+    },
+    {
+      "title": "Solving Message Ordering from First Principles",
+      "url": "https://www.milanjovanovic.tech/blog/solving-message-ordering-from-first-principles",
+      "source": "Solving Message Ordering from First PrinciplesMilan's .NET Weekly",
+      "date": "2026-01-09",
+      "relativeDate": "10d",
+      "description": "Solving Message Ordering from First PrinciplesMilan's .NET Weekly  / 10d Meet your AI App and Agent Factory It's never been easier to build, optimize, and govern AI apps and agents that understand your business context and deliver business impact. Microsoft Foundry helps teams accelerate innovation with open-source frameworks, the widest model selection on any cloud, RAG on data stored anywhere, s",
+      "otherBoards": []
+    },
+    {
+      "title": "From Stateful to Stateless: Building Web Apps That Scale",
+      "url": "https://newsletter.francofernando.com/p/from-stateful-to-stateless-building",
+      "source": "From Stateful to Stateless: Building Web Apps That ScaleThe Polymathic Engineer",
+      "date": "2026-01-09",
+      "relativeDate": "10d",
+      "description": "From Stateful to Stateless: Building Web Apps That ScaleThe Polymathic Engineer  / 10d Hi Friends, Welcome to the 155th issue of the Polymathic Engineer newsletter, the first in the new year. The front-end layer of a web application is where the battle for scalability is won or lost. Every user interaction, every click, every API call flows through this layer. It is your first line of defense and ",
+      "otherBoards": []
+    },
+    {
+      "title": "LLM predictions for 2026, shared with Oxide and Friends",
+      "url": "https://simonwillison.net/2026/Jan/8/llm-predictions-for-2026/",
+      "source": "LLM predictions for 2026, shared with Oxide and FriendsSimon Willison's Weblog",
+      "date": "2026-01-08",
+      "relativeDate": "11d",
+      "description": "LLM predictions for 2026, shared with Oxide and FriendsSimon Willison's Weblog  / 11d I joined a recording of the Oxide and Friends podcast on Tuesday to talk about 1, 3 and 6 year predictions for the tech industry. This is my second appearance on their annual predictions episode, you can see my predictions from January 2025 here . Here's the page for this year's episode , with options to listen i",
+      "otherBoards": []
+    },
+    {
+      "title": "EF Core Lazy Loading Performance Gotcha",
+      "url": "https://markheath.net/post/2026/1/8/efcore-lazy-loader-gotcha",
+      "source": "EF Core Lazy Loading Performance GotchaSound Code - Mark Heath's Blog",
+      "date": "2026-01-08",
+      "relativeDate": "11d",
+      "description": "EF Core Lazy Loading Performance GotchaSound Code - Mark Heath's Blog  / 11d I was recently using EF Core's ILazyLoader for lazy loading without proxies , and ran into a performance issue that took me by surprise. When you call DbSet .Add() to add an entity to the context, EF Core immediately injects the lazy loader into your entity even before you've called SaveChangesAsync() . This means if you ",
+      "otherBoards": []
+    },
+    {
+      "title": "Must-Know Message Broker Patterns",
+      "url": "https://blog.bytebytego.com/p/must-know-message-broker-patterns",
+      "source": "Must-Know Message Broker PatternsByteByteGo Newsletter",
+      "date": "2026-01-08",
+      "relativeDate": "11d",
+      "description": "Must-Know Message Broker PatternsByteByteGo Newsletter  / 11d Modern distributed systems rely on message brokers to enable communication between independent services. However, using message brokers effectively requires understanding common architectural patterns that solve recurring challenges. This article introduces seven essential patterns that help developers build reliable, scalable, and main",
+      "otherBoards": []
+    },
+    {
+      "title": "How Google Got Its Groove Back and Edged Ahead of OpenAI",
+      "url": "https://simonwillison.net/2026/Jan/8/how-google-got-its-groove-back/",
+      "source": "Simon Willison's Weblog",
+      "date": "2026-01-08",
+      "relativeDate": "11d",
+      "description": "How Google Got Its Groove Back and Edged Ahead of OpenAIGoogle surpasses OpenAI with Gemini•Simon Willison's Weblog  / 11d  I picked up a few interesting tidbits from this Wall Street Journal piece on Google's recent hard won success with Gemini. Here's the origin of the name \"Nano Banana\": Naina Raisinghani, known inside Google for working late into the night, needed a name for the new tool to co",
+      "otherBoards": []
+    },
+    {
+      "title": "My favorite musical discoveries of 2025",
+      "url": "https://martinfowler.com/articles/2025-music.html",
+      "source": "My favorite musical discoveries of 2025Martin Fowler",
+      "date": "2026-01-08",
+      "relativeDate": "11d",
+      "description": "My favorite musical discoveries of 2025Martin Fowler  / 11d My favorite albums from last year. Balkan brass, an acoustic favorite of 80s returns, Ethio-jazz, Guatemalan singer-guitarist, jazz-rock/Indian classical fusion, and a unique male vocalist. more…",
+      "otherBoards": []
+    },
+    {
+      "title": "Fragments: January 8",
+      "url": "https://martinfowler.com/fragments/2026-01-08.html",
+      "source": "Fragments: January 852Martin Fowler",
+      "date": "2026-01-08",
+      "relativeDate": "11d",
+      "description": "Fragments: January 852Martin Fowler  / 11d Anthropic report on how their AI is changing their own software development practice . Most usage is for debugging and helping understand existing code Notable increase in using it for implementing new features Developers using it for 59% of their work and getting 50% productivity increase 14% of developers are “power users” reporting much greater gains C",
+      "otherBoards": []
+    },
+    {
+      "title": "From GitLab to Kilo Code",
+      "url": "https://changelog.com/podcast/672",
+      "source": "From GitLab to Kilo CodeChangelog",
+      "date": "2026-01-08",
+      "relativeDate": "11d",
+      "description": "From GitLab to Kilo CodeChangelog  / 11d We’re joined by Sid Sijbrandij, founder of GitLab who led the all-in-one coding platform all the way to IPO. In late 2022, Sid discovered that he had bone cancer. That started a journey he’s been on ever since… a journey that he shares with us in great detail. Along the way, Sid continued founding companies including Kilo Code , an all-in-one agentic engine",
+      "otherBoards": []
+    },
+    {
+      "title": "The grief when AI writes most of the code",
+      "url": "https://blog.pragmaticengineer.com/the-grief-when-ai-writes-most-of-the-code/",
+      "source": "The grief when AI writes most of the codeThe Pragmatic Engineer",
+      "date": "2026-01-07",
+      "relativeDate": "12d",
+      "description": "The grief when AI writes most of the codeThe Pragmatic Engineer  / 12d I’m coming to terms with the high probability that AI will write most of my code which I ship to prod, going forward. It already does it faster, and with similar results to if I’d typed it out. For languages/frameworks I’m less familiar with, it does a better job than me. It feels like something valuable is being taken away, an",
+      "otherBoards": []
+    },
+    {
+      "title": "The grief when AI writes most of the code",
+      "url": "https://blog.pragmaticengineer.com/the-grief-when-ai-writes-most-of-the-code/",
+      "source": "The grief when AI writes most of the codeThe Pragmatic Engineer",
+      "date": "2026-01-07",
+      "relativeDate": "12d",
+      "description": "The grief when AI writes most of the codeThe Pragmatic Engineer  / 12d I’m coming to terms with the high probability that AI will write most of my code which I ship to prod, going forward. It already does it faster, and with similar results to if I’d typed it out. For languages/frameworks I’m less familiar with, it does a better job than me. It feels like something valuable is being taken away, an",
+      "otherBoards": []
+    },
+    {
+      "title": "Secure and Intelligent: Queryable Encryption and Vector Search in MongoDB EF Core Provider",
+      "url": "https://devblogs.microsoft.com/dotnet/mongodb-efcore-provider-queryable-encryption-vector-search/",
+      "source": "Secure and Intelligent: Queryable Encryption and Vector Search in MongoDB EF Core Provider.NET Blog",
+      "date": "2026-01-07",
+      "relativeDate": "12d",
+      "description": "Secure and Intelligent: Queryable Encryption and Vector Search in MongoDB EF Core Provider.NET Blog  / 12d This is a guest post by Rishit Bhatia and Luce Carter. Rishit is a Senior Product Manager at MongoDB focusing on the .NET Developer Experience and worked hands-on with C# for many years before moving into Product Management. Luce is a Senior Developer Advocate at MongoDB, Microsoft MVP, and l",
+      "otherBoards": []
+    },
+    {
+      "title": "Quoting Adam Wathan",
+      "url": "https://simonwillison.net/2026/Jan/7/adam-wathan/",
+      "source": "Quoting Adam WathanSimon Willison's Weblog",
+      "date": "2026-01-07",
+      "relativeDate": "12d",
+      "description": "Quoting Adam WathanSimon Willison's Weblog  / 12d [...] the reality is that 75% of the people on our engineering team lost their jobs here yesterday because of the brutal impact AI has had on our business. And every second I spend trying to do fun free things for the community like this is a second I'm not spending trying to turn the business around and make sure the people who are still here are ",
+      "otherBoards": []
+    },
+    {
+      "title": "Quoting Robin Sloan",
+      "url": "https://simonwillison.net/2026/Jan/7/robin-sloan/#atom-everything",
+      "source": "Quoting Robin SloanSimon Willison's Weblog",
+      "date": "2026-01-07",
+      "relativeDate": "12d",
+      "description": "Quoting Robin SloanSimon Willison's Weblog  / 12d AGI is here ! When exactly it arrived, we’ll never know; whether it was one company’s Pro or another company’s Pro Max (Eddie Bauer Edition) that tip-toed first across the line … you may debate. But generality has been achieved, & now we can proceed to new questions. [...] The key word in Artificial General Intelligence is General. That’s the word ",
+      "otherBoards": []
+    }
+  ],
+  "Docker": [],
+  "Frontend": [],
+  "General": [],
+  "General Security": [],
+  "GitHub": [
+    {
+      "title": "IssueOps: Automate CI/CD (and more!) with GitHub Issues and Actions",
+      "url": "https://github.blog/engineering/issueops-automate-ci-cd-and-more-with-github-issues-and-actions/",
+      "source": "The latest from GitHub's engineering tea...",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "IssueOps: Automate CI/CD (and more!) with GitHub Issues and ActionsGitHub•The latest from GitHub's engineering tea...  / 10mo Software development is filled with repetitive tasks—managing issues, handling approvals, triggering CI/CD workflows, and more. But what if you could automate these types of tasks directly within GitHub Issues? That’s the promise of IssueOps , a methodology that turns GitHu",
+      "otherBoards": []
+    },
+    {
+      "title": "How to Use GitHub Codespaces with Azure DevOps Repositories",
+      "url": "https://luke.geek.nz/azure/github-codespaces-azure-devops-repo/",
+      "source": "Azure Feeds",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "How to Use GitHub Codespaces with Azure DevOps RepositoriesAI•Azure Feeds  / 10mo I’ve talked about GitHub Codespaces before, but what I haven’t covered – is using a GitHub Codespace to connect to a repository in Azure DevOps. It’s classed as ‘Remote Repository’ in the Codespace, however, it’s something that can be done. To start with, we have a repository in Azure DevOps, and we want to connect t",
+      "otherBoards": []
+    },
+    {
+      "title": "How to debug code with GitHub Copilot",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-debug-code-with-github-copilot/",
+      "source": "The latest from GitHub's engineering tea...",
+      "date": "2025-02-19",
+      "relativeDate": "11mo",
+      "description": "How to debug code with GitHub CopilotGitHub•27The latest from GitHub's engineering tea...  / 11mo Debugging is an essential part of a developer’s workflow—but it’s also one of the most time consuming. What if AI could streamline the process, helping you analyze, fix, and document code faster? Enter GitHub Copilot, your AI-powered coding assistant. GitHub Copilot isn’t just for writing code—it’s al",
+      "otherBoards": []
+    },
+    {
+      "title": "Iterate across multiple files more efficiently with GitHub Copilot Edits",
+      "url": "https://devblogs.microsoft.com/visualstudio/iterate-across-multiple-files-more-efficiently-with-github-copilot-edits-preview/",
+      "source": "Visual Studio Blog",
+      "date": "2025-02-19",
+      "relativeDate": "11mo",
+      "description": "Iterate across multiple files more efficiently with GitHub Copilot EditsAI•Visual Studio Blog  / 11mo GitHub Copilot Edits in Visual Studio 2022 combines the conversational flow of chat and an inline review experience to help you iterate across your codebase with more control and efficiency. Here’s how Copilot Edits helps with iterating across multiple files: Preview with clarity : Review a clear ",
+      "otherBoards": []
+    }
+  ],
+  "Go": [],
+  "IaC": [
+    {
+      "title": "Cache public container images in your Azure Container Registry with Terraform",
+      "url": "https://medium.com/microsoftazure/cache-public-container-images-in-your-azure-container-registry-with-terraform-aa76dcdb08b4?source=rss----8bec1183ada9---4",
+      "source": "Microsoft Azure",
+      "date": "2025-02-19",
+      "relativeDate": "11mo",
+      "description": "Cache public container images in your Azure Container Registry with TerraformIaC•Microsoft Azure  / 11mo When running your application on Azure Kubernetes Services, it’s a best practice to store the container images you need in an Azure Container Registry. This setup will improve performance when downloading container images for new pods. It also ensures you can create new pods even if a public re",
+      "otherBoards": []
+    }
+  ],
+  "Identity / Authentication": [
+    {
+      "title": "Implement a secure MCP server using OAuth and Entra ID",
+      "url": "https://damienbod.com/2025/09/23/implement-a-secure-mcp-server-using-oauth-and-entra-id/",
+      "source": "Software Engineering",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "Implement a secure MCP server using OAuth and Entra IDAI•Software Engineering  / 3mo The article shows how to implement a secure model context protocol (MCP) server using OAuth and Entra ID. The MCP server is implemented using ASP.NET Core and uses Microsoft Entra ID to secure the API. An ASP.NET Core application using Azure OpenAI and semantic kernel is used to implement the MCP client for the ag",
+      "otherBoards": []
+    },
+    {
+      "title": "Authentication and authorization in a microservice architecture: Part 2 - Authentication",
+      "url": "http://microservices.io//post/architecture/2025/05/28/microservices-authn-authz-part-2-authentication.html",
+      "source": "Microservice architecture",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "Authentication and authorization in a microservice architecture: Part 2 - AuthenticationArchitecture •Microservice architecture  / 7mo This article is the second in a series of articles about authentication and authorization in a microservice architecture. The complete series is: Overview of authentication and authorization in a microservice architecture Implementing authentication Implementing JW",
+      "otherBoards": []
+    },
+    {
+      "title": "Use client assertions in OpenID Connect and ASP.NET Core",
+      "url": "https://damienbod.com/2025/02/24/use-client-assertions-in-openid-connect-and-asp-net-core/",
+      "source": "Software Engineering",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "Use client assertions in OpenID Connect and ASP.NET CoreIdentity / Authentication•Software Engineering  / 10mo Client assertions is a method of client authentication which can be used in OpenID Connect. This provides an alternative to client secrets. This approach enhances security by using signed tokens (JWTs) to authenticate clients during the token request process or the OAuth PAR request. In A",
+      "otherBoards": []
+    }
+  ],
+  "Interview": [
+    {
+      "title": "How to Tackle Coding Interviews",
+      "url": "https://newsletter.francofernando.com/p/how-to-tackle-coding-interviews",
+      "source": "The Polymathic Engineer",
+      "date": "2025-07-19",
+      "relativeDate": "6mo",
+      "description": "How to Tackle Coding InterviewsInterview - Coding•The Polymathic Engineer  / 6mo Hi Friends, Welcome to the 130th issue of the Polymathic Engineer. Coding interviews can be intimidating. You are asked to answer a difficult problem on the spot and write code that works while also explaining your thought process to the interviewer. It's not surprising that a lot of smart engineers have trouble with ",
+      "otherBoards": []
+    }
+  ],
+  "Interview - Coding": [
+    {
+      "title": "How to Tackle Coding Interviews",
+      "url": "https://newsletter.francofernando.com/p/how-to-tackle-coding-interviews",
+      "source": "The Polymathic Engineer",
+      "date": "2025-07-19",
+      "relativeDate": "6mo",
+      "description": "How to Tackle Coding InterviewsInterview - Coding•The Polymathic Engineer  / 6mo Hi Friends, Welcome to the 130th issue of the Polymathic Engineer. Coding interviews can be intimidating. You are asked to answer a difficult problem on the spot and write code that works while also explaining your thought process to the interviewer. It's not surprising that a lot of smart engineers have trouble with ",
+      "otherBoards": []
+    },
+    {
+      "title": "Range Queries",
+      "url": "https://newsletter.francofernando.com/p/range-queries",
+      "source": "The Polymathic Engineer",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "Range QueriesInterview - Coding•The Polymathic Engineer  / 7mo Hi Friends, Welcome to the 126th issue of the Polymathic Engineer newsletter. This week, we discuss some interesting data structures that can be used to efficiently run range queries on arrays. In particular, we will mostly talk about range sum queries (which add up all the elements in a range) and range minimum queries (which find the",
+      "otherBoards": []
+    },
+    {
+      "title": "Mastering the Two-Pointers Technique",
+      "url": "https://newsletter.francofernando.com/p/mastering-the-two-pointers-technique",
+      "source": "The Polymathic Engineer",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "Mastering the Two-Pointers TechniqueInterview - Coding•The Polymathic Engineer  / 7mo Hi Friends, Welcome to the 124th issue of the Polymathic Engineer newsletter. This week, we’ll have an overview on Chaos Engineering, an approach to testing that uses intentional failure to make distributed systems more resilient. The outline will be as follows: What is the two pointers method? Core strategies an",
+      "otherBoards": []
+    }
+  ],
+  "Interview - Systems Design": [
+    {
+      "title": "How Facebook’s Distributed Priority Queue Handles Trillions of Items",
+      "url": "https://blog.bytebytego.com/p/how-facebooks-distributed-priority",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "How Facebook’s Distributed Priority Queue Handles Trillions of ItemsInterview - Systems Design•ByteByteGo Newsletter  / 3mo AI AppGen that understands your business (Sponsored) AI app builders can scaffold a UI from a prompt. But connecting it to your data, deploying it to your preferred environment, and securing it by default? That’s where most tools break down. Retool takes you all the way—combi",
+      "otherBoards": []
+    },
+    {
+      "title": "Caching in Distributed Systems - Part I",
+      "url": "https://newsletter.francofernando.com/p/caching-in-distributed-systems-part",
+      "source": "The Polymathic Engineer",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "Caching in Distributed Systems - Part IInterview - Systems Design•The Polymathic Engineer  / 3mo Hi Friends, Welcome to the 143rd issue of the Polymathic Engineer newsletter. This week, we start a small series of in-depth articles regarding caching in distributed systems. A few of you who have been reading my work since the beginning might remember that we talked about caching in one of the first ",
+      "otherBoards": []
+    },
+    {
+      "title": "Caching in Distributed Systems - Part II",
+      "url": "https://newsletter.francofernando.com/p/caching-in-distributed-systems-part-6ca",
+      "source": "The Polymathic Engineer",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "Caching in Distributed Systems - Part IIInterview - Systems Design•The Polymathic Engineer  / 3mo Hi Friends, Welcome to the 144th issue of the Polymathic Engineer newsletter. This week, we will continue our deep dive on caching in distributed systems. While in the last issue we focused mainly on performance and deployment strategies, this time we will discuss read/write strategies and all what is",
+      "otherBoards": []
+    },
+    {
+      "title": "How Reddit Delivers Notifications to Tens of Millions of Users",
+      "url": "https://blog.bytebytego.com/p/how-reddit-delivers-notifications",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-08-19",
+      "relativeDate": "5mo",
+      "description": "How Reddit Delivers Notifications to Tens of Millions of UsersInterview - Systems Design•ByteByteGo Newsletter  / 5mo Building Low Latency Apps Virtual Masterclass (Sponsored) Get battle-tested tips from Pekka Enberg, Author of Latency and Turso co-founder Latency lurks in every layer of a distributed system. In this masterclass you’ll learn proven strategies to eliminate bottlenecks across the st",
+      "otherBoards": []
+    },
+    {
+      "title": "Top Leader Election Algorithms in Distributed Databases",
+      "url": "https://blog.bytebytego.com/p/top-leader-election-algorithms-in",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-08-19",
+      "relativeDate": "5mo",
+      "description": "Top Leader Election Algorithms in Distributed DatabasesInterview - Systems Design•ByteByteGo Newsletter  / 5mo Distributed database systems rely on coordination to work properly. When multiple nodes replicate data and process requests across regions or zones, a particular node has to take charge of write operations. This node is typically called the leader: a single node responsible for ordering u",
+      "otherBoards": []
+    },
+    {
+      "title": "Top Scalability Strategies for Real-World Load",
+      "url": "https://blog.bytebytego.com/p/top-scalability-strategies-for-real",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-08-19",
+      "relativeDate": "5mo",
+      "description": "Top Scalability Strategies for Real-World LoadInterview - Systems Design•ByteByteGo Newsletter  / 5mo Scalability is the ability of a system to handle growth (more users, more data, and more requests) with high performance. In modern distributed systems, scalability is not a nice-to-have. Whether serving a global user base or responding to a viral spike, systems that fail to scale often fail outri",
+      "otherBoards": []
+    },
+    {
+      "title": "EP173: BIGGEST Mistakes to Avoid in System Design Interviews",
+      "url": "https://blog.bytebytego.com/p/ep173-12-mcp-servers-you-can-use",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-08-19",
+      "relativeDate": "5mo",
+      "description": "EP173: BIGGEST Mistakes to Avoid in System Design InterviewsInterview - Systems Design•ByteByteGo Newsletter  / 5mo ByteByteGo Technical Interview Prep Kit Launching the All-in-one interview prep. We’re making all the books available on the ByteByteGo website . What's included: System Design Interview Coding Interview Patterns Object-Oriented Design Interview How to Write a Good Resume Behavioral ",
+      "otherBoards": []
+    },
+    {
+      "title": "Consistency and Partition Tolerance: Understanding CAP vs PACELC",
+      "url": "https://blog.bytebytego.com/p/consistency-and-partition-tolerance",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-08-19",
+      "relativeDate": "5mo",
+      "description": "Consistency and Partition Tolerance: Understanding CAP vs PACELCInterview - Systems Design•ByteByteGo Newsletter  / 5mo Modern databases don’t run on a single box anymore. They span regions, replicate data across nodes, and serve millions of queries in parallel. However, every time a database tries to be fast, available, and correct at once, something has to give. As systems scale, the promise of ",
+      "otherBoards": []
+    },
+    {
+      "title": "EP169: RAG vs Agentic RAG",
+      "url": "https://blog.bytebytego.com/p/ep169-rag-vs-agentic-rag",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-07-19",
+      "relativeDate": "6mo",
+      "description": "EP169: RAG vs Agentic RAGInterview - Systems Design•ByteByteGo Newsletter  / 6mo 🚀 Faster mobile app releases with 100% parallel automated QA (Sponsored) Manual testing on personal devices is too slow and too limited . It forces teams to cut releases a week early just to test before submitting them to app stores. And without broad device coverage, issues slip through. QA Wolf gets mobile apps to ",
+      "otherBoards": []
+    },
+    {
+      "title": "EP170: All-in-One Technical Interview Prep Kit",
+      "url": "https://blog.bytebytego.com/p/ep170-best-ways-to-test-system-functionality",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-07-19",
+      "relativeDate": "6mo",
+      "description": "EP170: All-in-One Technical Interview Prep KitInterview - Systems Design•ByteByteGo Newsletter  / 6mo 😘 Kiss bugs goodbye with fully automated end-to-end test coverage (Sponsored) Bugs sneak out when less than 80% of user flows are tested before shipping. However, getting that kind of coverage (and staying there) is hard and pricey for any team. QA Wolf’s AI-native service provides high-volume, h",
+      "otherBoards": []
+    },
+    {
+      "title": "How Discord Stores Trillions of Messages with High Performance",
+      "url": "https://blog.bytebytego.com/p/how-discord-stores-trillions-of-messages",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-07-19",
+      "relativeDate": "6mo",
+      "description": "How Discord Stores Trillions of Messages with High PerformanceInterview - Systems Design•ByteByteGo Newsletter  / 6mo MCP Authorization in 5 Easy OAuth Specs (Sponsored) Securely authorizing access to an MCP server used to be an open question. Now there's a clear answer: OAuth. It provides a path with five key specs covering delegation, token exchange, and scoped access. WorkOS packages the full s",
+      "otherBoards": []
+    },
+    {
+      "title": "Model Once, Represent Everywhere: UDA (Unified Data Architecture) at Netflix",
+      "url": "https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d",
+      "source": "Netflix TechBlog",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "Model Once, Represent Everywhere: UDA (Unified Data Architecture) at NetflixInterview - Systems Design•Netflix TechBlog  / 7mo By Alex Hutter , Alexandre Bertails , Claire Wang , Haoyuan He , Kishore Banala , Peter Royal , Shervin Afshar As Netflix’s offerings grow — across films, series, games, live events, and ads — so does the complexity of the systems that support it. Core business concepts li",
+      "otherBoards": []
+    },
+    {
+      "title": "How Netflix Runs on Java?",
+      "url": "https://blog.bytebytego.com/p/how-netflix-runs-on-java",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "How Netflix Runs on Java?Interview - Systems Design•ByteByteGo Newsletter  / 7mo Kubernetes Quick-Start Guide (Sponsored) Cut through the noise with this engineer-friendly guide to Kubernetes observability. Get a fast-track reference to essential kubectl commands and critical metrics — from disk I/O and network latency to real-time cluster events. Perfect for scaling, debugging, and tuning your wo",
+      "otherBoards": []
+    },
+    {
+      "title": "Journey to 1000 models: Scaling Instagram’s recommendation system",
+      "url": "https://engineering.fb.com/2025/05/21/production-engineering/journey-to-1000-models-scaling-instagrams-recommendation-system/",
+      "source": "Engineering at Meta",
+      "date": "2025-05-19",
+      "relativeDate": "8mo",
+      "description": "Journey to 1000 models: Scaling Instagram’s recommendation systemInterview - Systems Design•100+Engineering at Meta  / 8mo In this post, we explore how Instagram has successfully scaled its algorithm to include over 1000 ML models without sacrificing recommendation quality or reliability. We delve into the intricacies of managing such a vast array of models, each with its own performance character",
+      "otherBoards": []
+    },
+    {
+      "title": "Engineering Trade-offs: Eventual Consistency in Practice",
+      "url": "https://blog.bytebytego.com/p/a-guide-to-eventual-consistency-in",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-05-19",
+      "relativeDate": "8mo",
+      "description": "Engineering Trade-offs: Eventual Consistency in PracticeInterview - Systems Design•ByteByteGo Newsletter  / 8mo Imagine a ride-sharing app that shows a driver’s location with a few seconds of delay. Now, imagine if the entire app refused to show anything until every backend service agreed on the perfect current location. No movement, no updates, just a spinning wheel. That’s what would happen if s",
+      "otherBoards": []
+    },
+    {
+      "title": "Behind the Scenes: Building a Robust Ads Event Processing Pipeline",
+      "url": "https://netflixtechblog.com/behind-the-scenes-building-a-robust-ads-event-processing-pipeline-e4e86caf9249",
+      "source": "Stories by Netflix Technology Blog on Me...",
+      "date": "2025-05-19",
+      "relativeDate": "8mo",
+      "description": "Behind the Scenes: Building a Robust Ads Event Processing PipelineInterview - Systems Design•Stories by Netflix Technology Blog on Me...  / 8mo Kinesh Satiya Introduction In a digital advertising platform, a robust feedback system is essential for the lifecycle and success of an ad campaign. This system comprises of diverse sub-systems designed to monitor, measure, and optimize ad campaigns. At Ne",
+      "otherBoards": []
+    },
+    {
+      "title": "How Halo on Xbox Scaled to 10+ Million Players using the Saga Pattern",
+      "url": "https://blog.bytebytego.com/p/how-halo-on-xbox-scaled-to-10-million",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-05-19",
+      "relativeDate": "8mo",
+      "description": "How Halo on Xbox Scaled to 10+ Million Players using the Saga PatternInterview - Systems Design•ByteByteGo Newsletter  / 8mo The 6 Core Competencies of Mature DevSecOps Orgs (Sponsored) Understand the core competencies that define mature DevSecOps organizations. This whitepaper offers a clear framework to assess your organization's current capabilities, define where you want to be, and outline pra",
+      "otherBoards": []
+    },
+    {
+      "title": "EP160: Top 20 System Design Concepts You Should Know",
+      "url": "https://blog.bytebytego.com/p/ep160-top-20-system-design-concepts",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-05-19",
+      "relativeDate": "8mo",
+      "description": "EP160: Top 20 System Design Concepts You Should KnowInterview - Systems Design•ByteByteGo Newsletter  / 8mo ✂️Cut your QA cycles down to minutes with QA Wolf (Sponsored) If slow QA processes bottleneck you or your software engineering team and you’re releasing slower because of it — you need to check out QA Wolf. QA Wolf’s AI-native service supports web and mobile apps , delivering 80% automated t",
+      "otherBoards": []
+    },
+    {
+      "title": "Staff+ self-onboarding questions",
+      "url": "https://blog.alexewerlof.com/p/staff-self-onboarding-questions",
+      "source": "Alex Ewerlöf Notes",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Staff+ self-onboarding questionsInterview - Systems Design•Alex Ewerlöf Notes  / 9mo Congratulations on getting a role as Staff+ (Staff Engineer, Principal Engineer, Distinguished Engineer, etc.). Now you need to quickly onboard yourself to a new t echnology landscape, p roduct area, o peration model, and new p eople ( T-POP ). This post discusses: What makes self-onboarding special for senior tec",
+      "otherBoards": []
+    },
+    {
+      "title": "How (not to) fail a system design interview",
+      "url": "https://newsletter.francofernando.com/p/how-not-to-fail-a-system-design-interview",
+      "source": "The Polymathic Engineer",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "How (not to) fail a system design interviewInterview - Systems Design•The Polymathic Engineer  / 9mo Hi Friends, Welcome to the 116th issue of the Polymathic Engineer newsletter. This week, we talk about system design interviews. Every software engineer knows that these interviews can be the hardest part of the whole process. While coding interviews are more focused on algorithms, system design in",
+      "otherBoards": []
+    }
+  ],
+  "Kubernetes": [
+    {
+      "title": "How To Build a Kubernetes Operator From Scratch",
+      "url": "https://thenewstack.io/how-to-build-a-kubernetes-operator-from-scratch/",
+      "source": "Kubernetes Overview, News and Trends",
+      "date": "2025-05-19",
+      "relativeDate": "8mo",
+      "description": "How To Build a Kubernetes Operator From ScratchKubernetes•Kubernetes Overview, News and Trends  / 8mo Building robust, scalable applications in Kubernetes often requires fine-tuned automation — and that’s where Kubernetes operators come into play. Operators extend Kubernetes’ capabilities by automating management of custom resources and stateful applications. Think of operators as software that kn",
+      "otherBoards": []
+    },
+    {
+      "title": "Components vs. Containers: Fight?",
+      "url": "https://www.cncf.io/blog/2025/04/09/components-vs-containers-fight/",
+      "source": "Cloud Native Computing Foundation",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Components vs. Containers: Fight?Kubernetes•Cloud Native Computing Foundation  / 9mo WebAssembly components offer a new way to deploy microservices and other applications in cloud native environments. This naturally raises the question: is the upstart component out to replace containers? Or is this one of those situations where the apparent rivals need to learn to work together? For a proper answe",
+      "otherBoards": []
+    },
+    {
+      "title": "Application Gateway for Containers: a not-so-gentle intro (4)",
+      "url": "https://blog.cloudtrooper.net/2025/04/02/application-gateway-for-containers-a-not-so-gentle-intro-4/",
+      "source": "Azure Feeds",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Application Gateway for Containers: a not-so-gentle intro (4)Kubernetes•Azure Feeds  / 9mo This post will explore the new support in Azure Application Gateway for Containers (AGC) for the overlay network option in Azure Kubernetes Service (AKS) as documented in https://aka.ms/agc/overlay , as well as whether you can see traffic between AGC and AKS with VNet Flow Logs. This blog is part of a series",
+      "otherBoards": []
+    },
+    {
+      "title": "Istio: The Highest-Performance Solution for Network Security",
+      "url": "https://www.cncf.io/blog/2025/03/27/istio-the-highest-performance-solution-for-network-security/",
+      "source": "Cloud Native Computing Foundation",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Istio: The Highest-Performance Solution for Network SecurityTools and Frameworks•Cloud Native Computing Foundation  / 9mo Ambient mode provides more encrypted throughput than any other project in the Kubernetes ecosystem. Encryption in transit is a baseline requirement for almost all Kubernetes environments today, and forms the foundation of a zero-trust security posture. However, the challenge wi",
+      "otherBoards": []
+    },
+    {
+      "title": "Kubernetes Troubleshooting: A Step-by-Step Guide",
+      "url": "https://www.cncf.io/blog/2025/03/13/kubernetes-troubleshooting-a-step-by-step-guide/",
+      "source": "Cloud Native Computing Foundation",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "Kubernetes Troubleshooting: A Step-by-Step GuideKubernetes•Cloud Native Computing Foundation  / 10mo In the modern era of the software industry, microservice architecture and Kubernetes have become the globally adopted solution, for organizations looking for scalability and operational efficiency. At one end where these cutting-edge technologies help organizations operate at scale, navigating thro",
+      "otherBoards": []
+    },
+    {
+      "title": "Use Azure Front Door to secure AKS workloads",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/aks-front-door/aks-front-door",
+      "source": "Azure Feeds",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "Use Azure Front Door to secure AKS workloadsArchitecture •Azure Feeds  / 10mo Learn how to secure AKS workloads by using end-to-end TLS encryption, Azure Front Door Premium, an Azure Private Link service, and the NGINX ingress controller.",
+      "otherBoards": []
+    },
+    {
+      "title": "Demo an Automated Canary Deployment on Kubernetes with Argo Rollouts, Istio, and Prometheus",
+      "url": "https://www.cncf.io/blog/2025/02/18/demo-an-automated-canary-deployment-on-kubernetes-with-argo-rollouts-istio-and-prometheus/",
+      "source": "Cloud Native Computing Foundation",
+      "date": "2025-02-19",
+      "relativeDate": "11mo",
+      "description": "Demo an Automated Canary Deployment on Kubernetes with Argo Rollouts, Istio, and PrometheusKubernetes•Cloud Native Computing Foundation  / 11mo Building stuff is fun! Let’s use Argo Rollouts, Istio, and Prometheus to automate a canary deployment on Kubernetes! The application we’ll run is the Argo Rollouts Demo Application which does a great job of visualizing how traffic is slowly routed from fro",
+      "otherBoards": []
+    },
+    {
+      "title": "Kubernetes Best Practices I Wish I Had Known Before",
+      "url": "https://www.pulumi.com/blog/kubernetes-best-practices-i-wish-i-had-known-before/",
+      "source": "pulumi",
+      "date": "2025-01-19",
+      "relativeDate": "12mo",
+      "description": "Kubernetes Best Practices I Wish I Had Known BeforeKubernetes•pulumi  / 12mo  Posted on Monday, Jan 20, 2025 Kubernetes has undeniably transformed the way we build, ship, and run applications. But let’s be honest, getting started with Kubernetes can feel like climbing Mount Everest in flip-flops. As a cloud-native citizen and Kubernetes enthusiast, I’ve learned the hard way that there are a bunch ",
+      "otherBoards": []
+    },
+    {
+      "title": "Build an Open Source Kubernetes GitOps Platform, Part 1",
+      "url": "https://thenewstack.io/build-an-open-source-kubernetes-gitops-platform-part-1/",
+      "source": "Kubernetes Overview, News and Trends",
+      "date": "2025-01-19",
+      "relativeDate": "12mo",
+      "description": "Build an Open Source Kubernetes GitOps Platform, Part 1Kubernetes•Kubernetes Overview, News and Trends  / 12mo Read Part 2 With Kubernetes recently celebrating its 10th birthday, its landscape of popular open source products reached such a maturity that whatever your platform must use, there is a reliable open source product ready to help. A common cluster typically includes many open source tools",
+      "otherBoards": []
+    },
+    {
+      "title": "WebAssembly and Containers’ Love Affair on Kubernetes",
+      "url": "https://thenewstack.io/webassembly-and-containers-love-affair-on-kubernetes/",
+      "source": "Kubernetes Overview, News and Trends",
+      "date": "2025-01-19",
+      "relativeDate": "12mo",
+      "description": "WebAssembly and Containers’ Love Affair on KubernetesKubernetes•Kubernetes Overview, News and Trends  / 12mo The use of WebAssembly is emerging as an optimal use case to replace containers in Kubernetes environments for certain workloads. Running side by side with containers , Wasm modules can replace heavier containers or be used when very fast cold start times are required, as Wasm modules are s",
+      "otherBoards": []
+    }
+  ],
+  "Leadership": [
+    {
+      "title": "How to be a good mentor for your whole team",
+      "url": "https://www.atlassian.com/blog/leadership/how-to-be-a-good-mentor-for-your-whole-team",
+      "source": "Work Life by Atlassian",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "How to be a good mentor for your whole teamLeadership•Work Life by Atlassian  / 10mo Subscribe to Work Life Get stories like this in your inbox In a perfect world, all managers would adopt a mentorship mindset. But we live in the real, decidedly im perfect world. Plenty of managers simply get the work done and call it a day. They make sure their team is executing well, but unlike mentor-minded man",
+      "otherBoards": []
+    }
+  ],
+  "Microservices": [
+    {
+      "title": "Understanding Microservices: Core Concepts and Benefits",
+      "url": "https://www.milanjovanovic.tech/blog/understanding-microservices-core-concepts-and-benefits",
+      "source": "Milan's .NET Weekly",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Understanding Microservices: Core Concepts and BenefitsMicroservices•Milan's .NET Weekly  / 9mo Build Faster with ABP.IO Modules . Save weeks of development time with ready-made, enterprise-grade modules from ABP.IO. From Identity and SaaS to Audit Logging and Language Management, ABP's modular architecture helps you ship faster and scale confidently — all within your favorite .NET ecosystem. Each",
+      "otherBoards": []
+    }
+  ],
+  "Patterns": [],
+  "Rust": [],
+  "Serverless": [],
+  "Share with Bootcamps": [
+    {
+      "title": "OOP Design Patterns and Anti-Patterns: What Works and What Fails",
+      "url": "https://blog.bytebytego.com/p/oop-design-patterns-and-anti-patterns",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "OOP Design Patterns and Anti-Patterns: What Works and What FailsArchitecture •ByteByteGo Newsletter  / 9mo Writing clean, maintainable, and scalable code sounds easy as a requirement, but is a constant challenge when developing real-world applications. As projects grow, the task becomes more complex. One way to simplify it is by identifying recurring design problems, which can be solved using appr",
+      "otherBoards": []
+    }
+  ],
+  "SQL, Data Access": [],
+  "Static Sites": [],
+  "Systems Design": [
+    {
+      "title": "EP197: 12 Architectural Concepts Developers Should Know",
+      "url": "https://blog.bytebytego.com/p/ep197-12-architectural-concepts-developers",
+      "source": "ByteByteGo Newsletter",
+      "date": "2026-01-10",
+      "relativeDate": "9d",
+      "description": "EP197: 12 Architectural Concepts Developers Should KnowSystems Design•ByteByteGo Newsletter  / 9d How Sentry Built Production-Informed AI Code Reviews (Sponsored) In order to have your code review reflect real system behavior, you can integrate production signals into developer workflows. Sentry built Seer to connect production failure signals to incoming code changes before merge. Under the hood ",
+      "otherBoards": []
+    },
+    {
+      "title": "How Uber Serves over 150 Million Reads per Second from Integrated Cache",
+      "url": "https://blog.bytebytego.com/p/how-uber-serves-over-150-million",
+      "source": "ByteByteGo Newsletter",
+      "date": "2026-01-14",
+      "relativeDate": "5d",
+      "description": "How Uber Serves over 150 Million Reads per Second from Integrated CacheSystems Design•ByteByteGo Newsletter  / 5d How Coinbase made incident investigations 72% faster (Sponsored) Writing code is no longer the bottleneck. Instead, engineering orgs spend 70%+ of their time investigating incidents and trying to debug the sh** out of prod. Engineering teams at Coinbase, DoorDash, Salesforce, and Zscal",
+      "otherBoards": []
+    },
+    {
+      "title": "How Lyft Built an ML Platform That Serves Millions of Predictions Per Second",
+      "url": "https://blog.bytebytego.com/p/how-lyft-built-an-ml-platform-that",
+      "source": "ByteByteGo Newsletter",
+      "date": "2026-01-13",
+      "relativeDate": "6d",
+      "description": "How Lyft Built an ML Platform That Serves Millions of Predictions Per SecondSystems Design•ByteByteGo Newsletter  / 6d ✂️ Cut your QA cycles down to minutes with automated testing (Sponsored) If slow QA processes bottleneck you or your software engineering team and you’re releasing slower because of it — you need to check out QA Wolf. QA Wolf’s AI-native service supports web and mobile apps, deliv",
+      "otherBoards": []
+    },
+    {
+      "title": "How Facebook’s Distributed Priority Queue Handles Trillions of Items",
+      "url": "https://blog.bytebytego.com/p/how-facebooks-distributed-priority",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "How Facebook’s Distributed Priority Queue Handles Trillions of ItemsInterview - Systems Design•ByteByteGo Newsletter  / 3mo AI AppGen that understands your business (Sponsored) AI app builders can scaffold a UI from a prompt. But connecting it to your data, deploying it to your preferred environment, and securing it by default? That’s where most tools break down. Retool takes you all the way—combi",
+      "otherBoards": []
+    },
+    {
+      "title": "Caching in Distributed Systems - Part I",
+      "url": "https://newsletter.francofernando.com/p/caching-in-distributed-systems-part",
+      "source": "The Polymathic Engineer",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "Caching in Distributed Systems - Part IInterview - Systems Design•The Polymathic Engineer  / 3mo Hi Friends, Welcome to the 143rd issue of the Polymathic Engineer newsletter. This week, we start a small series of in-depth articles regarding caching in distributed systems. A few of you who have been reading my work since the beginning might remember that we talked about caching in one of the first ",
+      "otherBoards": []
+    },
+    {
+      "title": "Caching in Distributed Systems - Part II",
+      "url": "https://newsletter.francofernando.com/p/caching-in-distributed-systems-part-6ca",
+      "source": "The Polymathic Engineer",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "Caching in Distributed Systems - Part IIInterview - Systems Design•The Polymathic Engineer  / 3mo Hi Friends, Welcome to the 144th issue of the Polymathic Engineer newsletter. This week, we will continue our deep dive on caching in distributed systems. While in the last issue we focused mainly on performance and deployment strategies, this time we will discuss read/write strategies and all what is",
+      "otherBoards": []
+    },
+    {
+      "title": "How OpenAI Uses Kubernetes And Apache Kafka for GenAI",
+      "url": "https://blog.bytebytego.com/p/how-openai-uses-kubernetes-and-apache",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "How OpenAI Uses Kubernetes And Apache Kafka for GenAIBig Data - Stream Processing•ByteByteGo Newsletter  / 3mo Supercharge Cursor and Claude with your team’s knowledge (Sponsored) AI coding tools become more reliable when they understand the “why” behind your code. With Unblocked’s MCP server , tools like Cursor and Claude now leverage your team’s historical knowledge across tools like GitHub, Sla",
+      "otherBoards": []
+    },
+    {
+      "title": "How Airbnb Runs Distributed Databases on Kubernetes at Scale",
+      "url": "https://blog.bytebytego.com/p/how-airbnb-runs-distributed-databases",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "How Airbnb Runs Distributed Databases on Kubernetes at ScaleSystems Design•ByteByteGo Newsletter  / 3mo Stop Agent Hallucinations with Project Rules (Warp University) (Sponsored) AI coding agents are here, but harnessing that power without agents going off the rails isn’t always simple. Warp’s Project Rules solves that. Warp is the top-ranked coding agent (outperforming Claude Code, Cursor, and Co",
+      "otherBoards": []
+    },
+    {
+      "title": "How Reddit Delivers Notifications to Tens of Millions of Users",
+      "url": "https://blog.bytebytego.com/p/how-reddit-delivers-notifications",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-08-19",
+      "relativeDate": "5mo",
+      "description": "How Reddit Delivers Notifications to Tens of Millions of UsersInterview - Systems Design•ByteByteGo Newsletter  / 5mo Building Low Latency Apps Virtual Masterclass (Sponsored) Get battle-tested tips from Pekka Enberg, Author of Latency and Turso co-founder Latency lurks in every layer of a distributed system. In this masterclass you’ll learn proven strategies to eliminate bottlenecks across the st",
+      "otherBoards": []
+    },
+    {
+      "title": "Top Leader Election Algorithms in Distributed Databases",
+      "url": "https://blog.bytebytego.com/p/top-leader-election-algorithms-in",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-08-19",
+      "relativeDate": "5mo",
+      "description": "Top Leader Election Algorithms in Distributed DatabasesInterview - Systems Design•ByteByteGo Newsletter  / 5mo Distributed database systems rely on coordination to work properly. When multiple nodes replicate data and process requests across regions or zones, a particular node has to take charge of write operations. This node is typically called the leader: a single node responsible for ordering u",
+      "otherBoards": []
+    },
+    {
+      "title": "Top Scalability Strategies for Real-World Load",
+      "url": "https://blog.bytebytego.com/p/top-scalability-strategies-for-real",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-08-19",
+      "relativeDate": "5mo",
+      "description": "Top Scalability Strategies for Real-World LoadInterview - Systems Design•ByteByteGo Newsletter  / 5mo Scalability is the ability of a system to handle growth (more users, more data, and more requests) with high performance. In modern distributed systems, scalability is not a nice-to-have. Whether serving a global user base or responding to a viral spike, systems that fail to scale often fail outri",
+      "otherBoards": []
+    },
+    {
+      "title": "EP173: BIGGEST Mistakes to Avoid in System Design Interviews",
+      "url": "https://blog.bytebytego.com/p/ep173-12-mcp-servers-you-can-use",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-08-19",
+      "relativeDate": "5mo",
+      "description": "EP173: BIGGEST Mistakes to Avoid in System Design InterviewsInterview - Systems Design•ByteByteGo Newsletter  / 5mo ByteByteGo Technical Interview Prep Kit Launching the All-in-one interview prep. We’re making all the books available on the ByteByteGo website . What's included: System Design Interview Coding Interview Patterns Object-Oriented Design Interview How to Write a Good Resume Behavioral ",
+      "otherBoards": []
+    },
+    {
+      "title": "Consistency and Partition Tolerance: Understanding CAP vs PACELC",
+      "url": "https://blog.bytebytego.com/p/consistency-and-partition-tolerance",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-08-19",
+      "relativeDate": "5mo",
+      "description": "Consistency and Partition Tolerance: Understanding CAP vs PACELCInterview - Systems Design•ByteByteGo Newsletter  / 5mo Modern databases don’t run on a single box anymore. They span regions, replicate data across nodes, and serve millions of queries in parallel. However, every time a database tries to be fast, available, and correct at once, something has to give. As systems scale, the promise of ",
+      "otherBoards": []
+    },
+    {
+      "title": "EP169: RAG vs Agentic RAG",
+      "url": "https://blog.bytebytego.com/p/ep169-rag-vs-agentic-rag",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-07-19",
+      "relativeDate": "6mo",
+      "description": "EP169: RAG vs Agentic RAGInterview - Systems Design•ByteByteGo Newsletter  / 6mo 🚀 Faster mobile app releases with 100% parallel automated QA (Sponsored) Manual testing on personal devices is too slow and too limited . It forces teams to cut releases a week early just to test before submitting them to app stores. And without broad device coverage, issues slip through. QA Wolf gets mobile apps to ",
+      "otherBoards": []
+    },
+    {
+      "title": "EP170: All-in-One Technical Interview Prep Kit",
+      "url": "https://blog.bytebytego.com/p/ep170-best-ways-to-test-system-functionality",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-07-19",
+      "relativeDate": "6mo",
+      "description": "EP170: All-in-One Technical Interview Prep KitInterview - Systems Design•ByteByteGo Newsletter  / 6mo 😘 Kiss bugs goodbye with fully automated end-to-end test coverage (Sponsored) Bugs sneak out when less than 80% of user flows are tested before shipping. However, getting that kind of coverage (and staying there) is hard and pricey for any team. QA Wolf’s AI-native service provides high-volume, h",
+      "otherBoards": []
+    },
+    {
+      "title": "How Discord Stores Trillions of Messages with High Performance",
+      "url": "https://blog.bytebytego.com/p/how-discord-stores-trillions-of-messages",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-07-19",
+      "relativeDate": "6mo",
+      "description": "How Discord Stores Trillions of Messages with High PerformanceInterview - Systems Design•ByteByteGo Newsletter  / 6mo MCP Authorization in 5 Easy OAuth Specs (Sponsored) Securely authorizing access to an MCP server used to be an open question. Now there's a clear answer: OAuth. It provides a path with five key specs covering delegation, token exchange, and scoped access. WorkOS packages the full s",
+      "otherBoards": []
+    },
+    {
+      "title": "Model Once, Represent Everywhere: UDA (Unified Data Architecture) at Netflix",
+      "url": "https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d",
+      "source": "Netflix TechBlog",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "Model Once, Represent Everywhere: UDA (Unified Data Architecture) at NetflixInterview - Systems Design•Netflix TechBlog  / 7mo By Alex Hutter , Alexandre Bertails , Claire Wang , Haoyuan He , Kishore Banala , Peter Royal , Shervin Afshar As Netflix’s offerings grow — across films, series, games, live events, and ads — so does the complexity of the systems that support it. Core business concepts li",
+      "otherBoards": []
+    },
+    {
+      "title": "How Netflix Runs on Java?",
+      "url": "https://blog.bytebytego.com/p/how-netflix-runs-on-java",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "How Netflix Runs on Java?Interview - Systems Design•ByteByteGo Newsletter  / 7mo Kubernetes Quick-Start Guide (Sponsored) Cut through the noise with this engineer-friendly guide to Kubernetes observability. Get a fast-track reference to essential kubectl commands and critical metrics — from disk I/O and network latency to real-time cluster events. Perfect for scaling, debugging, and tuning your wo",
+      "otherBoards": []
+    },
+    {
+      "title": "Journey to 1000 models: Scaling Instagram’s recommendation system",
+      "url": "https://engineering.fb.com/2025/05/21/production-engineering/journey-to-1000-models-scaling-instagrams-recommendation-system/",
+      "source": "Engineering at Meta",
+      "date": "2025-05-19",
+      "relativeDate": "8mo",
+      "description": "Journey to 1000 models: Scaling Instagram’s recommendation systemInterview - Systems Design•100+Engineering at Meta  / 8mo In this post, we explore how Instagram has successfully scaled its algorithm to include over 1000 ML models without sacrificing recommendation quality or reliability. We delve into the intricacies of managing such a vast array of models, each with its own performance character",
+      "otherBoards": []
+    },
+    {
+      "title": "EP159: The Data Engineering Roadmap",
+      "url": "https://blog.bytebytego.com/p/ep159-the-data-engineering-roadmap",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "EP159: The Data Engineering RoadmapSystems Design•ByteByteGo Newsletter  / 9mo How to monitor containerized applications in Azure (Sponsored) In this eBook, you’ll learn how to deploy and monitor containerized applications using Azure and Datadog. Start monitoring AKS cluster status, AKS control plane, and understand critical AKS resource metrics. Plus, get best practices on collecting and trackin",
+      "otherBoards": []
+    }
+  ],
+  "Talks": [],
+  "Test Automation": [],
+  "Tools and Frameworks": [
+    {
+      "title": "Building Custom Tooling with LLMs",
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/16-building-custom-tooling-with-llms.html",
+      "source": "Martin Fowler",
+      "date": "2025-05-19",
+      "relativeDate": "8mo",
+      "description": "Building Custom Tooling with LLMsTools and Frameworks•Martin Fowler  / 8mo Tools that treat diagrams as code, such as PlantUML, are invaluable for communicating complex system behavior. But Unmesh Joshi often wished for an extension to walk through these diagrams step-by-step. Yet, extending established tools like PlantUML often involves significant initial setup - parsing hooks, build scripts, vi",
+      "otherBoards": []
+    },
+    {
+      "title": "PostgreSQL JSONB - Powerful Storage for Semi-Structured Data",
+      "url": "https://www.architecture-weekly.com/p/postgresql-jsonb-powerful-storage",
+      "source": "Architecture Weekly",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "PostgreSQL JSONB - Powerful Storage for Semi-Structured DataTools and Frameworks•Architecture Weekly  / 9mo Object-oriented or relational? You’ve seen this battle in your projects. For many years, we tried to fit the business data, which is usually grouped by business use case, into a normalised table structure. Sometimes it fits better, sometimes worse. We learn to cheat it with Object-Relational",
+      "otherBoards": []
+    },
+    {
+      "title": "Announcing CommandLineExtensions, a .NET DI Compatible System.CommandLine Facade",
+      "url": "https://blog.peterritchie.com/posts/announcing-commandlineextensions",
+      "source": "Peter Ritchie's Blog",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Announcing CommandLineExtensions, a .NET DI Compatible System.CommandLine FacadeTools and Frameworks•Peter Ritchie's Blog  / 9mo Mission, Inspiration The mission of CommandLineExtensions is to help make command-line argument parsing simpler while leveraging Microsoft-supported System.CommandLine . The inspiration for CommandLineExtensions spawns from ConsoleApplicationBuilder, which makes it easie",
+      "otherBoards": []
+    },
+    {
+      "title": "Programming with GitHub Copilot Agent Mode",
+      "url": "https://techcommunity.microsoft.com/blog/azuredevcommunityblog/programming-with-github-copilot-agent-mode/4400630",
+      "source": "Azure Feeds",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Programming with GitHub Copilot Agent ModeTools and Frameworks•Azure Feeds  / 9mo GitHub Copilot continues to grow, starting with code completion/generation/optimization, to GitHub Copilot Chat, which optimizes the quality of AI-generated…",
+      "otherBoards": []
+    },
+    {
+      "title": "Create Enterprise AI Agents with Azure AI Foundry VSCode Extension",
+      "url": "https://techcommunity.microsoft.com/blog/azuredevcommunityblog/create-enterprise-ai-agents-with-azure-ai-foundry-vscode-extension/4400803",
+      "source": "Azure Feeds",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Create Enterprise AI Agents with Azure AI Foundry VSCode ExtensionTools and Frameworks•Azure Feeds  / 9mo Azure AI Foundry allows you to create enterprise-level intelligent apps and agents using Azure AI Agent Services, Azure AI Foundry Portal and the Azure…",
+      "otherBoards": []
+    },
+    {
+      "title": "Convert documents to Markdown to build a RAG solution",
+      "url": "https://bartwullems.blogspot.com/2025/03/convert-documents-to-markdown-to-build.html",
+      "source": "The art of simplicity",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Convert documents to Markdown to build a RAG solutionTools and Frameworks•The art of simplicity  / 9mo Context is key in building effective AI enabled solutions. The most popular way to extend the pretrained knowledge set of a Large Language Model is through RAG, or Retrieval-Augmented Generation. By augmenting LLMs with external data we ensure that outputs are not only coherent but also factually",
+      "otherBoards": []
+    },
+    {
+      "title": "Istio: The Highest-Performance Solution for Network Security",
+      "url": "https://www.cncf.io/blog/2025/03/27/istio-the-highest-performance-solution-for-network-security/",
+      "source": "Cloud Native Computing Foundation",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Istio: The Highest-Performance Solution for Network SecurityTools and Frameworks•Cloud Native Computing Foundation  / 9mo Ambient mode provides more encrypted throughput than any other project in the Kubernetes ecosystem. Encryption in transit is a baseline requirement for almost all Kubernetes environments today, and forms the foundation of a zero-trust security posture. However, the challenge wi",
+      "otherBoards": []
+    },
+    {
+      "title": "Practical Introduction to Event Sourcing with Emmett",
+      "url": "https://www.architecture-weekly.com/p/practical-introduction-to-event-sourcing",
+      "source": "Architecture Weekly",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "Practical Introduction to Event Sourcing with EmmettTools and Frameworks•Architecture Weekly  / 10mo Titles can be misleading. No special guest this time, but I’d like to introduce you to Emmett. Oh well, most importantly, I'd like to introduce you to Event Sourcing and show you how straightforward it can be. I believe that TypeScript, Node.js, and Emmett can help with that. For many years, I’ve t",
+      "otherBoards": []
+    },
+    {
+      "title": "Log Replication Disaggregation Survey - Apache Pulsar and BookKeeper",
+      "url": "https://jack-vanlightly.com/blog/2025/3/13/log-replication-disaggregation-survey-apache-pulsar-and-bookkeeper",
+      "source": "Jack Vanlightly",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "Log Replication Disaggregation Survey - Apache Pulsar and BookKeeperTools and Frameworks•Jack Vanlightly  / 10mo In this latest post of the disaggregated log replication survey, we’re going to look at the Apache BookKeeper Replication Protocol and how it is used by Apache Pulsar to form topic partitions. Raft blends the roles and responsibilities into one monolithic protocol, MultiPaxos separates ",
+      "otherBoards": []
+    },
+    {
+      "title": "Exploring new .NET releases with Dev Containers",
+      "url": "https://devblogs.microsoft.com/dotnet/dotnet-in-dev-container/",
+      "source": ".NET Blog",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "Exploring new .NET releases with Dev ContainersTools and Frameworks•.NET Blog  / 10mo The .NET team has just released preview2 of .NET 10, and it’s got a bundle of new features and improvements . You might want to give these a try but don’t want to mess with your local development environment. A great way to try out a .NET preview is by using dev containers. In this blog post, we’ll walk you throu",
+      "otherBoards": []
+    },
+    {
+      "title": "Announcing Dapr AI Agents",
+      "url": "https://www.cncf.io/blog/2025/03/12/announcing-dapr-ai-agents/",
+      "source": "CNCF",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "Announcing Dapr AI AgentsTools and Frameworks•CNCF  / 10mo Posted on March 12, 2025 by Mark Fussell (Dapr Maintainer and STC member), Yaron Schneider (Dapr Maintainer and STC member), Roberto Rodriguez (Dapr Maintainer) The Dapr project is excited to announce Dapr Agents , a framework for developers to simplify the creation of AI agents that reason, act, and collaborate using LLMs. Today, we are e",
+      "otherBoards": []
+    },
+    {
+      "title": "Deploy LiteLLM on Microsoft Azure with AZD, Azure Container Apps and PostgreSQL",
+      "url": "https://build5nines.com/deploy-litellm-on-microsoft-azure-with-azd-azure-container-apps-and-postgresql/",
+      "source": "Build5Nines",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "Deploy LiteLLM on Microsoft Azure with AZD, Azure Container Apps and PostgreSQLAI•Build5Nines  / 10mo Generative AI is evolving rapidly, and developers are increasingly looking for efficient ways to manage multiple LLMs (Large Language Models) using a centralized proxy. LiteLLM is a powerful solution that simplifies multi-LLM management by acting as a proxy server. However, setting it up on Micros",
+      "otherBoards": []
+    },
+    {
+      "title": "Announcing Dapr AI Agents",
+      "url": "https://www.cncf.io/blog/2025/03/12/announcing-dapr-ai-agents/",
+      "source": "Cloud Native Computing Foundation",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "Announcing Dapr AI AgentsAI•Cloud Native Computing Foundation  / 10mo The Dapr project is excited to announce Dapr Agents , a framework for developers to simplify the creation of AI agents that reason, act, and collaborate using LLMs. Today, we are excited to announce Dapr Agents, a framework built on top of Dapr that combines stateful workflow coordination with advanced Agentic AI features. Dapr ",
+      "otherBoards": []
+    },
+    {
+      "title": "Hello HybridCache! Streamlining Cache Management for ASP.NET Core Applications",
+      "url": "https://devblogs.microsoft.com/dotnet/hybrid-cache-is-now-ga/",
+      "source": ".NET Blog",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "Hello HybridCache! Streamlining Cache Management for ASP.NET Core ApplicationsTools and Frameworks•.NET Blog  / 10mo HybridCache is a new .NET 9 library available via the Microsoft.Extensions.Caching.Hybrid package and is now generally available! HybridCache, named for its ability to leverage both in-memory and distributed caches like Redis, ensures that data storage and retrieval is optimized for",
+      "otherBoards": []
+    },
+    {
+      "title": "How to Use GitHub Codespaces with Azure DevOps Repositories",
+      "url": "https://luke.geek.nz/azure/github-codespaces-azure-devops-repo/",
+      "source": "Azure Feeds",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "How to Use GitHub Codespaces with Azure DevOps RepositoriesAI•Azure Feeds  / 10mo I’ve talked about GitHub Codespaces before, but what I haven’t covered – is using a GitHub Codespace to connect to a repository in Azure DevOps. It’s classed as ‘Remote Repository’ in the Codespace, however, it’s something that can be done. To start with, we have a repository in Azure DevOps, and we want to connect t",
+      "otherBoards": []
+    },
+    {
+      "title": ".NET AI Template Now Available in Preview",
+      "url": "https://devblogs.microsoft.com/dotnet/announcing-dotnet-ai-template-preview1/",
+      "source": ".NET Blog",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": ".NET AI Template Now Available in PreviewAI•35.NET Blog  / 10mo Want to get started with AI development, but not sure where to start? I’ve got a treat for you – we have a new AI Chat Web App template now in preview. This template is part of our ongoing effort to make AI development with .NET easier to discover and use, with scaffolding and guidance within Visual Studio, Visual Studio Code, and the",
+      "otherBoards": []
+    },
+    {
+      "title": "How GitHub uses CodeQL to secure GitHub",
+      "url": "https://github.blog/engineering/how-github-uses-codeql-to-secure-github/",
+      "source": "The latest from GitHub's engineering tea...",
+      "date": "2025-02-19",
+      "relativeDate": "11mo",
+      "description": "How GitHub uses CodeQL to secure GitHubTools and Frameworks•The latest from GitHub's engineering tea...  / 11mo GitHub’s Product Security Engineering team writes code and implements tools that help secure the code that powers GitHub. We use GitHub Advanced Security (GHAS) to discover, track, and remediate vulnerabilities and enforce secure coding standards at scale. One tool we rely heavily on to ",
+      "otherBoards": []
+    },
+    {
+      "title": "Exploring Neon as a Serverless Postgres Alternative for .NET Applications on Azure - Part 1 (Simple ASP.NET Core on App Service)",
+      "url": "https://www.tpeczek.com/2025/02/exploring-neon-as-serverless-postgres.html",
+      "source": "Yet another developer blog",
+      "date": "2025-02-19",
+      "relativeDate": "11mo",
+      "description": "Exploring Neon as a Serverless Postgres Alternative for .NET Applications on Azure - Part 1 (Simple ASP.NET Core on App Service)Tools and Frameworks•Yet another developer blog  / 11mo Neon , a serverless Postgres platform, was recently brought to my attention. It comes with the promise of some interesting features like scale-to-zero, on-demand autoscaling, point-in-time restore and time travel wit",
+      "otherBoards": []
+    },
+    {
+      "title": "An AZD Template for a Chainlit Azure Container App",
+      "url": "https://jasonhaley.com/2025/01/19/chainlit-openai-containerapps-template/",
+      "source": "Jason Haley",
+      "date": "2025-01-19",
+      "relativeDate": "12mo",
+      "description": "An AZD Template for a Chainlit Azure Container AppTools and Frameworks•Jason Haley  / 12mo Late last year I was looking for an AZD template that uses Chainlit for a UI application and deploys to Azure Container Apps, but couldn’t find one … so now I’m working on building one. Chainlit OpenAI AssistantsAPI Azure Container Apps Starter This is a starter template that works with Azure Developer CLI (",
+      "otherBoards": []
+    }
+  ],
+  "Visual Studio": [
+    {
+      "title": "Democratizing Performance: The Copilot Profiler Agent in Action on Real Code",
+      "url": "https://devblogs.microsoft.com/visualstudio/copilot-profiler-agent-visual-studio/",
+      "source": "Visual Studio Blog",
+      "date": "2025-09-19",
+      "relativeDate": "4mo",
+      "description": "Democratizing Performance: The Copilot Profiler Agent in Action on Real CodeVisual Studio•Visual Studio Blog  / 4mo Watch behind the scenes of the Profiler Agent Head on over to the Copilot Profiler Agent to watch. We’re excited to announce the Copilot Profiler Agent available in Visual Studio 2026 Insiders, it’s an AI-powered performance assistant built directly into Visual Studio. Forget staring",
+      "otherBoards": []
+    }
+  ],
+  "Visual Studio Code": []
+}

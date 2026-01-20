@@ -1,0 +1,187 @@
+{
+  "board": "Systems Design",
+  "scrapedAt": "2026-01-19T23:01:38.663Z",
+  "articleCount": 20,
+  "articles": [
+    {
+      "title": "EP197: 12 Architectural Concepts Developers Should Know",
+      "url": "https://blog.bytebytego.com/p/ep197-12-architectural-concepts-developers",
+      "source": "ByteByteGo Newsletter",
+      "date": "2026-01-10",
+      "relativeDate": "9d",
+      "description": "EP197: 12 Architectural Concepts Developers Should KnowSystems Design•ByteByteGo Newsletter  / 9d How Sentry Built Production-Informed AI Code Reviews (Sponsored) In order to have your code review reflect real system behavior, you can integrate production signals into developer workflows. Sentry built Seer to connect production failure signals to incoming code changes before merge. Under the hood ",
+      "otherBoards": []
+    },
+    {
+      "title": "How Uber Serves over 150 Million Reads per Second from Integrated Cache",
+      "url": "https://blog.bytebytego.com/p/how-uber-serves-over-150-million",
+      "source": "ByteByteGo Newsletter",
+      "date": "2026-01-14",
+      "relativeDate": "5d",
+      "description": "How Uber Serves over 150 Million Reads per Second from Integrated CacheSystems Design•ByteByteGo Newsletter  / 5d How Coinbase made incident investigations 72% faster (Sponsored) Writing code is no longer the bottleneck. Instead, engineering orgs spend 70%+ of their time investigating incidents and trying to debug the sh** out of prod. Engineering teams at Coinbase, DoorDash, Salesforce, and Zscal",
+      "otherBoards": []
+    },
+    {
+      "title": "How Lyft Built an ML Platform That Serves Millions of Predictions Per Second",
+      "url": "https://blog.bytebytego.com/p/how-lyft-built-an-ml-platform-that",
+      "source": "ByteByteGo Newsletter",
+      "date": "2026-01-13",
+      "relativeDate": "6d",
+      "description": "How Lyft Built an ML Platform That Serves Millions of Predictions Per SecondSystems Design•ByteByteGo Newsletter  / 6d ✂️ Cut your QA cycles down to minutes with automated testing (Sponsored) If slow QA processes bottleneck you or your software engineering team and you’re releasing slower because of it — you need to check out QA Wolf. QA Wolf’s AI-native service supports web and mobile apps, deliv",
+      "otherBoards": []
+    },
+    {
+      "title": "How Facebook’s Distributed Priority Queue Handles Trillions of Items",
+      "url": "https://blog.bytebytego.com/p/how-facebooks-distributed-priority",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "How Facebook’s Distributed Priority Queue Handles Trillions of ItemsInterview - Systems Design•ByteByteGo Newsletter  / 3mo AI AppGen that understands your business (Sponsored) AI app builders can scaffold a UI from a prompt. But connecting it to your data, deploying it to your preferred environment, and securing it by default? That’s where most tools break down. Retool takes you all the way—combi",
+      "otherBoards": []
+    },
+    {
+      "title": "Caching in Distributed Systems - Part I",
+      "url": "https://newsletter.francofernando.com/p/caching-in-distributed-systems-part",
+      "source": "The Polymathic Engineer",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "Caching in Distributed Systems - Part IInterview - Systems Design•The Polymathic Engineer  / 3mo Hi Friends, Welcome to the 143rd issue of the Polymathic Engineer newsletter. This week, we start a small series of in-depth articles regarding caching in distributed systems. A few of you who have been reading my work since the beginning might remember that we talked about caching in one of the first ",
+      "otherBoards": []
+    },
+    {
+      "title": "Caching in Distributed Systems - Part II",
+      "url": "https://newsletter.francofernando.com/p/caching-in-distributed-systems-part-6ca",
+      "source": "The Polymathic Engineer",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "Caching in Distributed Systems - Part IIInterview - Systems Design•The Polymathic Engineer  / 3mo Hi Friends, Welcome to the 144th issue of the Polymathic Engineer newsletter. This week, we will continue our deep dive on caching in distributed systems. While in the last issue we focused mainly on performance and deployment strategies, this time we will discuss read/write strategies and all what is",
+      "otherBoards": []
+    },
+    {
+      "title": "How OpenAI Uses Kubernetes And Apache Kafka for GenAI",
+      "url": "https://blog.bytebytego.com/p/how-openai-uses-kubernetes-and-apache",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "How OpenAI Uses Kubernetes And Apache Kafka for GenAIBig Data - Stream Processing•ByteByteGo Newsletter  / 3mo Supercharge Cursor and Claude with your team’s knowledge (Sponsored) AI coding tools become more reliable when they understand the “why” behind your code. With Unblocked’s MCP server , tools like Cursor and Claude now leverage your team’s historical knowledge across tools like GitHub, Sla",
+      "otherBoards": []
+    },
+    {
+      "title": "How Airbnb Runs Distributed Databases on Kubernetes at Scale",
+      "url": "https://blog.bytebytego.com/p/how-airbnb-runs-distributed-databases",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "How Airbnb Runs Distributed Databases on Kubernetes at ScaleSystems Design•ByteByteGo Newsletter  / 3mo Stop Agent Hallucinations with Project Rules (Warp University) (Sponsored) AI coding agents are here, but harnessing that power without agents going off the rails isn’t always simple. Warp’s Project Rules solves that. Warp is the top-ranked coding agent (outperforming Claude Code, Cursor, and Co",
+      "otherBoards": []
+    },
+    {
+      "title": "How Reddit Delivers Notifications to Tens of Millions of Users",
+      "url": "https://blog.bytebytego.com/p/how-reddit-delivers-notifications",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-08-19",
+      "relativeDate": "5mo",
+      "description": "How Reddit Delivers Notifications to Tens of Millions of UsersInterview - Systems Design•ByteByteGo Newsletter  / 5mo Building Low Latency Apps Virtual Masterclass (Sponsored) Get battle-tested tips from Pekka Enberg, Author of Latency and Turso co-founder Latency lurks in every layer of a distributed system. In this masterclass you’ll learn proven strategies to eliminate bottlenecks across the st",
+      "otherBoards": []
+    },
+    {
+      "title": "Top Leader Election Algorithms in Distributed Databases",
+      "url": "https://blog.bytebytego.com/p/top-leader-election-algorithms-in",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-08-19",
+      "relativeDate": "5mo",
+      "description": "Top Leader Election Algorithms in Distributed DatabasesInterview - Systems Design•ByteByteGo Newsletter  / 5mo Distributed database systems rely on coordination to work properly. When multiple nodes replicate data and process requests across regions or zones, a particular node has to take charge of write operations. This node is typically called the leader: a single node responsible for ordering u",
+      "otherBoards": []
+    },
+    {
+      "title": "Top Scalability Strategies for Real-World Load",
+      "url": "https://blog.bytebytego.com/p/top-scalability-strategies-for-real",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-08-19",
+      "relativeDate": "5mo",
+      "description": "Top Scalability Strategies for Real-World LoadInterview - Systems Design•ByteByteGo Newsletter  / 5mo Scalability is the ability of a system to handle growth (more users, more data, and more requests) with high performance. In modern distributed systems, scalability is not a nice-to-have. Whether serving a global user base or responding to a viral spike, systems that fail to scale often fail outri",
+      "otherBoards": []
+    },
+    {
+      "title": "EP173: BIGGEST Mistakes to Avoid in System Design Interviews",
+      "url": "https://blog.bytebytego.com/p/ep173-12-mcp-servers-you-can-use",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-08-19",
+      "relativeDate": "5mo",
+      "description": "EP173: BIGGEST Mistakes to Avoid in System Design InterviewsInterview - Systems Design•ByteByteGo Newsletter  / 5mo ByteByteGo Technical Interview Prep Kit Launching the All-in-one interview prep. We’re making all the books available on the ByteByteGo website . What's included: System Design Interview Coding Interview Patterns Object-Oriented Design Interview How to Write a Good Resume Behavioral ",
+      "otherBoards": []
+    },
+    {
+      "title": "Consistency and Partition Tolerance: Understanding CAP vs PACELC",
+      "url": "https://blog.bytebytego.com/p/consistency-and-partition-tolerance",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-08-19",
+      "relativeDate": "5mo",
+      "description": "Consistency and Partition Tolerance: Understanding CAP vs PACELCInterview - Systems Design•ByteByteGo Newsletter  / 5mo Modern databases don’t run on a single box anymore. They span regions, replicate data across nodes, and serve millions of queries in parallel. However, every time a database tries to be fast, available, and correct at once, something has to give. As systems scale, the promise of ",
+      "otherBoards": []
+    },
+    {
+      "title": "EP169: RAG vs Agentic RAG",
+      "url": "https://blog.bytebytego.com/p/ep169-rag-vs-agentic-rag",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-07-19",
+      "relativeDate": "6mo",
+      "description": "EP169: RAG vs Agentic RAGInterview - Systems Design•ByteByteGo Newsletter  / 6mo 🚀 Faster mobile app releases with 100% parallel automated QA (Sponsored) Manual testing on personal devices is too slow and too limited . It forces teams to cut releases a week early just to test before submitting them to app stores. And without broad device coverage, issues slip through. QA Wolf gets mobile apps to ",
+      "otherBoards": []
+    },
+    {
+      "title": "EP170: All-in-One Technical Interview Prep Kit",
+      "url": "https://blog.bytebytego.com/p/ep170-best-ways-to-test-system-functionality",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-07-19",
+      "relativeDate": "6mo",
+      "description": "EP170: All-in-One Technical Interview Prep KitInterview - Systems Design•ByteByteGo Newsletter  / 6mo 😘 Kiss bugs goodbye with fully automated end-to-end test coverage (Sponsored) Bugs sneak out when less than 80% of user flows are tested before shipping. However, getting that kind of coverage (and staying there) is hard and pricey for any team. QA Wolf’s AI-native service provides high-volume, h",
+      "otherBoards": []
+    },
+    {
+      "title": "How Discord Stores Trillions of Messages with High Performance",
+      "url": "https://blog.bytebytego.com/p/how-discord-stores-trillions-of-messages",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-07-19",
+      "relativeDate": "6mo",
+      "description": "How Discord Stores Trillions of Messages with High PerformanceInterview - Systems Design•ByteByteGo Newsletter  / 6mo MCP Authorization in 5 Easy OAuth Specs (Sponsored) Securely authorizing access to an MCP server used to be an open question. Now there's a clear answer: OAuth. It provides a path with five key specs covering delegation, token exchange, and scoped access. WorkOS packages the full s",
+      "otherBoards": []
+    },
+    {
+      "title": "Model Once, Represent Everywhere: UDA (Unified Data Architecture) at Netflix",
+      "url": "https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d",
+      "source": "Netflix TechBlog",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "Model Once, Represent Everywhere: UDA (Unified Data Architecture) at NetflixInterview - Systems Design•Netflix TechBlog  / 7mo By Alex Hutter , Alexandre Bertails , Claire Wang , Haoyuan He , Kishore Banala , Peter Royal , Shervin Afshar As Netflix’s offerings grow — across films, series, games, live events, and ads — so does the complexity of the systems that support it. Core business concepts li",
+      "otherBoards": []
+    },
+    {
+      "title": "How Netflix Runs on Java?",
+      "url": "https://blog.bytebytego.com/p/how-netflix-runs-on-java",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "How Netflix Runs on Java?Interview - Systems Design•ByteByteGo Newsletter  / 7mo Kubernetes Quick-Start Guide (Sponsored) Cut through the noise with this engineer-friendly guide to Kubernetes observability. Get a fast-track reference to essential kubectl commands and critical metrics — from disk I/O and network latency to real-time cluster events. Perfect for scaling, debugging, and tuning your wo",
+      "otherBoards": []
+    },
+    {
+      "title": "Journey to 1000 models: Scaling Instagram’s recommendation system",
+      "url": "https://engineering.fb.com/2025/05/21/production-engineering/journey-to-1000-models-scaling-instagrams-recommendation-system/",
+      "source": "Engineering at Meta",
+      "date": "2025-05-19",
+      "relativeDate": "8mo",
+      "description": "Journey to 1000 models: Scaling Instagram’s recommendation systemInterview - Systems Design•100+Engineering at Meta  / 8mo In this post, we explore how Instagram has successfully scaled its algorithm to include over 1000 ML models without sacrificing recommendation quality or reliability. We delve into the intricacies of managing such a vast array of models, each with its own performance character",
+      "otherBoards": []
+    },
+    {
+      "title": "EP159: The Data Engineering Roadmap",
+      "url": "https://blog.bytebytego.com/p/ep159-the-data-engineering-roadmap",
+      "source": "ByteByteGo Newsletter",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "EP159: The Data Engineering RoadmapSystems Design•ByteByteGo Newsletter  / 9mo How to monitor containerized applications in Azure (Sponsored) In this eBook, you’ll learn how to deploy and monitor containerized applications using Azure and Datadog. Start monitoring AKS cluster status, AKS control plane, and understand critical AKS resource metrics. Plus, get best practices on collecting and trackin",
+      "otherBoards": []
+    }
+  ]
+}

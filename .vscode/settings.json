@@ -8,6 +8,9 @@
     "chat.tools.terminal.autoApprove": {
         "mv": true,
         "curl": true,
+        ".\\blogs\\feedly.ps1 -Untagged": true,
+        ".\\blogs\\feedly.ps1 -Tag": true,
+        
     },
     "chat.customAgentInSubagent.enabled": true,
     "github.copilot.chat.cli.customAgents.enabled": true,

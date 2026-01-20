@@ -1,0 +1,34 @@
+{
+  "board": "Interview - Coding",
+  "scrapedAt": "2026-01-19T23:01:06.996Z",
+  "articleCount": 3,
+  "articles": [
+    {
+      "title": "How to Tackle Coding Interviews",
+      "url": "https://newsletter.francofernando.com/p/how-to-tackle-coding-interviews",
+      "source": "The Polymathic Engineer",
+      "date": "2025-07-19",
+      "relativeDate": "6mo",
+      "description": "How to Tackle Coding InterviewsInterview - Coding•The Polymathic Engineer  / 6mo Hi Friends, Welcome to the 130th issue of the Polymathic Engineer. Coding interviews can be intimidating. You are asked to answer a difficult problem on the spot and write code that works while also explaining your thought process to the interviewer. It's not surprising that a lot of smart engineers have trouble with ",
+      "otherBoards": []
+    },
+    {
+      "title": "Range Queries",
+      "url": "https://newsletter.francofernando.com/p/range-queries",
+      "source": "The Polymathic Engineer",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "Range QueriesInterview - Coding•The Polymathic Engineer  / 7mo Hi Friends, Welcome to the 126th issue of the Polymathic Engineer newsletter. This week, we discuss some interesting data structures that can be used to efficiently run range queries on arrays. In particular, we will mostly talk about range sum queries (which add up all the elements in a range) and range minimum queries (which find the",
+      "otherBoards": []
+    },
+    {
+      "title": "Mastering the Two-Pointers Technique",
+      "url": "https://newsletter.francofernando.com/p/mastering-the-two-pointers-technique",
+      "source": "The Polymathic Engineer",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "Mastering the Two-Pointers TechniqueInterview - Coding•The Polymathic Engineer  / 7mo Hi Friends, Welcome to the 124th issue of the Polymathic Engineer newsletter. This week, we’ll have an overview on Chaos Engineering, an approach to testing that uses intentional failure to make distributed systems more resilient. The outline will be as follows: What is the two pointers method? Core strategies an",
+      "otherBoards": []
+    }
+  ]
+}

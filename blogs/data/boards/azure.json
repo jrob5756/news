@@ -1,0 +1,79 @@
+{
+  "board": "Azure",
+  "scrapedAt": "2026-01-19T23:00:13.107Z",
+  "articleCount": 8,
+  "articles": [
+    {
+      "title": "Azure Kubernetes Service Automatic: Fast and frictionless Kubernetes for all",
+      "url": "https://azure.microsoft.com/en-us/blog/azure-kubernetes-service-automatic-fast-and-frictionless-kubernetes-for-all/",
+      "source": "Microsoft Azure Blog",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "Azure Kubernetes Service Automatic: Fast and frictionless Kubernetes for allAzure•Microsoft Azure Blog  / 3mo•Microsoft launches AKS Automatic Today, I’m excited to announce the general availability of Azure Kubernetes Service (AKS) Automatic , delivering Kubernetes that’s already configured, optimized, and ready to run—right out of the box. AKS Automatic accelerates app delivery with automation, ",
+      "otherBoards": []
+    },
+    {
+      "title": "Fast deploy and evaluate AI model performance on AML/AI Foundry",
+      "url": "https://techcommunity.microsoft.com/blog/machinelearningblog/fast-deploy-and-evaluate-ai-model-performance-on-amlai-foundry/4400100",
+      "source": "Azure Feeds",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Fast deploy and evaluate AI model performance on AML/AI FoundryAI•Azure Feeds  / 9mo This source code of this article: https://github.com/xinyuwei-david/AI-Foundry-Model-Performance.git Please refer to my repo to get more AI resources,…",
+      "otherBoards": []
+    },
+    {
+      "title": "Application Gateway for Containers: a not-so-gentle intro (4)",
+      "url": "https://blog.cloudtrooper.net/2025/04/02/application-gateway-for-containers-a-not-so-gentle-intro-4/",
+      "source": "Azure Feeds",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Application Gateway for Containers: a not-so-gentle intro (4)Kubernetes•Azure Feeds  / 9mo This post will explore the new support in Azure Application Gateway for Containers (AGC) for the overlay network option in Azure Kubernetes Service (AKS) as documented in https://aka.ms/agc/overlay , as well as whether you can see traffic between AGC and AKS with VNet Flow Logs. This blog is part of a series",
+      "otherBoards": []
+    },
+    {
+      "title": "Static Web Apps CLI: local authentication emulation with ASP.NET",
+      "url": "https://johnnyreilly.com/static-web-apps-cli-local-auth-emulator-with-dotnet-authentication",
+      "source": "I CAN MAKE THIS WORK",
+      "date": "2025-04-19",
+      "relativeDate": "9mo",
+      "description": "Static Web Apps CLI: local authentication emulation with ASP.NETAzure•I CAN MAKE THIS WORK  / 9mo When developing web applications that have some dependency on authentication, it can be tricky to get a local development setup that allows you to manage authentication effectively. However, there's a way to achieve this, using the Static Web Apps CLI local authentication emulator. I build a lot of SP",
+      "otherBoards": []
+    },
+    {
+      "title": "[Launched] Generally Available: API Management as a Private Link-Enabled Origin for Front Door Premium",
+      "url": "https://azure.microsoft.com/en-us/updates",
+      "source": "Azure Feeds",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "[Launched] Generally Available: API Management as a Private Link-Enabled Origin for Front Door PremiumAzure•200+Azure Feeds  / 10mo You can now configure Azure API Management resources as Private Link enabled origins in your Front Door Premium profile. Private Link enabled origins in Front Door allow you to deliver content to your end-users through public Front Door endpoints while en",
+      "otherBoards": []
+    },
+    {
+      "title": "Use Azure Front Door to secure AKS workloads",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/aks-front-door/aks-front-door",
+      "source": "Azure Feeds",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "Use Azure Front Door to secure AKS workloadsArchitecture •Azure Feeds  / 10mo Learn how to secure AKS workloads by using end-to-end TLS encryption, Azure Front Door Premium, an Azure Private Link service, and the NGINX ingress controller.",
+      "otherBoards": []
+    },
+    {
+      "title": "Cache public container images in your Azure Container Registry with Terraform",
+      "url": "https://medium.com/microsoftazure/cache-public-container-images-in-your-azure-container-registry-with-terraform-aa76dcdb08b4?source=rss----8bec1183ada9---4",
+      "source": "Microsoft Azure",
+      "date": "2025-02-19",
+      "relativeDate": "11mo",
+      "description": "Cache public container images in your Azure Container Registry with TerraformIaC•Microsoft Azure  / 11mo When running your application on Azure Kubernetes Services, it’s a best practice to store the container images you need in an Azure Container Registry. This setup will improve performance when downloading container images for new pods. It also ensures you can create new pods even if a public re",
+      "otherBoards": []
+    },
+    {
+      "title": "Terraform: Get User Principal Name (UPN) of User Running Deployment without Entra ID Read Permissions",
+      "url": "https://build5nines.com/terraform-get-user-principal-name-upn-of-user-running-deployment-without-entra-id-read-permissions/",
+      "source": "Build5Nines",
+      "date": "2025-02-19",
+      "relativeDate": "11mo",
+      "description": "Terraform: Get User Principal Name (UPN) of User Running Deployment without Entra ID Read PermissionsAzure•Build5Nines  / 11mo I has a scenario where I needed to configure an Azure PostgreSQL Flexible Server to use Entra ID (Azure AD) authentication and add the Entra user running the HashiCorp Terraform deployment as the Azure PostgreSQL Administrator using the azurerm_postgresql_flexible_server_a",
+      "otherBoards": []
+    }
+  ]
+}

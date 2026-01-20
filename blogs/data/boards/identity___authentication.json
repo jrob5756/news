@@ -1,0 +1,34 @@
+{
+  "board": "Identity / Authentication",
+  "scrapedAt": "2026-01-19T23:01:01.250Z",
+  "articleCount": 3,
+  "articles": [
+    {
+      "title": "Implement a secure MCP server using OAuth and Entra ID",
+      "url": "https://damienbod.com/2025/09/23/implement-a-secure-mcp-server-using-oauth-and-entra-id/",
+      "source": "Software Engineering",
+      "date": "2025-10-19",
+      "relativeDate": "3mo",
+      "description": "Implement a secure MCP server using OAuth and Entra IDAI•Software Engineering  / 3mo The article shows how to implement a secure model context protocol (MCP) server using OAuth and Entra ID. The MCP server is implemented using ASP.NET Core and uses Microsoft Entra ID to secure the API. An ASP.NET Core application using Azure OpenAI and semantic kernel is used to implement the MCP client for the ag",
+      "otherBoards": []
+    },
+    {
+      "title": "Authentication and authorization in a microservice architecture: Part 2 - Authentication",
+      "url": "http://microservices.io//post/architecture/2025/05/28/microservices-authn-authz-part-2-authentication.html",
+      "source": "Microservice architecture",
+      "date": "2025-06-19",
+      "relativeDate": "7mo",
+      "description": "Authentication and authorization in a microservice architecture: Part 2 - AuthenticationArchitecture •Microservice architecture  / 7mo This article is the second in a series of articles about authentication and authorization in a microservice architecture. The complete series is: Overview of authentication and authorization in a microservice architecture Implementing authentication Implementing JW",
+      "otherBoards": []
+    },
+    {
+      "title": "Use client assertions in OpenID Connect and ASP.NET Core",
+      "url": "https://damienbod.com/2025/02/24/use-client-assertions-in-openid-connect-and-asp-net-core/",
+      "source": "Software Engineering",
+      "date": "2025-03-19",
+      "relativeDate": "10mo",
+      "description": "Use client assertions in OpenID Connect and ASP.NET CoreIdentity / Authentication•Software Engineering  / 10mo Client assertions is a method of client authentication which can be used in OpenID Connect. This provides an alternative to client secrets. This approach enhances security by using signed tokens (JWTs) to authenticate clients during the token request process or the OAuth PAR request. In A",
+      "otherBoards": []
+    }
+  ]
+}
