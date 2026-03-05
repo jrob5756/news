@@ -10,7 +10,7 @@ SOURCES=$(jq -c '.sources' "$CONFIG")
 TOPICS=$(jq -c '.interests.topics' "$CONFIG")
 COMPANIES=$(jq -c '.interests.companies' "$CONFIG")
 
-CONDUCTOR="${CONDUCTOR:-conductor}"
+CONDUCTOR="${CONDUCTOR:-cond}"
 
 $CONDUCTOR run "$PROJECT_ROOT/workflows/news/news.yaml" \
   "$@" \
