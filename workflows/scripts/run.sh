@@ -10,10 +10,7 @@ SOURCES=$(jq -c '.sources' "$CONFIG")
 TOPICS=$(jq -c '.interests.topics' "$CONFIG")
 COMPANIES=$(jq -c '.interests.companies' "$CONFIG")
 
-# Build conductor command as an array to handle word-splitting correctly
-IFS=' ' read -ra CONDUCTOR <<< "${CONDUCTOR:-conductor}"
-
-"${CONDUCTOR[@]}" run "$PROJECT_ROOT/workflows/news/news.yaml" \
+conductor run "$PROJECT_ROOT/workflows/news/news.yaml" \
   "$@" \
   -i "project_root=$PROJECT_ROOT" \
   -i "report_template=$TEMPLATE" \
