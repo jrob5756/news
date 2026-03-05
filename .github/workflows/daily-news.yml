@@ -8,7 +8,7 @@ on:
 jobs:
   generate-report:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 35
 
     steps:
       - uses: actions/checkout@v4
@@ -19,6 +19,9 @@ jobs:
 
       - name: Install conductor
         run: uv tool install conductor-cli@git+https://github.com/microsoft/conductor.git
+
+      - name: Install Copilot CLI
+        run: npm install -g @github/copilot
 
       - name: Run news digest workflow
         env:
