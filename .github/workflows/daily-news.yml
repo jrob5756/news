@@ -1,0 +1,34 @@
+name: Daily News Digest
+
+on:
+  schedule:
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 10
+
+      - uses: astral-sh/setup-uv@v4
+
+      - name: Install conductor
+        run: uv tool install conductor-cli
+
+      - name: Run news digest workflow
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash run.sh --silent --no-interactive --skip-gates --log-file auto
+
+      - name: Commit and push report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports/
+          git diff --cached --quiet || git commit -m "Add daily news report for $(date +%Y-%m-%d)"
+          git push

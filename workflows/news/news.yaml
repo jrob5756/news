@@ -1,0 +1,231 @@
+workflow:
+  name: news-digest
+  description: Gather, analyze, and summarize today's news articles based on configured topics and companies of interest.
+  version: "1.0.0"
+  entry_point: build_exclusion_list
+
+  runtime:
+    provider: copilot
+    default_model: claude-sonnet-4.6
+    temperature: 0.3
+    max_tokens: 8192
+    mcp_servers:
+      web-fetch:
+        command: sh
+        args: ["-c", "MODE=stdio DEFAULT_SEARCH_ENGINE=bing exec npx -y open-websearch@latest"]
+        tools: ["*"]
+
+  input:
+    project_root:
+      type: string
+      required: false
+      default: "."
+      description: Absolute path to the news project root directory
+    report_template:
+      type: string
+      required: false
+      default: ""
+      description: Content of the report template markdown file
+    sources:
+      type: array
+      required: false
+      default: []
+      description: List of news source URLs to gather articles from
+      items:
+        type: string
+    topics:
+      type: array
+      required: false
+      default: []
+      description: Topics of interest for filtering articles
+      items:
+        type: string
+    companies:
+      type: array
+      required: false
+      default: []
+      description: Companies of interest for filtering articles
+      items:
+        type: string
+
+  context:
+    mode: explicit
+
+  limits:
+    max_iterations: 30
+    timeout_seconds: 900
+
+  cost:
+    show_summary: true
+
+# ──────────────────────────────────────────────
+# Agents
+# ──────────────────────────────────────────────
+agents:
+  # ── Stage 1: Build Exclusion List ──
+  - name: build_exclusion_list
+    description: Read recent reports and extract previously reported articles for dedup
+    system_prompt: !file prompts/system.md
+    prompt: !file prompts/1_build_exclusion_list.md
+    input:
+      - workflow.input.project_root
+    output:
+      exclusion_list:
+        type: string
+        description: JSON array of previously reported articles with title, url, and keywords
+    routes:
+      - to: gather_sources
+
+  # ── Stage 2: Gather Articles (parallel for-each over sources) ──
+
+  # ── Stage 3: Rank Articles ──
+  - name: rank_articles
+    description: Deduplicate and rank all gathered articles by relevance
+    system_prompt: !file prompts/system.md
+    prompt: !file prompts/3_rank_articles.md
+    input:
+      - build_exclusion_list.output
+      - gather_sources.outputs
+      - workflow.input.topics
+      - workflow.input.companies
+    output:
+      ranked_articles:
+        type: string
+        description: JSON array of top 25 ranked articles with rank, source, title, url, summary, date
+      top_3:
+        type: array
+        description: The top 3 articles for detailed analysis
+        items:
+          type: object
+          properties:
+            title:
+              type: string
+            url:
+              type: string
+            source:
+              type: string
+            date:
+              type: string
+            summary:
+              type: string
+    routes:
+      - to: analyze_top_articles
+
+  # ── Stage 5: Generate Report ──
+  - name: generate_report
+    description: Compile the final markdown news report
+    system_prompt: !file prompts/system.md
+    prompt: !file prompts/5_generate_report.md
+    input:
+      - rank_articles.output
+      - analyze_top_articles.outputs
+      - workflow.input.report_template
+    output:
+      report:
+        type: string
+        description: Complete markdown news report content
+    routes:
+      - to: save_report
+
+  # ── Stage 5b: Save Report ──
+  - name: save_report
+    type: script
+    description: Save report to file and move old reports to reports directory
+    command: bash
+    args:
+      - "-c"
+      - |
+        set -e
+        PR="{{ workflow.input.project_root }}"
+        YR=$(date +%Y)
+        MO=$(date +%m)
+        DY=$(date +%d)
+        DIR="$PR/reports/$YR/$MO"
+        RF="$DIR/$DY.md"
+
+        # Create target directory
+        mkdir -p "$DIR"
+
+        # Save the new report
+        cat > "$RF" << 'REPORT_EOF'
+        {{ generate_report.output.report }}
+        REPORT_EOF
+
+        # Migrate legacy *_news_report.md files from root into yyyy/mm/dd.md format
+        for f in "$PR"/*_news_report.md; do
+          [ -f "$f" ] || continue
+          BN=$(basename "$f")
+          FY=$(echo "$BN" | cut -c1-4)
+          FM=$(echo "$BN" | cut -c5-6)
+          FD=$(echo "$BN" | cut -c7-8)
+          FDIR="$PR/reports/$FY/$FM"
+          mkdir -p "$FDIR"
+          mv "$f" "$FDIR/$FD.md"
+        done
+
+        # Migrate legacy files from reports/ root
+        for f in "$PR/reports"/*_news_report.md; do
+          [ -f "$f" ] || continue
+          BN=$(basename "$f")
+          FY=$(echo "$BN" | cut -c1-4)
+          FM=$(echo "$BN" | cut -c5-6)
+          FD=$(echo "$BN" | cut -c7-8)
+          FDIR="$PR/reports/$FY/$FM"
+          mkdir -p "$FDIR"
+          mv "$f" "$FDIR/$FD.md"
+        done
+
+        echo "Report saved to $RF"
+    routes:
+      - to: $end
+        when: "exit_code == 0"
+      - to: $end
+
+# ──────────────────────────────────────────────
+# For-Each Groups
+# ──────────────────────────────────────────────
+for_each:
+  # ── Stage 2: Parallel source gathering ──
+  - name: gather_sources
+    type: for_each
+    description: Fetch articles from each news source in parallel
+    source: workflow.input.sources
+    as: source
+    max_concurrent: 5
+    failure_mode: continue_on_error
+    agent:
+      name: source_gatherer
+      system_prompt: !file prompts/system.md
+      prompt: !file prompts/2_gather_articles.md
+      output:
+        articles:
+          type: string
+          description: JSON array of articles found from this source with source, title, url, summary, date
+    routes:
+      - to: rank_articles
+
+  # ── Stage 4: Parallel deep analysis of top 3 ──
+  - name: analyze_top_articles
+    type: for_each
+    description: Perform in-depth analysis on each of the top 3 ranked articles
+    source: rank_articles.output.top_3
+    as: article
+    max_concurrent: 3
+    failure_mode: continue_on_error
+    agent:
+      name: article_analyzer
+      system_prompt: !file prompts/system.md
+      prompt: !file prompts/4_analyze_article.md
+      output:
+        detailed_summary:
+          type: string
+          description: In-depth analysis and summary of the article
+    routes:
+      - to: generate_report
+
+# ──────────────────────────────────────────────
+# Output
+# ──────────────────────────────────────────────
+output:
+  report: "{{ generate_report.output.report }}"
+  save_result: "{{ save_report.output.stdout }}"
