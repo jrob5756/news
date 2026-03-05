@@ -16,7 +16,7 @@ You are gathering news articles from a single source.
 {% endfor %}
 
 ## Exclusion List (DO NOT include these articles)
-{{ build_exclusion_list.output.exclusion_list }}
+{{ build_exclusion_list.output.stdout }}
 
 ## Instructions
 

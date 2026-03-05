@@ -224,6 +224,10 @@ for_each:
       name: source_gatherer
       system_prompt: !file prompts/system.md
       prompt: !file prompts/2_gather_articles.md
+      input:
+        - workflow.input.topics
+        - workflow.input.companies
+        - build_exclusion_list.output
       output:
         articles:
           type: string
