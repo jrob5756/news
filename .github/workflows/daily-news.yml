@@ -17,12 +17,10 @@ jobs:
 
       - uses: astral-sh/setup-uv@v4
 
-      - name: Install conductor
-        run: uv tool install conductor-cli
-
       - name: Run news digest workflow
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CONDUCTOR: uvx conductor-cli
         run: bash workflows/scripts/run.sh --silent --no-interactive --skip-gates --log-file auto
 
       - name: Commit and push report

@@ -10,7 +10,9 @@ SOURCES=$(jq -c '.sources' "$CONFIG")
 TOPICS=$(jq -c '.interests.topics' "$CONFIG")
 COMPANIES=$(jq -c '.interests.companies' "$CONFIG")
 
-conductor run "$PROJECT_ROOT/workflows/news/news.yaml" \
+CONDUCTOR="${CONDUCTOR:-conductor}"
+
+$CONDUCTOR run "$PROJECT_ROOT/workflows/news/news.yaml" \
   "$@" \
   -i project_root="$PROJECT_ROOT" \
   -i report_template="$TEMPLATE" \
