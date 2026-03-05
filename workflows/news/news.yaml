@@ -11,8 +11,11 @@ workflow:
     max_tokens: 8192
     mcp_servers:
       web-fetch:
-        command: sh
-        args: ["-c", "MODE=stdio DEFAULT_SEARCH_ENGINE=bing exec npx -y open-websearch@latest"]
+        command: npx
+        args: ["-y", "open-websearch@latest"]
+        env:
+          MODE: stdio
+          DEFAULT_SEARCH_ENGINE: bing
         tools: ["*"]
 
   input:

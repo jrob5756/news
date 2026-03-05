@@ -23,7 +23,7 @@ jobs:
       - name: Run news digest workflow
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: bash run.sh --silent --no-interactive --skip-gates --log-file auto
+        run: bash workflows/scripts/run.sh --silent --no-interactive --skip-gates --log-file auto
 
       - name: Commit and push report
         run: |

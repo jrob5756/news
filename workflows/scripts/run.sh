@@ -2,16 +2,17 @@
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-CONFIG="$SCRIPT_DIR/config.json"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+CONFIG="$PROJECT_ROOT/config.json"
 
-TEMPLATE=$(cat "$SCRIPT_DIR/templates/news_report_template.md")
+TEMPLATE=$(cat "$PROJECT_ROOT/templates/news_report_template.md")
 SOURCES=$(jq -c '.sources' "$CONFIG")
 TOPICS=$(jq -c '.interests.topics' "$CONFIG")
 COMPANIES=$(jq -c '.interests.companies' "$CONFIG")
 
-conductor run "$SCRIPT_DIR/workflows/news/news.yaml" \
+conductor run "$PROJECT_ROOT/workflows/news/news.yaml" \
   "$@" \
-  -i project_root="$SCRIPT_DIR" \
+  -i project_root="$PROJECT_ROOT" \
   -i report_template="$TEMPLATE" \
   -i sources="$SOURCES" \
   -i topics="$TOPICS" \
