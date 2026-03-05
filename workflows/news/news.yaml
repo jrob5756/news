@@ -69,6 +69,8 @@ agents:
   - name: build_exclusion_list
     type: script
     description: Extract previously reported article titles and URLs from recent reports for dedup
+    input:
+      - workflow.input.project_root
     command: bash
     args:
       - "-c"
