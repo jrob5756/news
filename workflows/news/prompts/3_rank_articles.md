@@ -9,7 +9,7 @@ You are ranking news articles by relevance.
 {% endfor %}
 
 ## Exclusion List (final dedup check)
-{{ build_exclusion_list.output.exclusion_list }}
+{{ build_exclusion_list.output.stdout }}
 
 ## Interests
 

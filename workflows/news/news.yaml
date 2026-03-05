@@ -67,15 +67,37 @@ workflow:
 agents:
   # ── Stage 1: Build Exclusion List ──
   - name: build_exclusion_list
-    description: Read recent reports and extract previously reported articles for dedup
-    system_prompt: !file prompts/system.md
-    prompt: !file prompts/1_build_exclusion_list.md
-    input:
-      - workflow.input.project_root
-    output:
-      exclusion_list:
-        type: string
-        description: JSON array of previously reported articles with title, url, and keywords
+    type: script
+    description: Extract previously reported article titles and URLs from recent reports for dedup
+    command: bash
+    args:
+      - "-c"
+      - |
+        set -e
+        PR="{{ workflow.input.project_root }}"
+
+        # Find the 5 most recent report files (yyyy/mm/dd.md structure)
+        FILES=$(find "$PR/reports" -name '*.md' -type f 2>/dev/null | sort -r | head -5)
+
+        # Also check for legacy files
+        LEGACY=$(find "$PR" -maxdepth 1 -name '*_news_report.md' -type f 2>/dev/null | sort -r)
+        LEGACY2=$(find "$PR/reports" -maxdepth 1 -name '*_news_report.md' -type f 2>/dev/null | sort -r)
+
+        ALL_FILES=$(echo -e "$FILES\n$LEGACY\n$LEGACY2" | grep -v '^$' | sort -r | head -5)
+
+        if [ -z "$ALL_FILES" ]; then
+          echo "[]"
+          exit 0
+        fi
+
+        # Extract markdown links [Title](URL) and output as JSON array
+        echo "$ALL_FILES" | xargs grep -ohE '\[([^]]+)\]\(([^)]+)\)' 2>/dev/null \
+          | sed -E 's/\[([^]]+)\]\(([^)]+)\)/\1\t\2/' \
+          | jq -R -s '
+              split("\n") | map(select(length > 0)) | map(
+                split("\t") | { title: .[0], url: .[1] }
+              )
+            '
     routes:
       - to: gather_sources
 
