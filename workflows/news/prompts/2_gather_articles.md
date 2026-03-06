@@ -28,4 +28,6 @@ You are gathering news articles from a single source.
    - Same primary subject/announcement from the same source
 4. Ensure articles are recent (within the last 7 days).
 5. Skip any article that matches the exclusion list.
-6. Return the articles found as a JSON array. Each article must have: source, title, url, summary, date.
+6. Format the articles found as a JSON array. Each article must have: source, title, url, summary, date.
+7. **IMPORTANT**: Save the JSON array to a file at `{{ workflow.input.project_root }}/tmp/articles/` using a descriptive filename (e.g., `hackernews.json`, `reddit_programming.json`). Create the directories if they don't exist.
+8. Return the file path you saved to.

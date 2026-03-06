@@ -8,7 +8,7 @@ You are generating the final news report.
 
 ## Detailed Analyses of Top 3
 {% for analysis in analyze_top_articles.outputs %}
-### Article {{ _index + 1 }}
+### Article {{ loop.index }}
 {{ analysis.detailed_summary }}
 {% endfor %}
 

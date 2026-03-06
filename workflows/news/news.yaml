@@ -112,7 +112,7 @@ agents:
     prompt: !file prompts/3_rank_articles.md
     input:
       - build_exclusion_list.output
-      - gather_sources.outputs
+      - workflow.input.project_root
       - workflow.input.topics
       - workflow.input.companies
     output:
@@ -158,6 +158,9 @@ agents:
   - name: save_report
     type: script
     description: Save report to file and move old reports to reports directory
+    input:
+      - workflow.input.project_root
+      - generate_report.output
     command: bash
     args:
       - "-c"
@@ -203,6 +206,9 @@ agents:
         done
 
         echo "Report saved to $RF"
+
+        # Clean up temp files from gather_sources
+        rm -rf "$PR/tmp/articles"
     routes:
       - to: $end
         when: "exit_code == 0"
@@ -225,6 +231,7 @@ for_each:
       system_prompt: !file prompts/system.md
       prompt: !file prompts/2_gather_articles.md
       input:
+        - workflow.input.project_root
         - workflow.input.topics
         - workflow.input.companies
         - build_exclusion_list.output
@@ -247,6 +254,9 @@ for_each:
       name: article_analyzer
       system_prompt: !file prompts/system.md
       prompt: !file prompts/4_analyze_article.md
+      input:
+        - workflow.input.topics
+        - workflow.input.companies
       output:
         detailed_summary:
           type: string
