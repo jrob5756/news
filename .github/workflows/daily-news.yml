@@ -32,6 +32,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add reports/
+
+          # Update the latest report link in README
+          REPORT_PATH="reports/$(date +%Y/%m/%d).md"
+          sed -i "s|📰 \*\*\[Latest Report\](.*)\*\*|📰 **[Latest Report](${REPORT_PATH})**|" README.md
+
+          git add reports/ README.md
           git diff --cached --quiet || git commit -m "Add daily news report for $(date +%Y-%m-%d)"
           git push

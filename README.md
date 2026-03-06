@@ -1,25 +1,29 @@
-# Daily News Report
+# Daily News Digest
 
-An AI-powered daily news aggregation and analysis tool built on GitHub Copilot prompt files. It gathers articles from curated sources, ranks them by relevance, and generates detailed markdown reports focused on software development, AI, and cloud computing.
+An AI-powered daily news aggregation and analysis pipeline built with [Conductor](https://github.com/microsoft/conductor). It gathers articles from curated sources, ranks them by relevance, and generates detailed markdown reports focused on software development, AI, and cloud computing.
+
+📰 **[Latest Report](reports/2026/03/05.md)**
 
 ## How It Works
 
-The core workflow is driven by a [Copilot prompt file](.github/prompts/news.prompt.md) that orchestrates multiple AI sub-agents to:
+The workflow is defined in [`workflows/news/news.yaml`](workflows/news/news.yaml) and orchestrated by Conductor using the GitHub Copilot provider with Claude Sonnet 4.6. The pipeline runs through six stages:
 
-1. **Build an exclusion list** from recent reports to avoid duplicate coverage
-2. **Gather articles** from configured sources (Hacker News, Reddit, TechMeme, DZone, etc.)
-3. **Rank articles** by relevance to configured topics and companies of interest
-4. **Analyze the top articles** in depth, fetching full content and related discussion
-5. **Generate a markdown report** with summaries of the top 25 articles
+1. **Build exclusion list** — A script extracts previously reported articles from the last 5 reports for dedup
+2. **Gather articles** — 10 news sources are scraped in parallel (max 5 concurrent), each saving results to a temp file
+3. **Rank articles** — The model reads all gathered article files from disk, deduplicates, and ranks the top 25 by relevance
+4. **Analyze top articles** — The top 3 articles are analyzed in depth (parallel), fetching full content and related discussion
+5. **Generate report** — A final markdown report is compiled from the ranked articles and deep analyses
+6. **Save report** — The report is saved to `reports/YYYY/MM/DD.md` and temp files are cleaned up
 
 ## Usage
 
-1. Open the repository in VS Code with [GitHub Copilot](https://github.com/features/copilot) enabled (Claude Opus 4.5 recommended).
-2. Run the **News for Today** prompt from the Copilot prompt picker, or reference it directly:
-   ```
-   @workspace /prompt news
-   ```
-3. The report is saved to the root as `yyyyMMdd_news_report.md`. Previous reports are stored in the [`reports/`](reports/) directory.
+### Local
+```bash
+bash workflows/scripts/run.sh
+```
+
+### CI
+The workflow runs daily at 7:00 AM UTC via [GitHub Actions](.github/workflows/daily-news.yml) and can also be triggered manually.
 
 ## Configuration
 
@@ -32,15 +36,19 @@ Edit [`config.json`](config.json) to customize:
 ## Project Structure
 
 ```
-├── config.json                  # Sources and interests configuration
+├── config.json                          # Sources and interests configuration
 ├── templates/
-│   └── news_report_template.md  # Markdown template for generated reports
-├── reports/                     # Archive of previous daily reports
-│   ├── 2025/
-│   └── *.md
+│   └── news_report_template.md          # Markdown template for generated reports
+├── workflows/
+│   ├── news/
+│   │   ├── news.yaml                    # Conductor workflow definition
+│   │   └── prompts/                     # Prompt files for each pipeline stage
+│   └── scripts/
+│       └── run.sh                       # Wrapper script to run the workflow
+├── reports/                             # Archive of daily reports (YYYY/MM/DD.md)
 └── .github/
-    └── prompts/
-        └── news.prompt.md       # Copilot prompt that drives the workflow
+    └── workflows/
+        └── daily-news.yml               # GitHub Actions CI workflow
 ```
 
 ## Report Format
@@ -49,6 +57,6 @@ Each report includes:
 
 - **Summary** — Key themes and trends of the day
 - **Top 3 Articles** — In-depth analysis with detailed summaries
-- **Other Articles** — Brief summaries of additional relevant stories
+- **Other Articles** — Brief summaries of additional relevant stories (up to 25 total)
 
 Reports are deduplicated against the 5 most recent reports to keep coverage fresh.
