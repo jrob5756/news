@@ -8,7 +8,7 @@ on:
 jobs:
   generate-report:
     runs-on: ubuntu-latest
-    timeout-minutes: 70
+    timeout-minutes: 60
 
     steps:
       - uses: actions/checkout@v4
@@ -21,12 +21,33 @@ jobs:
         run: uv tool install conductor-cli@git+https://github.com/microsoft/conductor.git
 
       - name: Install Copilot CLI
-        run: npm install -g @github/copilot
+        run: |
+          npm install -g @github/copilot
+          # Clear any cached/stale Copilot binary to force fresh download
+          rm -rf ~/.copilot/pkg
+          # Verify the CLI starts successfully
+          copilot --version || echo "Warning: copilot --version failed"
 
       - name: Run news digest workflow
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: bash workflows/scripts/run.sh --no-interactive --skip-gates --log-file auto
+        run: |
+          MAX_ATTEMPTS=2
+          for attempt in $(seq 1 $MAX_ATTEMPTS); do
+            echo "=== Attempt $attempt of $MAX_ATTEMPTS ==="
+            if bash workflows/scripts/run.sh --no-interactive --skip-gates --log-file auto; then
+              echo "Workflow succeeded on attempt $attempt"
+              exit 0
+            fi
+
+            if [ "$attempt" -lt "$MAX_ATTEMPTS" ]; then
+              echo "Attempt $attempt failed, retrying in 30s..."
+              sleep 30
+            fi
+          done
+
+          echo "All $MAX_ATTEMPTS attempts failed"
+          exit 1
 
       - name: Commit and push report
         run: |
