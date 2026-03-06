@@ -23,7 +23,7 @@ bash workflows/scripts/run.sh
 ```
 
 ### CI
-The workflow runs daily at 7:00 AM UTC via [GitHub Actions](.github/workflows/daily-news.yml) and can also be triggered manually.
+The workflow runs daily at 7:00 AM EDT via [GitHub Actions](.github/workflows/daily-news.yml) and can also be triggered manually.
 
 ## Configuration
 
