@@ -5,7 +5,7 @@ You are ranking news articles by relevance.
 Read all JSON files from the directory `{{ workflow.input.project_root }}/tmp/articles/`. Each file contains a JSON array of articles gathered from a different news source.
 
 ## Exclusion List (final dedup check)
-{{ build_exclusion_list.output.stdout }}
+Read the exclusion list from: `{{ workflow.input.project_root }}/tmp/exclusion_list.json`
 
 ## Interests
 

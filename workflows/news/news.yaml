@@ -87,19 +87,26 @@ agents:
 
         ALL_FILES=$(echo -e "$FILES\n$LEGACY\n$LEGACY2" | grep -v '^$' | sort -r | head -5)
 
+        EXCL_DIR="$PR/tmp"
+        EXCL_FILE="$EXCL_DIR/exclusion_list.json"
+        mkdir -p "$EXCL_DIR"
+
         if [ -z "$ALL_FILES" ]; then
-          echo "[]"
+          echo "[]" > "$EXCL_FILE"
+          echo "$EXCL_FILE"
           exit 0
         fi
 
-        # Extract markdown links [Title](URL) and output as JSON array
+        # Extract markdown links [Title](URL) and save as JSON array to temp file
         echo "$ALL_FILES" | xargs grep -ohE '\[([^]]+)\]\(([^)]+)\)' 2>/dev/null \
           | sed -E 's/\[([^]]+)\]\(([^)]+)\)/\1\t\2/' \
           | jq -R -s '
               split("\n") | map(select(length > 0)) | map(
                 split("\t") | { title: .[0], url: .[1] }
               )
-            '
+            ' > "$EXCL_FILE"
+
+        echo "$EXCL_FILE"
     routes:
       - to: gather_sources
 
@@ -111,7 +118,6 @@ agents:
     system_prompt: !file prompts/system.md
     prompt: !file prompts/3_rank_articles.md
     input:
-      - build_exclusion_list.output
       - workflow.input.project_root
       - workflow.input.topics
       - workflow.input.companies
@@ -207,8 +213,8 @@ agents:
 
         echo "Report saved to $RF"
 
-        # Clean up temp files from gather_sources
-        rm -rf "$PR/tmp/articles"
+        # Clean up all temp files
+        rm -rf "$PR/tmp"
     routes:
       - to: $end
         when: "exit_code == 0"
@@ -234,7 +240,6 @@ for_each:
         - workflow.input.project_root
         - workflow.input.topics
         - workflow.input.companies
-        - build_exclusion_list.output
       output:
         articles:
           type: string

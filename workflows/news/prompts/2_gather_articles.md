@@ -16,7 +16,7 @@ You are gathering news articles from a single source.
 {% endfor %}
 
 ## Exclusion List (DO NOT include these articles)
-{{ build_exclusion_list.output.stdout }}
+Read the exclusion list from: `{{ workflow.input.project_root }}/tmp/exclusion_list.json`
 
 ## Instructions
 
