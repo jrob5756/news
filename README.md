@@ -2,7 +2,7 @@
 
 An AI-powered daily news aggregation and analysis pipeline built with [Conductor](https://github.com/microsoft/conductor). It gathers articles from curated sources, ranks them by relevance, and generates detailed markdown reports focused on software development, AI, and cloud computing.
 
-📰 **[Latest Report](reports/2026/03/05.md)**
+📰 **[Latest Report](reports/2026/03/06.md)**
 
 ## How It Works
 
