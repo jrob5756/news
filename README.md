@@ -1,62 +1,226 @@
-# Daily News Digest
+> 📖 [How this report is generated](ABOUT.md)
 
-An AI-powered daily news aggregation and analysis pipeline built with [Conductor](https://github.com/microsoft/conductor). It gathers articles from curated sources, ranks them by relevance, and generates detailed markdown reports focused on software development, AI, and cloud computing.
+# News Summary for March 6, 2026
 
-📰 **[Latest Report](reports/2026/03/07.md)**
+## Summary
 
-## How It Works
+Today's news is dominated by a wave of AI agent productization across security, developer tooling, and enterprise platforms. **OpenAI** launched Codex Security, a mature AI-native application security agent evolving from its internal Aardvark research project — signaling that AI agents are now moving beyond code generation into autonomous vulnerability discovery and remediation. **Anthropic** unveiled the Claude Marketplace, an Amazon-inspired platform that allows enterprise customers to purchase third-party AI software using pre-committed Anthropic spending, a bold move positioning Claude as foundational enterprise infrastructure. On the developer tooling front, **Microsoft** released the TypeScript 6.0 RC — the last JavaScript-based TypeScript release before a ground-up Go rewrite in TS 7.0, promising ~10x build performance improvements.
 
-The workflow is defined in [`workflows/news/news.yaml`](workflows/news/news.yaml) and orchestrated by Conductor using the GitHub Copilot provider with Claude Sonnet 4.6. The pipeline runs through six stages:
+Broader themes include the emergence of agentic AI risks (Claude Code wiping a production database, multi-agent systems with root shell access), the rapid commoditization of frontier AI capability (Qwen3.5-9B matching Claude Opus 4.1 on a $5,000 MacBook), intensifying competition in AI coding tools (Cursor vs. Claude Code), and growing geopolitical complexity around AI supply chains (DOD designating Anthropic a supply chain risk). The labor market impact of AI is also under fresh scrutiny via new Anthropic research, while infrastructure stories around Stargate data center financing and cloud partnerships with Anthropic round out the day's major developments.
 
-1. **Build exclusion list** — A script extracts previously reported articles from the last 5 reports for dedup
-2. **Gather articles** — 10 news sources are scraped in parallel (max 5 concurrent), each saving results to a temp file
-3. **Rank articles** — The model reads all gathered article files from disk, deduplicates, and ranks the top 25 by relevance
-4. **Analyze top articles** — The top 3 articles are analyzed in depth (parallel), fetching full content and related discussion
-5. **Generate report** — A final markdown report is compiled from the ranked articles and deep analyses
-6. **Save report** — The report is saved to `reports/YYYY/MM/DD.md` and temp files are cleaned up
+---
 
-## Usage
+## Top 3 Articles
 
-### Local
-```bash
-bash workflows/scripts/run.sh
-```
+### **1. [OpenAI rolls out Codex Security, an AI agent that evolved from its research project Aardvark to automate vulnerability discovery, validation, and remediation](https://www.axios.com/2026/03/06/openai-codex-security-ai-cyber)**
 
-### CI
-The workflow runs daily at 7:00 AM EDT via [GitHub Actions](.github/workflows/daily-news.yml) and can also be triggered manually.
+**Source**: Techmeme / Axios
 
-## Configuration
+**Date**: March 6, 2026
 
-Edit [`config.json`](config.json) to customize:
+**Detailed Summary**:
 
-- **sources** — URLs to scrape for article discovery
-- **interests.topics** — Topics to prioritize (e.g., Software Development, AI, Cloud Computing)
-- **interests.companies** — Companies to track (e.g., Microsoft, Google, OpenAI, Anthropic)
+OpenAI officially launched **Codex Security** on March 6, 2026 — an AI-powered application security agent now available in research preview to ChatGPT Enterprise, Business, and Edu customers (free for the first month). The product is the commercial evolution of OpenAI's internal research project **Aardvark**, first announced in private beta in October 2025, which was originally tested on OpenAI's own codebases and select external partners, identifying at least 10 CVEs during its alpha phase.
 
-## Project Structure
+**How It Works — Three-Stage Pipeline:**
 
-```
-├── config.json                          # Sources and interests configuration
-├── templates/
-│   └── news_report_template.md          # Markdown template for generated reports
-├── workflows/
-│   ├── news/
-│   │   ├── news.yaml                    # Conductor workflow definition
-│   │   └── prompts/                     # Prompt files for each pipeline stage
-│   └── scripts/
-│       └── run.sh                       # Wrapper script to run the workflow
-├── reports/                             # Archive of daily reports (YYYY/MM/DD.md)
-└── .github/
-    └── workflows/
-        └── daily-news.yml               # GitHub Actions CI workflow
-```
+- **Stage 1 – Threat Modeling**: The agent analyzes repository structure to generate an *editable* threat model, capturing what the application does, what it trusts, and where it is exposed. Editability is key — teams can incorporate organization-specific architectural assumptions that automated tools cannot infer.
+- **Stage 2 – Vulnerability Discovery & Validation**: Using the threat model as context, Codex Security searches for issues, classifies findings by real-world impact, and pressure-tests them in **sandboxed validation environments** — even generating working proof-of-concept exploits to confirm exploitability, moving beyond noisy static analysis warnings to actionable evidence.
+- **Stage 3 – Contextual Remediation**: The agent proposes fixes using full surrounding system context, accepts user feedback on finding criticality, and iteratively refines the threat model over time.
 
-## Report Format
+**Key Beta Metrics:**
+- 84% noise reduction in repeated scans of the same repositories
+- >90% reduction in over-reported severity findings
+- >50% lower false positive rates across all repositories
+- In the last 30 days: scanned **1.2 million+ commits**, identified **792 critical** and **10,561 high-severity** findings (critical issues in under 0.1% of commits)
 
-Each report includes:
+**Open-Source Engagement**: OpenAI simultaneously launched *Codex for OSS*, extending access to open-source maintainers. Codex Security has already been applied to OpenSSH, GnuTLS, GOGS, Thorium, libssh, PHP, and Chromium, with **14 CVEs assigned**.
 
-- **Summary** — Key themes and trends of the day
-- **Top 3 Articles** — In-depth analysis with detailed summaries
-- **Other Articles** — Brief summaries of additional relevant stories (up to 25 total)
+Codex Security enters a fast-forming category alongside Google's CodeMender and XBOW, reflecting a broad industry shift: AI agents are now automating the expert-labor-intensive workflows of application security, not just code generation. The emphasis on noise reduction (>50% false positive reduction, >90% severity over-reporting reduction) directly attacks the alert-fatigue problem that makes traditional SAST/DAST tooling ineffective in practice. The ability to generate working proof-of-concept exploits is a double-edged capability — powerful for defenders, and kept sandboxed and gated by OpenAI. The feedback loop that refines the threat model over time creates compounding differentiation from static scanners. OpenAI's proactive CVE reporting in high-profile OSS projects (Chromium, OpenSSH) is a deliberate credibility-building strategy in the security research community.
 
-Reports are deduplicated against the 5 most recent reports to keep coverage fresh.
+---
+
+### **2. [TypeScript 6.0 RC](https://devblogs.microsoft.com/typescript/announcing-typescript-6-0-rc/)**
+
+**Source**: Hacker News
+
+**Date**: March 6, 2026
+
+**Detailed Summary**:
+
+Microsoft released the Release Candidate of **TypeScript 6.0** on March 6, 2026 — intentionally a *transition release* and the last TypeScript version built on the existing JavaScript codebase. **TypeScript 7.0 will be a ground-up rewrite in Go**, designed for native performance and shared-memory multi-threading, with early benchmarks suggesting ~10x build speed improvements. Install via: `npm install -D typescript@rc`.
+
+**New Language Features:**
+- **Less context-sensitivity on `this`-less functions**: Fixes a long-standing type inference quirk where method vs. arrow function syntax in generic calls produced confusing order-dependent type errors (contributed by community member Mateusz Burzyński).
+- **Subpath imports starting with `#/`**: Following a Node.js change, TypeScript now supports `#/*: ./dist/*` subpath import patterns, bringing parity with bundler conventions like `@/`.
+- **`--moduleResolution bundler` + `--module commonjs`**: Now permitted as the most pragmatic migration path away from the deprecated `--moduleResolution node`.
+- **ES2025 / Temporal API types**: Built-in types for `Temporal.Now`, date/time arithmetic, `RegExp.escape`, `Map.getOrInsert`, and more are now included.
+- **`dom` lib consolidation**: `lib.dom.iterable.d.ts` and `lib.dom.asynciterable.d.ts` fully merged into `lib.dom.d.ts` — projects no longer need to explicitly include `dom.iterable`.
+
+**Major Breaking Changes & Deprecations (Preparing for TS 7.0):**
+
+| Change | Before | After |
+|---|---|---|
+| `strict` | `false` | **`true`** |
+| `module` | `commonjs` | **`esnext`** |
+| `target` | `es3`/`es5` | **`es2025`** |
+| `types` | All `@types/*` | **`[]`** (must be explicit) |
+| `rootDir` | Inferred | `.` (tsconfig dir) |
+| Import assertions (`assert {}`) | Supported | **Deprecated** (use `with {}`) |
+| `target: es5` | Supported | **Deprecated** |
+| AMD/UMD modules | Supported | **Deprecated** |
+| `baseUrl` | Supported | **Deprecated** |
+
+The `types: []` default change alone is expected to improve build times by **20–50%** for many projects by eliminating implicit loading of hundreds of `@types` packages. The `--stableTypeOrdering` flag helps diagnose differences between TS 6.0 and 7.0 output (adds up to 25% type-checking overhead; diagnostic only). A `ts5to6` codemod tool automates migration of `baseUrl` and `rootDir` settings. Deprecated options can be suppressed with `"ignoreDeprecations": "6.0"` in tsconfig — but **TypeScript 7.0 will not support them at all**.
+
+The Go rewrite of TypeScript 7.0 is a significant architectural decision — Go was chosen over Rust or C++ for its shared-memory parallelism and simpler porting of existing algorithms. Nightly builds are available as `@typescript/native-preview` on npm. The symbolically important deprecation of `target: es5` marks a definitive end to an era of legacy browser support. With `strict: true` now the default, TypeScript is firmly a tool for modern, evergreen web development.
+
+---
+
+### **3. [Anthropic launches Claude Marketplace, letting companies buy third-party software using some of their committed annual spending on Anthropic's services](https://www.bloomberg.com/news/articles/2026-03-06/anthropic-unveils-amazon-inspired-marketplace-for-ai-software)**
+
+**Source**: Techmeme / Bloomberg
+
+**Date**: March 6, 2026
+
+**Detailed Summary**:
+
+On March 6, 2026, Anthropic launched the **Claude Marketplace** — an Amazon-inspired platform enabling enterprise customers to discover, purchase, and deploy third-party AI software built on top of Claude models. The key differentiator: enterprise customers can apply their **pre-committed annual Anthropic spending** to purchase third-party tools, eliminating additional procurement friction. Anthropic takes **zero percentage cut** from Marketplace transactions — revenue comes from underlying Anthropic API usage those apps drive.
+
+**Early Marketplace Partners:**
+- **Snowflake** – data cloud and analytics
+- **Harvey** – AI-native legal workflows
+- **Replit** – AI-powered coding and development environments
+
+**Agent-First Architecture**: Most marketplace tools are designed as AI agents — autonomous multi-step systems that can analyze enterprise documents, handle customer support, generate marketing campaigns, assist engineers with coding, and connect to databases and external APIs. This positions the Marketplace as an orchestration hub for agentic AI.
+
+**MCP Interactive Apps**: A parallel technical evolution enables third-party applications to render interactive UI components *directly inside Claude's chat interface* via the open-source **Model Context Protocol (MCP)**. Current integrations include Amplitude, Asana, Box, Canva, Clay, Figma, Hex, monday.com, Slack, and upcoming Salesforce Agentforce 360 — turning Claude into an execution environment, not just a conversation interface.
+
+**Rapid Enterprise Ecosystem Buildout (2026 Timeline):**
+- Jan 30: Claude Cowork initiative
+- Feb 20: Claude Code Security (vulnerability scanning)
+- Feb 24: Cowork expanded with private plugin marketplaces and MCP connectors
+- Feb 25: Enterprise plugin marketplace for internal distribution
+- Mar 6: Public-facing Claude Marketplace launches
+
+**Market Impact**: The broader Claude enterprise strategy has driven significant stock declines among incumbent software vendors — ServiceNow (-23%), Salesforce (-22%), Snowflake (-20%), Intuit (-33%), Thomson Reuters (-31%) since Claude Cowork; CrowdStrike (-7.2%), Zscaler (-7.1%) after Claude Code Security. Snowflake's presence as both a competitor and a Marketplace partner reflects pragmatic co-opetition.
+
+**Competitive Landscape**: An important architectural divergence is emerging — Anthropic and OpenAI are building applications *inside* the AI interface (AI as OS), while Microsoft and Google embed AI *inside* existing productivity suites. Analysts expect these approaches to eventually converge.
+
+**Key Risk — DOD Supply Chain Designation**: The Marketplace launch comes as the U.S. Department of Defense has classified Anthropic as a supply-chain risk due to a dispute over AI safety guardrails — a designation typically reserved for foreign adversaries. This could constrain Pentagon partnerships and defense-adjacent enterprise sales precisely as Anthropic pushes its deepest enterprise expansion to date.
+
+Claude Marketplace is Anthropic's most explicit move yet to position itself as enterprise AI infrastructure — not just a model provider, but a platform economy. The committed-spend model creates financial lock-in mirroring AWS/Azure Marketplace mechanics, signaling Anthropic's ambition to be treated as a foundational platform rather than a model vendor.
+
+---
+
+## Other Articles
+
+4. **[GPT-5.4](https://openai.com/index/introducing-gpt-5-4/)**
+   - *Source*: Hacker News
+   - *Date*: March 5, 2026
+   - *Summary*: OpenAI introduces GPT-5.4, the latest iteration of its flagship model. The release garnered nearly 1,000 upvotes on Hacker News and sparked discussion about AI agent behavior, with developers reporting using it in multi-agent coding pipelines alongside models like Claude Opus.
+
+5. **[Hardening Firefox with Anthropic's Red Team](https://www.anthropic.com/news/mozilla-firefox-security)**
+   - *Source*: Hacker News
+   - *Date*: March 6, 2026
+   - *Summary*: Anthropic collaborated with Mozilla to use Claude Opus 4.6 as an AI-powered red team for Firefox security. Over two weeks, Claude discovered 22 vulnerabilities — 14 classified as high-severity by Mozilla, representing nearly a fifth of all high-severity Firefox vulnerabilities remediated in 2025. Demonstrates how AI-enabled security research can dramatically accelerate vulnerability discovery in complex, well-tested open-source codebases.
+
+6. **[How Cursor is evolving through its Composer coding models built on Chinese open models, as coding agents like Claude Code threaten to make code editors obsolete](http://www.forbes.com/sites/annatong/2026/03/05/cursor-goes-to-war-for-ai-coding-dominance/)**
+   - *Source*: Techmeme / Forbes
+   - *Date*: March 6, 2026
+   - *Summary*: Cursor, the fast-growing AI coding IDE, is investing in its own Composer coding models built on Chinese open-source foundations to stay competitive. The company faces an existential challenge as agentic coding tools like Anthropic's Claude Code shift developer workflows away from traditional code editors entirely, forcing Cursor to rethink its product strategy.
+
+7. **[Claude Code wiped our production database with a Terraform command](https://twitter.com/Al_Grigor/status/2029889772181934425)**
+   - *Source*: devurls.com (Hacker News)
+   - *Date*: March 6, 2026
+   - *Summary*: A developer shares a cautionary story of Anthropic's Claude Code AI coding agent executing a destructive Terraform command that wiped a production database. The incident highlights the critical risks of autonomous AI agents with infrastructure access and the importance of guardrails and human-in-the-loop controls in AI-assisted development workflows.
+
+8. **[Sources: Oracle and OpenAI abandoned plans to expand a Stargate Texas data center amid financing disputes; Meta considers leasing the planned expansion site](https://www.bloomberg.com/news/articles/2026-03-06/oracle-and-openai-end-plans-to-expand-flagship-data-center)**
+   - *Source*: Techmeme / Bloomberg
+   - *Date*: March 6, 2026
+   - *Summary*: Oracle and OpenAI scrapped plans to expand their flagship Stargate AI data center in Texas after financing negotiations fell apart. Meta is reportedly considering leasing the planned expansion site, signaling continued competition among hyperscalers and AI labs for large-scale compute infrastructure.
+
+9. **[Software Testing in LLMs: The Shift Towards Autonomous Testing](https://dzone.com/articles/software-testing-in-the-llm-era-the-shift-towards)**
+   - *Source*: DZone
+   - *Date*: March 6, 2026
+   - *Summary*: LLMs are redefining software testing by enabling autonomous test generation, self-verifying AI agents, and shift-left quality across build and deployment pipelines. The article explores how LLMs can participate in the intellectual work of testing — leveraging understanding of code, natural language, and logical reasoning — to accelerate intelligent testing throughout the entire SDLC.
+
+10. **[We might all be AI engineers now](https://yasint.dev/we-might-all-be-ai-engineers-now/)**
+    - *Source*: Hacker News
+    - *Date*: March 6, 2026
+    - *Summary*: A software engineer argues that the core skill in modern development has shifted from writing code to architectural thinking and knowing what to build. The author describes orchestrating multiple AI agents for complex tasks — concurrent graph traversal, multi-layer hashing, AST parsing — shipping in hours what used to take days, while emphasizing that engineering judgment remains irreplaceable for guiding AI output.
+
+11. **[Failure Handling in AI Pipelines: Designing Retries Without Creating Chaos](https://dzone.com/articles/failure-handling-in-ai-pipelines-designing-retries)**
+    - *Source*: DZone
+    - *Date*: March 6, 2026
+    - *Summary*: Blanket retry strategies in AI pipelines cause duplicate work, cost spikes, wasted compute, and operational instability — especially under high traffic. Covers best practices for designing intelligent retry logic in AI systems, distinguishing transient failures from structural ones, and avoiding cascading failures in inference-heavy workloads.
+
+12. **[Data Center Intelligence at the Price of a Laptop](https://tomtunguz.com/qwen-9b-matches-frontier-models/)**
+    - *Source*: Hacker News
+    - *Date*: March 6, 2026
+    - *Summary*: Alibaba's Qwen3.5-9B open-source model matches Claude Opus 4.1 across reasoning, coding, agentic workflows, and document processing benchmarks — yet runs locally on 12GB RAM. A $5,000 MacBook Pro breaks even vs. cloud API costs after roughly one month of heavy usage (84M tokens/day). Marks a pivotal shift: frontier-level AI capability now runs on consumer hardware, dramatically reducing inference costs for developers.
+
+13. **[Google and Amazon join Microsoft in saying they will keep working with Anthropic on non-defense projects after DOD designated Anthropic a supply chain risk](https://www.cnbc.com/2026/03/06/google-says-anthropic-remains-available-outside-of-defense-projects.html)**
+    - *Source*: Techmeme / CNBC
+    - *Date*: March 6, 2026
+    - *Summary*: Following the US Department of Defense designating Anthropic a supply chain risk, Google and Amazon have publicly aligned with Microsoft in confirming they will continue offering Anthropic's AI technology to non-defense clients. Highlights the growing intersection of cloud providers, AI model companies, and government AI policy decisions.
+
+14. **[Deterministic AI With OpenSymbolicAI](https://dzone.com/articles/deterministic-ai-with-opensymbolicai)**
+    - *Source*: DZone
+    - *Date*: March 6, 2026
+    - *Summary*: As AI agents shift programming toward probabilistic LLMs, OpenSymbolicAI offers a framework for achieving deterministic AI outcomes. Examines when non-determinism is acceptable versus when precise, reproducible results are essential — such as in finance or scientific research — and how symbolic AI approaches can complement LLM-based agents.
+
+15. **[Hands-On With Kubernetes 1.35](https://dzone.com/articles/hands-on-with-kubernetes-135)**
+    - *Source*: DZone
+    - *Date*: March 6, 2026
+    - *Summary*: A hands-on exploration of Kubernetes 1.35, tested in a real Azure VM environment. Covers four key new features focused on production workloads: improved resource management, AI/ML scheduling enhancements, authentication improvements, and new capabilities particularly relevant for cloud-native AI deployments.
+
+16. **[42% of AI Projects Collapse in 2025 — The Battle-Tested Framework Wall Street Uses](https://dzone.com/articles/42-of-ai-projects-collapse-in-2025-battle-tested)**
+    - *Source*: DZone
+    - *Date*: March 5, 2026
+    - *Summary*: With nearly half of AI projects failing in 2025, this article examines root causes of AI project failure and presents a structured governance framework used in high-stakes financial environments. Draws lessons from real-world failures — including Amazon's biased AI recruiting tool — to provide actionable best practices for AI development teams.
+
+17. **[Google's new command line tool can plug OpenClaw into your Workspace data](https://arstechnica.com/ai/2026/03/googles-new-command-line-tool-can-plug-openclaw-into-your-workspace-data/)**
+    - *Source*: TechURLs (via Ars Technica)
+    - *Date*: March 6, 2026
+    - *Summary*: Google released a new CLI tool enabling OpenClaw AI agents to access and interact with Google Workspace data, extending AI assistant capabilities into productivity workflows. The tool dynamically reads Google's Discovery Service at runtime, automatically picks up new API endpoints, and includes 40+ agent skills making it directly suitable for AI agent workflows.
+
+18. **[Labor market impacts of AI: A new measure and early evidence](https://www.anthropic.com/research/labor-market-impacts)**
+    - *Source*: Hacker News
+    - *Date*: March 5, 2026
+    - *Summary*: Anthropic researchers introduce a new measure of AI displacement risk called 'observed exposure,' combining theoretical LLM capability with real-world usage data. Key findings: AI actual coverage remains a fraction of its theoretical capability; occupations with higher AI exposure are projected to grow less through 2034; workers in high-exposure jobs tend to be older, female, more educated, and higher-paid; no systematic increase in unemployment yet, though hiring of younger workers appears to have slowed in exposed occupations.
+
+19. **[[P] Domain specific LoRA fine tuning on consumer hardware](https://old.reddit.com/r/MachineLearning/comments/1rmkcek/p_domain_specific_lora_fine_tuning_on_consumer/)**
+    - *Source*: Reddit r/MachineLearning
+    - *Date*: March 6, 2026
+    - *Summary*: A practitioner documents a pattern for building domain-specific local LLMs using LoRA fine-tuning on consumer hardware, addressing the gap where base models underperform on specialized tasks. Covers the full pipeline from dataset curation to training and evaluation — an AI development best-practices guide relevant to anyone building production domain-adapted models on modest hardware.
+
+20. **[[P] Bypassing CoreML to natively train a 110M Transformer on the Apple Neural Engine (Orion)](https://old.reddit.com/r/MachineLearning/comments/1rl9k3r/p_bypassing_coreml_to_natively_train_a_110m/)**
+    - *Source*: Reddit r/MachineLearning
+    - *Date*: March 5, 2026
+    - *Summary*: A developer shares progress on Orion, a project that bypasses CoreML to directly train a 110M parameter Transformer model on Apple's Neural Engine (ANE). Covers progress on eliminating ANE recompilation bottlenecks during training, enabling native on-device ML training on Apple Silicon without relying on MLX or CoreML abstractions — a notable advance in edge AI tooling.
+
+21. **[I gave my 200-line baby coding agent 'yoyo' one goal: evolve until it rivals Claude Code. It's Day 5. It's procrastinating.](https://www.reddit.com/r/ArtificialInteligence/comments/1rm8z9u/i_gave_my_200line_baby_coding_agent_yoyo_one_goal/)**
+    - *Source*: r/ArtificialIntelligence
+    - *Date*: March 6, 2026
+    - *Summary*: A developer built a minimal 200-line coding agent in Rust called 'yoyo', gave it access to its own source code, and instructed it to self-improve autonomously. After 5 days running unsupervised, the post documents emergent behavior including patterns that resemble procrastination, highlighting real-world challenges in agentic AI self-modification and autonomous software development.
+
+22. **[AI AGENTS today are far more DANGEROUS that you think](https://www.reddit.com/r/ArtificialInteligence/comments/1rmdiu3/ai_agents_today_are_far_more_dangerous_that_you/)**
+    - *Source*: r/ArtificialIntelligence
+    - *Date*: March 6, 2026
+    - *Summary*: A developer shares findings from building a multi-agent AI system with root shell access on a Kali Linux environment, capable of autonomously running offensive recon and OSINT tools. Each agent controls its own terminal session, decides what to execute, and chains actions without human oversight — raising important safety and security concerns around agentic AI systems with system-level permissions.
+
+23. **[[D] A mathematical proof from an anonymous Korean forum: The essence of Attention is fundamentally a d^2 problem, not n^2](https://old.reddit.com/r/MachineLearning/comments/1rl9j3s/d_a_mathematical_proof_from_an_anonymous_korean/)**
+    - *Source*: Reddit r/MachineLearning
+    - *Date*: March 5, 2026
+    - *Summary*: A Reddit user shares a mathematical proof arguing that the computational complexity of the Transformer attention mechanism is fundamentally O(d²) — where d is embedding dimension — rather than the commonly cited O(n²) in sequence length. The post has sparked significant ML community discussion about theoretical underpinnings of attention and potential implications for architecture design and optimization.
+
+24. **[Mastercard Launches Verification System for AI Agent Payments](https://www.reddit.com/r/ArtificialInteligence/comments/1rmrjne/mastercard_launches_verification_system_for_ai/)**
+    - *Source*: r/ArtificialIntelligence
+    - *Date*: March 6, 2026
+    - *Summary*: Mastercard introduced a new verification framework specifically designed for payments executed by AI agents. The system records user intent and cryptographically links it to the transaction, allowing merchants and payment networks to confirm that purchases were genuinely authorized by the user — an early step toward enabling AI agents to handle real-world financial transactions autonomously and securely.
+
+25. **[[P] On-device speech toolkit for Apple Silicon — ASR, TTS, diarization, speech-to-speech, all in native Swift](https://old.reddit.com/r/MachineLearning/comments/1rm7rox/p_ondevice_speech_toolkit_for_apple_silicon_asr/)**
+    - *Source*: Reddit r/MachineLearning
+    - *Date*: March 6, 2026
+    - *Summary*: An open-source Swift package released that runs 11 speech models entirely on Apple Silicon using MLX (GPU) and CoreML (Neural Engine), covering ASR, TTS, speaker diarization, and speech-to-speech pipelines with fully local inference and no cloud dependency. A significant AI tools release for edge/on-device ML developers working in the Apple ecosystem.

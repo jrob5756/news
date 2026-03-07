@@ -73,40 +73,8 @@ agents:
       - workflow.input.project_root
     command: bash
     args:
-      - "-c"
-      - |
-        set -e
-        PR="{{ workflow.input.project_root }}"
-
-        # Find the 5 most recent report files (yyyy/mm/dd.md structure)
-        FILES=$(find "$PR/reports" -name '*.md' -type f 2>/dev/null | sort -r | head -5)
-
-        # Also check for legacy files
-        LEGACY=$(find "$PR" -maxdepth 1 -name '*_news_report.md' -type f 2>/dev/null | sort -r)
-        LEGACY2=$(find "$PR/reports" -maxdepth 1 -name '*_news_report.md' -type f 2>/dev/null | sort -r)
-
-        ALL_FILES=$(echo -e "$FILES\n$LEGACY\n$LEGACY2" | grep -v '^$' | sort -r | head -5)
-
-        EXCL_DIR="$PR/tmp"
-        EXCL_FILE="$EXCL_DIR/exclusion_list.json"
-        mkdir -p "$EXCL_DIR"
-
-        if [ -z "$ALL_FILES" ]; then
-          echo "[]" > "$EXCL_FILE"
-          echo "$EXCL_FILE"
-          exit 0
-        fi
-
-        # Extract markdown links [Title](URL) and save as JSON array to temp file
-        echo "$ALL_FILES" | xargs grep -ohE '\[([^]]+)\]\(([^)]+)\)' 2>/dev/null \
-          | sed -E 's/\[([^]]+)\]\(([^)]+)\)/\1\t\2/' \
-          | jq -R -s '
-              split("\n") | map(select(length > 0)) | map(
-                split("\t") | { title: .[0], url: .[1] }
-              )
-            ' > "$EXCL_FILE"
-
-        echo "$EXCL_FILE"
+      - "{{ workflow.input.project_root }}/workflows/scripts/build_exclusion_list.sh"
+      - "{{ workflow.input.project_root }}"
     routes:
       - to: gather_sources
 
@@ -169,52 +137,9 @@ agents:
       - generate_report.output
     command: bash
     args:
-      - "-c"
-      - |
-        set -e
-        PR="{{ workflow.input.project_root }}"
-        YR=$(date +%Y)
-        MO=$(date +%m)
-        DY=$(date +%d)
-        DIR="$PR/reports/$YR/$MO"
-        RF="$DIR/$DY.md"
-
-        # Create target directory
-        mkdir -p "$DIR"
-
-        # Save the new report
-        cat > "$RF" << 'REPORT_EOF'
-        {{ generate_report.output.report }}
-        REPORT_EOF
-
-        # Migrate legacy *_news_report.md files from root into yyyy/mm/dd.md format
-        for f in "$PR"/*_news_report.md; do
-          [ -f "$f" ] || continue
-          BN=$(basename "$f")
-          FY=$(echo "$BN" | cut -c1-4)
-          FM=$(echo "$BN" | cut -c5-6)
-          FD=$(echo "$BN" | cut -c7-8)
-          FDIR="$PR/reports/$FY/$FM"
-          mkdir -p "$FDIR"
-          mv "$f" "$FDIR/$FD.md"
-        done
-
-        # Migrate legacy files from reports/ root
-        for f in "$PR/reports"/*_news_report.md; do
-          [ -f "$f" ] || continue
-          BN=$(basename "$f")
-          FY=$(echo "$BN" | cut -c1-4)
-          FM=$(echo "$BN" | cut -c5-6)
-          FD=$(echo "$BN" | cut -c7-8)
-          FDIR="$PR/reports/$FY/$FM"
-          mkdir -p "$FDIR"
-          mv "$f" "$FDIR/$FD.md"
-        done
-
-        echo "Report saved to $RF"
-
-        # Clean up all temp files
-        rm -rf "$PR/tmp"
+      - "{{ workflow.input.project_root }}/workflows/scripts/save_report.sh"
+      - "{{ workflow.input.project_root }}"
+      - "{{ generate_report.output.report }}"
     routes:
       - to: $end
         when: "exit_code == 0"
