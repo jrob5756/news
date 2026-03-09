@@ -21,7 +21,7 @@ jobs:
       - uses: astral-sh/setup-uv@v4
 
       - name: Install conductor
-        run: uv tool install conductor-cli@git+https://github.com/microsoft/conductor.git
+        run: uv tool install conductor-cli@git+https://github.com/microsoft/conductor.git@fix/pin-copilot-sdk-revert-serialization
 
       - name: Install Copilot CLI
         run: |
