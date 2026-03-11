@@ -2,7 +2,7 @@
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 CONFIG="$PROJECT_ROOT/config.json"
 
 TEMPLATE=$(cat "$PROJECT_ROOT/templates/news_report_template.md")

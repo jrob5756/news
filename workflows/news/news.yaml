@@ -73,7 +73,7 @@ agents:
       - workflow.input.project_root
     command: bash
     args:
-      - "{{ workflow.input.project_root }}/workflows/scripts/build_exclusion_list.sh"
+      - "{{ workflow.input.project_root }}/workflows/news/scripts/build_exclusion_list.sh"
       - "{{ workflow.input.project_root }}"
     routes:
       - to: gather_sources
@@ -137,7 +137,7 @@ agents:
       - generate_report.output
     command: bash
     args:
-      - "{{ workflow.input.project_root }}/workflows/scripts/save_report.sh"
+      - "{{ workflow.input.project_root }}/workflows/news/scripts/save_report.sh"
       - "{{ workflow.input.project_root }}"
       - "{{ generate_report.output.report }}"
     routes:

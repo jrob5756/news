@@ -2,7 +2,7 @@ name: Daily News Digest
 
 on:
   schedule:
-    - cron: "0 9 * * *"
+    - cron: "0 8 * * *"
   workflow_dispatch:
 
 permissions:
@@ -39,7 +39,7 @@ jobs:
           MAX_ATTEMPTS=2
           for attempt in $(seq 1 $MAX_ATTEMPTS); do
             echo "=== Attempt $attempt of $MAX_ATTEMPTS ==="
-            if bash workflows/scripts/run.sh --no-interactive --skip-gates --log-file auto; then
+            if bash workflows/run.sh --no-interactive --skip-gates --log-file auto; then
               echo "Workflow succeeded on attempt $attempt"
               exit 0
             fi
