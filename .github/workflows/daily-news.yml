@@ -18,10 +18,8 @@ jobs:
         with:
           fetch-depth: 10
 
-      - uses: astral-sh/setup-uv@v4
-
       - name: Install conductor
-        run: uv tool install conductor-cli@git+https://github.com/microsoft/conductor.git
+        run: curl -sSfL https://aka.ms/conductor/install.sh | sh
 
       - name: Install Copilot CLI
         run: |
