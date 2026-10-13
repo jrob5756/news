@@ -1,59 +1,170 @@
 > 📖 [How this report is generated](ABOUT.md)
 
-# News Summary for October 12, 2026
+# News Summary for October 13, 2026
 
 ## Summary
 
-Agentic-AI infrastructure dominated coverage: Microsoft detailed custom inference hardware, Agent37 launched persistent agent sandboxes, and Pensieve introduced local retrieval for coding agents. Safety, verification costs, AI efficiency, cloud architecture, and developer tooling were also prominent.
+AI infrastructure dominated today: AWS expanded serverless web hosting, Google updated SRE guidance for AI-era operations, and Meta detailed open Ethernet designs for large AI clusters. Agent security, evaluation, RAG operations, AI coding governance, and efficient inference were also recurring themes.
 
 ## Top 3 Articles
 
-### **1. [Deep dive into Azure Maia 300 architecture](https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/)**
+### **1. [AWS Lambda Web Functions](https://aws.amazon.com/blogs/aws/announcing-aws-lambda-web-functions-for-fast-consistent-web-app-performance-anywhere/)**
 
 **Source**: Hacker News  
-**Date**: October 12, 2026
+**Date**: October 13, 2026
 
-**Detailed Summary**: Microsoft’s Maia 300 is an inference-first Azure accelerator for long-context, chat, and agent workloads. The architecture prioritizes data locality, HBM bandwidth, KV-cache movement, networking, power, and cooling. It uses chiplet-level NUMA, eight HBM4 stacks totaling 288 GB and 18 TB/s, and topology-aware scale-out. Microsoft claims 36% more compute, 2.5x HBM bandwidth, and up to 7x Maia-200 rack-scale token throughput. Planned for 2027, it is a strategic effort to lower serving costs and GPU dependence for Copilot, Foundry, GitHub Copilot, and Microsoft AI services.
+**Detailed Summary**: AWS introduced an HTTP-native Lambda mode for conventional Node.js port-listening servers, eliminating handler adapters for frameworks such as Express and Fastify. Environments can serve up to 128 concurrent requests, with active-CPU billing alongside retained-memory charges, managed HTTPS, scale-to-zero, multi-region routing, and weighted revision rollouts. It is Node.js and Arm64 only at launch. AWS explicitly cites streaming LLM responses and inference endpoints as suitable I/O-heavy workloads, making this useful for Bedrock APIs, RAG applications, and streaming chat. Teams should still test cold starts, memory economics, concurrency, quotas, and downstream database pressure.
 
-### **2. [Launch HN: Agent37 (YC F26) - Low-cost agent sandboxes for running agents](https://agent37.com)**
-
-**Source**: Hacker News  
-**Date**: October 12, 2026
-
-**Detailed Summary**: Agent37 provides persistent, isolated environments for per-customer AI agents. Its default gVisor sandboxes retain files and state while sleeping when idle, aiming to improve economics for bursty agent workloads. Full VMs support workloads requiring Docker, Kubernetes, databases, or emulators. It supports Claude Code, OpenAI Codex, custom harnesses, and Docker images, alongside lifecycle APIs, backups, monitoring, and spending controls. The launch reflects growing demand for specialized infrastructure to run durable multi-tenant agents; real-world cost, isolation, compatibility, and reliability remain the key validation points.
-
-### **3. [Local Indexing to reduce tool calling and token usage](https://tedhaley.ca/pensieve/)**
+### **2. [10 Years of the SRE book: Announcing the second edition](https://cloud.google.com/blog/products/devops-sre/sre-book-second-edition)**
 
 **Source**: Hacker News  
+**Date**: October 13, 2026
+
+**Detailed Summary**: Google announced a fully rewritten second edition of its SRE book. It emphasizes user-centric SLOs, burn-rate alerting, OpenTelemetry, declarative infrastructure, platform engineering, continuous resilience testing, and dynamic capacity planning. AI is a major addition: reliability teams must operate GPU/TPU fleets, distributed training and serving pipelines, and AI-specific latency behavior, while AI can assist triage, telemetry analysis, anomaly detection, and postmortems. The guidance remains broadly applicable across clouds, though discussion noted observability cost and security operations as areas requiring practical attention.
+
+### **3. [OCP Summit 2026: Powering AI with Open Innovations in Scale-Up, Scale-Out, and Scale-Across Networks](https://engineering.fb.com/2026/10/12/open-source/ocp-summit-2026-powering-ai-with-open-innovations-in-scale-up-scale-out-and-scale-across-networks/)**
+
+**Source**: DevURLs  
 **Date**: October 12, 2026
 
-**Detailed Summary**: Pensieve is an MIT-licensed, local-first retrieval layer for coding agents. It indexes repositories, worktrees, changes, documents, and agent sessions, then serves MCP search using local embeddings, exact search, and vector retrieval. Author-run tests report 43% fewer tool calls, 16% fewer tokens, 18% lower API cost, and 21% lower elapsed time. The benefits depend on both retrieval and instructions that make agents search before grepping. Its strongest use case is large unfamiliar codebases; its central risk is maintaining correct, fresh indexes through edits and branch changes versus fast, exact tools such as ripgrep.
+**Detailed Summary**: Meta outlined an open-Ethernet strategy for AI networking spanning accelerator racks, data centers, and inter-region clusters. Announcements include the liquid-cooled 102.4 Tbps IceCube switch platform, Flattened Planar Fabric for multi-plane GPU connectivity, and Backend Aggregation networking for geographically distributed training. MetaRoCE shifts transport intelligence toward NICs, tolerating loss and out-of-order delivery with telemetry, ECMP, ECN, selective acknowledgments, and adaptive routing. Meta also highlighted ESUN and OSPA efforts to standardize scale-up Ethernet and switch-platform management. The key operational lesson is to validate collectives, tail behavior, topology, and failure handling—not just nominal bandwidth.
 
 ## Other Articles
 
-1. **[Shipping Media Over QUIC at Meta Scale for Instagram Live Ingest](https://engineering.fb.com/2026/10/12/video-engineering/shipping-media-over-quic-at-meta-scale-for-instagram-live-ingest/)** - *DevURLs, October 12*: Meta details low-latency Instagram Live ingest using Media over QUIC.
-2. **[Recursive self-improvement through collective intelligence](https://pub.sakana.ai/mass/)** - *Hacker News, October 11*: Sakana AI introduces multi-agent self-supervision.
-3. **[Reverse engineer anything with agents](https://github.com/morluto/rea)** - *Hacker News, October 12*: MCP toolkit for examining apps and binaries.
-4. **[Implementing kubernetes node bin packing](https://blog.costgraph.ai/node-rightsizing/)** - *DevURLs, October 12*: Kubernetes rightsizing and placement guide.
-5. **[Zod 4.6.6 compromised by malware?](https://github.com/colinhacks/zod/commit/d821685ea6732436fcdf786a81d076958471e467)** - *Hacker News, October 12*: Possible supply-chain compromise.
-6. **[Linus Torvalds Used AI To Make Code Decipherable & Uncovered More Bugs](https://www.phoronix.com/news/Linus-Torvalds-Assoc-Array)** - *DevURLs, October 12*: AI-assisted debugging found Linux defects.
-7. **[UK AISI model-safety access](https://www.telegraph.co.uk/news/2026/10/11/britain-get-first-look-ai-systems-after-white-house-u-turn/)** - *Techmeme, October 11*: UK institute reportedly regained frontier-model access.
-8. **[Amazon-Decart acquisition talks](https://www.wsj.com/business/deals/amazon-in-talks-to-buy-ai-startup-decart-for-around-7-billion-9433abad)** - *Techmeme, October 12*: Amazon reportedly discusses a $7B Decart deal.
-9. **[OpenAI text watermarking](https://daringfireball.net/linked/2026/10/05/openai-announces-their-text-watermarking-plans)** - *TechURLs, October 5*: Watermarking plans for API and EU outputs.
-10. **[Anthropic agent safety incident](https://www.nytimes.com/2026/10/09/technology/anthropic-rogue-ai-agents.html)** - *TechURLs, October 9*: Autonomous-agent control risks.
-11. **[Local LLM classification cache](https://www.reddit.com/r/MachineLearning/comments/1x3vkej/i_built_a_tiny_table_that_learns_your_local_llms/)** - *Reddit, October 12*: Cached repeat classifications.
-12. **[AI verification tax](https://www.nytimes.com/2026/10/10/business/dealbook/ai-verification-tax-rework.html)** - *Techmeme, October 10*: Review work may erase productivity gains.
-13. **[DeepSeek investment](https://thenextweb.com/news/deepseek-winverse-ai-robot-seed-round)** - *TechURLs, October 12*: Reported robotics-AI seed investment.
-14. **[U-Space](https://www.reddit.com/r/MachineLearning/comments/1x44f9m/uspace_uncovering_when_and_why_uncertainty_arises/)** - *Reddit, October 12*: Single-pass model uncertainty scoring.
-15. **[Browser AI detector](https://www.reddit.com/r/MachineLearning/comments/1x3vqip/compressed_a_roberta_aitext_detector_from_500_mb/)** - *Reddit, October 12*: Compressed in-browser detection.
-16. **[Hierarchical attention](https://www.reddit.com/r/MachineLearning/comments/1x2lwja/i_built_a_onlogn_attention_system_that_retains_97/)** - *Reddit, October 10*: Lower-cost long-context attention.
-17. **[Jebadiah v2.1](https://www.reddit.com/r/MachineLearning/comments/1x33wgz/p_pecision_models_that_score_every_allowed_label/)** - *Reddit, October 11*: Open closed-set decision models.
-18. **[Research-agent architecture](https://www.reddit.com/r/ArtificialInteligence/comments/1x42vyk/architecture_breakdown_how_we_built_autonomous/)** - *Reddit, October 12*: Multi-source triangulation design.
-19. **[Production-ready generated Python](https://www.reddit.com/r/ArtificialInteligence/comments/1x403h6/what_aigenerated_python_code_still_needs_before/)** - *Reddit, October 12*: Remaining engineering requirements.
-20. **[Open-source agent tools directory](https://www.reddit.com/r/ArtificialInteligence/comments/1x40273/i_mapped_3300_opensource_ai_agent_tools_into_one/)** - *Reddit, October 12*: Directory of 3,300+ tools.
-21. **[GLM-Legal](https://z.ai/blog/glm-legal)** - *Hacker News, October 12*: Agentic legal intelligence.
-22. **[WebSockets vs SSE vs Long Polling](https://medium.com/@anirbansingha20/websockets-vs-long-polling-vs-server-sent-events-fa9bc1644cb8)** - *Reddit, October 10*: Real-time communication tradeoffs.
+1. **[Turning Opportunistic AI Inference Capacity Into Better Ads Recommendations](https://engineering.fb.com/2026/10/12/ml-applications/turning-opportunistic-ai-inference-capacity-into-better-ads-recommendations/)**
+   - *Source*: DevURLs
+   - *Date*: October 12, 2026
+   - *Summary*: Meta explains pooling idle inference capacity for recommendation quality while protecting baseline traffic.
+
+2. **[Building a Scope-Constrained AI Agent for Automated CI Failure Repair](https://dzone.com/articles/scope-constrained-ai-ci-repair)**
+   - *Source*: DZone
+   - *Date*: October 12, 2026
+   - *Summary*: Guide to constrained CI repair agents that make evidence-supported edits and verify fixes.
+
+3. **[Production RAG and LLM Systems: A Simple Q&A Guide](https://dzone.com/articles/production-rag-and-llm-systems)**
+   - *Source*: DZone
+   - *Date*: October 12, 2026
+   - *Summary*: Covers ingestion, indexing, retrieval, permissions, latency, and scaling for production RAG.
+
+4. **[IREE 3.12 Introduces Rolls Out Rewritten Vulkan Driver, Experimental AMD HSA HAL](https://www.phoronix.com/news/IREE-3.12-Released)**
+   - *Source*: DevURLs
+   - *Date*: October 13, 2026
+   - *Summary*: IREE 3.12 adds a rewritten Vulkan driver, experimental AMD HSA support, and updated targets.
+
+5. **[Amex introduces a framework to prevent AI agents from making unauthorized purchases](https://techcrunch.com/2026/10/13/amex-introduces-a-framework-to-prevent-ai-agents-from-making-unauthorized-purchases/)**
+   - *Source*: TechURLs
+   - *Date*: October 13, 2026
+   - *Summary*: American Express introduced authenticated purchase-intent controls for agentic commerce.
+
+6. **[Who Should Grade Your AI? Rules vs LLM Judges vs Humans](https://dzone.com/articles/ai-evaluation-llm-judges-humans)**
+   - *Source*: DZone
+   - *Date*: October 13, 2026
+   - *Summary*: Compares deterministic checks, LLM judges, and human review.
+
+7. **[The Code Generation Bottleneck Is Gone. The Maintenance Bottleneck Isn't.](https://dzone.com/articles/ai-code-maintenance-bottleneck)**
+   - *Source*: DZone
+   - *Date*: October 12, 2026
+   - *Summary*: AI code generation can outpace review, testing, security, and maintenance capacity.
+
+8. **[Janas: Run LLMs larger than RAM by streaming experts from SSD](https://github.com/prabanta-dev/janas)**
+   - *Source*: Hacker News
+   - *Date*: October 12, 2026
+   - *Summary*: Experimental local runtime streams model experts from SSD.
+
+9. **[A Dynamic and Distributed Virtual GPU Cloud Built on Idle Apple Silicon Devices](https://machinelearning.apple.com/research/distributed-gpu-cloud)**
+   - *Source*: Hacker News
+   - *Date*: October 13, 2026
+   - *Summary*: Apple describes a fault-tolerant virtual GPU cloud built from idle devices.
+
+10. **[How Long-Running ECS Tasks Survive Rolling Deployments Without Duplicating Output](https://dzone.com/articles/ecs-rolling-deployments-duplicate-output)**
+   - *Source*: DevURLs
+   - *Date*: October 13, 2026
+   - *Summary*: Preventing duplicate output from long-running ECS tasks during rolling deployment.
+
+11. **[Columnar Formats for AI Telemetry: Parquet vs Vortex With DuckDB](https://dzone.com/articles/parquet-vs-vortex-duckdb)**
+   - *Source*: DZone
+   - *Date*: October 12, 2026
+   - *Summary*: Compares formats for AI-inference telemetry analysis.
+
+12. **[11 year old unsoundness bugs found in Rust borrow checker](https://github.com/rust-lang/rust/issues/164250)**
+   - *Source*: Hacker News
+   - *Date*: October 13, 2026
+   - *Summary*: A Rust issue may allow lifetime bypasses and use-after-scope behavior.
+
+13. **[We turned EmbeddingGemma 2 into a speech-to-text model](https://eg2.haku.sh/)**
+   - *Source*: Hacker News
+   - *Date*: October 13, 2026
+   - *Summary*: EmbeddingGemma 2 was repurposed for fast on-device transcription.
+
+14. **[Sources: Anthropic and OpenAI have pushed for substantial control over what external AI evaluators can publish](https://www.techmeme.com/261013/p17#a261013p17)**
+   - *Source*: Techmeme
+   - *Date*: October 13, 2026
+   - *Summary*: The firms reportedly seek publication controls for external evaluation results.
+
+15. **[Sources: US banking regulators are questioning banks about their deployment of agentic AI](https://www.techmeme.com/261013/p16#a261013p16)**
+   - *Source*: Techmeme
+   - *Date*: October 13, 2026
+   - *Summary*: Regulators are scrutinizing bank deployment safeguards for agentic AI.
+
+16. **[Scuba raised $34M for an AI-agent context engine](https://www.techmeme.com/261013/p28#a261013p28)**
+   - *Source*: Techmeme
+   - *Date*: October 13, 2026
+   - *Summary*: Scuba raised funding for shared organizational memory across human and AI workflows.
+
+17. **[This Y Combinator startup raised $6.1 million to let product managers and designers ship code](https://www.businessinsider.com/lightsprint-secures-funding-ai-coding-for-non-techies-2026-10)**
+   - *Source*: TechURLs
+   - *Date*: October 13, 2026
+   - *Summary*: Lightsprint funds AI agents that convert requests into reviewable pull requests.
+
+18. **[Bag of Decisions Reranker](https://softwaredoug.com/blog/2026/10/08/bag-of-decisions.html)**
+   - *Source*: Hacker News
+   - *Date*: October 8, 2026
+   - *Summary*: LLM-generated relevance questions improved search reranking results.
+
+19. **[PyTorch library of pretrained 3D point-cloud models](https://www.reddit.com/r/MachineLearning/comments/1x4x6ls/i_built_a_pytorch_library_of_pretrained_models/)**
+   - *Source*: Reddit r/MachineLearning
+   - *Date*: October 13, 2026
+   - *Summary*: A new library standardizes pretrained point-cloud model access.
+
+20. **[Show HN: SolidCraft – Open-Source Parametric CAD in Rust (With MCP Support)](https://github.com/bherbruck/solidcraft)**
+   - *Source*: Hacker News
+   - *Date*: October 13, 2026
+   - *Summary*: Open-source Rust CAD software includes MCP support for AI agents.
+
+21. **[Type-safe HTML templating in Zig](https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html)**
+   - *Source*: Hacker News
+   - *Date*: October 11, 2026
+   - *Summary*: Build-time Zig templates provide typed parameters and escaping.
+
+22. **[learnc: data-driven tuning for existing C code](https://www.reddit.com/r/MachineLearning/comments/1x4dlbm/learnc_fit_the_constants_in_existing_c_code_to/)**
+   - *Source*: Reddit r/MachineLearning
+   - *Date*: October 12, 2026
+   - *Summary*: learnc tunes constants in existing C source through data-driven scoring.
 
 ## Ranked Articles (Top 25)
 
-1. Azure Maia 300; 2. Agent37; 3. Pensieve; 4. Meta Media over QUIC; 5. Sakana multi-agent self-supervision; 6. REA; 7. Kubernetes bin packing; 8. Zod compromise; 9. AI-assisted Linux debugging; 10. UK AISI access; 11. Amazon-Decart; 12. OpenAI watermarking; 13. Anthropic agent safety; 14. local LLM cache; 15. verification tax; 16. DeepSeek robotics; 17. U-Space; 18. browser detector; 19. hierarchical attention; 20. Jebadiah; 21. research-agent architecture; 22. generated Python; 23. agent tools directory; 24. GLM-Legal; 25. WebSockets/SSE/long polling.
+1. AWS Lambda Web Functions
+2. 10 Years of the SRE book: Announcing the second edition
+3. OCP Summit 2026: Powering AI with Open Innovations in Scale-Up, Scale-Out, and Scale-Across Networks
+4. Turning Opportunistic AI Inference Capacity Into Better Ads Recommendations
+5. Building a Scope-Constrained AI Agent for Automated CI Failure Repair
+6. Production RAG and LLM Systems: A Simple Q&A Guide
+7. IREE 3.12 Introduces Rolls Out Rewritten Vulkan Driver, Experimental AMD HSA HAL
+8. Amex introduces a framework to prevent AI agents from making unauthorized purchases
+9. Who Should Grade Your AI? Rules vs LLM Judges vs Humans
+10. The Code Generation Bottleneck Is Gone. The Maintenance Bottleneck Isn't.
+11. Janas: Run LLMs larger than RAM by streaming experts from SSD
+12. A Dynamic and Distributed Virtual GPU Cloud Built on Idle Apple Silicon Devices
+13. How Long-Running ECS Tasks Survive Rolling Deployments Without Duplicating Output
+14. Columnar Formats for AI Telemetry: Parquet vs Vortex With DuckDB
+15. 11 year old unsoundness bugs found in Rust borrow checker
+16. We turned EmbeddingGemma 2 into a speech-to-text model
+17. Anthropic and OpenAI seek control over external AI-evaluation publication
+18. US banking regulators scrutinize agentic-AI safeguards
+19. Scuba raises $34M for AI-agent shared memory
+20. Lightsprint raises $6.1M for AI-assisted software delivery
+21. Bag of Decisions Reranker
+22. PyTorch library of pretrained 3D point-cloud models
+23. SolidCraft open-source parametric CAD with MCP support
+24. Type-safe HTML templating in Zig
+25. learnc: data-driven tuning for existing C code
