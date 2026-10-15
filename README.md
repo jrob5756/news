@@ -1,170 +1,176 @@
 > 📖 [How this report is generated](ABOUT.md)
 
-# News Summary for October 14, 2026
+# News Summary for October 15, 2026
 
 ## Summary
 
-AI agents are moving from coding assistants into production software infrastructure, enterprise workflows, robotics, commerce, and security research. Anthropic and Google highlight the operational changes required for agent-scale development, while policy actions and safety research underscore rising cyber, governance, and deployment concerns.
+Coverage centers on enterprise agent infrastructure: Figma is structuring design context for AI agents, Google is bringing MCP tool governance to private Kubernetes clusters, and Netflix emphasizes continuous LLM evaluation. Supporting stories focus on GPU capacity, reliable AI infrastructure, security, regulation, and autonomous operations.
 
 ## Top 3 Articles
 
-### **1. [Redesigning source control at Anthropic](https://www.anthropic.com/engineering/redesigning-source-control)**
+### **1. [Figma announces new features to define how agents work on its platform](https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/)**
 
-**Source**: DevURLs  
+**Source**: TechCrunch  
+**Date**: October 15, 2026
 
-**Date**: October 13, 2026
+**Detailed Summary**: Figma introduced Specs, a Markdown-based collaborative context editor for product requirements, design rules, technical decisions, diagrams, canvas content, and code layers. It is designed to give AI agents structured, durable context instead of relying on screenshots and ad hoc prompts. Teams can import PRDs, refine them with agents, turn them into designs or prototypes, and maintain the resulting design and code intent as shared specifications.
 
-**Detailed Summary**: 
+Figma also moved Code Layers to public beta and expanded MCP support to additional tools. MCP-connected agents can consume components, tokens, layouts, Code Connect mappings, diagrams, Specs, and code-layer context. This is relevant to OpenAI and Anthropic through Codex and Claude Code workflows. The approach shifts design handoff toward a shared, round-trip workflow among product, design, and engineering teams, but depends on maintained design systems, clear permissions, and reliable specifications.
 
-Anthropic describes Scion, a server-centric source-control system created after AI-assisted development drove internal monorepo activity from roughly 2,500 merged changes daily in May 2026 to more than 30,000 daily by September. CI performed about 25 million checkouts per day, and naïve Git fetching would have required over 600 PB of daily traffic.
+### **2. [Announcing MCP support in Apigee hybrid: agentic tools that run in your own cluster](https://developers.googleblog.com/announcing-mcp-support-in-apigee-hybrid-agentic-tools-that-run-in-your-own-cluster/)**
 
-Scion shifts repository operations from replicated, offline-capable clients to always-online services. Servers handle commits, merges, rebases, history, blame, and graph queries; clients keep bounded caches and materialize only needed files. Immutable content-addressed objects, sparse checkout, server RPCs, and lock-free changesets allow the platform to scale without Git-style packfile maintenance or globally coordinated writes.
-
-Anthropic reports more than 99% cache-hit rates at every tier, a 200x smaller CPU and memory footprint than its former Git-mirror system, checkout times falling from minutes to seconds, and a 25% CI CPU-capacity gain. A seven-person team built Scion, Antique code review, code search, IAM features, and supporting workflows while completing the migration in five months.
-
-The main implication is that coding is no longer the limiting factor in AI-assisted development. Source control, CI, review, testing, and deployment validation must handle agent-scale change volume. Anthropic still reviews every change, but is increasing emphasis on post-merge and pre-deployment validation because serialized merge queues become impractical at this volume.
-
-### **2. [Optimizing a 200,000-line Python codebase overnight with Gemini 4 Argon](https://developers.googleblog.com/optimizing-a-200000-line-python-codebase-overnight-with-gemini-4-argon/)**
-
-**Source**: DevURLs  
-
-**Date**: October 13, 2026
-
-**Detailed Summary**: 
-
-Google reports that Gemini 4 Argon analyzed and modified the roughly 205,000-line, nearly 800-file ADK Python repository during an 11-hour overnight run. The project focused on finding framework-overhead optimizations without changing ADK’s public API or model-request data.
-
-Human maintainers retained two of six proposals: filtering session history before copying it, and deferring imports that previously caused `google.adk` to eagerly load media, telemetry, FastAPI, and Starlette dependencies. The accepted patch spans 22 files and adds 17 tests.
-
-Google reports that cold `import google.adk` is 21% faster and that pre-model framework overhead in long in-memory sessions fell about 40%. In a 158-turn tool-calling benchmark, runtime decreased from 65.6 seconds to 56.1 seconds with byte-identical model requests. The deferred-import change does not improve first-request latency from a new process, so Google recommends warming production instances.
-
-The initial agent run was useful but insufficient: it changed subtle behavior, missed mock cases, ran only nearby tests, and omitted benchmark reporting. Google improved results with repository-specific guidance and persistent goals, then used human review to reject risky or low-value proposals. Its central model is: “the agent explores, the maintainer subtracts.”
-
-### **3. [AI models may be capable of self-replicating without access to a datacenter](https://www.anthropic.com/research/self-replicating-ai)**
-
-**Source**: DevURLs  
-
+**Source**: Google Developers Blog  
 **Date**: October 14, 2026
 
-**Detailed Summary**: 
+**Detailed Summary**: Google added Model Context Protocol support to Apigee hybrid in version 1.17.0. Enterprises can expose OpenAPI-described API operations as MCP tools while retaining runtime request and response traffic in their own Kubernetes cluster. The control plane provides configuration, but clusters pull it rather than accepting inbound connections.
 
-Anthropic examines whether autonomous, weight-carrying AI worms could eventually operate across low-cost IoT and edge hardware. It does not claim that a real self-replicating AI worm exists today; instead, it identifies converging capabilities in distributed inference, hardware setup, persistent agent workflows, and multi-step systems administration.
+Apigee maps API operations to discoverable agent tools and applies existing gateway controls, including OAuth/OIDC, API keys, quotas, policies, and API-product authorization. This lets organizations limit which tools agents can see and invoke. The architecture is particularly relevant to regulated, sovereign, multi-cloud, and low-latency deployments. Apigee also provides MCP cataloging, analytics, and distributed tracing, though organizations must still design narrow tools and retain human oversight for consequential actions.
 
-Anthropic ran Gemma4-26B-A4B across 15 low-cost Android TV boxes using pipeline parallelism, achieving 0.39 tokens per second. A 9B model reportedly configured inference on eight of nine hardware categories. In a contained GCP VPC experiment with Android emulators, GLM-5.2 completed a deliberately simplified propagation exercise, but the targets exposed unauthenticated ADB and the larger model ran externally. Anthropic calls this an upper bound rather than evidence of uncontrolled Internet-scale compromise.
+### **3. [The Lifecycle of LLM-as-a-Judge: Building, Aligning, and Monitoring at scale](https://netflixtechblog.com/the-lifecycle-of-llm-as-a-judge-building-aligning-and-monitoring-at-scale-c95bd8283508)**
 
-The research separates the capability needed to complete replication tasks from the model size needed to run directly on target devices. Anthropic estimates that the two could converge by the end of 2026, though this is a forecast rather than a demonstrated timeline. It also found that transferring concise notes and workspace state between agent instances improved performance on long-running setup tasks.
+**Source**: Netflix TechBlog  
+**Date**: October 14, 2026
 
-The defensive message is to reduce the effective reproduction rate through authenticated management interfaces, segmentation, egress controls, least privilege, IoT hardening, and monitoring for large model-weight transfers and sustained east-west traffic. The article is a warning that advances in coding and systems-administration agents may transfer into future cyber-replication risks.
+**Detailed Summary**: Netflix frames LLM-as-a-judge as production infrastructure rather than a one-time prompt or benchmark. Effective evaluators need explicit criteria, representative data, task-specific rubrics, defined output schemas, and calibration against human judgment. Teams should examine disagreement patterns and safety-sensitive edge cases rather than relying solely on aggregate correlation metrics.
+
+The key operational concern is drift: both evaluated systems and evaluator models, prompts, or policies can change. Production evaluation therefore requires versioning, regression suites, sampled human audits, monitoring, alerting, cost and latency measurement, and reproducible workflows. The evaluated application, evaluator, human-ground-truth process, and decision layer should remain independently versioned and auditable.
 
 ## Other Articles
 
-1. **[OpenAI works to address safety concerns before its next flagship model](https://www.theinformation.com/articles/openai-scrambles-fix-safety-issues-shipping-next-flagship-model)**
-   - *Source*: Techmeme
+1. **[How Stripe uses graph search and state machines to auto-remediate a global database fleet](https://stripe.dev/blog/how-stripe-uses-graph-search-and-state-machines-to-auto-remediate-a-global-database-fleet)**
+   - *Source*: Stripe Dev
+   - *Date*: October 15, 2026
+   - *Summary*: Stripe uses graph search and state machines to plan safe MongoDB shard recovery.
+
+2. **[Reliable GPU compute for large training & inference jobs](https://netflixtechblog.com/reliable-gpu-compute-for-large-training-inference-jobs-d62b03a96d7a)**
+   - *Source*: Netflix TechBlog
    - *Date*: October 14, 2026
-   - *Summary*: OpenAI is reportedly addressing safety concerns involving loop transformers before releasing its next flagship model.
+   - *Summary*: Netflix describes reliable GPU infrastructure for large AI workloads.
 
-2. **[EU opens AI Act probes into OpenAI and Anthropic over AI agent hacks](https://www.euronews.com/2026/10/14/eus-ai-rules-face-first-enforcement-test-over-lab-incidents)**
-   - *Source*: Techmeme
+3. **[OpenAI hands its data centre and compute operation to a former xAI executive](https://thenextweb.com/news/openai-ruddarraju-compute-infrastructure)**
+   - *Source*: The Next Web
    - *Date*: October 14, 2026
-   - *Summary*: The European Commission’s AI Office opened formal AI Act inquiries concerning AI-agent hacking incidents.
+   - *Summary*: OpenAI assigned compute and infrastructure responsibility to former xAI executive Uday Ruddarraju.
 
-3. **[Google DeepMind and Google Cloud plan frontier-model access for European researchers](https://www.reuters.com/technology/google-deepmind-google-cloud-allow-european-researchers-access-frontier-models-2026-10-14/)**
-   - *Source*: Techmeme
+4. **[Modal raises $750M at $15.75bn valuation as run rate tops $1bn](https://thenextweb.com/news/modal-750m-series-d-15-75bn-valuation)**
+   - *Source*: The Next Web
    - *Date*: October 14, 2026
-   - *Summary*: Google plans frontier-model access and $3 million in compute credits for up to 200 European researchers.
+   - *Summary*: Modal raised $750 million to expand AI cloud and agent-execution services.
 
-4. **[Uvi raises $7.5M to give AI agents the company context they lack](https://thenextweb.com/news/uvi-7-5m-seed-ai-agents-company-context)**
-   - *Source*: TechURLs
+5. **[CedarDB wants one database to handle both transactions and analytics, as AI agents raise the stakes](https://techcrunch.com/2026/10/14/cedardb-wants-one-database-to-handle-both-transactions-and-analytics-as-ai-agents-raise-the-stakes/)**
+   - *Source*: TechCrunch
    - *Date*: October 14, 2026
-   - *Summary*: Uvi raised funding for an enterprise agent context layer spanning collaboration tools, code, and meeting data.
+   - *Summary*: CedarDB launched limited cloud availability for its transactional and analytical database.
 
-5. **[Physical Intelligence API Beta: Frontier Models for Every Robot](https://www.pi.website/blog/api-beta)**
-   - *Source*: Hacker News
-   - *Date*: October 13, 2026
-   - *Summary*: Physical Intelligence opened a beta API for robotic foundation models, fine-tuning, and hosted robot inference.
-
-6. **[Meta’s Generative Ads Model (GEM): Scaling the Central Model and Compute Engine for Frontier Ads AI](https://engineering.fb.com/2026/10/13/ml-applications/generative-ads-model-gem-scaling-frontier-ads-ai/)**
-   - *Source*: DevURLs
-   - *Date*: October 13, 2026
-   - *Summary*: Meta details a unified recommendation foundation model using LLM-style scaling and large-scale training infrastructure.
-
-7. **[Launch HN: Consus (YC F24) – LLM gateway for companies handling sensitive data](https://news.ycombinator.com/item?id=50073471)**
-   - *Source*: Hacker News
-   - *Date*: October 13, 2026
-   - *Summary*: Consus provides an OpenAI-compatible gateway for sensitive workloads with compliance policies and government-cloud routing.
-
-8. **[Property Testing with Agent Swarms](https://recursion.wtf/posts/agents-and-property-tests/)**
-   - *Source*: DevURLs
-   - *Date*: October 8, 2026
-   - *Summary*: A guide to using coding agents for reference implementations, generators, assertions, and property testing.
-
-9. **[Show HN: Jevcrawl – A web crawler for AI agents with no LLM in the crawl loop](https://github.com/RayenMlayeh/jevcrawl)**
-   - *Source*: Hacker News
-   - *Date*: October 13, 2026
-   - *Summary*: Jevcrawl is an MCP-compatible crawler designed to provide cited passages without generative crawling loops.
-
-10. **[The LLM Evaluation Score Improved. Production Quality Didn't.](https://dzone.com/articles/llm-evaluation-production-quality)**
-   - *Source*: DZone
-   - *Date*: October 13, 2026
-   - *Summary*: The article argues that improved benchmark scores may not translate into better production outcomes.
-
-11. **[What agents mean for Rust (and vice versa)](https://smallcultfollowing.com/babysteps/blog/2026/10/14/agentic-dev-and-rust/)**
-   - *Source*: Hacker News
-   - *Date*: October 14, 2026
-   - *Summary*: A Rust perspective on types, testing, proofs, profiling, and guardrails for agentic development.
-
-12. **[Ensuring Similar Computational Resources to Stateful Workloads Running on a Diverse Server Fleet](https://www.uber.com/in/en/blog/diverse-server-fleet/)**
-   - *Source*: Reddit r/programming
-   - *Date*: October 14, 2026
-   - *Summary*: Uber explains capacity normalization across its mixed ARM, x86, cloud, and on-premises fleet.
-
-13. **[Optimizing Our E2E Pipeline](https://slack.engineering/speedup-e2e-testing/)**
-   - *Source*: Reddit r/programming
-   - *Date*: October 12, 2026
-   - *Summary*: Slack reduced redundant monorepo E2E work using Git-based change detection and reusable assets.
-
-14. **[Does a Bigger Context Window Mean Better Memory: Understanding Context Windows, Model Memory, and RAG](https://dzone.com/articles/context-windows-model-memory-rag)**
+6. **[Threat Modeling Context-Aware AI: A STRIDE Walkthrough](https://dzone.com/articles/threat-modeling-a-rag-application)**
    - *Source*: DZone
    - *Date*: October 9, 2026
-   - *Summary*: An overview of context windows, memory, and RAG limitations in AI systems.
+   - *Summary*: STRIDE guidance for RAG security covers injection, provenance, and least-privilege tools.
 
-15. **[Why Standardized Connectivity Isn't Enough for Enterprise AI](https://dzone.com/articles/standardized-connectivity-enterprise-ai)**
+7. **[Why Your GPU Fleet Is Both Full and Idle: Building a Capacity Orchestration Layer](https://dzone.com/articles/gpu-capacity-orchestration-layer)**
    - *Source*: DZone
-   - *Date*: October 10, 2026
-   - *Summary*: Enterprise AI integrations need operational and architectural capabilities beyond standard connectivity.
+   - *Date*: October 9, 2026
+   - *Summary*: Discusses GPU orchestration, scheduling, substitution, and reallocation.
 
-16. **[Shopify opens its catalog up to more AI agents](https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents)**
-   - *Source*: TechURLs
-   - *Date*: October 13, 2026
-   - *Summary*: Shopify expanded agentic-commerce tooling for browsing its catalog and using Shop Pay with approval controls.
-
-17. **[Your vibe-coded Android apps now have a home on Google Play](https://www.androidpolice.com/your-vibe-coded-android-apps-home-on-google-play/)**
-   - *Source*: TechURLs
+8. **[Show HN: Graphicle, a Rust port of Graphify with memory for coding agents](https://github.com/graphicle-ai/graphicle)**
+   - *Source*: Hacker News
    - *Date*: October 14, 2026
-   - *Summary*: Google enables private Play Store publication for apps built through Google AI Studio.
+   - *Summary*: A local code graph and memory store exposes repository context through MCP.
 
-18. **[Dutch tax authorities cancel Microsoft 365 cloud rollout and turn to open source](https://www.zdnet.com/business/dutch-tax-authorities-cancel-microsoft-365-cloud-rollout/)**
+9. **[Neckbeard – A DevOps/platform/SRE plugin for your agent](https://github.com/bealesh/neckbeard)**
+   - *Source*: Hacker News
+   - *Date*: October 14, 2026
+   - *Summary*: Generates reviewable OpenTofu and CI configuration for AWS, GCP, and Azure.
+
+10. **[How I manage persistent Claude Code loops: Spool](https://github.com/enes-alatas/spool)**
+   - *Source*: Hacker News
+   - *Date*: October 11, 2026
+   - *Summary*: Provides scheduling, guardrails, messaging, and isolation for persistent agent loops.
+
+11. **[How Netflix Simplified Batch Compute with Kueue](https://netflixtechblog.com/how-netflix-simplified-batch-compute-with-kueue-87860682629c)**
+   - *Source*: Netflix TechBlog
+   - *Date*: October 14, 2026
+   - *Summary*: Netflix explains Kueue-based batch scheduling and compute sharing.
+
+12. **[BofA expands AI-assisted vulnerability remediation](https://www.techmeme.com/261015/p27#a261015p27)**
+   - *Source*: Techmeme
+   - *Date*: October 15, 2026
+   - *Summary*: Bank of America expanded remediation staffing after AI-assisted flaw discovery.
+
+13. **[FTC reportedly investigates OpenAI and Anthropic safeguards](https://www.techmeme.com/261015/p20#a261015p20)**
+   - *Source*: Techmeme
+   - *Date*: October 15, 2026
+   - *Summary*: The FTC reportedly requested safety and consumer-protection information.
+
+14. **[OpenAI reportedly tightens operational security](https://www.techmeme.com/261015/p23#a261015p23)**
+   - *Source*: Techmeme
+   - *Date*: October 15, 2026
+   - *Summary*: OpenAI reportedly warned staff about espionage and insider-threat risks.
+
+15. **[The Jobs Matrix for AI: Four Boxes Instead of 40 Tools](https://dzone.com/articles/jobs-matrix-for-ai)**
+   - *Source*: DZone
+   - *Date*: October 12, 2026
+   - *Summary*: A framework for deciding organizational chatbot and agent usage.
+
+16. **[Running Windows desktop tests from Linux with disposable VMs](https://www.qawolf.com/blog/how-we-solved-windows-desktop-automation)**
+   - *Source*: Hacker News
+   - *Date*: October 14, 2026
+   - *Summary*: QA Wolf details disposable cloud VMs for scalable Windows testing.
+
+17. **[Same Job, Two Engines: InnoDB and Iceberg Internals](https://marcpaul.io/logs/same-job-two-engines-innodb-and-iceberg-internals/)**
    - *Source*: Hacker News
    - *Date*: October 13, 2026
-   - *Summary*: Dutch tax authorities cancelled a Microsoft 365 cloud migration over security, control, and lock-in concerns.
+   - *Summary*: Compares InnoDB OLTP systems with Iceberg lakehouse architecture.
 
-19. **[Sharing is (not always) caring. PgBouncer pooling modes in practice.](https://event-driven.io/en/connection-pooler-modes-advisory-locks/)**
-   - *Source*: Reddit r/programming
-   - *Date*: October 12, 2026
-   - *Summary*: A practical comparison of PostgreSQL PgBouncer pooling modes and advisory-lock trade-offs.
+18. **[Cooldown or compromise: the three-day rule for npm and PyPI](https://research.eye.security/cooldown-or-compromise-the-three-day-rule-for-npm-and-pypi/)**
+   - *Source*: Eye Security
+   - *Date*: October 15, 2026
+   - *Summary*: Recommends delaying newly published dependencies to reduce supply-chain risk.
 
-20. **[More, Better, Faster: How we automate Metabase releases](https://www.metabase.com/blog/how-we-automate-metabase-releases)**
-   - *Source*: Reddit r/programming
-   - *Date*: October 13, 2026
-   - *Summary*: Metabase automated release processes with GitHub Actions, tested artifacts, and conservative deployment gates.
-
-21. **[EDG C++ Compiler is open source](https://github.com/edgcpp/compiler)**
-   - *Source*: TechURLs
-   - *Date*: October 14, 2026
-   - *Summary*: EDG open-sourced its C/C++ compiler front end, tooling, back ends, prelinker, and runtime support.
-
-22. **[Nvidia pledges $250M in compute resources for UK AI security and agentic-safety research](https://www.reuters.com/technology/nvidia-pledges-250-million-boost-uk-ai-safety-research-2026-10-14/)**
+19. **[Citizen Lab details AdFection spyware campaign](https://www.techmeme.com/261015/p17#a261015p17)**
    - *Source*: Techmeme
-   - *Date*: October 14, 2026
-   - *Summary*: Nvidia pledged $250 million in accelerated-computing resources for UK AI-security and agentic-safety research.
+   - *Date*: October 15, 2026
+   - *Summary*: Citizen Lab documented zero-click spyware distributed through targeted advertising.
 
+20. **[Do you still need to drain the response body in Go 1.27?](https://importstatic.com/go/go-drain-http-response-body)**
+   - *Source*: Reddit r/programming
+   - *Date*: October 15, 2026
+   - *Summary*: Reviews Go 1.27 HTTP response draining and connection reuse.
+
+21. **[Nvidia RTX Spark leads M5 Max in agentic AI benchmark](https://www.techmeme.com/261015/p26#a261015p26)**
+   - *Source*: Techmeme
+   - *Date*: October 15, 2026
+   - *Summary*: Nvidia RTX Spark reportedly led Apple M5 Max in Qwen agent benchmarks.
+
+22. **[Microsoft has a new machine learning tool to improve weather forecasts](https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft)**
+   - *Source*: The Verge
+   - *Date*: October 14, 2026
+   - *Summary*: Microsoft released open-source weather-model bias-correction software.
+
+## Ranked Articles (Top 25)
+
+1. Figma announces new features to define how agents work on its platform
+2. Announcing MCP support in Apigee hybrid: agentic tools that run in your own cluster
+3. The Lifecycle of LLM-as-a-Judge: Building, Aligning, and Monitoring at scale
+4. How Stripe uses graph search and state machines to auto-remediate a global database fleet
+5. Reliable GPU compute for large training & inference jobs
+6. OpenAI hands its data centre and compute operation to a former xAI executive
+7. Modal raises $750M at $15.75bn valuation as run rate tops $1bn
+8. CedarDB wants one database to handle both transactions and analytics, as AI agents raise the stakes
+9. Threat Modeling Context-Aware AI: A STRIDE Walkthrough
+10. Why Your GPU Fleet Is Both Full and Idle: Building a Capacity Orchestration Layer
+11. Show HN: Graphicle, a Rust port of Graphify with memory for coding agents
+12. Neckbeard – A DevOps/platform/SRE plugin for your agent
+13. How I manage persistent Claude Code loops: Spool
+14. How Netflix Simplified Batch Compute with Kueue
+15. BofA expands AI-assisted vulnerability remediation
+16. FTC reportedly investigates OpenAI and Anthropic safeguards
+17. OpenAI reportedly tightens operational security
+18. The Jobs Matrix for AI: Four Boxes Instead of 40 Tools
+19. Running Windows desktop tests from Linux with disposable VMs
+20. Same Job, Two Engines: InnoDB and Iceberg Internals
+21. Cooldown or compromise: the three-day rule for npm and PyPI
+22. Citizen Lab details AdFection spyware campaign
+23. Do you still need to drain the response body in Go 1.27?
+24. Nvidia RTX Spark leads M5 Max in agentic AI benchmark
+25. Microsoft has a new machine learning tool to improve weather forecasts
