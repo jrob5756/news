@@ -1,195 +1,83 @@
 > 📖 [How this report is generated](ABOUT.md)
 
-# News Summary for 2026-10-17
+# News Summary for October 18, 2026
 
 ## Summary
 
-Today’s news is dominated by agent infrastructure: NVIDIA introduced a policy-enforced runtime for autonomous AI agents, while Google released Android automation tooling that lets assistants interact with real devices. Open-source AI tooling, local inference, model gateways, and image generation remain active themes. Enterprise coverage focuses on Anthropic’s infrastructure financing, AI’s workforce effects, cryptographic research, and model-provider competition.
+AI agents are moving from code generation into governed deployment. Anthropic's code-review workflow, plugin directory, and reported negotiation-agent exploration illustrate the shift; security, supply-chain, web-access, data-centre, and financing risks remain key constraints.
 
 ## Top 3 Articles
 
-### **1. [NVIDIA/OpenShell – OpenShell is the safe, private runtime for autonomous AI agents.](https://github.com/NVIDIA/OpenShell)**
-
-**Source**: DevURLs  
-
-**Date**: 2026-10-17
-
-**Detailed Summary**: 
-
-NVIDIA’s Apache-2.0 OpenShell is an open-source runtime intended to let autonomous agents use files, package installation, APIs, networks, and credentials without receiving unrestricted access to the host or secrets. Its central model is policy-governed execution: operators declare permitted access and OpenShell enforces those rules at runtime rather than relying on prompt instructions or application-level guardrails.
-
-The design separates an untrusted agent sandbox from a trusted supervisor. The sandbox constrains filesystem, process, and network behavior, while the supervisor evaluates policies, opens approved connections, and injects credentials only into approved requests. On Linux, the documented backend uses non-root identities, Landlock filesystem controls, seccomp user notifications for network mediation, and an outer egress fence. This is intended to reduce risks including arbitrary data exfiltration, cloud-metadata access, internal-service access, and long-lived credential leakage.
-
-OpenShell also includes a policy prover that evaluates proposed access-policy changes. It can flag security-expanding changes—such as new credentialed hosts, methods, paths, or metadata reachability—for human review and CI enforcement. The runtime supports Docker, Podman, Kubernetes, and MicroVM-backed isolation, with Python, TypeScript, Go, and Rust SDKs.
-
-The project is relevant to enterprise agent deployment because it places authorization, networking, and credential handling outside the LLM-driven execution environment. It is still early-stage, however: its protections depend on correctly authored policies, secure gateways and supervisors, sound runtime isolation, and correctly configured Kubernetes networking. Teams should validate observability, provider integrations, policy-review processes, telemetry settings, and incident response before broad production use.
-
-### **2. [google/artemis – ARTEMIS turns natural-language instructions into reliable Android automation.](https://github.com/google/artemis)**
-
-**Source**: DevURLs  
-
-**Date**: 2026-10-17
-
-**Detailed Summary**: 
-
-Google’s Apache-2.0 ARTEMIS is an Android automation system that enables AI assistants and test suites to execute natural-language tasks on real phones or emulators. It combines accessibility and UI-hierarchy data, OCR, screenshots, visual grounding, ADB diagnostics, and replayable traces so agents can inspect and interact with live applications rather than only generate speculative test code.
-
-ARTEMIS provides CLI, web-console, Python SDK, and MCP-server interfaces. Its faster “Flash” mode uses a reactive observe-think-act loop, while “Pro” uses a slower multi-agent workflow with planning, checking, safety controls, checkpoints, diagnostics, and reports. Its hybrid locator strategy uses semantic accessibility data and OCR first, with visual and coordinate fallback for harder Canvas, Compose, and Flutter interfaces.
-
-The project reports more than 99% completion on Google Research’s AndroidWorld benchmark, comprising 116 tasks across 20 apps. That is a project-reported benchmark result, not an independently audited guarantee for production use. Real-world performance will depend on the selected model, app behavior, device state, permissions, latency, and provider compatibility.
-
-ARTEMIS is significant for AI-assisted development because it encourages an explore-then-author pattern: inspect the actual application, verify state transitions, retain diagnostic evidence, then generate deterministic automation. Organizations should assess USB/ADB exposure, accessibility permissions, screenshots and log retention, webhook destinations, and model-provider data handling before using it with sensitive applications or accounts.
-
-### **3. [DeepSeek: DeepSeek v4.1 Flash 1017](https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017)**
+### **1. [How the Claude Code team does code review](https://claude.dev/blog/solving-code-review-at-anthropic/)**
 
 **Source**: Hacker News  
+**Date**: October 16, 2026
 
-**Date**: 2026-10-17
+**Detailed Summary**: Anthropic describes a risk-tiered review system for Claude Code, saying Claude writes about 90% of its code. Automated checks cover tests, builds, linting, agent review, CI, security review, merge validation, staged rollout, monitoring, and rollback. Low-risk changes can merge after automated checks, while medium- and high-risk changes require one or two human approvals; sensitive CI paths always need humans and agent approval never substitutes for human approval. Anthropic emphasizes executable verification, incident-driven evaluations, and controls to stop repeated author-reviewer loops. Its internal metrics show faster review and fewer reverts, but do not independently prove long-term quality or security. The account shows that successful coding agents depend on CI/CD, permissions, deployment controls, telemetry, and rollback as much as model generation.
 
-**Detailed Summary**: 
+### **2. [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official)**
 
-OpenRouter has listed DeepSeek V4.1 Flash 1017 (`deepseek/deepseek-v4.1-flash-1017`) through its OpenAI-compatible Chat Completions API. The listing confirms endpoint availability and advertised integration capabilities, but it is not a DeepSeek technical launch announcement and does not provide verified architecture, benchmarks, pricing, context-window, licensing, latency, or training-data information.
+**Source**: DevURLs  
+**Date**: October 18, 2026
 
-The endpoint advertises tool/function calling, structured responses, streaming, log probabilities, deterministic seeds, sampling controls, and reasoning controls. Those features make it suitable for agentic applications, coding assistants, workflow automation, and schema-constrained downstream systems. Applications should still implement handling for invalid requests, rate limits, and upstream generation failures.
+**Detailed Summary**: Anthropic's official Claude Code plugin directory is a curated distribution channel for reusable commands, agents, skills, hooks, MCP configuration, and external-tool integrations. It spans development, productivity, databases, monitoring, security, and deployment, with integrations from AWS, Google, and Microsoft. The directory turns reusable agentic workflows into installable platform artifacts and positions Claude Code as an integration layer across cloud ecosystems. Anthropic warns that curation is not a security guarantee: plugins may run with user privileges, hooks can execute commands, and MCP servers can run alongside sessions. Organizations should inspect source and permissions, pin versions, test in constrained environments, minimize installed plugins, and govern updates with allowlists.
 
-A key enterprise constraint is that the model is not currently available through OpenRouter’s EU in-region routing, which may affect data residency, compliance, and latency requirements. The listing demonstrates broader gateway access to DeepSeek models, but does not establish comparative quality or safety against OpenAI, Anthropic, Google, Microsoft, or Meta offerings.
+### **3. [Anthropic is developing AI agents to negotiate on humans' behalf](https://www.ft.com/content/f7c26ac0-f5f2-443a-86b2-39d62f7920a9)**
+
+**Source**: Techmeme  
+**Date**: October 18, 2026
+
+**Detailed Summary**: The Financial Times reports that Anthropic is consulting law firms about rules for agents that negotiate prices, complaints, and contract terms for users. The work is exploratory; no product, authority model, jurisdictional scope, or liability regime has been announced. Anthropic's Project Deal experiment involved 69 employee-representing agents completing 186 transactions across more than 500 listings worth over $4,000. Stronger models obtained better outcomes than weaker ones while perceived fairness was similar, highlighting capability asymmetry that users may not notice. Production systems would require explicit delegation limits, approved price and clause boundaries, disclosure, audit logs, escalation paths, reversible steps, and human confirmation for consequential commitments. The emerging competitive layer is trustworthy delegation infrastructure—permissions, identity, policy enforcement, auditability, privacy, payment and contract rails—not model quality alone.
 
 ## Other Articles
 
-1. **[AI-assisted PCB design for KiCad 10](https://github.com/mixelpixx/Konnect)**
-   - *Source*: Hacker News
-   - *Date*: 2026-10-16T14:01:53Z
-   - *Summary*: Konnect is a KiCad 10 plugin exposing schematic capture, PCB layout, routing, verification, part search, and manufacturing export to MCP-compatible assistants.
-
-2. **[mksglu/context-mode – Context window optimization for AI coding agents.](https://github.com/mksglu/context-mode)**
-   - *Source*: DevURLs
-   - *Date*: 2026-10-17
-   - *Summary*: Context Mode sandboxes tool output, persists session memory, and uses MCP hooks to reduce context and token consumption for coding agents.
-
-3. **[affaan-m/ECC – The agent harness performance optimization system.](https://github.com/affaan-m/ECC)**
-   - *Source*: DevURLs
-   - *Date*: 2026-10-15
-   - *Summary*: ECC provides reusable skills, memory, security controls, and research-first workflows for AI coding tools.
-
-4. **[Qdrant tests Perplexity’s PDF embeddings: 21× smaller compressed vectors, with originals still stored](https://www.reddit.com/r/ArtificialInteligence/comments/1x7zaui/qdrant_tests_perplexitys_pdf_embeddings_21/)**
-   - *Source*: Reddit r/ArtificialInteligence
-   - *Date*: 2026-10-17T02:52:20Z
-   - *Summary*: Qdrant reports that 1-bit TurboQuant reduced vectors from 856 KB to 40 KB per page while retaining 96.5% of float32 retrieval quality.
-
-5. **[[Research] 2,788 tokens/s on a single RTX 5090 with a diffusion LLM — Introducing ORL](https://www.reddit.com/r/MachineLearning/comments/1x7qgr0/research_2788_tokenss_on_a_single_rtx_5090_with_a/)**
-   - *Source*: Reddit r/MachineLearning
-   - *Date*: 2026-10-16T20:03:32+00:00
-   - *Summary*: Researchers introduced open-source On-Policy Residual Learning and the dlmrt inference engine, claiming up to 2,788 tokens per second on an RTX 5090.
-
-6. **[FLUX 3 Image Klein](https://bfl.ai/blog/flux-3-image-klein)**
-   - *Source*: Hacker News
-   - *Date*: 2026-10-16
-   - *Summary*: Black Forest Labs released a 5.6B open-weights model for image generation, editing, and multi-reference workflows.
-
-7. **[Anthropic says Claude traced NIST's ECDSA curve seeds to a pseudorandom number generator](https://www.anthropic.com/research/ecdsa-curve-origins)**
-   - *Source*: Techmeme
-   - *Date*: 2026-10-16
-   - *Summary*: Anthropic says Claude traced NIST ECDSA curve seeds to pseudorandom-number-generator outputs, challenging long-running NSA-backdoor suspicions.
-
-8. **[Replit is no longer working with Anthropic, CEO says](https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/)**
-   - *Source*: Techmeme
-   - *Date*: 2026-10-16
-   - *Summary*: Replit’s CEO cites cost and ChatGPT quality in a claimed move away from Anthropic, although a source says the partnership remains active.
-
-9. **[Anthropic reportedly seeks financing for a $60B TPU debt package](https://www.ft.com/content/cb4034e1-475f-40b9-a5f9-256e91aacb89)**
-   - *Source*: Techmeme
-   - *Date*: 2026-10-17
-   - *Summary*: Sources say Anthropic is seeking Blackstone financing for a $60B debt package to buy Google TPUs.
-
-10. **[Anthropic report on how AI is changing employment at the startup](https://www.anthropic.com/research/employment-at-anthropic)**
-   - *Source*: Techmeme
-   - *Date*: 2026-10-16
-   - *Summary*: Anthropic reports declining entry-level technical hiring alongside productivity gains across departments.
-
-11. **[Survey of Anthropic staffers and US adults on AI expectations](https://www.anthropic.com/research/ai-expectations-gap)**
-   - *Source*: Techmeme
-   - *Date*: 2026-10-16
-   - *Summary*: Anthropic finds a major gap between staff and public expectations for AI capabilities, science, and workplace agents.
-
-12. **[Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console](https://github.com/cobanov/PS5LM)**
-   - *Source*: Hacker News
-   - *Date*: 2026-10-16
-   - *Summary*: PS5LM runs llama.cpp through Vulkan on a jailbroken PlayStation 5 and exposes local OpenAI- and Anthropic-compatible APIs.
-
-13. **[Interactive refactoring in gopls](https://go.dev/blog/interactive-refactoring)**
-   - *Source*: DevURLs
-   - *Date*: 2026-10-16
-   - *Summary*: Go introduces interactive gopls refactoring and proposes editor-native LSP dialogs for multi-step transformations.
-
-14. **[Self-hosted infrastructure with Incus OS](https://dataswamp.org/~solene/2026-10-15-selfhosting-infrastructure-incus-os.html)**
-   - *Source*: Hacker News
-   - *Date*: 2026-10-16T13:38:25Z
-   - *Summary*: A reproducible home-cloud architecture using Incus OS, unprivileged containers, Podman, OpenTofu, cloud-init, monitoring, and backups.
-
-15. **[From Console Clicks to PRs: AWS Secrets with SOPS](https://medium.com/@AhmadBabaei/from-console-clicks-to-prs-aws-secrets-with-sops-5d09f5f9f884?source=friends_link&sk=a344fd3f295c9c4a3c5c32c1e3918aef)**
-   - *Source*: Reddit r/programming
-   - *Date*: 2026-10-17T08:46:38+00:00
-   - *Summary*: A workflow for managing AWS secrets through version-controlled pull requests using SOPS.
-
-16. **[Domain-Driven Design (DDD) — The Complete Guide | Visually Explained](https://youtu.be/0c2fj6z6Zso)**
-   - *Source*: Reddit r/programming
-   - *Date*: 2026-10-16T18:34:45+00:00
-   - *Summary*: A visual guide to domain-driven design concepts for structuring complex software domains.
-
-17. **[Learned Index Lab: Replacing B-Trees with streaming linear models in pure Rust](https://github.com/gilnett/learned_index_lab)**
-   - *Source*: Reddit r/programming
-   - *Date*: 2026-10-16T00:12:04+00:00
-   - *Summary*: An experimental Rust learned index claims substantially lower memory use and faster lookups than B-trees.
-
-18. **[DenseCore: a small Rust deep-learning framework with a PyTorch-like Python API](https://github.com/lncch/DenseCore)**
-   - *Source*: Reddit r/MachineLearning
-   - *Date*: 2026-10-16T00:00:00+00:00
-   - *Summary*: DenseCore is a Rust deep-learning framework with a PyTorch-like Python API and claimed PyTorch agreement on nanoGPT.
-
-19. **[PGO or not PGO this is the dilemma. Step 2](https://www.percona.com/blog/pgo-or-not-pgo-this-is-the-dilemma-step-2/)**
-   - *Source*: Hacker News
-   - *Date*: 2026-10-16T21:01:32Z
-   - *Summary*: A technical explanation of profile-guided optimization and its effects on inlining, branches, loops, and indirect calls.
-
-20. **[C++26: The New Debugging Header](https://www.sandordargo.com/blog/2026/09/30/cpp26-debugging)**
-   - *Source*: Hacker News
-   - *Date*: 2026-10-16T18:52:39Z
-   - *Summary*: Reviews C++26’s standardized `<debugging>` header for portable breakpoints and debugger-presence detection.
-
-21. **[Learning Postgres extensions using Zig](https://barddoo.com/posts/learning-postgres-as-a-zig-developer)**
-   - *Source*: Reddit r/programming
-   - *Date*: 2026-10-16T17:36:14+00:00
-   - *Summary*: A developer-oriented account of learning PostgreSQL extension development using Zig.
-
-22. **[Improving heuristics for A* search](https://www.redblobgames.com/pathfinding/heuristics/differential.html)**
-   - *Source*: Reddit r/programming
-   - *Date*: 2026-10-17T04:00:54+00:00
-   - *Summary*: Explains differential heuristics and how landmark distances can improve A* pathfinding efficiency.
+1. **[Microsoft reportedly quits Nscale’s UK data centre weeks before its IPO](https://thenextweb.com/news/microsoft-pulls-out-nscale-loughton-data-centre-ipo)** — *TechURLs*, October 18: Microsoft reportedly withdrew from Nscale's delayed UK AI data-centre project, exposing capacity and power-delivery risk.
+2. **[OpenCode reports breach affecting API keys](https://startupfortune.com/opencode-breach-exposes-stored-openai-and-anthropic-keys-prompts-urgent-key-rotation/)** — *Techmeme*, October 17: A coding-agent breach exposed keys for roughly 1.4% of Console users.
+3. **[Satya Nadella discusses making Windows safer for AI agents](https://thenewthings.com/p/microsoft-ceo-on-rogue-ai-agents-super-laptops-and-clippy)** — *Techmeme*, October 17: Microsoft discusses safer Windows foundations for agents.
+4. **[Deno Acquired by Cloudflare](https://developers.slashdot.org/story/26/10/17/0549255/deno-acquired-by-cloudflare-will-work-on-open-source-self-hosting-platform-for-applications)** — *TechURLs*, October 17: Cloudflare plans self-hosted and managed Workers support.
+5. **[Linux Maintainers Can Now Submit AI-Generated Code Without Declaring It](https://linux.slashdot.org/story/26/10/17/0723207/linux-maintainers-can-now-submit-ai-generated-code-without-declaring-it)** — *DevURLs*, October 17: Maintainers removed an LLM-assistance tag requirement while retaining contributor responsibility.
+6. **[Websites are closing their doors to AI agents](https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web)** — *TechURLs*, October 17: Services increasingly block agents over bot-control, security, and licensing concerns.
+7. **[Jev is Vercel’s fastest-adopted AI model ever](https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/)** — *TechURLs*, October 16: Vercel reports rapid adoption of its lightweight decision model.
+8. **[2026 World Cup: Breaking Records, Spiky Charts and Reliability at Scale](https://engineering.fb.com/2026/10/15/production-engineering/2026-world-cup-record-traffic-reliability-at-scale/)** — *DevURLs*, October 15: Meta details reliability engineering for extreme traffic.
+9. **[Sapienz Receives ISSTA 2026 Impact Paper Award](https://engineering.fb.com/2026/10/15/developer-tools/sapienz-issta-2026-impact-paper-award-meta/)** — *DevURLs*, October 15: Meta links its testing system to LLM-agent testing and repair.
+10. **[Designing more efficient quantum circuits with Claude](https://www.anthropic.com/research/designing-efficient-quantum-circuits)** — *Hacker News*, October 16: Claude was used in a propose-evaluate-revise circuit-design loop.
+11. **[Show HN: Gemini 4 Argon plays StarCraft](https://starskirmish.com/bench/v0-2/)** — *Hacker News*, October 16: A benchmark compares coding agents through StarCraft-bot development.
+12. **[Introducing ORL](https://www.reddit.com/r/MachineLearning/comments/1x7qgr0/research_2788_tokenss_on_a_single_rtx_5090_with_a/)** — *Reddit r/MachineLearning*, October 17: Open-source diffusion-LLM inference reports high speed on an RTX 5090.
+13. **[EpochGo local-first AutoML](https://www.reddit.com/r/MachineLearning/comments/1x8c2sq/epochgo_localfirst_multiagent_automl_engine_using/)** — *Reddit r/MachineLearning*, October 17: Offline Ollama reasoning is combined with deterministic ML pipelines.
+14. **[Built a search engine for debugging](https://www.reddit.com/r/MachineLearning/comments/1x8uwbg/built_a_search_engine_for_debugging_which_is_not/)** — *Reddit r/MachineLearning*, October 18: Odin ranks likely code locations for bug reports.
+15. **[asmsense dataset](https://www.reddit.com/r/MachineLearning/comments/1x91a47/p_asmsense_228k_stripped_x8664_functions_with/)** — *Reddit r/MachineLearning*, October 18: A labeled stripped-function dataset supports reverse-engineering research.
+16. **[GPT-2 KV cache measurements](https://www.reddit.com/r/MachineLearning/comments/1x8xxmv/gpt2_kv_cache_from_scratch_correctness_latency/)** — *Reddit r/MachineLearning*, October 18: A PyTorch implementation studies KV-cache correctness, latency, and memory.
+17. **[AI debt worries grow around CoreWeave, Oracle, and SoftBank](https://www.nytimes.com/2026/10/17/business/ai-debt-coreweave-oracle-softbank.html)** — *Techmeme*, October 18: AI-infrastructure financing pressure is increasing.
+18. **[Ultramarine 1 Flash](https://www.paperinstruments.com/ultramarine)** — *Hacker News*, October 15: An open model targets professional knowledge work.
+19. **[Intuitive concurrent programming in any language](https://www.lf-lang.org/)** — *Hacker News*, October 15: Lingua Franca proposes deterministic concurrency.
+20. **[GNOME's New Local/Cloud AI Chat App Gains More Features](https://www.phoronix.com/news/GNOME-Moose-0.6-AI)** — *DevURLs*, October 17: GNOME Moose adds local mode, permissions, and credentials protection.
+21. **[Python's binary wheels and supply chain attacks](https://rushter.com/blog/python-binary-wheels/)** — *Reddit r/programming*, October 17: Malicious binaries can evade source-focused dependency scanning.
+22. **[Show HN: Llmspeed](https://llmspeed.dev/)** — *Hacker News*, October 17: A tool estimates local-LLM speed before hardware purchases.
 
 ## Ranked Articles (Top 25)
 
-1. NVIDIA OpenShell
-2. Google ARTEMIS
-3. DeepSeek V4.1 Flash 1017
-4. Konnect for KiCad 10
-5. Context Mode
-6. ECC agent harness
-7. Qdrant PDF-embedding compression
-8. ORL diffusion LLM
-9. FLUX 3 Image Klein
-10. Anthropic ECDSA seed analysis
-11. Replit and Anthropic
-12. Anthropic TPU financing
-13. Anthropic employment report
-14. Anthropic AI-expectations survey
-15. PS5LM
-16. Interactive gopls refactoring
-17. Incus OS self-hosting
-18. AWS Secrets with SOPS
-19. Domain-Driven Design guide
-20. Learned Index Lab
-21. DenseCore
-22. Profile-guided optimization
-23. C++26 debugging header
-24. PostgreSQL extensions with Zig
-25. A* differential heuristics
+1. How the Claude Code team does code review
+2. anthropics/claude-plugins-official
+3. Anthropic is developing AI agents to negotiate on humans' behalf
+4. Microsoft reportedly quits Nscale’s UK data centre weeks before its IPO
+5. OpenCode reports breach affecting API keys
+6. Satya Nadella discusses making Windows safer for AI agents
+7. Deno acquired by Cloudflare
+8. Linux maintainers can submit AI-generated code without declaring it
+9. Websites are closing their doors to AI agents
+10. Jev is Vercel’s fastest-adopted AI model ever
+11. 2026 World Cup reliability at scale
+12. Sapienz receives ISSTA impact award
+13. Designing more efficient quantum circuits with Claude
+14. Gemini 4 Argon plays StarCraft
+15. Introducing ORL
+16. EpochGo local-first AutoML
+17. Debugging search engine
+18. asmsense dataset
+19. GPT-2 KV cache measurements
+20. AI debt worries around CoreWeave, Oracle, and SoftBank
+21. Ultramarine 1 Flash
+22. Intuitive concurrent programming in any language
+23. GNOME local/cloud AI chat app
+24. Python binary wheels and supply-chain attacks
+25. Llmspeed
