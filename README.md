@@ -1,83 +1,201 @@
 > 📖 [How this report is generated](ABOUT.md)
 
-# News Summary for October 18, 2026
+# News Summary for October 19, 2026
 
 ## Summary
 
-AI agents are moving from code generation into governed deployment. Anthropic's code-review workflow, plugin directory, and reported negotiation-agent exploration illustrate the shift; security, supply-chain, web-access, data-centre, and financing risks remain key constraints.
+AI agents are shifting from experimental tools to production infrastructure. Microsoft is emphasizing zero-trust identity, permissions, risk scoring, and containment; Google DeepMind demonstrates long-running multi-agent coordination; and Meta shows that frontier AI depends on networking, fault recovery, power management, and liquid cooling as much as GPUs. Across the remaining coverage, demand for AI compute, observability, durable workflows, and safer developer automation continues to accelerate.
 
 ## Top 3 Articles
 
-### **1. [How the Claude Code team does code review](https://claude.dev/blog/solving-code-review-at-anthropic/)**
+### **1. [Microsoft adds tools to limit and monitor AI agents in Microsoft 365 E7](https://thenextweb.com/news/microsoft-365-e7-ai-agents-dynamic-permissions)**
 
-**Source**: Hacker News  
-**Date**: October 16, 2026
+**Source**: TechURLs / The Next Web  
 
-**Detailed Summary**: Anthropic describes a risk-tiered review system for Claude Code, saying Claude writes about 90% of its code. Automated checks cover tests, builds, linting, agent review, CI, security review, merge validation, staged rollout, monitoring, and rollback. Low-risk changes can merge after automated checks, while medium- and high-risk changes require one or two human approvals; sensitive CI paths always need humans and agent approval never substitutes for human approval. Anthropic emphasizes executable verification, incident-driven evaluations, and controls to stop repeated author-reviewer loops. Its internal metrics show faster review and fewer reverts, but do not independently prove long-term quality or security. The account shows that successful coding agents depend on CI/CD, permissions, deployment controls, telemetry, and rollback as much as model generation.
+**Date**: October 19, 2026
 
-### **2. [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official)**
+**Detailed Summary**: 
 
-**Source**: DevURLs  
-**Date**: October 18, 2026
+Microsoft is framing AI agents as potentially risky “agentic insiders” that can be overprivileged, manipulated, compromised, or drift from their intended task. Its Microsoft 365 E7 and Project Perception announcements add a zero-trust architecture intended to secure agents independently of the model itself.
 
-**Detailed Summary**: Anthropic's official Claude Code plugin directory is a curated distribution channel for reusable commands, agents, skills, hooks, MCP configuration, and external-tool integrations. It spans development, productivity, databases, monitoring, security, and deployment, with integrations from AWS, Google, and Microsoft. The directory turns reusable agentic workflows into installable platform artifacts and positions Claude Code as an integration layer across cloud ecosystems. Anthropic warns that curation is not a security guarantee: plugins may run with user privileges, hooks can execute commands, and MCP servers can run alongside sessions. Organizations should inspect source and permissions, pin versions, test in constrained environments, minimize installed plugins, and govern updates with allowlists.
+Dynamic Permissions gives every agent a distinct identity with no standing authority. Permissions are limited to a specific task, expire over time, remain within organizational policy, and cannot exceed the sponsoring user’s authority. Higher-impact actions can require human approval. Dynamic Agent Risk continuously assesses signals across identity, data, endpoint, cloud, network, runtime, configuration, reachable resources, potential impact, and behavior. Dynamic Conditional Access can then revoke temporary access, limit write rights or data paths, require approval, isolate runtimes, or stop agents.
 
-### **3. [Anthropic is developing AI agents to negotiate on humans' behalf](https://www.ft.com/content/f7c26ac0-f5f2-443a-86b2-39d62f7920a9)**
+Microsoft is expanding discovery to 60 local-agent types, including Claude Code, OpenAI Codex, and GitHub Copilot. Entra Agent ID will assign discovered agents identities so they can be governed and audited. Microsoft Execution Container is intended to keep controls outside an agent’s reach even if its model or harness is compromised. Project Perception adds Playbooks and Guardian Agents for investigating risk changes and recommending or executing containment within human-defined policy limits.
 
-**Source**: Techmeme  
-**Date**: October 18, 2026
+The announcement reinforces a central enterprise pattern: models must not be the enforcement boundary. Production agents need explicit ownership, minimal temporary permissions, controlled egress and tool access, isolated execution, immutable audit evidence, and human gates for consequential actions. Microsoft has not supplied firm general-availability timing, pricing, false-positive rates, or independent validation of its risk-scoring approach.
 
-**Detailed Summary**: The Financial Times reports that Anthropic is consulting law firms about rules for agents that negotiate prices, complaints, and contract terms for users. The work is exploratory; no product, authority model, jurisdictional scope, or liability regime has been announced. Anthropic's Project Deal experiment involved 69 employee-representing agents completing 186 transactions across more than 500 listings worth over $4,000. Stronger models obtained better outcomes than weaker ones while perceived fairness was similar, highlighting capability asymmetry that users may not notice. Production systems would require explicit delegation limits, approved price and clause boundaries, disclosure, audit logs, escalation paths, reversible steps, and human confirmation for consequential commitments. The emerging competitive layer is trustworthy delegation infrastructure—permissions, identity, policy enforcement, auditability, privacy, payment and contract rails—not model quality alone.
+### **2. [Inside Prometheus: Meta’s Journey to a Gigawatt-Scale Supercluster](https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/)**
+
+**Source**: DevURLs / Meta Engineering  
+
+**Date**: October 19, 2026
+
+**Detailed Summary**: 
+
+Meta describes Prometheus, its New Albany, Ohio AI-training supercluster, as a phased multi-building system already containing hundreds of thousands of GPUs and designed to scale toward roughly one million. Its first phase trained Meta’s Muse/Muse Wonder models. The article argues that frontier training is a full-stack systems problem involving network design, rapid failure recovery, fleet telemetry, power control, and cooling—not simply accelerator count.
+
+Meta reports more than 85% pretraining goodput and more than 90% reinforcement-learning goodput for Muse Wonder, with mean time between interruptions rising from approximately 47,000 to more than 54,000 GPU-hours. It aims for two interruptions per 8,000 GPUs per day. Prometheus uses 72-GPU NVLink domains, Ethernet GPU-training fabrics, and a Backend Aggregation layer connecting facilities across 2 km to more than 100 km.
+
+Reliability is a major focus. Moving from NVL8 to NVL72 enlarges tightly coupled failure domains, so Meta uses 64 active GPUs plus eight in-rack spares and roughly 2% spare racks. It says interruption rates peaked near 1,000 events per 8,000 GPUs per day in mid-2025, then fell 99% through work on NVLink signal screening, firmware, predictive retirement, fabric monitoring, repair quarantine, rapid firmware deployment, and burn-in checks.
+
+At the software layer, Parallelism-Aware Fault Tolerance lets one failed data-parallel replica drop out while others repeat a step; asynchronous delta checkpointing reduces recovery overhead. Meta also treats electrical demand as a scheduling problem: synchronized training can cause 30–40% load swings and tens of megawatts of change in seconds. Its Dynamo Dimmer gradually caps GPU power rather than stopping jobs.
+
+The practical conclusion is that usable AI-training capacity is determined by goodput, failure rates, recovery time, power availability, cooling, and network behavior—not nominal GPU totals or peak FLOPS alone. The metrics are Meta’s self-reported results and do not independently establish model quality, total cost, or energy efficiency.
+
+### **3. [Four Gemini 4 Argon agents beat Minecraft in 27 hours with no human help](https://thenextweb.com/news/gemini-4-argon-agents-beat-minecraft-27-hours)**
+
+**Source**: TechURLs / The Next Web  
+
+**Date**: October 19, 2026
+
+**Detailed Summary**: 
+
+Google DeepMind reports that four Gemini 4 Argon coding agents autonomously defeated Minecraft’s Ender Dragon in 27 hours and 14 minutes. The agents controlled players through Mineflayer, an open-source JavaScript bot library, repeatedly writing and debugging short programs based on structured state and errors.
+
+Starting in a random Minecraft Java 1.20.4 world on Easy difficulty with cheats disabled, the agents received only a short objective. They were not assigned roles or given custom Minecraft-specific tools, routes, or curriculum. They self-organized work on tools, food, Nether exploration, stronghold discovery, portal preparation, Enderman shelters, and the final fight. Persistent shared notes and in-game chat captured coordinates, hazards, discoveries, and recovery instructions.
+
+Before succeeding, the agents wrote 2,783 programs with 63,313 distinct JavaScript lines, exchanged 229 messages, and died 605 times. The run used approximately 24,000 model calls, 1.35 billion input tokens, and 16 million output tokens. DeepMind estimates the cost at about $520 under introductory pricing, or $1,040 at standard pricing. A fifth agent monitored the session for cheating, fabricated claims, and specification gaming.
+
+The most important signal is long-horizon operational coordination, rather than game speed. The agents created reusable helpers and durable state, recovered items before despawn, triangulated a stronghold from Eye of Ender trajectories, diagnosed failures, and eventually learned to destroy the End crystals that healed the dragon. These behaviors resemble long-running coding, incident response, and cloud-operations work.
+
+Important caveats apply: this was one Easy-mode run; Mineflayer provided structured state unavailable to normal players; pathfinding was supplied by a plugin; 22% of programs ended in error; and training data likely included Minecraft knowledge. The result is stronger evidence for code-mediated tool use, collaboration, and recovery than for general embodied intelligence or dependable enterprise autonomy.
 
 ## Other Articles
 
-1. **[Microsoft reportedly quits Nscale’s UK data centre weeks before its IPO](https://thenextweb.com/news/microsoft-pulls-out-nscale-loughton-data-centre-ipo)** — *TechURLs*, October 18: Microsoft reportedly withdrew from Nscale's delayed UK AI data-centre project, exposing capacity and power-delivery risk.
-2. **[OpenCode reports breach affecting API keys](https://startupfortune.com/opencode-breach-exposes-stored-openai-and-anthropic-keys-prompts-urgent-key-rotation/)** — *Techmeme*, October 17: A coding-agent breach exposed keys for roughly 1.4% of Console users.
-3. **[Satya Nadella discusses making Windows safer for AI agents](https://thenewthings.com/p/microsoft-ceo-on-rogue-ai-agents-super-laptops-and-clippy)** — *Techmeme*, October 17: Microsoft discusses safer Windows foundations for agents.
-4. **[Deno Acquired by Cloudflare](https://developers.slashdot.org/story/26/10/17/0549255/deno-acquired-by-cloudflare-will-work-on-open-source-self-hosting-platform-for-applications)** — *TechURLs*, October 17: Cloudflare plans self-hosted and managed Workers support.
-5. **[Linux Maintainers Can Now Submit AI-Generated Code Without Declaring It](https://linux.slashdot.org/story/26/10/17/0723207/linux-maintainers-can-now-submit-ai-generated-code-without-declaring-it)** — *DevURLs*, October 17: Maintainers removed an LLM-assistance tag requirement while retaining contributor responsibility.
-6. **[Websites are closing their doors to AI agents](https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web)** — *TechURLs*, October 17: Services increasingly block agents over bot-control, security, and licensing concerns.
-7. **[Jev is Vercel’s fastest-adopted AI model ever](https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/)** — *TechURLs*, October 16: Vercel reports rapid adoption of its lightweight decision model.
-8. **[2026 World Cup: Breaking Records, Spiky Charts and Reliability at Scale](https://engineering.fb.com/2026/10/15/production-engineering/2026-world-cup-record-traffic-reliability-at-scale/)** — *DevURLs*, October 15: Meta details reliability engineering for extreme traffic.
-9. **[Sapienz Receives ISSTA 2026 Impact Paper Award](https://engineering.fb.com/2026/10/15/developer-tools/sapienz-issta-2026-impact-paper-award-meta/)** — *DevURLs*, October 15: Meta links its testing system to LLM-agent testing and repair.
-10. **[Designing more efficient quantum circuits with Claude](https://www.anthropic.com/research/designing-efficient-quantum-circuits)** — *Hacker News*, October 16: Claude was used in a propose-evaluate-revise circuit-design loop.
-11. **[Show HN: Gemini 4 Argon plays StarCraft](https://starskirmish.com/bench/v0-2/)** — *Hacker News*, October 16: A benchmark compares coding agents through StarCraft-bot development.
-12. **[Introducing ORL](https://www.reddit.com/r/MachineLearning/comments/1x7qgr0/research_2788_tokenss_on_a_single_rtx_5090_with_a/)** — *Reddit r/MachineLearning*, October 17: Open-source diffusion-LLM inference reports high speed on an RTX 5090.
-13. **[EpochGo local-first AutoML](https://www.reddit.com/r/MachineLearning/comments/1x8c2sq/epochgo_localfirst_multiagent_automl_engine_using/)** — *Reddit r/MachineLearning*, October 17: Offline Ollama reasoning is combined with deterministic ML pipelines.
-14. **[Built a search engine for debugging](https://www.reddit.com/r/MachineLearning/comments/1x8uwbg/built_a_search_engine_for_debugging_which_is_not/)** — *Reddit r/MachineLearning*, October 18: Odin ranks likely code locations for bug reports.
-15. **[asmsense dataset](https://www.reddit.com/r/MachineLearning/comments/1x91a47/p_asmsense_228k_stripped_x8664_functions_with/)** — *Reddit r/MachineLearning*, October 18: A labeled stripped-function dataset supports reverse-engineering research.
-16. **[GPT-2 KV cache measurements](https://www.reddit.com/r/MachineLearning/comments/1x8xxmv/gpt2_kv_cache_from_scratch_correctness_latency/)** — *Reddit r/MachineLearning*, October 18: A PyTorch implementation studies KV-cache correctness, latency, and memory.
-17. **[AI debt worries grow around CoreWeave, Oracle, and SoftBank](https://www.nytimes.com/2026/10/17/business/ai-debt-coreweave-oracle-softbank.html)** — *Techmeme*, October 18: AI-infrastructure financing pressure is increasing.
-18. **[Ultramarine 1 Flash](https://www.paperinstruments.com/ultramarine)** — *Hacker News*, October 15: An open model targets professional knowledge work.
-19. **[Intuitive concurrent programming in any language](https://www.lf-lang.org/)** — *Hacker News*, October 15: Lingua Franca proposes deterministic concurrency.
-20. **[GNOME's New Local/Cloud AI Chat App Gains More Features](https://www.phoronix.com/news/GNOME-Moose-0.6-AI)** — *DevURLs*, October 17: GNOME Moose adds local mode, permissions, and credentials protection.
-21. **[Python's binary wheels and supply chain attacks](https://rushter.com/blog/python-binary-wheels/)** — *Reddit r/programming*, October 17: Malicious binaries can evade source-focused dependency scanning.
-22. **[Show HN: Llmspeed](https://llmspeed.dev/)** — *Hacker News*, October 17: A tool estimates local-LLM speed before hardware purchases.
+1. **[Amnon Shashua’s doubleAI launches an AI that speeds up code while it runs](https://thenextweb.com/news/doubleai-maxwell-code-execution-model-compute-costs)**
+   - *Source*: TechURLs / The Next Web
+   - *Date*: October 19, 2026
+   - *Summary*: doubleAI launched Maxwell, which observes running programs and rewrites machine code for active hardware and workload conditions without altering source code.
+
+2. **[Researcher says a hacker used AI agents to target 1,200+ websites and breach 100+ entities](https://www.reuters.com/legal/government/how-one-hacker-used-ai-agents-few-thousand-dollars-break-into-scores-sites-2026-10-19/)**
+   - *Source*: Techmeme / Reuters
+   - *Date*: October 19, 2026
+   - *Summary*: A researcher documented an attacker allegedly using AI agents and roughly $5,000 in tokens to target more than 1,200 websites and compromise over 100 organizations.
+
+3. **[Turning Opportunistic AI Inference Capacity Into Better Ads Recommendations](https://engineering.fb.com/2026/10/12/ml-applications/turning-opportunistic-ai-inference-capacity-into-better-ads-recommendations/)**
+   - *Source*: DevURLs / Meta Engineering
+   - *Date*: October 12, 2026
+   - *Summary*: Meta explains how it converts reclaimable inference capacity into additional ads-ranking work while protecting baseline latency and reliability.
+
+4. **[Gemini 4 Argon for Robotics](https://developers.googleblog.com/gemini-4-argon-for-robotics/)**
+   - *Source*: DevURLs / Google Developers Blog
+   - *Date*: October 13, 2026
+   - *Summary*: Google presents Gemini workflows for robot control, digital-twin construction, hindsight labeling, and simulation-driven improvement.
+
+5. **[DeepSeek search and fetch – $0.75 per 1000 successful requests](https://api-docs.deepseek.com/guides/search/)**
+   - *Source*: Hacker News / DeepSeek
+   - *Date*: October 18, 2026
+   - *Summary*: DeepSeek documents Search and Fetch APIs for agent and RAG applications.
+
+6. **[OCP Summit 2026: Powering AI with Open Innovations in Scale-Up, Scale-Out, and Scale-Across Networks](https://engineering.fb.com/2026/10/12/open-source/ocp-summit-2026-powering-ai-with-open-innovations-in-scale-up-scale-out-and-scale-across-networks/)**
+   - *Source*: DevURLs / Meta Engineering
+   - *Date*: October 12, 2026
+   - *Summary*: Meta outlines open AI-networking work including IcePack, IceCube, Flattened Planar Fabric, MetaRoCE, and OSPA.
+
+7. **[Getting Hands-On With Monitoring AI Agents and Models in Gemini Enterprise Agent Platform](https://dzone.com/articles/monitoring-ai-agents-gemini-enterprise)**
+   - *Source*: DZone
+   - *Date*: October 16, 2026
+   - *Summary*: A hands-on look at observability for production agents and models in Google’s enterprise platform.
+
+8. **[Designing AI for Long-Running Tasks: Looking Beyond More Context](https://dzone.com/articles/designing-ai-long-running-tasks)**
+   - *Source*: DZone
+   - *Date*: October 16, 2026
+   - *Summary*: Argues that reliable long-running AI systems need more than larger context windows.
+
+9. **[Building a Scope-Constrained AI Agent for Automated CI Failure Repair](https://dzone.com/articles/scope-constrained-ai-ci-repair)**
+   - *Source*: DZone
+   - *Date*: October 12, 2026
+   - *Summary*: Describes constraining automated CI-repair agents to make remediation safer and more manageable.
+
+10. **[Show HN: WhatsApp MCP running free on Cloudflare](https://github.com/finereli/whatsapp-mcp)**
+   - *Source*: Hacker News / GitHub
+   - *Date*: October 18, 2026
+   - *Summary*: An open-source, read-only Cloudflare MCP server that lets AI clients search a linked WhatsApp account.
+
+11. **[Shipping Media Over QUIC at Meta Scale for Instagram Live Ingest](https://engineering.fb.com/2026/10/12/video-engineering/shipping-media-over-quic-at-meta-scale-for-instagram-live-ingest/)**
+   - *Source*: DevURLs / Meta Engineering
+   - *Date*: October 12, 2026
+   - *Summary*: Meta describes deploying Media over QUIC for Instagram Live ingestion.
+
+12. **[Analysis: data center capacity additions are set to exceed 50GW in 2027](https://newsletter.semianalysis.com/p/datacenters-2027-the-year-of-acceleration)**
+   - *Source*: Techmeme / SemiAnalysis
+   - *Date*: October 19, 2026
+   - *Summary*: SemiAnalysis projects more than 50 GW of data-center capacity additions in 2027.
+
+13. **[Tenstorrent raises $1.5B at a $6.2B valuation to scale its Galaxy servers](https://thenextweb.com/news/tenstorrent-1-5bn-series-e-6-2bn-valuation)**
+   - *Source*: TechURLs / The Next Web
+   - *Date*: October 19, 2026
+   - *Summary*: Tenstorrent raised $1.5 billion to scale RISC-V-based AI servers and licensed chip designs.
+
+14. **[How Containers Work: Building a Docker-like Container From Scratch](https://labs.iximiuz.com/tutorials/container-filesystem-from-scratch)**
+   - *Source*: Reddit r/programming
+   - *Date*: October 18, 2026
+   - *Summary*: A tutorial on container internals through building a Docker-like container.
+
+15. **[Durable workflows without replay: freezing the VM instead of re-running the code](https://qoqi.dev/blog/durable-workflows-without-replay)**
+   - *Source*: Reddit r/programming
+   - *Date*: October 18, 2026
+   - *Summary*: Proposes preserving VM state instead of replaying code after workflow interruptions.
+
+16. **[How Postgres DELETE can actually scale](https://www.dbos.dev/blog/scaling-deletions-in-postgres)**
+   - *Source*: Hacker News / DBOS
+   - *Date*: October 15, 2026
+   - *Summary*: Explains scalable retention deletion patterns in Postgres.
+
+17. **[Columnar Formats for AI Telemetry: Parquet vs Vortex With DuckDB](https://dzone.com/articles/parquet-vs-vortex-duckdb)**
+   - *Source*: DZone
+   - *Date*: October 12, 2026
+   - *Summary*: Compares Parquet and Vortex for storing and analyzing AI telemetry with DuckDB.
+
+18. **[I built a programming language that LLMs can't use](https://blog.picheta.me/post/killswitch-lang/)**
+   - *Source*: Hacker News
+   - *Date*: October 17, 2026
+   - *Summary*: Introduces an adversarial programming language designed to test LLM reasoning rather than memorization.
+
+19. **[Borrow Checking Zero-Cost Cyclic Mutability](https://antelang.org/blog/safe_cyclic_mutability/)**
+   - *Source*: Reddit r/programming
+   - *Date*: October 19, 2026
+   - *Summary*: Discusses safe cyclic mutability with zero-cost borrow checking.
+
+20. **[Automated Accessibility Testing at Slack](https://slack.engineering/automated-accessibility-testing-at-slack/)**
+   - *Source*: Reddit r/programming / Slack Engineering
+   - *Date*: October 18, 2026
+   - *Summary*: Slack details automated accessibility-testing practices.
+
+21. **[JDK 28](https://openjdk.org/projects/jdk/28/)**
+   - *Source*: Hacker News / OpenJDK
+   - *Date*: October 17, 2026
+   - *Summary*: OpenJDK provides early-access information and planned features for Java SE 28.
+
+22. **[The Five Stages of AI Adoption: A Practical Maturity Model for Software Teams](https://dzone.com/articles/five-stages-of-ai-adoption)**
+   - *Source*: DZone
+   - *Date*: October 15, 2026
+   - *Summary*: A maturity model for advancing AI adoption in software-engineering organizations.
 
 ## Ranked Articles (Top 25)
 
-1. How the Claude Code team does code review
-2. anthropics/claude-plugins-official
-3. Anthropic is developing AI agents to negotiate on humans' behalf
-4. Microsoft reportedly quits Nscale’s UK data centre weeks before its IPO
-5. OpenCode reports breach affecting API keys
-6. Satya Nadella discusses making Windows safer for AI agents
-7. Deno acquired by Cloudflare
-8. Linux maintainers can submit AI-generated code without declaring it
-9. Websites are closing their doors to AI agents
-10. Jev is Vercel’s fastest-adopted AI model ever
-11. 2026 World Cup reliability at scale
-12. Sapienz receives ISSTA impact award
-13. Designing more efficient quantum circuits with Claude
-14. Gemini 4 Argon plays StarCraft
-15. Introducing ORL
-16. EpochGo local-first AutoML
-17. Debugging search engine
-18. asmsense dataset
-19. GPT-2 KV cache measurements
-20. AI debt worries around CoreWeave, Oracle, and SoftBank
-21. Ultramarine 1 Flash
-22. Intuitive concurrent programming in any language
-23. GNOME local/cloud AI chat app
-24. Python binary wheels and supply-chain attacks
-25. Llmspeed
+1. Microsoft adds tools to limit and monitor AI agents in Microsoft 365 E7
+2. Inside Prometheus: Meta’s Journey to a Gigawatt-Scale Supercluster
+3. Four Gemini 4 Argon agents beat Minecraft in 27 hours with no human help
+4. Amnon Shashua’s doubleAI launches an AI that speeds up code while it runs
+5. Researcher says a hacker used AI agents to target 1,200+ websites and breach 100+ entities
+6. Turning Opportunistic AI Inference Capacity Into Better Ads Recommendations
+7. Gemini 4 Argon for Robotics
+8. DeepSeek search and fetch – $0.75 per 1000 successful requests
+9. OCP Summit 2026: Powering AI with Open Innovations in Scale-Up, Scale-Out, and Scale-Across Networks
+10. Getting Hands-On With Monitoring AI Agents and Models in Gemini Enterprise Agent Platform
+11. Designing AI for Long-Running Tasks: Looking Beyond More Context
+12. Building a Scope-Constrained AI Agent for Automated CI Failure Repair
+13. Show HN: WhatsApp MCP running free on Cloudflare
+14. Shipping Media Over QUIC at Meta Scale for Instagram Live Ingest
+15. Analysis: data center capacity additions are set to exceed 50GW in 2027
+16. Tenstorrent raises $1.5B at a $6.2B valuation to scale its Galaxy servers
+17. How Containers Work: Building a Docker-like Container From Scratch
+18. Durable workflows without replay: freezing the VM instead of re-running the code
+19. How Postgres DELETE can actually scale
+20. Columnar Formats for AI Telemetry: Parquet vs Vortex With DuckDB
+21. I built a programming language that LLMs can't use
+22. Borrow Checking Zero-Cost Cyclic Mutability
+23. Automated Accessibility Testing at Slack
+24. JDK 28
+25. The Five Stages of AI Adoption: A Practical Maturity Model for Software Teams
