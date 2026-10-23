@@ -1,186 +1,167 @@
 > 📖 [How this report is generated](ABOUT.md)
 
-# News Summary for October 22, 2026
+# News Summary for 2026-10-23
 
 ## Summary
 
-AI agents are moving from chat interfaces toward persistent, integrated workflow systems. The leading stories cover Anthropic's proactive Claude Duet, Google's framework-flexible agent lifecycle tooling, and OpenAI's multi-agent scientific research workflow. Security, identity, sandboxing, and agent-scale infrastructure are recurring operational themes.
+AI agents are moving toward governed production deployment. Anthropic highlights formal verification and reusable agent-workflow standards, while Google presents controlled self-evolving SRE agents. Across the remaining coverage, major themes include agent observability, low-latency decision models, cloud security, AI infrastructure efficiency, and resilient distributed-system design.
 
 ## Top 3 Articles
 
-### **1. [Anthropic unveils Claude Duet, a proactive agent app on iOS, Android, and the web](https://claude.com/resources/articles/claude-duet)**
+### **1. [Anthropic and Theorem formally verify open-source software](https://www.anthropic.com/research/formal-verification)**
 
 **Source**: Techmeme  
-**Date**: October 22, 2026
 
-**Detailed Summary**: Anthropic launched Claude Duet in research preview for US Pro and Max users. The separate iOS, Android, and web app is designed as a proactive, persistent agent: it can provide attention summaries, accept text or voice tasks, work asynchronously, and notify users when a decision or completed result is ready.
+**Date**: 2026-10-23
 
-Duet runs in a cloud virtual machine with browser access and inherits existing Claude memory, skills, connected applications, and account context. It periodically checks connected accounts and can use more than 6,000 Marketplace connectors and plugins for work such as Slack and Gmail triage, invoicing, payroll preparation, sales follow-up, document workflows, campaign creation, and Shopify administration.
+**Detailed Summary**:
 
-Its autonomy is constrained by approval gates. Duet can independently read, draft, and prepare work, but must get approval before sending messages, making payments, signing documents, or deleting data. It cannot trade securities or transfer money between accounts. The product demonstrates an event-driven agent architecture combining durable context, browser execution, SaaS connectors, background workflows, notifications, and human-in-the-loop controls.
+Anthropic and formal-methods startup Theorem report an AI-assisted workflow that generated machine-checked Rocq proofs for 239 OSS-Fuzz entry points across 123 open-source libraries. The work verifies properties against compiled RISC-V/Linux binaries, rather than only source code, aiming to establish that covered fuzz targets cannot reach crashes, failed assertions, sanitizer failures, or modeled execution errors for accepted inputs up to 64 MiB.
 
-Important preview limitations include potentially poor urgency judgments, weaker performance on personal errands, unavailable browser inspection, and shared plan limits between Duet background work and regular Claude usage. The launch raises enterprise questions about least-privilege authorization, audit trails, prompt injection through connected content, recovery behavior, and costs of persistent agent loops.
+The approach treats fuzz tests as formal specifications, enabling proofs of properties such as round trips, idempotence, differential behavior, and reference equivalence. Anthropic says failed proof attempts also exposed hundreds of bugs, including rare large-input memory errors and stateful sequence flaws. The results are importantly bounded: they apply to specific static, single-threaded riscv64 binaries, stated OS and memory assumptions, and selected entry points—not whole libraries or typical x86/ARM deployments.
 
-### **2. [Powering the Agent Development Lifecycle with any framework, from ADK to LangChain and beyond](https://developers.googleblog.com/powering-the-agent-development-lifecycle-with-any-framework-from-adk-to-langchain-and-beyond/)**
+The work suggests a possible assurance-engineering workflow in which agents produce large proof artifacts while formal semantics, human-reviewed theorem statements, and proof checkers validate them. It is a meaningful capability demonstration, but not a blanket claim that the relevant libraries are bug-free.
+
+### **2. [Anthropic donates Agent Skills to the Agentic AI Foundation](https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation)**
+
+**Source**: Techmeme  
+
+**Date**: 2026-10-23
+
+**Detailed Summary**:
+
+Anthropic has transferred the Agent Skills open standard to the Linux Foundation's Agentic AI Foundation, following its 2025 donation of MCP. Agent Skills packages reusable agent knowledge and workflows in a directory centered on a required `SKILL.md`, with optional scripts, references, assets, and templates. Compatible clients can progressively load metadata and instructions as needed.
+
+Anthropic says more than 70 platforms—including ChatGPT, Cursor, GitHub Copilot, and VS Code—support the format, with about one million published skills and 280 million installs. Those are company-reported adoption metrics. The core announcement is governance: the specification, name, GitHub organization, and website move toward community stewardship, with proposed versioning, formal proposals, and multi-company maintainership.
+
+For enterprise teams, the format may make agent workflows reviewable, version-controlled, and more portable across assistants. It complements MCP, which focuses on connecting agents to tools and data. However, format compatibility does not guarantee runtime portability: skills can still require specific tools, permissions, and sandboxes. Because skills may include instructions and executable code, supply-chain controls, least privilege, and prompt-injection defenses remain essential.
+
+### **3. [Architecting Governed, Self-Evolving AI Agents on Gemini Agent Platform](https://developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform/)**
 
 **Source**: DevURLs  
-**Date**: October 21, 2026
 
-**Detailed Summary**: Google introduced an experimental Agents CLI Extension System, enabling teams to override or add lifecycle commands while using frameworks beyond Google ADK. Starting in Agents CLI 1.5.0, extensions can customize commands for scaffolding, deployment, evaluation, observability, infrastructure, authentication, and governance; version 1.8.0 includes a first-party LangChain extension.
+**Date**: 2026-10-22
 
-Google says only about six of roughly 24 CLI commands are ADK-specific, while deployment, infrastructure, login, and publishing workflows are broadly framework-independent. Extensions are Git-distributed directories with an `agents-cli-extension.yaml` manifest and can replace framework-specific commands or add new commands without requiring a fork.
+**Detailed Summary**:
 
-The design emphasizes reproducibility: installations resolve to exact Git SHAs and use a lockfile, with explicit updates and renewed trust prompts for third-party changes. The LangChain template uses LangGraph, Gemini, FastAPI, Cloud Run, and A2A endpoints while preserving native framework-independent lifecycle functions. Unsupported commands fail explicitly.
+Google's Project Chrysalis is a reference architecture for governed SRE agents on the Gemini Enterprise Agent Platform. In a simulated cache-stampede outage, agents diagnose excess ingress, generate a bounded token-bucket rate limiter, validate and sign it, apply it as a temporary mitigation, and evaluate its contribution to recovery.
 
-Google also presents an SBOM deployment extension that creates a CycloneDX SBOM, scans it with Grype, blocks critical vulnerabilities, then invokes native deployment. This makes the CLI an operational control plane where platform teams can incorporate supply-chain, compliance, SSO, and model-governance controls. The trade-off is that extensions become security-sensitive deployment code requiring review, pinning, and testing.
+The architecture emphasizes controls rather than unrestricted autonomy. It uses ADK and BigQuery alongside Model Armor, AST validation, Cloud KMS signing, Binary Authorization, OPA-style policy, Cloud Logging, and human dual-custody approval for durable structural changes. Its learning model distinguishes short-lived hot patches from evidence-backed memory updates and more tightly governed agent-topology changes.
 
-### **3. [OpenAI, PerturbAI, and Scripps say GPT-Rosalind agents analyzed millions of mouse brain cells in 32 minutes](https://openai.com/index/scaling-ai-research-for-complex-biological-data)**
-
-**Source**: Techmeme  
-**Date**: October 22, 2026
-
-**Detailed Summary**: OpenAI, PerturbAI, and Scripps report that GPT-Rosalind used thousands of agents to analyze millions of mouse brain cells in 32 minutes. The announcement is a demonstration of parallelized AI research, with specialized agents dividing and coordinating analytical work on high-dimensional single-cell data.
-
-The key claims are the dataset scale, the use of thousands of agents, and a 32-minute wall-clock analysis. These claims should be treated as a partner-backed demonstration rather than independent clinical or scientific validation; the available information does not establish external replication, benchmarking against expert consensus, or suitability for medical decisions.
-
-The example illustrates the multi-agent research pattern: task decomposition, concurrent execution, shared-data access, result aggregation, provenance, quality control, and reproducibility. Its operational value depends on orchestration as much as model capability. Such systems require elastic compute, strong data governance, detailed observability, and cost controls. If validated, they could accelerate exploratory scientific analysis, but expert review and experimental verification remain essential.
+Google reports dramatic simulated reductions in mitigation time, errors, latency, and database load. Those results are not independent production benchmarks: the linked implementation uses simplified local components in several places, and harmful actions are counterfactual replays rather than live execution. The strongest takeaway is a concrete pattern for bounded, auditable automation in cloud operations.
 
 ## Other Articles
 
-1. **[The bridge to agent-scale Git infrastructure](https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/)**
-   - *Source*: Hacker News
-   - *Date*: October 21, 2026
-   - *Summary*: GitHub describes Azure-based repository storage for agent-driven Git traffic and reports 3–4x throughput improvement.
+1. **[OpenAI makes its Jev competitor widely available as decision model competition heats up](https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/)**
+   - *Source*: TechURLs
+   - *Date*: 2026-10-22
+   - *Summary*: OpenAI has made its Decisions API generally available, positioning a low-latency model for high-throughput classification and decision workflows with voice, visual, and geographically targeted inference support.
 
-2. **[How Meta Built Forum With AI-Native Engineering](https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/)**
-   - *Source*: DevURLs
-   - *Date*: October 15, 2026
-   - *Summary*: Meta describes AI-native engineering based on machine-readable specifications and automated validation.
-
-3. **[OpenAI CLI](https://github.com/openai/openai-cli)**
-   - *Source*: Hacker News
-   - *Date*: October 22, 2026
-   - *Summary*: OpenAI released an official Go CLI for its API and organization administration.
-
-4. **[Walmart unveils Agent Gateway, an MCP server for AI agents to shop its site](https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/)**
+2. **[METR finds flaws in OpenAI's internal monitoring system](https://www.reuters.com/business/ai-safety-group-metr-finds-flaws-openais-internal-monitoring-system-2026-10-22/)**
    - *Source*: Techmeme
-   - *Date*: October 22, 2026
-   - *Summary*: Walmart introduced MCP-based agent-commerce integrations, authorization profiles, and purchase tracking.
+   - *Date*: 2026-10-22
+   - *Summary*: METR's pilot evaluation identified weaknesses in OpenAI agent monitoring, including a potential way for agents to conceal many recent actions.
 
-5. **[Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor](https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor)**
+3. **[Streaming comes to API Gateway](https://developers.googleblog.com/streaming-comes-to-api-gateway-real-time-and-ai-ready-apis-without-changing-your-spec/)**
    - *Source*: DevURLs
-   - *Date*: October 21, 2026
-   - *Summary*: SafeDep reports LiteLLM 1.107.0 contained a credential stealer and RCE backdoor.
+   - *Date*: 2026-10-22
+   - *Summary*: Google Cloud API Gateway adds public-preview streaming for SSE, WebSockets, gRPC, and HTTP response streaming without API-spec changes.
 
-6. **[How to Keep AI Agents From Going Rogue Using Docker Sandbox](https://dzone.com/articles/ai-agent-docker-sandbox)**
-   - *Source*: DZone
-   - *Date*: October 21, 2026
-   - *Summary*: Explains Docker sandboxing for isolating agent tools and execution.
-
-7. **[1Password passes $500M in ARR and announces 1Password for Agents](https://www.wsj.com/tech/ai/1password-surpasses-500-million-in-revenue-as-ai-agents-drive-growth-903ccd4b)**
+4. **[Microsoft's Diagnostic Orchestrator uses expert-like agents](https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence)**
    - *Source*: Techmeme
-   - *Date*: October 22, 2026
-   - *Summary*: 1Password announced agent-focused identity and credential-management capabilities.
+   - *Date*: 2026-10-23
+   - *Summary*: Microsoft says its GPT-5-powered multi-agent system simulates expert panels to diagnose medical conditions.
 
-8. **[Spring AI on Local LLMs](https://dzone.com/articles/spring-ai-on-local-llms)**
-   - *Source*: DZone
-   - *Date*: October 21, 2026
-   - *Summary*: Guide to using Spring AI with local models for privacy and security.
-
-9. **[How Kestra Unifies Enterprise Workflow Orchestration and Agentic AI](https://dzone.com/articles/kestra-enterprise-workflow-orchestration)**
-   - *Source*: DZone
-   - *Date*: October 21, 2026
-   - *Summary*: Reviews workflow orchestration across infrastructure, data, business processes, and agents.
-
-10. **[Show HN: Omnara – Open-source alternative to Claude Managed Agents](https://github.com/omnara-ai/omnara)**
-   - *Source*: Hacker News
-   - *Date*: October 21, 2026
-   - *Summary*: Self-hostable managed-agent platform with tools, secrets, permissions, sandboxing, and SDK support.
-
-11. **[DuckDB 2.0.0 LTS ‘Cinnamon Teal’](https://duckdb.org/2026/10/21/announcing-duckdb-200)**
-   - *Source*: Hacker News
-   - *Date*: October 21, 2026
-   - *Summary*: DuckDB 2.0.0 LTS adds protocol, asynchronous I/O, VARIANT, agent-mode, and parser capabilities.
-
-12. **[Microsoft says China-linked hackers used AI penetration testing tool ARTEX to compromise ConnectWise](https://www.reuters.com/technology/chinese-linked-hackers-compromise-connectwise-target-hundreds-global-attack-2026-10-21/)**
+5. **[DeepSeek and MiniMax reportedly win approval for overseas deployment](https://www.bloomberg.com/news/articles/2026-10-23/deepseek-minimax-win-approval-for-global-use-state-media-says)**
    - *Source*: Techmeme
-   - *Date*: October 22, 2026
-   - *Summary*: Microsoft linked ARTEX use to a ConnectWise compromise campaign.
+   - *Date*: 2026-10-23
+   - *Summary*: Chinese state media says DeepSeek and MiniMax received approval to open-source and deploy AI models internationally under proposed export controls.
 
-13. **[Announcing TypeScript 7.1 Beta](https://devblogs.microsoft.com/typescript/announcing-typescript-7-1-beta/)**
-   - *Source*: Reddit r/programming
-   - *Date*: October 20, 2026
-   - *Summary*: Microsoft announced the TypeScript 7.1 beta.
+6. **[Former OpenAI science lead launches Warp Science](https://techcrunch.com/2026/10/22/former-openai-science-lead-launches-warp-science-to-automate-wet-labs-with-robots/)**
+   - *Source*: TechURLs
+   - *Date*: 2026-10-22
+   - *Summary*: Kevin Weil launched Warp Sciences, an AI-and-robotics company for compound synthesis and testing, reporting a $215 million funding round.
 
-14. **[Bringing Visual Graph Debugging to Custom Edge Compilers with Model Explorer](https://developers.googleblog.com/bringing-visual-graph-debugging-to-custom-edge-compilers-with-model-explorer/)**
+7. **[Why Your AI Agent Works in the Demo and Fails in Production](https://dzone.com/articles/ai-agent-demo-production-failure)**
+   - *Source*: DZone
+   - *Date*: 2026-10-21
+   - *Summary*: A guide to productionizing agents through live-state grounding, deterministic execution boundaries, and risk-based approvals.
+
+8. **[Left alone with nothing to do, AI agents started playing](https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/)**
+   - *Source*: TechURLs
+   - *Date*: 2026-10-22
+   - *Summary*: MIT researchers found simulated Claude-powered agents invented challenges without assigned goals and later outperformed untrained counterparts.
+
+9. **[Architecture Review Boards for Generative AI](https://dzone.com/articles/genai-architecture-review)**
+   - *Source*: DZone
+   - *Date*: 2026-10-22
+   - *Summary*: Framework for extending architecture review to GenAI governance, model lifecycle, explainability, bias, security, monitoring, and accountability.
+
+10. **[Canva releases its first image generation model](https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/)**
+   - *Source*: TechURLs
+   - *Date*: 2026-10-22
+   - *Summary*: Canva launched Craft, an in-house image model focused on planned layouts, precise edits, layered designs, API access, and MCP integrations.
+
+11. **[Maxwell speeds up AI models by rewriting binaries](https://www.reddit.com/r/MachineLearning/comments/1xa2rrh/maxwell_a_new_model_that_speeds_up_ai_models_like/)**
+   - *Source*: Reddit r/MachineLearning
+   - *Date*: 2026-10-20
+   - *Summary*: Community discussion of a system that optimizes running AI workloads by modifying binaries at runtime rather than source code.
+
+12. **[Open GPU kernel engineering series](https://www.reddit.com/r/MachineLearning/comments/1xa4h2g/open_gpu_kernel_engineering_series_naive_gemm_to/)**
+   - *Source*: Reddit r/MachineLearning
+   - *Date*: 2026-10-20
+   - *Summary*: A public, code-first series covers GPU kernels from naive GEMM to FlashAttention across H100 and Blackwell hardware.
+
+13. **[Single-tenant Titus: VM-level isolation on a multi-tenant container platform](https://netflixtechblog.com/single-tenant-titus-vm-level-isolation-on-a-multi-tenant-container-platform-6d8b1909d163)**
    - *Source*: DevURLs
-   - *Date*: October 20, 2026
-   - *Summary*: Google and Arm describe visualization and profiling for edge compiler representations.
+   - *Date*: 2026-10-22
+   - *Summary*: Netflix describes a single-tenant Titus option that provides VM-level isolation while preserving its container-platform operations model.
 
-15. **[Muse exposes users' personal and business secrets when they share conversations](https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/)**
-   - *Source*: Hacker News
-   - *Date*: October 21, 2026
-   - *Summary*: Shared Meta Muse conversation links reportedly exposed sensitive information.
+14. **[Azure Firewall Security: How Routing Decisions Can Bypass Inspection](https://hackernoon.com/azure-firewall-security-how-routing-decisions-can-bypass-inspection)**
+   - *Source*: DevURLs
+   - *Date*: 2026-10-23
+   - *Summary*: Analysis of cloud-routing patterns that can bypass Azure Firewall inspection and related network-design safeguards.
 
-16. **[PHP web runtimes (CVE-2026-109618 and CVE-2026-109619)](https://aws.amazon.com/security/security-bulletins/2026-143-aws/)**
-   - *Source*: Hacker News
-   - *Date*: October 21, 2026
-   - *Summary*: AWS warns of critical unauthenticated PHP worker flaws.
+15. **[How to Design Multi-Cloud DevOps Architectures That Scale](https://hackernoon.com/how-to-design-multi-cloud-devops-architectures-that-scale)**
+   - *Source*: DevURLs
+   - *Date*: 2026-10-23
+   - *Summary*: Practical multi-cloud guidance on Kubernetes, Terraform, GitOps, observability, security, and FinOps.
 
-17. **[Header Accordions: QPACK amplification attacks against HTTP/3 servers](https://foxio.io/blog/header-accordions-qpack-amplification-attacks-against-http-3-servers)**
-   - *Source*: Hacker News
-   - *Date*: October 21, 2026
-   - *Summary*: Research identifies HTTP/3 QPACK memory-amplification risks.
-
-18. **[Where Should a Transaction End? Designing Consistency Boundaries in Distributed Java Systems](https://dzone.com/articles/where-should-a-transaction-end-designing-consisten)**
+16. **[Google Cloud KMS vs. AWS KMS: Java Encryption Guide](https://dzone.com/articles/google-cloud-kms-vs-aws-kms)**
    - *Source*: DZone
-   - *Date*: October 20, 2026
-   - *Summary*: Discusses consistency and transaction boundaries in distributed Java systems.
+   - *Date*: 2026-10-22
+   - *Summary*: Java-focused comparison of Google Cloud KMS and AWS KMS, including envelope encryption, authorization, rotation, and data keys.
 
-19. **[I Tried to Find Out How ClickHouse Keeper Takes Non-Blocking Snapshots](https://thewalstreetjournal.github.io/posts/clickhouse-keeper-non-blocking-snapshots/)**
-   - *Source*: Reddit r/programming
-   - *Date*: October 22, 2026
-   - *Summary*: Investigates ClickHouse Keeper’s non-blocking snapshot design.
-
-20. **[Rust Style Guide](https://google.github.io/styleguide/rustguide.html)**
-   - *Source*: Hacker News
-   - *Date*: October 21, 2026
-   - *Summary*: Google published Rust guidance for consistency and maintainability.
-
-21. **[TornadoVM 7 Enables GPU-Native Workloads From Java Applications](https://www.infoq.com/news/2026/10/tornadovm-7-gpu/)**
-   - *Source*: Reddit r/programming
-   - *Date*: October 22, 2026
-   - *Summary*: TornadoVM 7 enables GPU-native Java workloads.
-
-22. **[Java Virtual Threads Under Load: Three Production Limits](https://dzone.com/articles/java-virtual-threads-limits)**
+17. **[Idempotency Under Concurrency](https://dzone.com/articles/idempotency-under-concurrency)**
    - *Source*: DZone
-   - *Date*: October 20, 2026
-   - *Summary*: Reviews production limits for Java virtual threads.
+   - *Date*: 2026-10-22
+   - *Summary*: Explains why simple event-ID checks fail for concurrent Kafka consumers and how race conditions affect idempotency.
+
+18. **[Postgres recovery_prefetch can cause outages](https://ardentperf.com/2026/10/20/postgres-recovery_prefetch-considered-harmful-and-causing-outages/)**
+   - *Source*: Hacker News
+   - *Date*: 2026-10-21
+   - *Summary*: Production analysis of how recovery prefetch can amplify random I/O, causing replica lag and synchronous-replication outages.
+
+19. **[TypeScript 7.1 content mappers made type checks 20× faster](https://ismail.karsli.net/blog/typesql-content-mappers/)**
+   - *Source*: Reddit r/programming
+   - *Date*: 2026-10-23
+   - *Summary*: A TypeSQL implementation reports sharply lower TypeScript type instantiations by persisting checked SQL type information.
+
+20. **[YAGNI in the Age of AI Coding](https://dzone.com/articles/ai-coding-tools-yagni)**
+   - *Source*: DZone
+   - *Date*: 2026-10-22
+   - *Summary*: Argues that AI lowers code-generation cost but does not remove the integration, testing, explanation, and maintenance cost of speculative complexity.
+
+21. **[Carbon-X is an open 14.8B model trained jointly on DNA and text](https://www.reddit.com/r/MachineLearning/comments/1xchayq/carbonx_is_an_open_148b_model_trained_jointly_on/)**
+   - *Source*: Reddit r/MachineLearning
+   - *Date*: 2026-10-22
+   - *Summary*: Community post highlights an open 14.8B decoder-only model trained on a shared DNA-and-text token stream.
+
+22. **[Objects, attributes, maps, oh my](https://bernsteinbear.com/blog/object-shapes/)**
+   - *Source*: Hacker News
+   - *Date*: 2026-10-22
+   - *Summary*: A walkthrough of object shapes and hidden classes in dynamic-language runtimes, covering memory locality and faster property access.
 
 ## Ranked Articles (Top 25)
 
-1. Anthropic unveils Claude Duet
-2. Google Agents CLI Extension System
-3. GPT-Rosalind mouse-brain analysis
-4. Agent-scale Git infrastructure
-5. Meta AI-native engineering
-6. OpenAI CLI
-7. Walmart Agent Gateway
-8. LiteLLM PyPI compromise
-9. Docker sandboxing for agents
-10. 1Password for Agents
-11. Spring AI on local LLMs
-12. Kestra and agentic AI
-13. Omnara managed agents
-14. DuckDB 2.0.0 LTS
-15. ARTEX and ConnectWise compromise
-16. TypeScript 7.1 Beta
-17. Model Explorer for edge compilers
-18. Meta Muse data exposure
-19. PHP runtime vulnerabilities
-20. QPACK amplification attacks
-21. Distributed Java transaction boundaries
-22. ClickHouse Keeper snapshots
-23. Rust Style Guide
-24. TornadoVM 7
-25. Java virtual threads under load
+[{"rank":1,"source":"Techmeme","title":"Anthropic says it partnered with Theorem to use Claude to formally prove useful security properties at the assembly code level across 123 open-source libraries","url":"https://www.anthropic.com/research/formal-verification","date":"2026-10-23"},{"rank":2,"source":"Techmeme","title":"Anthropic donates the Agent Skills open standard to the Agentic AI Foundation","url":"https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation","date":"2026-10-23"},{"rank":3,"source":"DevURLs","title":"Architecting Governed, Self-Evolving AI Agents on Gemini Agent Platform","url":"https://developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform/","date":"2026-10-22"},{"rank":4,"source":"TechURLs","title":"OpenAI makes its Jev competitor widely available","url":"https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/","date":"2026-10-22"},{"rank":5,"source":"Techmeme","title":"METR says OpenAI monitoring system pilot found vulnerabilities","url":"https://www.reuters.com/business/ai-safety-group-metr-finds-flaws-openais-internal-monitoring-system-2026-10-22/","date":"2026-10-22"}]
