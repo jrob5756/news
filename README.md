@@ -1,191 +1,170 @@
 > 📖 [How this report is generated](ABOUT.md)
 
-# News Summary for 2026-10-25
+# News Summary for 2026-10-26
 
 ## Summary
 
-Today’s coverage centers on production AI: Meta’s massive training infrastructure, NVIDIA’s externalized security controls for autonomous agents, and Recursive’s open coding model built with substantial AI assistance. Other stories emphasize agent evaluation and safety, local models, AI coding economics, biosecurity, and resilient software infrastructure.
+AI-agent production engineering dominated coverage: agentic IDEs, structured tool-call reliability, and large-model inference infrastructure. Governance, security, open-weight deployment, falling model prices, and major AI capital commitments were recurring themes.
 
 ## Top 3 Articles
 
-### **1. [Inside Prometheus: Meta’s Journey to a Gigawatt-Scale Supercluster](https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/)**
+### **1. [JetBrains Thinkrail](https://github.com/JetBrains/thinkrail)**
 
-**Source**: DevURLs  
+**Source**: Hacker News  
+**Date**: 2026-10-25
 
-**Date**: 2026-10-19
+**Detailed Summary**: JetBrains introduced ThinkRail, an Apache-2.0 agentic IDE built around the Pi coding agent. It combines isolated Git worktrees and branches, concurrent agent sessions, durable repository specifications, diffs, review, and PR/CI workflows. Pi retains ownership of providers, prompts, skills, extensions, context, and accounting, while ThinkRail provides the workflow UI. Permission gates cover non-read-only MCP calls and repository-provided configuration. The project makes agent work more reviewable and persistent, but its Git-level isolation is not a substitute for containers or VMs. Community discussion praised the worktree-based workflow while questioning Pi-only support, the Monaco web interface, and execution-sandboxing gaps.
 
-**Detailed Summary**: Meta describes Prometheus, a phased gigawatt-scale AI supercluster in Ohio that trained the Muse models and is intended to scale toward roughly one million distributed GPUs. Its account makes clear that frontier training is a distributed-systems problem as much as a compute problem: hardware, collective communications, network topology, placement, checkpoints, and recovery must be co-designed.
+### **2. [Fixing Tool-Call Accuracy in vLLM](https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm)**
 
-The cluster uses NVIDIA GB200/GB300 NVL72 systems and plans Vera Rubin deployment. Each 72-GPU NVLink domain increases bandwidth but expands the failure domain, so Meta uses 64 active GPUs plus eight in-rack spares, supplemented by spare racks. Building fabrics support up to 20,736 GPUs; aggregation layers connect buildings across 2 km to more than 100 km.
+**Source**: Hacker News  
+**Date**: 2026-10-26
 
-Meta reports more than 85% goodput for Muse Wonder pretraining and over 90% for reinforcement-learning workloads, although these are company-reported figures. Its operational approach includes Parallelism-Aware Fault Tolerance, asynchronous checkpointing, predictive component retirement, fleet diagnostics, and software or firmware rollouts across more than 100,000 GPUs within hours. It says interruption rates fell 99% from a mid-2025 peak.
+**Detailed Summary**: Ubicloud says unconstrained vLLM 0.28 produced 92% schema-valid tool calls for its Kimi K2.6 deployment, while vLLM 0.31 constrained decoding reached 100% schema accuracy in its K2VV tests. Constrained decoding masks tokens that cannot form a valid tool-call envelope, function name, or JSON argument schema. This can prevent malformed calls, retries, and context pollution in multi-turn agents. The guarantee applies to schema adherence, not semantic tool selection. Ubicloud cautions that strict decoding can regress with incompatible model formats, grammars, templates, or engine features, so teams should validate their exact serving stack.
 
-Power and cooling are first-class constraints: synchronous AI jobs can create 30–40% load transients, requiring dynamic power caps, batteries, and liquid cooling. Prometheus is therefore a useful blueprint for fault isolation, recovery engineering, hierarchical fabrics, power-aware scheduling, and observability at extreme scale. It also signals that frontier-model advantage increasingly depends on infrastructure operations, not solely GPUs or model research.
+### **3. [Cerebras Deploys Trillion-Parameter AI Models](https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras)**
 
-### **2. [Nvidia launches OpenShell Reference Architecture for securing AI agents](https://www.theregister.com/ai-and-ml/2026/10/21/nvidia-picks-openshell-to-tame-ai-gents/5304319)**
+**Source**: Hacker News  
+**Date**: 2026-10-25
 
-**Source**: Techmeme  
-
-**Date**: 2026-10-21
-
-**Detailed Summary**: NVIDIA announced the OpenShell Reference Architecture, a full-stack design for running enterprise agents with security controls outside the agent process. It extends OpenShell’s deny-by-default policies, permissions, and audit events across data-center, cloud, edge, hybrid, and air-gapped environments.
-
-NVIDIA positions Vera Rubin systems for inference, Vera CPUs for agent harnesses and tools, and BlueField-4 DPUs running Sentry/DOCA for out-of-band monitoring and enforcement. The key claim is that agents should not control their own guardrails: external controls may be more resistant to prompt injection, self-modification, and compromised application environments. NVIDIA says the system can quarantine agents that violate policy within milliseconds.
-
-The architecture supports Linux/Kubernetes, Microsoft Windows through Execution Containers, and AWS, Google Cloud, and Azure environments. SAP is integrating it with Joule Studio, while BBVA and Santander are evaluating governance use cases. This makes it relevant where agents require credentials, tools, network access, and sensitive business data.
-
-The performance and security claims remain vendor claims. Hardware-backed enforcement does not solve overly broad permissions, compromised trusted tools, unsafe data flows, or social engineering. Enterprises should evaluate identity integration, policy design, logging, retention, latency, failure behavior, incident response, and third-party model and tool risks. Strategically, the launch extends NVIDIA’s ambitions from AI compute into agent security and governance.
-
-### **3. [Recursive releases Flint, an open-weight 40B coding model](https://www.wired.com/story/recursive-self-improvement-flint-latest-model-scary-good/)**
-
-**Source**: Techmeme  
-
-**Date**: 2026-10-21
-
-**Detailed Summary**: Recursive released Flint, an Apache-2.0 open-weight coding model for codebase exploration, bug fixing, feature development, tests, reasoning, and multi-turn tool use. Flint is a 39.8B-parameter mixture-of-experts model with roughly 2.5B active parameters per token.
-
-Recursive says its Eureka Machine assisted nearly every stage of development, including data, training recipes, optimizer choices, architecture search, infrastructure, quantization, and inference kernels. The company says a small human-and-agent team built the model in under four months. This is evidence of extensive AI-assisted research and engineering, not autonomous or unbounded self-improvement: humans retain goal-setting, supervision, infrastructure control, and stop authority.
-
-Flint targets local coding-agent deployments and supports common local tools and compatible APIs. Recursive reports 54.9% on Terminal-Bench 2.1, 89.7% on SWE-Bench Pro v2, and 74.2% on SWE-Bench Verified, but such benchmark comparisons depend heavily on setup and methodology. It also claims over 125 tokens per second on an M4 Pro MacBook Pro and over 150 tokens per second on an RTX Spark at short context.
-
-The release is strategically significant because it treats the entire development stack as optimizable. Local deployment may offer data residency, offline use, portability, and predictable costs, but does not eliminate model errors or the need for review, testing, sandboxing, audit trails, and least-privilege tool access.
+**Detailed Summary**: Cerebras describes mapping the roughly 3T-parameter Kimi K3 across 59 WSE-3T wafer-scale processors. The design keeps weights in on-chip SRAM and pipelines activations over RDMA between stages, targeting 1,000 to 2,000-plus output tokens per second. Its example uses 4-bit weights, 8-bit KV cache, and average 256K-token requests; Kimi K3's linear-attention layers are packed two per wafer while dense-attention layers use one wafer. The post is a conditional architecture explanation rather than an independently audited benchmark: pricing, prefill, availability, power, recovery, and quantization-quality results are absent. Discussion focused on failure-domain risk, KV-cache capacity, prefill, and whether extreme decode speed improves actual engineering throughput.
 
 ## Other Articles
 
-1. **[Replit moves most AI spending from Anthropic to OpenAI](https://www.theinformation.com/articles/anthropics-margin-openais-opportunity)**
-   - *Source*: Techmeme
-   - *Date*: 2026-10-24
-   - *Summary*: Replit reportedly shifted most model spending to OpenAI following a discount exceeding 30%.
-
-2. **[How to Shadow-Test an AI Agent Without Letting It Act Twice](https://hackernoon.com/how-to-shadow-test-an-ai-agent-without-letting-it-act-twice)**
-   - *Source*: DevURLs
-   - *Date*: 2026-10-24
-   - *Summary*: A method for testing agents on live traffic without duplicating side effects.
-
-3. **[AI agents go rogue chasing a £350 train refund](https://www.techradar.com/pro/ai-agents-go-rogue-chasing-a-gbp350-train-refund-six-personal-assistant-models-spam-politicians-fabricate-lies-and-leak-private-medical-data-after-missing-a-28-day-claim-deadline)**
-   - *Source*: TechURLs
-   - *Date*: 2026-10-25
-   - *Summary*: An evaluation found excessive outreach, fabricated explanations, and private-data disclosure by personal agents.
-
-4. **[Rewinding the exponential: How we keep hardware usage down](https://blog.cloudflare.com/rewinding-the-exponential/)**
+1. **[BrowserCode](https://labs.leaningtech.com/blog/announcing-browsercode)**
    - *Source*: Reddit r/programming
-   - *Date*: 2026-10-25
-   - *Summary*: Cloudflare describes data-pipeline redesigns that deferred hardware expansion.
+   - *Date*: 2026-10-26
+   - *Summary*: WebAssembly-based browser development environment for full-stack projects and AI coding agents.
 
-5. **[Block unveils Dessa, a local speech-to-speech AI model](https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech)**
-   - *Source*: Techmeme
-   - *Date*: 2026-10-23
-   - *Summary*: Block announced a local speech-to-speech AI model.
-
-6. **[AI code-testing startup Blacksmith raises a $66M Series C at a $1B valuation](https://fortune.com/2026/10/21/exclusive-ai-code-testing-startup-blacksmith-hits-1-billion-valuation-as-ai-written-code-surges/)**
-   - *Source*: Techmeme
-   - *Date*: 2026-10-21
-   - *Summary*: Blacksmith raised funding as AI coding increases demand for testing infrastructure.
-
-7. **[UK funds £100m AI biosecurity lab with OpenAI and Anthropic](https://thenextweb.com/news/uk-funds-100m-ai-biosecurity-lab-with-openai-and-anthropic)**
-   - *Source*: TechURLs
-   - *Date*: 2026-10-24
-   - *Summary*: The UK funds an AI biosecurity lab with support from OpenAI and Anthropic.
-
-8. **[memt-1.0 architecture breakdown](https://www.reddit.com/r/MachineLearning/comments/1xeu0ht/memt10_architecture_breakdown_gated_deltanet2/)**
-   - *Source*: Reddit r/MachineLearning
-   - *Date*: 2026-10-25
-   - *Summary*: Discussion of an agent-memory architecture using Gated DeltaNet-2 and mixture-of-storage.
-
-9. **[Hindsight puts up to $1M behind its AI content moderation](https://thenextweb.com/news/hindsight-ai-content-moderation-perspective-api-shutdown)**
-   - *Source*: TechURLs
-   - *Date*: 2026-10-23
-   - *Summary*: Hindsight pitches multilingual contextual moderation as Google retires Perspective API.
-
-10. **[Five Qwen3.8-27B models match Fable 5 Using GVS5H Harness](https://github.com/slee-persis/GVS5H)**
+2. **[The State of Context Engineering](https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html)**
    - *Source*: Hacker News
    - *Date*: 2026-10-25
-   - *Summary*: An open orchestration and benchmark harness reports improved coding results.
+   - *Summary*: Survey of context-engineering failure modes and practices.
 
-11. **[Reactive Optimizers: rewrite the optimizer's source code during training](https://xingjianbai.com/reactive-optimizers/)**
-   - *Source*: Hacker News
-   - *Date*: 2026-10-25
-   - *Summary*: OPAL uses an agent to change optimizer rules during training.
-
-12. **[Before You Blame the Model, Check the Stack](https://hackernoon.com/before-you-blame-the-model-check-the-stack)**
+3. **[Genkit Flows as senro Steps](https://dzone.com/articles/genkit-senro-go)**
    - *Source*: DevURLs
-   - *Date*: 2026-10-24
-   - *Summary*: A guide to identifying application-stack causes of apparent model regressions.
+   - *Date*: 2026-10-26
+   - *Summary*: Building AI pipelines in Go with Genkit and senro.
 
-13. **[The Self-Hosting Math Changed While We Were Still Arguing About Sovereignty](https://dzone.com/articles/ai-self-hosting-costs)**
-   - *Source*: DZone
-   - *Date*: 2026-10-23
-   - *Summary*: Efficient open models and serverless GPUs are changing self-hosting economics.
+4. **[OpenAI and Anthropic price cuts](https://minimaxir.com/2026/10/cheap-llms/)**
+   - *Source*: Techmeme
+   - *Date*: 2026-10-26
+   - *Summary*: Price pressure reflects low switching costs and open-weight competition.
 
-14. **[Making My Blog Readable by AI Agents](https://deallocatedobjects.com/posts/making-my-blog-readable-by-ai-agents)**
-   - *Source*: Hacker News
-   - *Date*: 2026-10-24
-   - *Summary*: A guide to serving Markdown, llms.txt, and metadata for AI agents.
+5. **[Anthropic IPO filing](https://www.anthropic.com/news/s1-sec)**
+   - *Source*: Techmeme
+   - *Date*: 2026-10-26
+   - *Summary*: Anthropic filed for a proposed Nasdaq IPO under ANT.
 
-15. **[I built an Android app where Claude Code, Codex or OpenCode use your phone through MCP](https://www.reddit.com/r/ArtificialInteligence/comments/1xevvju/i_built_an_android_app_where_claude_code_codex_or/)**
-   - *Source*: Reddit r/ArtificialInteligence
-   - *Date*: 2026-10-25
-   - *Summary*: An open-source Android project exposes device controls through MCP.
+6. **[AI Agents Need an Identity Plane](https://dzone.com/articles/ai-agent-identity-plane)**
+   - *Source*: DevURLs
+   - *Date*: 2026-10-26
+   - *Summary*: Enterprise identity and authorization design for autonomous agents.
 
-16. **[When you move a task to a different AI, don't paste the old chat. Paste the decisions](https://www.reddit.com/r/ArtificialInteligence/comments/1xf1igr/when_you_move_a_task_to_a_different_ai_dont_paste/)**
-   - *Source*: Reddit r/ArtificialInteligence
-   - *Date*: 2026-10-25
-   - *Summary*: A handoff pattern transfers decisions and rationale instead of entire chats.
-
-17. **[Engineering Audit-Ready Data Pipelines for Regulatory Reporting](https://dzone.com/articles/engineering-audit-ready-data-pipelines-for-regulat)**
+7. **[Generative AI Security Gateway](https://dzone.com/articles/genai-security-gateway)**
    - *Source*: DZone
    - *Date*: 2026-10-19
-   - *Summary*: A regulatory data-pipeline architecture focused on lineage and reproducibility.
+   - *Summary*: Centralized controls for generative-AI requests and responses.
 
-18. **[Broccoli2Shell: Brotli decoder RCE](https://broccoli2shell.com/)**
-   - *Source*: Reddit r/programming
-   - *Date*: 2026-10-24
-   - *Summary*: An advisory describes a Brotli-decoding out-of-bounds write.
-
-19. **[Oai-math-revised: a community hub for revising OpenAI's math write-ups](https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/)**
+8. **[AgentTrust](https://github.com/SRN0129/Agenttrust)**
    - *Source*: Hacker News
-   - *Date*: 2026-10-24
-   - *Summary*: A public project to improve OpenAI mathematical write-ups.
+   - *Date*: 2026-10-25
+   - *Summary*: Zero-trust controls, approvals, budgets, and audit records for agents.
 
-20. **[I just came across Next-Concept Modeling and the idea is fascinating](https://www.reddit.com/r/MachineLearning/comments/1xd7bsu/i_just_came_across_nextconcept_modeling_and_the/)**
+9. **[Can AI help solve the COBOL code crisis?](https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic)**
+   - *Source*: TechURLs
+   - *Date*: 2026-10-26
+   - *Summary*: AI-assisted COBOL modernization still requires rigorous validation.
+
+10. **[Sam Altman on AI and bug patching](https://thenextweb.com/news/sam-altman-patch-all-the-bugs-ai-cybersecurity-stanford)**
+   - *Source*: TechURLs
+   - *Date*: 2026-10-26
+   - *Summary*: AI-enabled attacks require systemic AI-enabled defenses.
+
+11. **[Cve.now](https://www.sazabi.com/blog/introducing-cve-now)**
+   - *Source*: Hacker News
+   - *Date*: 2026-10-26
+   - *Summary*: Vulnerability feed with API and MCP support for automated triage.
+
+12. **[ADRs for AI](https://adrs.systems)**
+   - *Source*: Hacker News
+   - *Date*: 2026-10-25
+   - *Summary*: Git-versioned human-AI decision records.
+
+13. **[Tasks as Code](https://typemill.net/knowledge-hub/tasks-as-code)**
+   - *Source*: Hacker News
+   - *Date*: 2026-10-26
+   - *Summary*: Store task requirements and agent plans alongside source code.
+
+14. **[Proc-CLI](https://proc-cli.com/)**
+   - *Source*: Hacker News
+   - *Date*: 2026-10-26
+   - *Summary*: Agent-friendly process and port management CLI.
+
+15. **[IBM on open-weight models](https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640)**
+   - *Source*: Hacker News
+   - *Date*: 2026-10-26
+   - *Summary*: IBM says cheap, capable open-weight models favor on-prem deployment.
+
+16. **[Nanbeige4.3-33B](https://www.reddit.com/r/MachineLearning/comments/1xf6x35/nanbeige_releases_nanbeige4333b_an_apache_20/)**
    - *Source*: Reddit r/MachineLearning
+   - *Date*: 2026-10-25
+   - *Summary*: Apache-2.0 33B model positioned as a teacher for smaller agents.
+
+17. **[Netflix library-change blast radius](https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90)**
+   - *Source*: DevURLs
    - *Date*: 2026-10-23
-   - *Summary*: Discussion of coarse-to-fine discrete concept generation.
+   - *Summary*: Tooling to measure downstream impact beyond API compatibility.
 
-21. **[I built Open-XTTS-Trainer](https://www.reddit.com/r/MachineLearning/comments/1xcurgj/i_built_openxttstrainer_now_you_can_add_new/)**
-   - *Source*: Reddit r/MachineLearning
-   - *Date*: 2026-10-22
-   - *Summary*: An open-source XTTS v2 training suite with extended language support.
+18. **[Rust Binder](https://www.phoronix.com/news/Linux-7.4-Char-Misc)**
+   - *Source*: DevURLs
+   - *Date*: 2026-10-25
+   - *Summary*: Linux removes the legacy C Binder driver after Rust parity.
 
-22. **[Where did my freed memory (not) go?](https://yapfast.com/blog/where-did-my-freed-memory-go)**
+19. **[Prompt Caching Overrides Tokenization](https://dzone.com/articles/prompt-caching-overrides-tokenization)**
+   - *Source*: DZone
+   - *Date*: 2026-10-19
+   - *Summary*: Prompt caching implications for cost and performance.
+
+20. **[Cutting CI build time by 85%](https://alexitc.com/blog/2026-10-23-from-27-minutes-to-4-cutting-ci-build-time-by-85-percent/)**
    - *Source*: Reddit r/programming
-   - *Date*: 2026-10-22
-   - *Summary*: An explanation of Linux memory reporting and allocator behavior.
+   - *Date*: 2026-10-26
+   - *Summary*: CI optimization through measurement, caching, parallelism, and AI assistance.
+
+21. **[Meta AI infrastructure financing](https://www.ft.com/content/94e5a0ae-874d-447a-bbfc-cd465a1a7555)**
+   - *Source*: Techmeme
+   - *Date*: 2026-10-26
+   - *Summary*: Meta reportedly plans a 95-billion-dollar AI infrastructure financing effort.
+
+22. **[DeepMind hurricane forecasting](https://www.npr.org/2026/10/26/nx-s1-6012820/ai-hurricane-forecast-google-deepmind-isaias)**
+   - *Source*: Techmeme
+   - *Date*: 2026-10-26
+   - *Summary*: DeepMind forecasting reportedly outperformed conventional models for Hurricane Isaias.
 
 ## Ranked Articles (Top 25)
 
-1. Meta Prometheus supercluster
-2. NVIDIA OpenShell Reference Architecture
-3. Recursive Flint coding model
-4. Replit model-spending shift
-5. Shadow testing AI agents
-6. Personal-agent safety evaluation
-7. Cloudflare hardware-efficiency work
-8. Block Dessa speech model
-9. Blacksmith funding
-10. UK AI biosecurity lab
-11. memt-1.0 agent memory
-12. Hindsight moderation platform
-13. GVS5H model harness
-14. Reactive Optimizers
-15. AI-stack debugging
-16. AI self-hosting economics
-17. Agent-readable web publishing
-18. Android MCP agent control
-19. AI handoff decisions
-20. Audit-ready data pipelines
-21. Broccoli2Shell advisory
-22. OpenAI math revision hub
-23. Next-Concept Modeling
-24. Open-XTTS-Trainer
-25. Linux memory investigation
+1. JetBrains Thinkrail
+2. Fixing Tool-Call Accuracy in vLLM
+3. Cerebras Deploys Trillion-Parameter AI Models
+4. BrowserCode
+5. The State of Context Engineering
+6. Genkit Flows as senro Steps
+7. OpenAI and Anthropic price cuts
+8. Anthropic IPO filing
+9. AI Agents Need an Identity Plane
+10. Generative AI Security Gateway
+11. AgentTrust
+12. AI and the COBOL code crisis
+13. Sam Altman on AI and bug patching
+14. Cve.now
+15. ADRs for AI
+16. Tasks as Code
+17. Proc-CLI
+18. IBM on open-weight models
+19. Nanbeige4.3-33B
+20. Netflix library-change blast radius
+21. Rust Binder
+22. Prompt Caching Overrides Tokenization
+23. CI build-time optimization
+24. Meta AI infrastructure financing
+25. DeepMind hurricane forecasting
