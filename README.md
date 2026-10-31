@@ -1,199 +1,83 @@
 > 📖 [How this report is generated](ABOUT.md)
 
-# News Summary for October 30, 2026
+# News Summary for 2026-10-31
 
 ## Summary
 
-AI is becoming operational infrastructure: agents are gaining safer UI standards and more explicit governance, while formal verification is emerging as a complement to AI-generated code. Cloud providers continue expanding AI capacity, and security coverage highlights both AI-enabled attacks and the need for stronger permissions, provenance, and review controls.
+AI developer tooling is advancing alongside major security, reliability, governance, and infrastructure challenges. Cursor disclosed a malicious Claude Code extension supply-chain incident; Meta detailed LLM-generated pre-merge testing; and OpenAI proposed a shared robots.txt preference for AI training. Other coverage includes agent frameworks, evaluation, large-scale AI spending, and systems engineering.
 
 ## Top 3 Articles
 
-### **1. [Build Generative UI Apps with A2UI & CopilotKit Agents](https://developers.googleblog.com/build-generative-ui-apps-with-a2ui-copilotkit-agents/)**
+### **1. [Security notice - malicious version of Anthropic.claude-code](https://cursor.com/blog/claude-code-extension-security-notice)**
+
+**Source**: TechURLs  
+**Date**: 2026-10-29
+
+**Detailed Summary**: Cursor says unauthorized Claude Code extension versions 2.1.312 and 2.1.313 were distributed through its marketplace for roughly 11 hours on October 29. The payload collected host metadata, attempted to add an SSH key labelled `svc-telemetry`, enable SSH, create persistence, and open a reverse tunnel to `134.209.82.225`. Cursor removed the builds, rebuilt the marketplace, rotated keys, and published remediation guidance. Uninstalling alone may not remove persistence or an injected SSH key. This is a serious supply-chain risk for AI coding environments with access to repositories, cloud credentials, SSH material, and CI/CD systems.
+
+### **2. [Catching Bugs Before They Land: JiTTesting's Human-on-the-Loop Approach at Full Scale](https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/)**
 
 **Source**: DevURLs  
+**Date**: 2026-10-29
 
-**Date**: October 29, 2026
+**Detailed Summary**: Meta describes Catching JiTTests, a system that generates tests which pass on a parent revision and fail on a proposed code change. It combines diff-oriented and intent-aware generation, LLM judging, deterministic filters, and targeted engineer confirmation. Meta reports 589 engineer engagements, a 60% true-positive rate among engagements, and 74 serious privacy bugs caught before landing in the first half of 2026. The reported metrics are not independent proof of causation, but the system demonstrates a practical pattern for agentic verification: differential execution, automated triage, and narrow human escalation.
 
-**Detailed Summary**: 
+### **3. [Making it easier for websites to express AI training preferences](https://openai.com/index/helping-websites-express-ai-training-preferences)**
 
-Google presents A2UI and CopilotKit as a way for AI agents to create interactive interfaces without generating arbitrary executable HTML or JavaScript. Agents instead produce declarative A2UI JSON that references a client-controlled catalog of trusted components. The host application maps those descriptions to native components in stacks including React, Angular, Flutter, SwiftUI, and Jetpack Compose.
+**Source**: TechURLs  
+**Date**: 2026-10-30
 
-The component catalog is the main safety mechanism: models can select and populate approved components but cannot invent rendering behavior beyond the catalog. A2UI uses compact, ID-referenced JSON that can stream incrementally for progressive UI rendering. The basic catalog includes 18 primitives, while production applications are expected to add domain-specific components such as cards, maps, forms, and transaction flows.
-
-CopilotKit provides an integration/runtime layer using AG-UI events to send A2UI operations to clients and return interaction data to agents. Interfaces are bi-directional and reactive: inputs bind to data paths, actions return scoped values, and client-side validation can reject malformed data without another model call.
-
-The architecture is relevant to enterprise and multi-agent systems because it separates UI intent from UI implementation. It offers stronger safety, accessibility, branding consistency, and cross-platform portability than agent-generated executable code. However, teams still need server-side authorization, action validation, rate limiting, auditability, and confirmation steps for consequential operations. A2UI is Apache-2.0 licensed but remains an evolving ecosystem.
-
-### **2. [OpenAI updates Model Spec to reorganize it around five values](https://openai.com/index/updated-model-spec)**
-
-**Source**: Techmeme  
-
-**Date**: October 30, 2026
-
-**Detailed Summary**: 
-
-OpenAI’s October 29 Model Spec update reorganizes its behavioral guidance around five values: faithfulness to human intent, minimizing harm, honesty and transparency, human agency, and care. This is a governance and product-behavior update rather than a model-release announcement.
-
-The specification moves beyond literal instruction following toward interpretation of a user’s actual purpose, while cautioning that assistants must not substitute their own judgment for human choice. It strengthens expectations for agentic systems: models should remain inside agreed autonomy scopes, disclose material side effects, enable oversight and correction, and make work understandable, editable, stoppable, and transferable.
-
-For developers building coding agents, cloud-operation assistants, and workflow automation, the guidance translates into practical controls: explicit authorization scopes, confirmation or reversibility for consequential actions, audit logs, side-effect summaries, clear uncertainty disclosures, least-privilege tools, prompt-injection defenses, and human takeover paths.
-
-The update is also a competitive governance signal for AI providers. As systems become more proactive, product differentiation increasingly depends on whether assistants are controllable, transparent, and safe around enterprise data and real-world tools. The public specification is CC0-dedicated and can be adapted into internal agent policies, evaluation suites, and safety requirements.
-
-### **3. [How a wave of startups are betting on AI to make formal software verification practical and essential](https://www.wired.com/story/software-verification-is-the-hot-new-answer-to-the-ai-safety-crisis/)**
-
-**Source**: Techmeme  
-
-**Date**: October 30, 2026
-
-**Detailed Summary**: 
-
-WIRED examines AI-assisted formal verification as a response to reliability and security risks from increasingly AI-generated code. Formal verification mathematically proves specified software properties, but historically has been costly because specialists must create detailed specifications and proofs. Startup &Truth, launching with $70 million raised, is betting that generative AI can lower that cost.
-
-Stanford researcher Chuyue Sun’s CryptoProver generated independent Verus-checked proofs for curve25519-dalek and verified RustCrypto’s ChaCha20 implementation against RFC 8439 without altering executable code. The work reportedly took 11.4 hours and $466.99 in API costs, compared with an eight-month human-led verification effort involving five primary contributors for curve25519-dalek.
-
-The field is becoming competitive, with Harmonic, Truidic, Proofcraft, Anthropic, Google OSS-Fuzz, AWS, Nvidia, and Microsoft-linked researchers all relevant. Anthropic’s work with Theorem used Claude to patch bugs and prove no crashes below 64 MB across 239 OSS-Fuzz entry points in 123 open-source libraries, under defined RISC-V/Linux assumptions.
-
-For engineering teams, the near-term model is layered assurance: AI creates patches, specifications, and proof artifacts; formal tools such as Verus, Lean, Rocq, or Isabelle mechanically check them; fuzzing, static analysis, testing, and human review remain necessary. Likely early use cases include cryptography, parsers, authorization paths, cloud control planes, kernels, native libraries, protocols, and hardware designs.
-
-Formal verification is not a panacea. A proof establishes only a selected property under stated assumptions; it cannot ensure a complete specification or account for all real-world dependencies. Its practical value is in adding auditable, property-specific guarantees to high-risk components rather than replacing robust testing.
+**Detailed Summary**: OpenAI plans to honor a shared robots.txt preference for generative-AI training. The related draft proposes `__usage_ai-training`, allowing websites to express training preferences with existing robots.txt path rules. It is separate from crawl and search controls such as GPTBot and OAI-SearchBot. The mechanism is voluntary, not yet an IETF standard, and cannot guarantee enforcement or resolve licensing and historical-data issues. If adopted broadly, it could simplify publisher, CMS, CDN, and AI-provider policy management.
 
 ## Other Articles
 
-1. **[CrowdStrike: China-linked hackers used AI tool ARTEX with a DeepSeek LLM and another model to target 200+ organizations](https://www.nbcnews.com/tech/security/china-linked-hackers-used-ai-target-200-organizations-crowdstrike-says-rcna606343)**
-   - *Source*: Techmeme
-   - *Date*: October 30, 2026
-   - *Summary*: CrowdStrike says China-linked attackers used AI-enabled tooling to automate a campaign targeting more than 200 organizations.
-
-2. **[Fast, reliable A2UI, with swappable inference formats](https://developers.googleblog.com/fast-reliable-a2ui/)**
-   - *Source*: DevURLs
-   - *Date*: October 27, 2026
-   - *Summary*: Google introduces A2UI Express and swappable formats intended to reduce token usage and latency while validating agent-generated UI.
-
-3. **[Amazon reports Q3 AWS revenue up 39% YoY to $45.98B](https://www.cnbc.com/2026/10/29/aws-q3-earnings-report-2026.html)**
-   - *Source*: Techmeme
-   - *Date*: October 30, 2026
-   - *Summary*: AWS reported $45.98 billion in quarterly revenue and $17.77 billion in operating income, supported by cloud and AI demand.
-
-4. **[Cisco gives engineer unlimited AI tokens to rewrite 98% of the company's code](https://www.tomshardware.com/tech-industry/big-tech/cisco-gives-27-year-old-engineer-unlimited-ai-tokens-to-rewrite-98-percent-of-the-companys-legacy-code-in-24-months-president-plucks-former-startup-founder-telling-him-to-go-nuts)**
-   - *Source*: Hacker News
-   - *Date*: October 30, 2026
-   - *Summary*: Cisco assigned an engineer to use AI coding tools to refactor 98% of its legacy code over 24 months.
-
-5. **[Local Code Launches as Free, Private AI Assistant Tool for Mac](https://www.macrumors.com/2026/10/30/local-code-free-private-ai-tool-for-mac/)**
-   - *Source*: TechURLs
-   - *Date*: October 30, 2026
-   - *Summary*: Draw Things released an open-source Mac assistant that runs Qwen or DeepSeek models locally.
-
-6. **[Applying Microservices Lessons to Multi-Agent AI Systems](https://dzone.com/articles/multi-agent-distributed-systems)**
-   - *Source*: DZone
-   - *Date*: October 30, 2026
-   - *Summary*: Explores how contracts, failure isolation, observability, and outcome validation can improve multi-agent reliability.
-
-7. **[AI Coding Agent Guardrails: Finding Gaps in Tool Permissions](https://dzone.com/articles/ai-coding-agent-guardrails)**
-   - *Source*: DZone
-   - *Date*: October 29, 2026
-   - *Summary*: Explains why agent guardrails need tests for permissions, hooks, and actual file changes.
-
-8. **[Solving Comprehension Debt in AI-Generated Codebases](https://dzone.com/articles/ai-code-comprehension-debt)**
-   - *Source*: DZone
-   - *Date*: October 29, 2026
-   - *Summary*: Proposes a framework for understanding and safely reviewing AI-generated code.
-
-9. **[A harness that records where an LLM agent’s tool arguments came from](https://www.reddit.com/r/MachineLearning/comments/1xhnoo2/a_harness_that_records_where_an_llm_agents_tool/)**
-   - *Source*: Reddit / r/MachineLearning
-   - *Date*: October 28, 2026
-   - *Summary*: An open harness tracks tool-argument provenance and tests whether agents adopt values from untrusted text.
-
-10. **[Grace Blackwell needs a new scheduler: 27% more usable GPUs from the same racks](https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler)**
-   - *Source*: Hacker News
-   - *Date*: October 29, 2026
-   - *Summary*: SkyPilot describes topology-aware NVL72 scheduling that reportedly improves usable GPU capacity by 27%.
-
-11. **[Sources: Nvidia is in talks to provide Nscale with billions of dollars in credit guarantees](https://www.theinformation.com/articles/nvidia-talks-provide-billions-credit-support-cloud-providers-45-billion-anthropic-deal)**
-   - *Source*: Techmeme
-   - *Date*: October 30, 2026
-   - *Summary*: Nvidia is reportedly discussing credit support for Nscale capacity intended for Anthropic.
-
-12. **[AWS will be a $1T business, Jassy says. But first, it will spend big.](https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/)**
-   - *Source*: TechURLs
-   - *Date*: October 29, 2026
-   - *Summary*: Amazon expects AI demand to support long-term AWS growth while significantly expanding capital spending.
-
-13. **[Papers with Code is now open-source](https://www.reddit.com/r/MachineLearning/comments/1xgoadu/papers_with_code_is_now_opensource_p/)**
-   - *Source*: Reddit / r/MachineLearning
-   - *Date*: October 27, 2026
-   - *Summary*: A community revival of Papers with Code is released under Apache 2.0 with APIs and an MCP server.
-
-14. **[Self-distillation with an EMA teacher at scale: ZeRO-3 + PEFT](https://www.reddit.com/r/MachineLearning/comments/1xh083s/selfdistillation_with_an_ema_teacher_at_scale/)**
-   - *Source*: Reddit / r/MachineLearning
-   - *Date*: October 27, 2026
-   - *Summary*: An implementation combines self-distillation, ZeRO-3, and lightweight PEFT adapters.
-
-15. **[Major breakthroughs by frontier labs came from scaling test-time compute with agent swarms](https://www.reddit.com/r/MachineLearning/comments/1xh9059/major_breakthroughs_by_frontier_labs_over_the/)**
-   - *Source*: Reddit / r/MachineLearning
-   - *Date*: October 27, 2026
-   - *Summary*: An author shares an open-source agent-swarm approach to scaling test-time compute.
-
-16. **[MiniLake Is a Local Databricks API Emulator with SQL, Delta Lake and Spark](https://dmux.github.io/minilake/)**
-   - *Source*: Hacker News
-   - *Date*: October 27, 2026
-   - *Summary*: MiniLake provides a local, air-gapped Databricks-style environment using DuckDB, Delta files, and Spark jobs.
-
-17. **[Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5](https://divagr.com/blog/qwenputer)**
-   - *Source*: Hacker News
-   - *Date*: October 29, 2026
-   - *Summary*: An experiment embeds a deterministic 32-bit RISC-V CPU in a Qwen 3.5 model’s weights.
-
-18. **[AMD's ROCm HRX Loom v0.1 released for targeting AMD CPUs, GPUs & NPUs](https://www.reddit.com/r/programming/comments/1xisevc/amds_rocm_hrx_loom_v01_released_for_targeting_amd/)**
-   - *Source*: Reddit r/programming
-   - *Date*: October 29, 2026
-   - *Summary*: AMD released ROCm HRX Loom v0.1 for heterogeneous workloads across AMD CPUs, GPUs, and NPUs.
-
-19. **[Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions](https://www.reddit.com/r/programming/comments/1xiq8we/linux_kernel_tcp_flaw_with_98_cvss_score_affects/)**
-   - *Source*: Reddit r/programming
-   - *Date*: October 29, 2026
-   - *Summary*: A critical Linux kernel TCP vulnerability affects major distributions and cloud operations.
-
-20. **[Solving Postgres' Count Problem](https://www.paradedb.com/blog/opening-a-closed-tin-part-2)**
-   - *Source*: Hacker News
-   - *Date*: October 28, 2026
-   - *Summary*: ParadeDB details techniques for faster PostgreSQL search COUNT queries.
-
-21. **[Containers as a recognized kernel object](https://lwn.net/Articles/1102593/)**
-   - *Source*: DevURLs
-   - *Date*: October 29, 2026
-   - *Summary*: A Linux-kernel-focused examination of recognizing containers as first-class kernel objects.
-
-22. **[noalloc: Tooling and libraries to enforce zero heap allocations in Golang](https://github.com/theconsensuslabs/noalloc)**
-   - *Source*: Hacker News
-   - *Date*: October 28, 2026
-   - *Summary*: An experimental Go tool traces marked call trees for heap allocations and includes zero-allocation utilities.
+1. **[Project Suncatcher prototype satellite response](https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/)** - Google reports AI output from a TPU in orbit.
+2. **[vercel-labs/skills](https://github.com/vercel-labs/skills)** - CLI for reusable coding-agent instructions.
+3. **[Street Fighter III refactoring with agents](https://codescene.com/blog/case-study-refactoring-at-scale-with-agents)** - Agent-assisted C-code refactoring case study.
+4. **[OpenRig](https://github.com/mvschwarz/openrig)** - Open-source persistent multi-agent team framework.
+5. **[Fault-injecting a write tool](https://outsideengineer.substack.com/p/thinking-harder-doesnt-help-ai-catch)** - Tests whether agents verify file writes.
+6. **[AI agent swarms in games](https://labs.ycombinator.com/projects/games/index.html)** - Multi-agent coordination research in Minecraft and Mindustry.
+7. **[Microsoft Foundry agent evaluators](https://levelup.gitconnected.com/creating-custom-code-based-agent-evaluators-in-microsoft-foundry-with-python-da53cf57f51d)** - Python evaluator tutorial.
+8. **[Simantic](https://news.ycombinator.com/item?id=50291116)** - Firmware simulation for AI agents.
+9. **[Evaluating RAG in production](https://dzone.com/articles/evaluating-rag-in-production)** - Production RAG measurement practices.
+10. **[Big Tech AI spending](https://www.bloomberg.com/news/articles/2026-10-30/big-tech-holds-3-trillion-in-spending-commitments-for-ai-boom)** - More than $3T in reported AI commitments.
+11. **[AI and SRE deskilling](https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling)** - Risks of automation eroding operational expertise.
+12. **[Cloudflare Queue double buffering](https://bellone.com/technical/double-buffering-with-cloudflare-queues)** - Telemetry archival architecture.
+13. **[Call Graph Analyzer](https://tweedegolf.nl/en/blog/242/finding-panics-with-call-graph-analyzer/)** - Rust panic-path analysis tool.
+14. **[Baseten funding report](https://www.bloomberg.com/news/articles/2026-10-30/baseten-set-for-30-billion-valuation-with-new-funding)** - Reported $2B AI-inference funding round.
+15. **[MariaDB performance fix](https://mariadb.org/how-mariadb-11-8-became-about-3x-faster-on-some-in-memory-workloads-fixing-a-regression-dating-back-to-10-5/)** - Mutex regression repair improves throughput.
+16. **[Sanstun](https://www.firezone.dev/blog/introducing-sanstun)** - Rust sans-IO WireGuard implementation.
+17. **[Artificial Analysis v5](https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers)** - Analysis of AI benchmark aggregation.
+18. **[Claude plan changes](https://windowsreport.com/anthropic-renames-claude-max-5x-and-20x-plans-removes-ultras-5-hour-limit/)** - Anthropic usage-plan update.
+19. **[Compile-Time Dependent Types](https://thenumb.at/Syl-Intro/)** - Introduction to the Syl systems language.
+20. **[Claude Code Windows focus issue](https://github.com/anthropics/claude-code/issues/91264)** - Reported usability defect.
+21. **[GitHub Actions, Pages, and Webhooks incident](https://www.githubstatus.com/incidents/pwxsjgnvrk6b)** - Availability event affecting developer workflows.
+22. **[Microsoft Edge logic-bug exploit chain](https://blog.orange.tw/posts/2026-10-the-last-proof-of-human-craft-browser-full-chain/)** - Pwn2Own exploit-chain write-up.
 
 ## Ranked Articles (Top 25)
 
-1. Build Generative UI Apps with A2UI & CopilotKit Agents
-2. OpenAI updates Model Spec to reorganize it around five values
-3. AI-assisted formal software verification becomes a startup focus
-4. China-linked hackers reportedly use AI in large-scale targeting
-5. Fast, reliable A2UI with swappable inference formats
-6. AWS Q3 revenue rises 39% year over year
-7. Cisco pursues an AI-assisted legacy-code rewrite
-8. Local Code launches as a private Mac AI assistant
-9. Applying microservices lessons to multi-agent AI systems
-10. AI coding-agent guardrails and tool permissions
-11. Comprehension debt in AI-generated codebases
-12. LLM-agent tool-argument provenance harness
-13. GPU scheduling for Grace Blackwell racks
-14. Nvidia and Nscale data-center financing talks
-15. AWS growth ambitions and capex plans
-16. Papers with Code becomes open-source
-17. Self-distillation with ZeRO-3 and PEFT
-18. Agent swarms for test-time compute
-19. MiniLake local Databricks emulator
-20. Qwenputer RISC-V experiment
-21. AMD ROCm HRX Loom v0.1
-22. Critical Linux kernel TCP flaw
-23. PostgreSQL count-query optimization
-24. Containers as recognized kernel objects
-25. noalloc tooling for Go
+1. Cursor malicious Claude Code extension
+2. Meta JiTTesting
+3. OpenAI AI-training preferences
+4. Google Project Suncatcher
+5. Vercel Skills
+6. Street Fighter III agent refactoring
+7. OpenRig
+8. Agent write verification
+9. AI agent swarms
+10. Microsoft Foundry evaluators
+11. Simantic
+12. Production RAG evaluation
+13. Big Tech AI spending
+14. AI and SRE deskilling
+15. Cloudflare Queue double buffering
+16. Call Graph Analyzer
+17. Baseten funding
+18. MariaDB performance fix
+19. Sanstun
+20. Artificial Analysis v5
+21. Claude plan changes
+22. Compile-Time Dependent Types
+23. Claude Code focus issue
+24. GitHub incident
+25. Microsoft Edge exploit chain
