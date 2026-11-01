@@ -1,83 +1,170 @@
 > 📖 [How this report is generated](ABOUT.md)
 
-# News Summary for 2026-10-31
+# News Summary for November 1, 2026
 
 ## Summary
 
-AI developer tooling is advancing alongside major security, reliability, governance, and infrastructure challenges. Cursor disclosed a malicious Claude Code extension supply-chain incident; Meta detailed LLM-generated pre-merge testing; and OpenAI proposed a shared robots.txt preference for AI training. Other coverage includes agent frameworks, evaluation, large-scale AI spending, and systems engineering.
+AI-agent deployment, security, and operational constraints dominated coverage. DeepSeek released a governed team coding-agent prototype; OpenAI is merging ChatGPT and Codex quotas; and several stories highlighted AI security risks.
 
 ## Top 3 Articles
 
-### **1. [Security notice - malicious version of Anthropic.claude-code](https://cursor.com/blog/claude-code-extension-security-notice)**
+### **1. [DeepSeek open-sources Super-Agent](https://thenextweb.com/news/deepseek-super-agent-open-source-coding-agent)**
 
 **Source**: TechURLs  
-**Date**: 2026-10-29
+**Date**: November 1, 2026
 
-**Detailed Summary**: Cursor says unauthorized Claude Code extension versions 2.1.312 and 2.1.313 were distributed through its marketplace for roughly 11 hours on October 29. The payload collected host metadata, attempted to add an SSH key labelled `svc-telemetry`, enable SSH, create persistence, and open a reverse tunnel to `134.209.82.225`. Cursor removed the builds, rebuilt the marketplace, rotated keys, and published remediation guidance. Uninstalling alone may not remove persistence or an injected SSH key. This is a serious supply-chain risk for AI coding environments with access to repositories, cloud credentials, SSH material, and CI/CD systems.
+**Detailed Summary**: DeepSeek released dsh-superagent under MIT as a research prototype for team coding workflows. It links GitHub and optional Feishu chat, runs approved work in isolated sessions, and returns reviewable outcomes such as pull requests. Its design emphasizes authorization, scoped access, limited notifications, and human review. DeepSeek says it is not production-ready; organizations should prioritize sandboxing, secrets controls, CI validation, permissions, and audit trails.
 
-### **2. [Catching Bugs Before They Land: JiTTesting's Human-on-the-Loop Approach at Full Scale](https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/)**
+### **2. [Do the math: How we took over ChatGPT accounts](https://www.parameter.ai/labs/we-found-a-gap-at-openai)**
 
-**Source**: DevURLs  
-**Date**: 2026-10-29
+**Source**: Hacker News  
+**Date**: October 31, 2026
 
-**Detailed Summary**: Meta describes Catching JiTTests, a system that generates tests which pass on a parent revision and fail on a proposed code change. It combines diff-oriented and intent-aware generation, LLM judging, deterministic filters, and targeted engineer confirmation. Meta reports 589 engineer engagements, a 60% true-positive rate among engagements, and 74 serious privacy bugs caught before landing in the first half of 2026. The reported metrics are not independent proof of causation, but the system demonstrates a practical pattern for agentic verification: differential execution, automated triage, and narrow human escalation.
+**Detailed Summary**: Parameter disclosed a P1 ChatGPT vulnerability fixed by OpenAI on October 26. A malicious public shared-chat link could execute JavaScript in a signed-in user's session through cross-frame message validation failures, HTML injection, origin inheritance, and a CSP bypass. Researchers demonstrated access to private conversations and data exfiltration. The incident shows that public shares, generated content, previews, and embedded tools must be treated as untrusted.
 
-### **3. [Making it easier for websites to express AI training preferences](https://openai.com/index/helping-websites-express-ai-training-preferences)**
+### **3. [ChatGPT and Codex usage limits merging](https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits)**
 
-**Source**: TechURLs  
-**Date**: 2026-10-30
+**Source**: Hacker News  
+**Date**: October 31, 2026
 
-**Detailed Summary**: OpenAI plans to honor a shared robots.txt preference for generative-AI training. The related draft proposes `__usage_ai-training`, allowing websites to express training preferences with existing robots.txt path rules. It is separate from crawl and search controls such as GPTBot and OAI-SearchBot. The mechanism is voluntary, not yet an IETF standard, and cannot guarantee enforcement or resolve licensing and historical-data issues. If adopted broadly, it could simplify publisher, CMS, CDN, and AI-provider policy management.
+**Detailed Summary**: OpenAI will combine ChatGPT and Codex usage into a shared token-based allowance for Plus, Pro, and Business users. Complex agentic workloads will consume more of the pool, changing the economics of coding-agent workflows. Teams should monitor consumption, checkpoint work, and keep fallback providers for critical tasks.
 
 ## Other Articles
 
-1. **[Project Suncatcher prototype satellite response](https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/)** - Google reports AI output from a TPU in orbit.
-2. **[vercel-labs/skills](https://github.com/vercel-labs/skills)** - CLI for reusable coding-agent instructions.
-3. **[Street Fighter III refactoring with agents](https://codescene.com/blog/case-study-refactoring-at-scale-with-agents)** - Agent-assisted C-code refactoring case study.
-4. **[OpenRig](https://github.com/mvschwarz/openrig)** - Open-source persistent multi-agent team framework.
-5. **[Fault-injecting a write tool](https://outsideengineer.substack.com/p/thinking-harder-doesnt-help-ai-catch)** - Tests whether agents verify file writes.
-6. **[AI agent swarms in games](https://labs.ycombinator.com/projects/games/index.html)** - Multi-agent coordination research in Minecraft and Mindustry.
-7. **[Microsoft Foundry agent evaluators](https://levelup.gitconnected.com/creating-custom-code-based-agent-evaluators-in-microsoft-foundry-with-python-da53cf57f51d)** - Python evaluator tutorial.
-8. **[Simantic](https://news.ycombinator.com/item?id=50291116)** - Firmware simulation for AI agents.
-9. **[Evaluating RAG in production](https://dzone.com/articles/evaluating-rag-in-production)** - Production RAG measurement practices.
-10. **[Big Tech AI spending](https://www.bloomberg.com/news/articles/2026-10-30/big-tech-holds-3-trillion-in-spending-commitments-for-ai-boom)** - More than $3T in reported AI commitments.
-11. **[AI and SRE deskilling](https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling)** - Risks of automation eroding operational expertise.
-12. **[Cloudflare Queue double buffering](https://bellone.com/technical/double-buffering-with-cloudflare-queues)** - Telemetry archival architecture.
-13. **[Call Graph Analyzer](https://tweedegolf.nl/en/blog/242/finding-panics-with-call-graph-analyzer/)** - Rust panic-path analysis tool.
-14. **[Baseten funding report](https://www.bloomberg.com/news/articles/2026-10-30/baseten-set-for-30-billion-valuation-with-new-funding)** - Reported $2B AI-inference funding round.
-15. **[MariaDB performance fix](https://mariadb.org/how-mariadb-11-8-became-about-3x-faster-on-some-in-memory-workloads-fixing-a-regression-dating-back-to-10-5/)** - Mutex regression repair improves throughput.
-16. **[Sanstun](https://www.firezone.dev/blog/introducing-sanstun)** - Rust sans-IO WireGuard implementation.
-17. **[Artificial Analysis v5](https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers)** - Analysis of AI benchmark aggregation.
-18. **[Claude plan changes](https://windowsreport.com/anthropic-renames-claude-max-5x-and-20x-plans-removes-ultras-5-hour-limit/)** - Anthropic usage-plan update.
-19. **[Compile-Time Dependent Types](https://thenumb.at/Syl-Intro/)** - Introduction to the Syl systems language.
-20. **[Claude Code Windows focus issue](https://github.com/anthropics/claude-code/issues/91264)** - Reported usability defect.
-21. **[GitHub Actions, Pages, and Webhooks incident](https://www.githubstatus.com/incidents/pwxsjgnvrk6b)** - Availability event affecting developer workflows.
-22. **[Microsoft Edge logic-bug exploit chain](https://blog.orange.tw/posts/2026-10-the-last-proof-of-human-craft-browser-full-chain/)** - Pwn2Own exploit-chain write-up.
+1. **[Deepgram acquires Daily](https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/)**
+   - *Source*: Techmeme
+   - *Date*: October 29, 2026
+   - *Summary*: Deepgram acquired Daily, developer of open-source voice-AI framework Pipecat.
+
+2. **[Prospero](https://nullprogram.com/blog/2026/10/31/)**
+   - *Source*: Hacker News
+   - *Date*: October 31, 2026
+   - *Summary*: A lightweight C++ harness for local or remote coding agents.
+
+3. **[Closing the Drift Loop](https://dzone.com/articles/terraform-drift-remediation)**
+   - *Source*: DZone
+   - *Date*: October 29, 2026
+   - *Summary*: A guarded agent drafts Terraform-drift remediation PRs.
+
+4. **[Batching Strategies](https://dzone.com/articles/batching-throughput-latency)**
+   - *Source*: DZone
+   - *Date*: October 30, 2026
+   - *Summary*: Production LLM throughput and latency tradeoffs.
+
+5. **[Claude game reverse-engineering restrictions](https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering)**
+   - *Source*: Hacker News
+   - *Date*: October 31, 2026
+   - *Summary*: Claude reportedly refuses more game decompilation and cloning requests.
+
+6. **[Multi-agent orchestration bottlenecks](https://www.techradar.com/pro/scaling-smart-how-llm-developers-are-solving-multi-agent-orchestration-bottlenecks)**
+   - *Source*: TechURLs
+   - *Date*: November 1, 2026
+   - *Summary*: Reviews synchronization, cost, latency, and hallucination risks.
+
+7. **[HackerTube](https://karpathy.bearblog.dev/hacker-tube/)**
+   - *Source*: Hacker News
+   - *Date*: October 31, 2026
+   - *Summary*: Claude Code was used to build a video site from HN recommendations.
+
+8. **[Memdoor](https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve)**
+   - *Source*: Hacker News
+   - *Date*: October 31, 2026
+   - *Summary*: A multi-agent coding workflow with reported benchmark results.
+
+9. **[AI, Lean, and Formal Verification](https://thedataexchange.media/leo-de-moura-lean-aws/)**
+   - *Source*: Hacker News
+   - *Date*: October 29, 2026
+   - *Summary*: Formal proofs may improve trust in AI-generated code.
+
+10. **[GPT-5.6 Sol can beat Factorio](https://ryanmadden.net/gpt-56-beats-factorio/)**
+    - *Source*: Hacker News
+    - *Date*: October 31, 2026
+    - *Summary*: A long-horizon agent planning experiment.
+
+11. **[After the AI Commit](https://dzone.com/articles/coding-agent-retrospectives)**
+    - *Source*: DZone
+    - *Date*: October 29, 2026
+    - *Summary*: Retrospectives for coding-agent workflows.
+
+12. **[The SDLC After AI](https://dzone.com/articles/the-sdlc-after-ai)**
+    - *Source*: DZone
+    - *Date*: October 29, 2026
+    - *Summary*: AI shifts bottlenecks toward human product judgment.
+
+13. **[Meta's Muse](https://www.wired.com/story/metas-muse-could-upend-all-kinds-of-businesses-it-hasnt-yet/)**
+    - *Source*: TechURLs
+    - *Date*: October 31, 2026
+    - *Summary*: Merchants adapt sites for early shopping agents.
+
+14. **[Kafka Replay Tool](https://dzone.com/articles/self-service-kafka-streaming)**
+    - *Source*: DZone
+    - *Date*: October 29, 2026
+    - *Summary*: A scalable Kafka replay architecture.
+
+15. **[The AI cost of JavaScript frameworks](https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/)**
+    - *Source*: Hacker News
+    - *Date*: October 28, 2026
+    - *Summary*: Benchmarks agent-built applications across frameworks.
+
+16. **[Brazilian Court Sanctions Lawyers for Prompt Injection](https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/)**
+    - *Source*: Hacker News
+    - *Date*: November 1, 2026
+    - *Summary*: A court sanctioned hidden prompt-injection language in a filing.
+
+17. **[LLM-enabled victim ranking malware](https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/)**
+    - *Source*: Hacker News
+    - *Date*: October 31, 2026
+    - *Summary*: Malware used LLMs to prioritize stolen-data victims.
+
+18. **[Platonic Representation Hypothesis with JEPAs](https://arxiv.org/abs/2610.39302)**
+    - *Source*: Hacker News
+    - *Date*: October 30, 2026
+    - *Summary*: New representation-learning research.
+
+19. **[BootGPT](https://github.com/kerlenton/bootgpt)**
+    - *Source*: Hacker News
+    - *Date*: October 31, 2026
+    - *Summary*: A quantized language model running from a boot runtime.
+
+20. **[NES Contra port](https://epoyraz.github.io/nes-contra-us/)**
+    - *Source*: Hacker News
+    - *Date*: October 31, 2026
+    - *Summary*: Contra ported from assembly to C and WebAssembly.
+
+21. **[Meta humanoid robot prototype](https://www.theinformation.com/articles/meta-built-humanoid-prototype-chinese-startup-ramp-robotics-push)**
+    - *Source*: Techmeme
+    - *Date*: October 31, 2026
+    - *Summary*: Meta reportedly built a humanoid prototype with Fourier.
+
+22. **[Sentinel Values in Python](https://florianwilhelm.info/2026/10/sentinel_values/)**
+    - *Source*: Hacker News
+    - *Date*: October 29, 2026
+    - *Summary*: Examines sentinel-value design tradeoffs in Python.
 
 ## Ranked Articles (Top 25)
 
-1. Cursor malicious Claude Code extension
-2. Meta JiTTesting
-3. OpenAI AI-training preferences
-4. Google Project Suncatcher
-5. Vercel Skills
-6. Street Fighter III agent refactoring
-7. OpenRig
-8. Agent write verification
-9. AI agent swarms
-10. Microsoft Foundry evaluators
-11. Simantic
-12. Production RAG evaluation
-13. Big Tech AI spending
-14. AI and SRE deskilling
-15. Cloudflare Queue double buffering
-16. Call Graph Analyzer
-17. Baseten funding
-18. MariaDB performance fix
-19. Sanstun
-20. Artificial Analysis v5
-21. Claude plan changes
-22. Compile-Time Dependent Types
-23. Claude Code focus issue
-24. GitHub incident
-25. Microsoft Edge exploit chain
+1. DeepSeek Super-Agent
+2. ChatGPT account takeover vulnerability
+3. ChatGPT and Codex limits merging
+4. Deepgram acquires Daily
+5. Prospero
+6. Terraform drift remediation
+7. LLM batching strategies
+8. Claude game reverse-engineering restrictions
+9. Multi-agent orchestration
+10. HackerTube
+11. Memdoor
+12. Lean and formal verification
+13. Factorio agent benchmark
+14. Coding-agent retrospectives
+15. SDLC after AI
+16. Meta's Muse
+17. Kafka replay architecture
+18. AI cost of JavaScript frameworks
+19. Brazilian prompt-injection sanctions
+20. LLM-assisted malware
+21. JEPAs research
+22. BootGPT
+23. Contra WebAssembly port
+24. Meta humanoid prototype
+25. Python sentinel values
