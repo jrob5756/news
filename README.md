@@ -1,170 +1,163 @@
 > 📖 [How this report is generated](ABOUT.md)
 
-# News Summary for November 1, 2026
+# News Summary for November 2, 2026
 
 ## Summary
 
-AI-agent deployment, security, and operational constraints dominated coverage. DeepSeek released a governed team coding-agent prototype; OpenAI is merging ChatGPT and Codex quotas; and several stories highlighted AI security risks.
+Today’s coverage highlights the shift from AI experimentation to operational deployment: production RAG architectures, agent identity and authorization, unified AI workspaces, model evaluation, and the growing infrastructure and power demands of frontier AI. Security, observability, governance, reproducibility, and cost control remain recurring themes.
 
 ## Top 3 Articles
 
-### **1. [DeepSeek open-sources Super-Agent](https://thenextweb.com/news/deepseek-super-agent-open-source-coding-agent)**
+### **1. [RAG Architecture Patterns: Proxy, Caching, and Routing](https://dzone.com/articles/rag-architecture-patterns-proxy-caching-routing)**
 
-**Source**: TechURLs  
-**Date**: November 1, 2026
+**Source**: DZone  
 
-**Detailed Summary**: DeepSeek released dsh-superagent under MIT as a research prototype for team coding workflows. It links GitHub and optional Feishu chat, runs approved work in isolated sessions, and returns reviewable outcomes such as pull requests. Its design emphasizes authorization, scoped access, limited notifications, and human review. DeepSeek says it is not production-ready; organizations should prioritize sandboxing, secrets controls, CI validation, permissions, and audit trails.
+**Date**: October 30, 2026
 
-### **2. [Do the math: How we took over ChatGPT accounts](https://www.parameter.ai/labs/we-found-a-gap-at-openai)**
+**Detailed Summary**: 
 
-**Source**: Hacker News  
-**Date**: October 31, 2026
+This article presents a production-oriented RAG design centered on a gateway or proxy layer that combines semantic caching, vector search, grounding checks, and intelligent routing. A central proxy can consolidate authentication, rate limiting, observability, safety controls, provider abstraction, and fallback behavior rather than requiring every application to implement them independently.
 
-**Detailed Summary**: Parameter disclosed a P1 ChatGPT vulnerability fixed by OpenAI on October 26. A malicious public shared-chat link could execute JavaScript in a signed-in user's session through cross-frame message validation failures, HTML injection, origin inheritance, and a CSP bypass. Researchers demonstrated access to private conversations and data exfiltration. The incident shows that public shares, generated content, previews, and embedded tools must be treated as untrusted.
+Semantic caching recognizes similar requests and can reuse appropriate prior responses, reducing latency and model spend. The primary trade-off is correctness: production implementations need tenant isolation, document-version awareness, expiration, invalidation, and carefully calibrated similarity thresholds. Routing can then choose between cache hits, specialized retrieval corpora, lightweight models, stronger models, and fallback paths according to intent, confidence, policy, latency, and cost.
 
-### **3. [ChatGPT and Codex usage limits merging](https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits)**
+The larger architectural lesson is to treat RAG as an operational platform rather than merely vector search plus an LLM. These patterns are applicable to deployments using OpenAI, Anthropic, Google, Microsoft Azure AI, Meta/open-weight models, and startup APIs. The original DZone page was inaccessible behind Cloudflare, so no article-specific performance benchmarks or discussion could be independently verified.
 
-**Source**: Hacker News  
-**Date**: October 31, 2026
+### **2. [AI Agents Need an Identity Plane: Rethinking Enterprise Authorization for Autonomous Software](https://dzone.com/articles/secure-ai-agents)**
 
-**Detailed Summary**: OpenAI will combine ChatGPT and Codex usage into a shared token-based allowance for Plus, Pro, and Business users. Complex agentic workloads will consume more of the pool, changing the economics of coding-agent workflows. Teams should monitor consumption, checkpoint work, and keep fallback providers for critical tasks.
+**Source**: DevURLs / DZone  
+
+**Date**: November 2, 2026
+
+**Detailed Summary**: 
+
+The article argues that autonomous agents should not simply inherit broad user or application permissions. Enterprises instead need a distinct identity plane to issue, verify, govern, audit, and revoke agent identities and their delegated authority.
+
+Likely design requirements include separate identities for users, agents, services, tools, and sub-agents; explicit delegation chains; narrow, short-lived permissions; centralized policy decisions; tool allowlists; immutable audit records; and approval gates for consequential actions. Authorization must evaluate context such as tenant, task, environment, data classification, and approval state—not merely credential validity.
+
+This is especially relevant to cloud IAM and agentic-application design. Prompt guardrails alone cannot secure systems that can plan, invoke tools, delegate work, and operate asynchronously. The source article was unavailable due to a Cloudflare challenge; this analysis is therefore based on the provided title and indexed summary, not verified quotations or data.
+
+### **3. [OpenAI is finally merging ChatGPT’s chat and Work tabs](https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/)**
+
+**Source**: TechCrunch  
+
+**Date**: November 2, 2026
+
+**Detailed Summary**: 
+
+OpenAI is testing a unified ChatGPT workspace that merges the desktop app’s separate Chat and Work tabs. The aim is to let users move from exploring an idea to executing work in one place, using files and plugins to build websites, create presentations, or take actions on the web under user review.
+
+The test begins with select users before a broader rollout. Codex will remain separate, but ChatGPT and Codex will share a single token and usage allowance. While OpenAI expects most users not to be affected, heavy users and users of certain models may reach reset limits more often.
+
+The move reflects a broader transition from chat as a standalone interface to an agentic workspace combining conversation, files, integrations, artifact generation, and supervised actions. It follows Anthropic’s earlier merger of Claude Chat and Cowork. For organizations, the streamlined experience makes quota management, plugin permissions, uploaded-file governance, web-action auditability, and model-routing transparency important evaluation criteria.
 
 ## Other Articles
 
-1. **[Deepgram acquires Daily](https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/)**
-   - *Source*: Techmeme
-   - *Date*: October 29, 2026
-   - *Summary*: Deepgram acquired Daily, developer of open-source voice-AI framework Pipecat.
+1. **[AI-Native Observability Patterns and Anti-Patterns](https://dzone.com/refcardz/ai-native-observability-patterns-and-anti-patterns)**
+   - *Source*: DevURLs / DZone
+   - *Date*: October 30, 2026
+   - *Summary*: Covers observability practices and common pitfalls for operating and debugging AI-native applications.
 
-2. **[Prospero](https://nullprogram.com/blog/2026/10/31/)**
-   - *Source*: Hacker News
-   - *Date*: October 31, 2026
-   - *Summary*: A lightweight C++ harness for local or remote coding agents.
-
-3. **[Closing the Drift Loop](https://dzone.com/articles/terraform-drift-remediation)**
-   - *Source*: DZone
-   - *Date*: October 29, 2026
-   - *Summary*: A guarded agent drafts Terraform-drift remediation PRs.
-
-4. **[Batching Strategies](https://dzone.com/articles/batching-throughput-latency)**
+2. **[The Permission Was Valid. The Action Was Not Authorized.](https://dzone.com/articles/the-permission-was-valid-the-action-was-not-author)**
    - *Source*: DZone
    - *Date*: October 30, 2026
-   - *Summary*: Production LLM throughput and latency tradeoffs.
+   - *Summary*: Discusses controls that constrain agentic-AI actions to organizational intent rather than relying solely on valid credentials.
 
-5. **[Claude game reverse-engineering restrictions](https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering)**
-   - *Source*: Hacker News
+3. **[What actually broke when I tried to fine-tune on web-scraped data and what fixed it](https://www.reddit.com/r/MachineLearning/comments/1xm1rjj/what_actually_broke_when_i_tried_to_finetune_on/)**
+   - *Source*: Reddit r/MachineLearning
+   - *Date*: November 2, 2026
+   - *Summary*: Practitioner account of web-data fine-tuning failures involving boilerplate contamination, deduplication order, and multilingual near-duplicate detection.
+
+4. **[An AI code patch can stop crashing—and still miss what matters.](https://www.reddit.com/r/MachineLearning/comments/1xk48lp/an_ai_code_patch_can_stop_crashingand_still_miss/)**
+   - *Source*: Reddit r/MachineLearning
    - *Date*: October 31, 2026
-   - *Summary*: Claude reportedly refuses more game decompilation and cloning requests.
+   - *Summary*: Proposes an evidence-based workflow for constraining and verifying AI coding-agent repairs.
 
-6. **[Multi-agent orchestration bottlenecks](https://www.techradar.com/pro/scaling-smart-how-llm-developers-are-solving-multi-agent-orchestration-bottlenecks)**
-   - *Source*: TechURLs
+5. **[Why so many great Python and ML pipelines fail when moving off a local laptop](https://www.reddit.com/r/MachineLearning/comments/1xjozyr/why_so_many_great_python_and_ml_pipelines_fail/)**
+   - *Source*: Reddit r/MachineLearning
+   - *Date*: October 30, 2026
+   - *Summary*: Discusses reproducible packaging practices for deploying Python and ML pipelines beyond local development.
+
+6. **[Simulusion: an open-source PyTorch framework for world models](https://www.reddit.com/r/MachineLearning/comments/1xkyptx/simulusion_an_opensource_pytorch_framework_for/)**
+   - *Source*: Reddit r/MachineLearning
    - *Date*: November 1, 2026
-   - *Summary*: Reviews synchronization, cost, latency, and hallucination risks.
+   - *Summary*: Open-source PyTorch framework for implementing and comparing world-model architectures through a common API.
 
-7. **[HackerTube](https://karpathy.bearblog.dev/hacker-tube/)**
-   - *Source*: Hacker News
-   - *Date*: October 31, 2026
-   - *Summary*: Claude Code was used to build a video site from HN recommendations.
+7. **[GPUlayer: send PyTorch training and Python jobs to any GPU you can reach](https://www.reddit.com/r/MachineLearning/comments/1xjpvw1/gpulayer_send_pytorch_training_and_python_jobs_to/)**
+   - *Source*: Reddit r/MachineLearning
+   - *Date*: October 30, 2026
+   - *Summary*: Tool for dispatching PyTorch training and Python jobs to reachable CUDA and Apple Silicon GPU resources.
 
-8. **[Memdoor](https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve)**
-   - *Source*: Hacker News
-   - *Date*: October 31, 2026
-   - *Summary*: A multi-agent coding workflow with reported benchmark results.
+8. **[Anthropic reports Q3 revenue up 12x YoY to nearly $17B](https://www.bloomberg.com/news/articles/2026-11-02/anthropic-revenue-hits-nearly-17-billion-before-blockbuster-ipo)**
+   - *Source*: Techmeme / Bloomberg
+   - *Date*: November 2, 2026
+   - *Summary*: Anthropic’s amended IPO filing reports nearly $17 billion in Q3 revenue alongside sharply higher frontier-AI development costs.
 
-9. **[AI, Lean, and Formal Verification](https://thedataexchange.media/leo-de-moura-lean-aws/)**
-   - *Source*: Hacker News
+9. **[OpenAI launches Grid Protectors to ease AI’s strain on power grids](https://thenextweb.com/news/openai-grid-protectors-program-demand-response-georgia)**
+   - *Source*: TechURLs / The Next Web
+   - *Date*: November 2, 2026
+   - *Summary*: OpenAI’s Grid Protectors program links future AI-campus load to demand-response commitments, beginning with a Georgia pilot.
+
+10. **[GDPx: Measuring Frontier Model Capabilities](https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities)**
+   - *Source*: Techmeme / SemiAnalysis
+   - *Date*: November 2, 2026
+   - *Summary*: SemiAnalysis launches an AI benchmark spanning 11 high-value domains, including chip design, cybersecurity, and software engineering.
+
+11. **[Rocky Linux Creator Built a New “Not Linux” Kernel in 11 Days Using AI](https://tech.slashdot.org/story/26/11/02/0317207/rocky-linux-creator-built-a-new-not-linux-kernel-in-11-days-using-ai)**
+   - *Source*: TechURLs / Slashdot
+   - *Date*: November 2, 2026
+   - *Summary*: A Rust-first x86-64 kernel created with an AI agent implements the Linux ABI and currently runs in QEMU.
+
+12. **[I made a free AI pricing and usage API](https://www.reddit.com/r/ArtificialInteligence/comments/1xly3vf/i_made_a_free_ai_pricing_and_usage_api/)**
+   - *Source*: Reddit r/ArtificialInteligence
+   - *Date*: November 2, 2026
+   - *Summary*: ModelMonitor is a free API for tracking AI-provider model pricing and usage, with planned pricing-change webhooks.
+
+13. **[Researchers gave 10 AI models a spending cap and an inbox](https://www.reddit.com/r/ArtificialInteligence/comments/1xlzyzk/researchers_gave_10_ai_models_a_spending_cap_and/)**
+   - *Source*: Reddit r/ArtificialInteligence
+   - *Date*: November 2, 2026
+   - *Summary*: An agent-security experiment highlights the need for approval channels that an agent cannot access.
+
+14. **[A model that just returns the decision](https://www.reddit.com/r/ArtificialInteligence/comments/1xm0m34/a_model_that_just_returns_the_decision/)**
+   - *Source*: Reddit r/ArtificialInteligence
+   - *Date*: November 2, 2026
+   - *Summary*: Bivia is presented as a decision tool that returns structured JSON with options, probabilities, confidence, and evidence.
+
+15. **[AI companies are racing to make assistants remember you](https://www.reddit.com/r/ArtificialInteligence/comments/1xls3km/ai_companies_are_racing_to_make_assistants/)**
+   - *Source*: Reddit r/ArtificialInteligence
+   - *Date*: November 2, 2026
+   - *Summary*: Examines searchable, exportable assistant-chat histories as an architecture and product concern.
+
+16. **[Share Delta Lake Tables Between Databricks and Snowflake](https://dzone.com/articles/delta-snowflake-interoperability)**
+   - *Source*: DZone
+   - *Date*: October 30, 2026
+   - *Summary*: Explains ADLS-backed sharing of Delta Lake and Iceberg tables between Databricks and Snowflake without duplicating data.
+
+17. **[How to Build a Scalable SaaS Product Architecture](https://dzone.com/articles/build-scalable-saas-product-architecture)**
+   - *Source*: DevURLs / DZone
+   - *Date*: November 2, 2026
+   - *Summary*: Guide to designing SaaS architecture that scales with customers, workloads, and operational requirements.
+
+18. **[Stop Writing Database Migration Scripts: Declarative Schema Sync for Java](https://dzone.com/articles/declarative-database-schema-management)**
+   - *Source*: DZone
    - *Date*: October 29, 2026
-   - *Summary*: Formal proofs may improve trust in AI-generated code.
+   - *Summary*: Compares declarative Java schema synchronization with imperative migration histories.
 
-10. **[GPT-5.6 Sol can beat Factorio](https://ryanmadden.net/gpt-56-beats-factorio/)**
-    - *Source*: Hacker News
-    - *Date*: October 31, 2026
-    - *Summary*: A long-horizon agent planning experiment.
+19. **[Designing Frontend Applications for Failure, Not Just Success](https://dzone.com/articles/design-frontend-apps-for-failure)**
+   - *Source*: DZone
+   - *Date*: October 28, 2026
+   - *Summary*: Resilience-focused frontend design for slow networks, API errors, session expiry, duplicate submissions, and partial failures.
 
-11. **[After the AI Commit](https://dzone.com/articles/coding-agent-retrospectives)**
-    - *Source*: DZone
-    - *Date*: October 29, 2026
-    - *Summary*: Retrospectives for coding-agent workflows.
+20. **[It’s the memory latency, stupid](https://pivotlake.io/blog/its-the-memory-latency-stupid/)**
+   - *Source*: Hacker News / Pivotlake
+   - *Date*: October 31, 2026
+   - *Summary*: Database-performance analysis of how RAM latency and cache locality dominate high-cardinality aggregation workloads.
 
-12. **[The SDLC After AI](https://dzone.com/articles/the-sdlc-after-ai)**
-    - *Source*: DZone
-    - *Date*: October 29, 2026
-    - *Summary*: AI shifts bottlenecks toward human product judgment.
+21. **[Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust](https://github.com/ivankovic/omnidiff)**
+   - *Source*: Hacker News
+   - *Date*: November 1, 2026
+   - *Summary*: Open-source Rust Git diff tool using content-specific algorithms for code and binary formats.
 
-13. **[Meta's Muse](https://www.wired.com/story/metas-muse-could-upend-all-kinds-of-businesses-it-hasnt-yet/)**
-    - *Source*: TechURLs
-    - *Date*: October 31, 2026
-    - *Summary*: Merchants adapt sites for early shopping agents.
-
-14. **[Kafka Replay Tool](https://dzone.com/articles/self-service-kafka-streaming)**
-    - *Source*: DZone
-    - *Date*: October 29, 2026
-    - *Summary*: A scalable Kafka replay architecture.
-
-15. **[The AI cost of JavaScript frameworks](https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/)**
-    - *Source*: Hacker News
-    - *Date*: October 28, 2026
-    - *Summary*: Benchmarks agent-built applications across frameworks.
-
-16. **[Brazilian Court Sanctions Lawyers for Prompt Injection](https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/)**
-    - *Source*: Hacker News
-    - *Date*: November 1, 2026
-    - *Summary*: A court sanctioned hidden prompt-injection language in a filing.
-
-17. **[LLM-enabled victim ranking malware](https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/)**
-    - *Source*: Hacker News
-    - *Date*: October 31, 2026
-    - *Summary*: Malware used LLMs to prioritize stolen-data victims.
-
-18. **[Platonic Representation Hypothesis with JEPAs](https://arxiv.org/abs/2610.39302)**
-    - *Source*: Hacker News
-    - *Date*: October 30, 2026
-    - *Summary*: New representation-learning research.
-
-19. **[BootGPT](https://github.com/kerlenton/bootgpt)**
-    - *Source*: Hacker News
-    - *Date*: October 31, 2026
-    - *Summary*: A quantized language model running from a boot runtime.
-
-20. **[NES Contra port](https://epoyraz.github.io/nes-contra-us/)**
-    - *Source*: Hacker News
-    - *Date*: October 31, 2026
-    - *Summary*: Contra ported from assembly to C and WebAssembly.
-
-21. **[Meta humanoid robot prototype](https://www.theinformation.com/articles/meta-built-humanoid-prototype-chinese-startup-ramp-robotics-push)**
-    - *Source*: Techmeme
-    - *Date*: October 31, 2026
-    - *Summary*: Meta reportedly built a humanoid prototype with Fourier.
-
-22. **[Sentinel Values in Python](https://florianwilhelm.info/2026/10/sentinel_values/)**
-    - *Source*: Hacker News
-    - *Date*: October 29, 2026
-    - *Summary*: Examines sentinel-value design tradeoffs in Python.
-
-## Ranked Articles (Top 25)
-
-1. DeepSeek Super-Agent
-2. ChatGPT account takeover vulnerability
-3. ChatGPT and Codex limits merging
-4. Deepgram acquires Daily
-5. Prospero
-6. Terraform drift remediation
-7. LLM batching strategies
-8. Claude game reverse-engineering restrictions
-9. Multi-agent orchestration
-10. HackerTube
-11. Memdoor
-12. Lean and formal verification
-13. Factorio agent benchmark
-14. Coding-agent retrospectives
-15. SDLC after AI
-16. Meta's Muse
-17. Kafka replay architecture
-18. AI cost of JavaScript frameworks
-19. Brazilian prompt-injection sanctions
-20. LLM-assisted malware
-21. JEPAs research
-22. BootGPT
-23. Contra WebAssembly port
-24. Meta humanoid prototype
-25. Python sentinel values
+22. **[A brief history of just-in-time: forty years of JIT work, from 1960–2000](https://dl.acm.org/doi/10.1145/857076.857077)**
+   - *Source*: Hacker News / ACM
+   - *Date*: October 29, 2026
+   - *Summary*: ACM retrospective on four decades of just-in-time compilation research and runtime-system design.
