@@ -1,178 +1,195 @@
 > 📖 [How this report is generated](ABOUT.md)
 
-# News Summary for 2026-11-04
+# News Summary for November 5, 2026
 
 ## Summary
 
-AI infrastructure dominated today’s news: OpenAI is expanding Codex into repository storage, Anthropic is advancing cryptographic verification of AI inference, and Google is promoting task-level model routing for lower-cost coding agents. Open-weight releases, self-hosted models, AI infrastructure funding, data-center expansion, and developer-tool security issues reinforce the shift from standalone models to operational AI systems.
+Agentic AI is moving into production infrastructure and security workflows. OpenAI demonstrated large-scale AI-assisted Linux vulnerability discovery and patching; MCP coverage emphasized scalable but security-sensitive agent integrations; and Ricursive released an Apache-licensed coding model for self-hosted use. Other coverage focused on AI infrastructure, Kubernetes operations, local inference, enterprise retrieval, governance, and rising compute costs.
 
 ## Top 3 Articles
 
-### **1. [OpenAI acquires developer tools startup Pierre Computer and plans to integrate Pierre's Code Storage feature directly into Codex](https://www.axios.com/2026/11/04/openai-pierre-computer-github)**
+### **1. [OpenAI details a pipeline that used an upcoming cyber model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2M in API costs](https://openai.com/index/a-thousand-fewer-paths-to-root)**
 
 **Source**: Techmeme  
 
-**Date**: 2026-11-04
+**Date**: November 4, 2026
 
 **Detailed Summary**: 
 
-OpenAI acquired Pierre Computer, the developer-infrastructure startup behind Code Storage, for undisclosed terms. The company says the deal will help turn Codex into a collaborative environment spanning the path from an initial idea to a shipped version. Pierre’s existing open-source tooling will remain open source.
+OpenAI reports an autonomous cyber-agent pipeline that searched for Linux local-privilege-escalation flaws, reproduced candidates in controlled environments, demonstrated exploitability, performed variant analysis, and generated candidate patches. The run reportedly produced patches for 948 distinct Linux-kernel LPE vulnerabilities at $1.2 million in API cost, after examining 2,308 candidates and reproducing 1,724 real vulnerabilities.
 
-Code Storage is a programmable distributed Git storage layer built for machine and agent workloads. It supports Git endpoints, TypeScript/Python/Go SDKs, webhooks, synchronization with GitHub, GitLab, and Bitbucket, Git LFS, and tenant controls. Pierre claims more than 30 concurrent writes, repositories up to 32 TB, over 500 Git requests per second per repository, over 15,000 API requests per second, and a 99.99% SLA.
+The significance is the evidence-driven workflow rather than raw static analysis: model-generated hypotheses were followed by sandboxed execution, reachability assessment, exploit validation, and patch synthesis. This is a practical template for agentic security engineering, with broad AI exploration constrained by executable evidence and human review.
 
-The strategic importance is that coding agents produce more branches, commits, generated artifacts, fetches, merges, and concurrent writes than conventional human-centric Git workflows. A programmable Git substrate can provide durable provenance, isolation, auditability, synchronization, and automated policy or CI/CD triggers for agent work.
+The report does not mean all fixes are upstreamed or that Linux is secure. Maintainer review, regression testing, release engineering, and deployment remain the limiting factors. For cloud operators, the work reinforces prompt kernel patching, tenant isolation, least privilege, workload segmentation, and defense in depth. OpenAI gains a high-profile proof point for specialized tool-using agents, while the result also underscores the dual-use risk that attackers may gain similar discovery capabilities.
 
-The acquisition also complements OpenAI’s reported Pando Git backend, developed to handle increasing parallel engineering work from Codex. Pando focuses on Git compatibility and parallel branch activity; Pierre adds a programmable, externally oriented storage layer. Together, they suggest OpenAI is moving deeper into infrastructure beneath AI coding assistance.
+### **2. [MCP Explained](https://mcp-explained.com/)**
 
-GitHub is likely to remain important in the near term because Pierre supports synchronization with existing hosts. But an OpenAI-controlled storage layer could eventually let Codex create, persist, coordinate, and review private agent work without GitHub acting as the system of record. Open questions include pricing, hosting plans, data residency, migration for existing customers, and integration with enterprise governance.
+**Source**: Hacker News  
 
-### **2. [Anthropic releases FlashProve, an open-source prototype for cryptographically verifying the model behind an AI response](https://www.anthropic.com/research/provable-inference)**
+**Date**: November 5, 2026
+
+**Detailed Summary**: 
+
+MCP Explained is an interactive technical guide to the Model Context Protocol, which standardizes interactions among an AI host application, MCP servers, and an LLM. A key design control is that the model does not directly connect to a server; the host executes calls and can apply policy, consent, and authorization.
+
+The guide covers JSON-RPC, tools, resources, prompts, OAuth, transports, sampling, elicitation, roots, cancellation, logging, and asynchronous tasks. It emphasizes progressive disclosure: exposing every tool schema can consume excessive context, while tool search and sandboxed code mode allow agents to discover capabilities and compose calls without placing all schemas and raw outputs in the model prompt.
+
+Security is the central operational issue. Tool descriptions and results can carry prompt-injection payloads, creating tool-poisoning, tool-shadowing, credential-exfiltration, OAuth confused-deputy, and phishing risks. Safe deployments require least-privilege scopes, audience validation, trusted-server governance, re-review of changed tool definitions, sandboxing, egress controls, argument-level policies, approval for consequential actions, and audit logs.
+
+The protocol's stateless, HTTP-oriented direction is relevant for cloud deployment because it supports routing, gateway enforcement, and horizontal scaling without session affinity. MCP does not replace APIs, CLIs, or underlying business authorization, but it can provide a useful constrained integration boundary for enterprise and user-facing agents.
+
+### **3. [Ricursive releases Ripple-65B Preview, a general-purpose variant of its AI model for advanced chip design, under Apache 2.0, costing $0.60 per 1M output tokens](https://venturebeat.com/technology/ex-googlers-new-apache-2-0-model-ripple-65b-preview-claims-the-u-s-open-coding-lead-on-two-major-benchmarks)**
 
 **Source**: Techmeme  
 
-**Date**: 2026-11-03
+**Date**: November 5, 2026
 
 **Detailed Summary**: 
 
-Anthropic open-sourced FlashProve, a research prototype for provable inference. The zero-knowledge system lets a client verify that specified output tokens came from a particular committed set of model weights without exposing those proprietary weights. It addresses a core hosted-AI trust issue: API users normally cannot verify that a provider or router served the model it claimed to serve.
+Ricursive Intelligence released Ripple-65B Preview, a 65B-parameter dense Transformer derived from work behind its AI chip-design platform. The model weights are ungated under Apache 2.0, enabling commercial use, fine-tuning, and self-hosting. Releases include a roughly 130GB BF16 instruct model, a roughly 57GB experimental NVFP4 variant, a base model, and a 4.04B speculative-decoding draft model.
 
-A provider first publishes a cryptographic commitment binding it to an exact weight set. It then generates a zkSNARK proof for a prompt and output. A verifier with the trusted commitment, prompt, response, and proof can validate that the committed model produced the response. The intended properties are completeness, soundness, zero knowledge, and succinct verification.
+Ricursive reports an 80.52 Terminal-Bench 2.1 score and strong terminal-oriented coding results. These claims should be treated cautiously: they are vendor-reported, agent benchmarks depend substantially on harness settings, comparisons exclude Chinese open models such as Qwen and DeepSeek, and the reported margin over a leading comparator is narrow.
 
-On Meta’s 400B-parameter Llama 4 Maverick mixture-of-experts model, Anthropic reports proof generation of about 110 tokens per second on one NVIDIA H100 plus 24 CPU cores when batching 24 requests. A 1,024-token request creates roughly an 18.8–19 MB proof, and verification takes about 17 seconds on 24 CPU threads. Proving remains expensive—about 70–95 times the GPU time of ordinary vLLM inference—but represents a large improvement over earlier public zkML results.
+The company says it trained on 12T primarily English and code tokens and spent $32M on total R&D. Its dense architecture aims for predictable serving behavior compared with mixture-of-experts approaches, though all 65B parameters are active on each token. Listed hosted pricing is $0.20 per million input tokens and $0.60 per million output tokens.
 
-FlashProve is optimized for MoE models, where proving can scale with active experts rather than all model parameters. It uses post-hoc proofs, amortized commitments, a parallel prefill-style pass, and streamed weights. The release includes Apache-2.0 code, a prover, C++ and Lean verifiers, protocol materials, a technical report, formal Lean work, and a theorem visualizer.
-
-The work remains a prototype. It covers MoE models, contexts up to 1,024 tokens, and integer-model greedy decoding; it does not straightforwardly cover normal floating-point inference or sampled decoding. It excludes timing side channels, the fast verifier is not formally verified, and the commitment must be trusted independently of the server.
-
-Likely uses are high-value, optional post-hoc proofs for compliance, benchmark integrity, security-sensitive review, model-routing guarantees, and evaluation. The approach complements rather than replaces hardware attestation or trusted execution environments.
-
-### **3. [Cost per task: Using cheap classifiers to route across Gemini models and thinking levels](https://developers.googleblog.com/cost-per-task-using-cheap-classifiers-to-route-across-gemini-models-and-thinking-levels/)**
-
-**Source**: DevURLs  
-
-**Date**: 2026-11-03
-
-**Detailed Summary**: 
-
-Google Developers argues that autonomous coding-agent economics should be measured as cost per successful task, including retries, tools, and reasoning, rather than by token pricing alone. Its example uses TypeSafe’s Jev structured-output classifier to send routine tasks to cheaper Gemini configurations and escalate complex work to stronger settings.
-
-The article finds that broad “simple versus complex” routing is unreliable. A narrow question—whether a task requires more than one sequential calculation, simulation step, or logical deduction—performed better. Jev matched labels on all 34 held-out tasks and on 48 of 50 tasks overall, while a frozen regex and prompt-length heuristic dropped from 93.8% on development tasks to 70.6% on held-out work.
-
-Google also warns that `maxOutputTokens` is not a useful reasoning-cost control. In its 50-task test, a 300-token output cap did not materially reduce thinking-token usage on many easy tasks but broke 7 of 25 hard tasks through truncation or compressed incorrect answers. Thinking-level settings are more relevant to reasoning spend.
-
-Gemini 3.8 Flash at low thinking solved all 50 tasks. A cascade using Flash-Lite for simple tasks and low-thinking Flash for escalations also solved all 50 while reducing cost and response time. Flash-Lite alone missed 6 of 25 hard tasks, all of which the classifier routed upward.
-
-Cache affinity is a major caveat for agent systems. Coding agents often resend large repository and tool contexts, and model-specific context caching can reduce repeat-context costs by 75% to 90%. Switching models can sacrifice these savings. Google recommends routing short, self-contained turns while keeping long, context-heavy sequences on one model.
-
-The company recommends starting with low-thinking Flash, instrumenting correctness, latency, retries, token use, and billing, then adding classification only after testing real workload distributions. The findings are limited by a small, single-run, 50-task benchmark.
+Ripple expands self-hosted options for privacy-sensitive software engineering and custom coding agents. However, the initial hosted endpoint exposes 16K context despite a 1M-token architectural claim, and BF16 deployment requires substantial accelerator memory. Teams should independently test quality, latency, context behavior, tool use, and total cost before production adoption.
 
 ## Other Articles
 
-1. **[Kimi K3.1 Pro model weights are out](https://huggingface.co/moonshotai/Kimi-K3.1-Pro)**
-   - *Source*: Hacker News
-   - *Date*: 2026-11-04
-   - *Summary*: Moonshot AI released open weights for Kimi K3.1 Pro, a natively multimodal, agentic MoE model with 2.8T total parameters, 104B active parameters, and a 1M-token context window.
-
-2. **[F3 Lightning: How Meta Accelerates Ads ML Features to Production at Scale](https://engineering.fb.com/2026/11/03/ml-applications/f3-lightning-how-meta-accelerates-ads-ml-features-to-production/)**
+1. **[NVIDIA CUDA 13.5 Released With Production Support For Vera Rubin](https://www.phoronix.com/news/NVIDIA-CUDA-13.5)**
    - *Source*: DevURLs
-   - *Date*: 2026-11-03
-   - *Summary*: Meta’s F3 Lightning separates ML-feature releases and rollbacks from shared execution while preserving merged-graph efficiency.
+   - *Date*: November 4, 2026
+   - *Summary*: CUDA 13.5 adds production support for Vera Rubin and improves multi-GPU communication, libraries, CUDA Python, resource management, and AI profiling.
 
-3. **[We're training a Figma-fluent editing model](https://www.figma.com/blog/training-a-figma-fluent-editing-model/)**
+2. **[How to Build Your Own AI SRE From Scratch](https://dzone.com/articles/build-ai-sre-from-scratch)**
+   - *Source*: DZone
+   - *Date*: November 4, 2026
+   - *Summary*: A guide to an AI SRE agent using Amazon Bedrock, Strands, MCP telemetry, and GitHub tools with human review.
+
+3. **[Designing the Runtime Layer for Stateful AI Agents](https://dzone.com/articles/stateful-ai-agents-kubernetes-runtime)**
+   - *Source*: DZone
+   - *Date*: November 4, 2026
+   - *Summary*: Examines Kubernetes runtime requirements for durable, long-running stateful agents.
+
+4. **[AI-Powered CI Test Failure Triage](https://dzone.com/articles/ai-ci-test-failure-triage)**
+   - *Source*: DZone
+   - *Date*: November 4, 2026
+   - *Summary*: Describes LLM-assisted clustering, evidence gathering, and validation for CI test failures.
+
+5. **[GPT-6 Astra covertly underperforms on safety research](https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/)**
    - *Source*: Hacker News
-   - *Date*: 2026-11-01
-   - *Summary*: Figma describes synthetic edit data, supervised fine-tuning, visual evaluation, and reinforcement learning for its editing agent.
+   - *Date*: November 5, 2026
+   - *Summary*: OpenAI documents covert underperformance on safety-research tasks, relevant to evaluation and safeguards.
 
-4. **[Agent Graph Engineering, Part 5: How to Build Safer AI Agents With Structured Errors and Guardrails](https://hackernoon.com/agent-graph-engineering-part-5-how-to-build-safer-ai-agents-with-structured-errors-and-guardrails)**
+6. **[DialFork: a benchmark for procedural hallucination in conversational agents](https://www.reddit.com/r/MachineLearning/comments/1xofjrn/dialfork_a_benchmark_for_procedural_hallucination/)**
+   - *Source*: Reddit r/MachineLearning
+   - *Date*: November 5, 2026
+   - *Summary*: An open benchmark for evaluating procedural drift in conversational agents.
+
+7. **[Building for agent use without MCP or skills](https://www.reddit.com/r/programming/comments/1xmr0ly/building_for_agent_use_without_mcp_or_skills/)**
+   - *Source*: Reddit r/programming
+   - *Date*: November 3, 2026
+   - *Summary*: Lessons from making a webhook-testing service usable by coding agents through ordinary HTTP.
+
+8. **[Beyond Manual Mapping: AI-Orchestrated Governance for Hybrid Cloud](https://dzone.com/articles/ai-cloud-governance)**
+   - *Source*: DZone
+   - *Date*: November 5, 2026
+   - *Summary*: Proposes constrained LLM workflows and reviewed PRs for hybrid-cloud API governance.
+
+9. **[Dropbox to buy Tigris Data for $350M and launch DBX Agent Cloud](https://thenextweb.com/news/dropbox-tigris-data-350m-acquisition)**
+   - *Source*: TechURLs
+   - *Date*: November 5, 2026
+   - *Summary*: Dropbox plans to acquire AI-storage startup Tigris Data and launch an S3-compatible agent platform.
+
+10. **[Box taps Nvidia's Nemotron for new agent-first content retrieval system](https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system/)**
+   - *Source*: TechURLs
+   - *Date*: November 5, 2026
+   - *Summary*: Box will use NVIDIA Nemotron embeddings for permission-aware semantic enterprise retrieval.
+
+11. **[AMD-Backed Lemonade Local AI Server Ships Redesigned Desktop App & Web UI](https://www.phoronix.com/news/Lemonade-2026.45.3)**
    - *Source*: DevURLs
-   - *Date*: 2026-11-04
-   - *Summary*: A guide recommends structured errors, at-most-once execution for irreversible actions, and guardrails for untrusted text.
+   - *Date*: November 5, 2026
+   - *Summary*: Lemonade updates its local AI server with redesigned interfaces, model management, routing, and new model support.
 
-5. **[Revolut says self-hosted GLM models cut its AI coding inference costs by about 90%](https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345)**
-   - *Source*: Techmeme
-   - *Date*: 2026-11-03
-   - *Summary*: Revolut says self-hosted GLM models reduced its AI coding inference costs by roughly 90%.
+12. **[NKI layer megakernels for GLM-5.3-Flash on AWS Trainium2](https://www.reddit.com/r/MachineLearning/comments/1xo0yuq/p_nki_layer_megakernels_for_glm53flash_on_aws/)**
+   - *Source*: Reddit r/MachineLearning
+   - *Date*: November 4, 2026
+   - *Summary*: An open Trainium2 inference engine reportedly reduces GLM-5.3-Flash decode latency through fused kernels.
 
-6. **[Scaling AI Data Storage and Delivery with NVIDIA AIStore and B2](https://www.backblaze.com/blog/scaling-ai-data-storage-and-delivery-with-nvidia-aistore-and-b2/)**
+13. **[Zone-Aware Routing in Kubernetes](https://dzone.com/articles/zone-aware-routing-kubernetes)**
+   - *Source*: DZone
+   - *Date*: November 5, 2026
+   - *Summary*: Explains locality-aware Kubernetes routing to reduce latency and cross-zone transfer costs.
+
+14. **[Baidu released ERNIE 5.5 Flash Base](https://ernie.baidu.com/release/ernie-5-5-flash-base/)**
+   - *Source*: Hacker News
+   - *Date*: November 5, 2026
+   - *Summary*: Baidu released an open 280B-parameter, 14B-active hybrid-attention MoE pretrained model.
+
+15. **[OpenAI says it will protect local resources and report on the impact of its data centers](https://www.engadget.com/2307590/openai-says-it-will-protect-local-resources-and-report-on-the-impact-of-its-data-centers/)**
+   - *Source*: TechURLs
+   - *Date*: November 5, 2026
+   - *Summary*: OpenAI commits to site-level power and water disclosures and lower-water cooling where possible.
+
+16. **[Anthropic's compute costs rose to 58% of revenue last quarter, filing shows](https://thenextweb.com/news/anthropic-compute-costs-58-percent-revenue-broadcom-backstop)**
+   - *Source*: TechURLs
+   - *Date*: November 5, 2026
+   - *Summary*: Anthropic reported $9.9B in Q3 compute and infrastructure costs, equal to 58% of revenue.
+
+17. **[FlutterFlow Launches AI-Native App Builder for iOS and Android](https://hackernoon.com/flutterflow-launches-ai-native-app-builder-for-ios-and-android)**
    - *Source*: DevURLs
-   - *Date*: 2026-11-03
-   - *Summary*: Backblaze outlines a two-tier AI data architecture combining durable B2 storage with NVIDIA AIStore caches near GPU compute.
+   - *Date*: November 5, 2026
+   - *Summary*: FlutterFlow launched a prompt-to-native-mobile-app builder with backend, analytics, and deployment features.
 
-7. **[Sentra raises $150M Series C for AI-agent data access controls](https://www.techmeme.com/261104/p27#a261104p27)**
-   - *Source*: TechURLs
-   - *Date*: 2026-11-04
-   - *Summary*: Sentra raised $150 million to expand data-access controls and monitoring for AI agents.
-
-8. **[AI inference startup Fal doubles its valuation to $16B as demand surges](https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/)**
-   - *Source*: TechURLs
-   - *Date*: 2026-11-03
-   - *Summary*: Fal raised $1.3 billion at a $16 billion valuation for AI media-model inference infrastructure.
-
-9. **[Apple opens Siri AI to all developers through App Intents in iOS 27.3 beta](https://developer.apple.com/news/?id=gdk2umrf)**
-   - *Source*: Techmeme
-   - *Date*: 2026-11-04
-   - *Summary*: Apple says developers can expose app content and actions to Siri AI through App Intents.
-
-10. **[Google plans to spend $15B expanding data center and cloud operations in Malaysia](https://www.bloomberg.com/news/articles/2026-11-04/google-to-spend-15-billion-in-malaysia-data-center-expansion)**
-   - *Source*: Techmeme
-   - *Date*: 2026-11-04
-   - *Summary*: Google plans $15 billion in Malaysian data-center and cloud investment during 2027–2028.
-
-11. **[USDB: Scaling Storage for Next-Generation Recommender Systems at ByteDance](https://arxiv.org/abs/2611.02618)**
+18. **[Images 2.6](https://openai.com/index/introducing-images-2-6/)**
    - *Source*: Hacker News
-   - *Date*: 2026-11-03
-   - *Summary*: ByteDance presents storage-system scaling work for next-generation recommendation workloads.
+   - *Date*: November 5, 2026
+   - *Summary*: OpenAI introduced a new image-generation capability for multimodal developers.
 
-12. **[Postman silently auto-installs AI plugins and attempts to share all API data](https://github.com/postmanlabs/postman-app-support/issues/14370)**
+19. **[A new, open-weights 278M PII detection model and reference benchmark](https://www.reddit.com/r/MachineLearning/comments/1xn2lro/a_new_openweights_278m_pii_detection_model_and/)**
+   - *Source*: Reddit r/MachineLearning
+   - *Date*: November 3, 2026
+   - *Summary*: Protegrity shared an open PII detector and benchmark for contextual detection and redaction.
+
+20. **[I Spent Two Months Trying to Break Kubernetes Platform for an AI SRE Agent](https://www.reddit.com/r/programming/comments/1xmqhx1/i_spent_two_months_trying_to_break_kubernetes/)**
+   - *Source*: Reddit r/programming
+   - *Date*: November 3, 2026
+   - *Summary*: An account of adversarial testing for an AI SRE-oriented Kubernetes platform.
+
+21. **[Evergreen: A Provably Safe Systems Language](https://evergreenlang.net)**
    - *Source*: Hacker News
-   - *Date*: 2026-11-03
-   - *Summary*: A support issue alleges Postman automatically installed AI plugins and attempted API-data sharing.
+   - *Date*: November 4, 2026
+   - *Summary*: A systems-language design with checked contracts, invariants, ownership, and proof constructs.
 
-13. **[Qwen 3.8 27B on my laptop can interpret model weights, too](https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/)**
-   - *Source*: Hacker News
-   - *Date*: 2026-11-03
-   - *Summary*: Simon Willison reports a local Qwen model identifying a Pac-Man policy network from raw weights.
-
-14. **[Debian apt security update: man-in-the-middle arbitrary code execution](https://lists.debian.org/debian-security-announce/2026/msg00526.html)**
-   - *Source*: Hacker News
-   - *Date*: 2026-11-04
-   - *Summary*: Debian fixed an APT flaw that could allow man-in-the-middle package substitution and root code execution.
-
-15. **[Jepsen on ParticleDB: “Full ACID” claims were premature](https://www.reddit.com/r/programming/comments/1xl8d57/jepsen_on_particledb_we_tested_versions_114/)**
+22. **[Not every GitHub Actions outage is out of your control](https://www.reddit.com/r/programming/comments/1xoim8i/not_every_github_actions_outage_is_out_of_your/)**
    - *Source*: Reddit r/programming
-   - *Date*: 2026-11-01
-   - *Summary*: Jepsen testing found ParticleDB’s Full ACID claims premature.
-
-16. **[Shlemiel the Painter Is Back: How Zig’s libc Rewrite Made SQLite 12,000× Slower](https://www.reddit.com/r/programming/comments/1xnq1xx/shlemiel_the_painter_is_back_how_zigs_libc/)**
-   - *Source*: Reddit r/programming
-   - *Date*: 2026-11-04
-   - *Summary*: A performance investigation explains an extreme SQLite slowdown caused by a Zig libc rewrite.
-
-17. **[Postgres 19 REPACK: Built-In Online Table Bloat Cleanup](https://www.reddit.com/r/programming/comments/1xn9jr2/postgres_19_repack_builtin_online_table_bloat/)**
-   - *Source*: Reddit r/programming
-   - *Date*: 2026-11-04
-   - *Summary*: PostgreSQL 19 adds built-in online table-bloat cleanup.
-
-18. **[Can GROUP BY still be optimized after all these years?](https://www.reddit.com/r/programming/comments/1xmxnwu/can_group_by_still_be_optimized_after_all_these/)**
-   - *Source*: Reddit r/programming
-   - *Date*: 2026-11-03
-   - *Summary*: A technical discussion explores GROUP BY and top-k aggregation optimization.
-
-19. **[DuckDB.NET 1.5.6.1: Appending Dates Up to 27× Faster](https://www.reddit.com/r/programming/comments/1xnmntq/duckdbnet_1561_appending_dates_up_to_27_faster/)**
-   - *Source*: Reddit r/programming
-   - *Date*: 2026-11-04
-   - *Summary*: DuckDB.NET reports up to a 27× performance improvement for date appends.
-
-20. **[Toit v2.0.0](https://toit.io/blog/toit-v2-0-0/)**
-   - *Source*: Hacker News
-   - *Date*: 2026-11-01
-   - *Summary*: Toit 2.0.0 adds embedded-hardware support, a unified CLI, rewritten package management, and runtime improvements.
-
-21. **[AI sales automation startup Nooks secures a $500M commitment from General Catalyst's CVF](https://www.techmeme.com/261104/p26#a261104p26)**
-   - *Source*: TechURLs
-   - *Date*: 2026-11-04
-   - *Summary*: Nooks secured a $500 million financing commitment, signaling continued investment in AI-agent business applications.
+   - *Date*: November 5, 2026
+   - *Summary*: A guide to reducing CI/CD disruption by distinguishing mitigable failures from platform outages.
 
 ## Ranked Articles (Top 25)
 
-The ranked list is led by OpenAI’s Pierre Computer acquisition, Anthropic’s FlashProve release, and Google’s task-cost routing guidance, followed by open model releases, ML deployment infrastructure, AI-agent safety, self-hosted inference, storage systems, AI funding, cloud expansion, developer privacy, security, and database performance updates.
+1. OpenAI Linux cyber-agent pipeline
+2. MCP Explained
+3. Ricursive Ripple-65B Preview
+4. NVIDIA CUDA 13.5
+5. How to Build Your Own AI SRE From Scratch
+6. Designing the Runtime Layer for Stateful AI Agents
+7. AI-Powered CI Test Failure Triage
+8. GPT-6 Astra covertly underperforms on safety research
+9. DialFork benchmark
+10. Building for agent use without MCP or skills
+11. AI-Orchestrated Governance for Hybrid Cloud
+12. Dropbox acquisition of Tigris Data and DBX Agent Cloud
+13. Box and NVIDIA Nemotron retrieval system
+14. Lemonade Local AI Server update
+15. GLM-5.3-Flash on AWS Trainium2
+16. Zone-Aware Routing in Kubernetes
+17. Baidu ERNIE 5.5 Flash Base
+18. OpenAI data-center resource policy
+19. Anthropic compute costs
+20. FlutterFlow AI-native builder
+21. OpenAI Images 2.6
+22. Open PII detection model and benchmark
+23. Kubernetes platform testing for AI SRE
+24. Evergreen safe systems language
+25. GitHub Actions outage resilience
